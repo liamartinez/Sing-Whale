@@ -1,0 +1,1328 @@
+TemptyExample
+v4
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist ofxiphone-Info.plist
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/emptyExample.app/ResourceRules.plist
+cCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png bin/data/Default.png
+cCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png bin/data/Icon.png
+cCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+cCpResource Project.xcconfig build/Debug-iphoneos/emptyExample.app/Project.xcconfig
+cCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample normal armv7
+cGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+cPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+cProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+cTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+cCodeSign /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/PkgInfo
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Project.xcconfig
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList
+c000000004F331E760000000000000157
+t1328750198
+s343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+c000000004F331E760000000000000041
+t1328750198
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/ofxiphone-Info.plist
+c000000004E273F2C0000000000000428
+t1311194924
+s1064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm
+c000000004BACD928000000000000009E
+t1269618984
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h
+c000000004DB3039A0000000000000219
+t1303577498
+s537
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm
+c000000004DB3039A00000000000006D3
+t1303577498
+s1747
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxAccelerometer/src/ofxAccelerometer.h
+c000000004D32663E0000000000001903
+t1295148606
+s6403
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxMultiTouch/src/ofxMultiTouch.h
+c000000004D32663E0000000000000C4C
+t1295148606
+s3148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h
+c000000004DB3039A0000000000000BB7
+t1303577498
+s2999
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/ofxiPhone.h
+c000000004DB3039A0000000000000840
+t1303577498
+s2112
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/ofxiPhoneExtras.h
+c000000004DB080AC0000000000002329
+t1303412908
+s9001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/EAGLView.h
+c000000004D2F319400000000000009EE
+t1294938516
+s2542
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ESRenderer.h
+c000000004D456C18000000000000018E
+t1296395288
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/SoundEngine.h
+c000000004D3305FA0000000000004003
+t1295189498
+s16387
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h
+c000000004E0F6EA80000000000000EA8
+t1309634216
+s3752
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxOpenALSoundPlayer.h
+c000000004D5583C80000000000000F14
+t1297449928
+s3860
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h
+c000000004C3F5CBA0000000000000E48
+t1279220922
+s3656
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h
+c000000004C3F5CBA0000000000000862
+t1279220922
+s2146
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneApp.h
+c000000004DB3039A0000000000000544
+t1303577498
+s1348
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h
+c000000004D55A30A000000000000095C
+t1297457930
+s2396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h
+c000000004D5583C800000000000008A6
+t1297449928
+s2214
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h
+c000000004D3305FA0000000000000C99
+t1295189498
+s3225
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h
+c000000004E0DF6B2000000000000068E
+t1309537970
+s1678
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h
+c000000004DB3039A0000000000001634
+t1303577498
+s5684
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h
+c000000004DB3039A00000000000008AC
+t1303577498
+s2220
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo-deprecated.h
+c000000004D558E2800000000000021FA
+t1297452584
+s8698
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo-features.h
+c000000004D558E28000000000000031D
+t1297452584
+s797
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo-pdf.h
+c000000004D558E280000000000000C24
+t1297452584
+s3108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo-svg.h
+c000000004D558E280000000000000ADD
+t1297452584
+s2781
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo-version.h
+c000000004D558E280000000000000094
+t1297452584
+s148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/cairo/include/cairo/cairo.h
+c000000004D558E280000000000016BCE
+t1297452584
+s93134
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/glu/include_iphone/glu.h
+c000000004BACD92A0000000000001F99
+t1269618986
+s8089
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/3d/of3dUtils.h
+c000000004DBB0C14000000000000002B
+t1304103956
+s43
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/3d/ofCamera.h
+c000000004DF2A5B40000000000000858
+t1307747764
+s2136
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/3d/ofEasyCam.h
+c000000004D846F74000000000000053C
+t1300524916
+s1340
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/3d/ofMesh.h
+c000000004E15EDE600000000000010DD
+t1310060006
+s4317
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/3d/ofNode.h
+c000000004D59888C000000000000143C
+t1297713292
+s5180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004E0F39D00000000000000590
+t1309620688
+s1424
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/app/ofAppRunner.h
+c000000004DD7C1F8000000000000075D
+t1305985528
+s1885
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/app/ofBaseApp.h
+c000000004DD7C1F80000000000000377
+t1305985528
+s887
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/events/ofEventUtils.h
+c000000004DDA95360000000000000DAD
+t1306170678
+s3501
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/events/ofEvents.h
+c000000004DB07F220000000000001B97
+t1303412514
+s7063
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofFbo.h
+c000000004E2849E60000000000000E23
+t1311263206
+s3619
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofGLRenderer.h
+c000000004E19CDB00000000000001109
+t1310313904
+s4361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofGLUtils.h
+c000000004E0E0E280000000000000B79
+t1309543976
+s2937
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofLight.h
+c000000004E0F7856000000000000084C
+t1309636694
+s2124
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofMaterial.h
+c000000004E0F78560000000000000555
+t1309636694
+s1365
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofShader.h
+c000000004E0E69F00000000000000F82
+t1309567472
+s3970
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofTexture.h
+c000000004E265D2400000000000010D0
+t1311137060
+s4304
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofVbo.h
+c000000004E0F78560000000000000A19
+t1309636694
+s2585
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/gl/ofVboMesh.h
+c000000004DF2A5B40000000000000114
+t1307747764
+s276
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofCairoRenderer.h
+c000000004E25D24000000000000012BF
+t1311101504
+s4799
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofGraphics.h
+c000000004E134E620000000000001D95
+t1309888098
+s7573
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofImage.h
+c000000004E15EDE80000000000002014
+t1310060008
+s8212
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofPath.h
+c000000004E19CDB0000000000000115A
+t1310313904
+s4442
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofPixels.h
+c000000004E1630D400000000000012C3
+t1310077140
+s4803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofPolyline.h
+c000000004E19CDB00000000000000E9D
+t1310313904
+s3741
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofRendererCollection.h
+c000000004E19CDB000000000000027C6
+t1310313904
+s10182
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofTessellator.h
+c000000004DDA957A0000000000000459
+t1306170746
+s1113
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004E2327FC00000000000009F5
+t1310926844
+s2549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofMath.h
+c000000004E19CDB00000000000000B3D
+t1310313904
+s2877
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D5583C80000000000000A4C
+t1297449928
+s2636
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D846F740000000000006D64
+t1300524916
+s28004
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofQuaternion.h
+c000000004D846F7400000000000033BD
+t1300524916
+s13245
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofVec2f.h
+c000000004D923DCC000000000000407D
+t1301429708
+s16509
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofVec3f.h
+c000000004D846F7400000000000061A8
+t1300524916
+s25000
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofVec4f.h
+c000000004D5583C80000000000002EC3
+t1297449928
+s11971
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/math/ofVectorMath.h
+c000000004D2F31940000000000000099
+t1294938516
+s153
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/ofMain.h
+c000000004E2849E60000000000000643
+t1311263206
+s1603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D5583C80000000000000366
+t1297449928
+s870
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/sound/ofBaseSoundStream.h
+c000000004D8613F200000000000002D4
+t1300632562
+s724
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004E2849E60000000000000637
+t1311263206
+s1591
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/sound/ofSoundStream.h
+c000000004E2867B000000000000006DB
+t1311270832
+s1755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/sound/ofxiPhoneSoundStream.h
+c000000004E2867B00000000000000382
+t1311270832
+s898
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/types/ofBaseTypes.h
+c000000004E286F800000000000002F01
+t1311272832
+s12033
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/types/ofColor.h
+c000000004E0F785600000000000013FD
+t1309636694
+s5117
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/types/ofPoint.h
+c000000004D846F74000000000000003D
+t1300524916
+s61
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/types/ofRectangle.h
+c000000004DB07C7E0000000000000454
+t1303411838
+s1108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/types/ofTypes.h
+c000000004E0F788A0000000000000D27
+t1309636746
+s3367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofConstants.h
+c000000004E2867B000000000000034C6
+t1311270832
+s13510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofFileUtils.h
+c000000004E25D2400000000000001D56
+t1311101504
+s7510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofLog.h
+c000000004E19CDB000000000000014B0
+t1310313904
+s5296
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofSystemUtils.h
+c000000004DD7C1F200000000000001AC
+t1305985522
+s428
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofThread.h
+c000000004D326642000000000000050C
+t1295148610
+s1292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004E2849E600000000000008C4
+t1311263206
+s2244
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/utils/ofUtils.h
+c000000004E2849E60000000000001245
+t1311263206
+s4677
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/video/ofVideoGrabber.h
+c000000004E19CD4C00000000000009ED
+t1310313804
+s2541
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/video/ofVideoPlayer.h
+c000000004E19CD4C0000000000000ABD
+t1310313804
+s2749
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004E19CD4C000000000000032C
+t1310313804
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004E19CD4C0000000000000612
+t1310313804
+s1554
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/AbstractDelegate.h
+c000000004D2CAD8A0000000000000B59
+t1294773642
+s2905
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/AbstractEvent.h
+c000000004D2CAD8A0000000000002D7C
+t1294773642
+s11644
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ActiveMethod.h
+c000000004D2CAD8A0000000000001C64
+t1294773642
+s7268
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ActiveResult.h
+c000000004D2CAD8A0000000000002E66
+t1294773642
+s11878
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ActiveRunnable.h
+c000000004D2CAD8A0000000000001785
+t1294773642
+s6021
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ActiveStarter.h
+c000000004D2CAD8A0000000000000927
+t1294773642
+s2343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/AtomicCounter.h
+c000000004D846F740000000000001D13
+t1300524916
+s7443
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/AutoPtr.h
+c000000004D2CAD8A0000000000001E0C
+t1294773642
+s7692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Bugcheck.h
+c000000004D2CAD8A00000000000014A9
+t1294773642
+s5289
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/CompareFunctions.h
+c000000004D2CAD8A00000000000007EC
+t1294773642
+s2028
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Condition.h
+c000000004D2CAD8A0000000000001236
+t1294773642
+s4662
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Config.h
+c000000004D2CAD8A0000000000000E22
+t1294773642
+s3618
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Delegate.h
+c000000004D2CAD8A0000000000001828
+t1294773642
+s6184
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Event.h
+c000000004D2CAD8A0000000000000E21
+t1294773642
+s3617
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Event_POSIX.h
+c000000004D2CAD8A0000000000000A91
+t1294773642
+s2705
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Exception.h
+c000000004D5583C8000000000000283D
+t1297449928
+s10301
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Expire.h
+c000000004D2CAD8A0000000000000D0D
+t1294773642
+s3341
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/FIFOEvent.h
+c000000004D2CAD8A0000000000000B15
+t1294773642
+s2837
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/FIFOStrategy.h
+c000000004D2CAD8A0000000000001116
+t1294773642
+s4374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/File.h
+c000000004D456C1A0000000000001F91
+t1296395290
+s8081
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/File_UNIX.h
+c000000004D2CAD8A0000000000000BC1
+t1294773642
+s3009
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Foundation.h
+c000000004D5583C800000000000010BE
+t1297449928
+s4286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/FunctionDelegate.h
+c000000004D2CAD8A00000000000013C8
+t1294773642
+s5064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Mutex.h
+c000000004D2CAD8C0000000000001D9F
+t1294773644
+s7583
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D5583C80000000000000AC3
+t1297449928
+s2755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/NotificationStrategy.h
+c000000004D2CAD8C0000000000000B48
+t1294773644
+s2888
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Platform.h
+c000000004D5583C80000000000001AF7
+t1297449928
+s6903
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Platform_POSIX.h
+c000000004D2CAD8C0000000000000843
+t1294773644
+s2115
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/RefCountedObject.h
+c000000004D2CAD8C0000000000000BB1
+t1294773644
+s2993
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Runnable.h
+c000000004D2CAD8C0000000000000861
+t1294773644
+s2145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ScopedLock.h
+c000000004D456C1A0000000000000B7F
+t1296395290
+s2943
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ScopedUnlock.h
+c000000004D2CAD8C000000000000092B
+t1294773644
+s2347
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/SharedPtr.h
+c000000004D5583C80000000000002278
+t1297449928
+s8824
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/SignalHandler.h
+c000000004D2CAD8C00000000000011EB
+t1294773644
+s4587
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/SingletonHolder.h
+c000000004D2CAD8C0000000000000A67
+t1294773644
+s2663
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Thread.h
+c000000004D2CAD8C0000000000001E10
+t1294773644
+s7696
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/ThreadPool.h
+c000000004D2CAD8C0000000000001C8A
+t1294773644
+s7306
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Thread_POSIX.h
+c000000004D2CAD8C00000000000013B7
+t1294773644
+s5047
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Timestamp.h
+c000000004D2CAD8C0000000000001A41
+t1294773644
+s6721
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/poco/include/Poco/Types.h
+c000000004D5583C80000000000001926
+t1297449928
+s6438
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/../../../libs/tess2/include/tesselator.h
+c000000004E0E247A0000000000001C63
+t1309549690
+s7267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+t1328750201
+s476
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM
+t1328750201
+s102
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig
+t1328750198
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png
+t1328750201
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png
+t1328750201
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist
+t1328750198
+s964
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/PkgInfo
+t1328750198
+s8
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Project.xcconfig
+t1328750198
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist
+t1328750198
+s485
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+t1328750201
+s7234
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+t1328750201
+s5124512
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist
+t1328750198
+s603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList
+c000000004F49B3F00000000000000147
+t1330230256
+s327
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o
+t1328750200
+s78036
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o
+t1328750200
+s161264
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+c000000004F331E760000000000000041
+t1328750198
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+t1328750201
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/ofxiphone-Info.plist
+c000000004E273F2C0000000000000428
+t1311194924
+s1064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm
+c000000004BACD928000000000000009E
+t1269618984
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm
+c000000004DB3039A00000000000006D3
+t1303577498
+s1747
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphoneos_Debug.a
+c000000004F3721CF0000000001DD67A8
+t1329013199
+s31287208
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E7840290000000000000110
+t1316503593
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+c000000004E5C595800000000000001A7
+t1314675032
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004E7807DB000000000015F8A0
+t1316489179
+s1439904
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004E72F36E00000000005AF640
+t1316156270
+s5961280
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004E7805AD0000000000076750
+t1316488621
+s485200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004E78069100000000000748C0
+t1316488849
+s477376
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004E72F744000000000001A9B0
+t1316157252
+s108976
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004E72F3370000000000001534
+t1316156215
+s5428
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004E78098C00000000000AF270
+t1316489612
+s717424
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004E72F3C20000000000022660
+t1316156354
+s140896
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004E72F6E00000000000017190
+t1316157152
+s94608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004E72F8910000000000173260
+t1316157585
+s1520224
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004E7808770000000000000BCB
+t1316489335
+s3019
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision
+c000000004F17B5E50000000000001C42
+t1326953957
+s7234
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.pth
+t2
+s0
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth
+t2
+s0
+
+Nofxiphone-Info.plist
+c000000004E273F2C0000000000000428
+t1311194924
+s1064
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies4a968770ebf9b441^569a8870ebf9b441^-116"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.1(21%IDEActivityLogMessage2@109"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.-351923056#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"84DEF11A-44D4-4509-912F-520B24F12C1B-
+
+CCodeSign /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app
+s350443001.588735
+e350443001.911027
+r1
+xCodeSign
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"CodeSign build/Debug-iphoneos/emptyExample.app58c696f955e3b441^0039e9f955e3b441^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/0000000000000000^904"CodeSign build/Debug-iphoneos/emptyExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Anna Martinez (G7MHC3HDQA)" --resource-rules=/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist --entitlements /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app36"DEBD9F08-A25E-400A-8F98-4CD7B1B4A4F4-
+
+CCodeSign /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+s351923060.268355
+e351923060.879707
+r1
+xCodeSign
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"CodeSign build/Debug-iphoneos/emptyExample.app92ce4474ebf9b441^df34e174ebf9b441^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/0000000000000000^872"CodeSign build/Debug-iphoneos/emptyExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Anna Martinez (G7MHC3HDQA)" --resource-rules=/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist --entitlements /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app36"3938CD3D-8482-40C5-8282-C1E19CEC578A-
+
+CCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s350442999.182915
+e350443000.285215
+r1
+xCompileC
+xbuild/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mmf4fb2ef755e3b441^970349f855e3b441^-854"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-350443000#242#92#3(36%IDEActivityLogHeaderInclusionMessage3@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:-350443000#0#122#-0#-23%DVTTextDocumentLocation4@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@119"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:-350443000#122#120#-0#-4@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-350443000#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-350443000#655#98#3(3@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:-350443000#413#122#-0#-4@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@119"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm:2:-350443000#535#120#-0#-4@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-350443000#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm0000000000000000^4095"CompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o36"F98073A7-6160-4BBE-BABE-56A72E56CE3C-
+
+CCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s351923057.148349
+e351923058.368430
+r1
+xCompileC
+xbuild/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm78282671ebf9b441^50545e72ebf9b441^-822"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-351923058#226#92#3(36%IDEActivityLogHeaderInclusionMessage3@113"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:-351923058#0#114#-0#-23%DVTTextDocumentLocation4@104"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@111"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:-351923058#114#112#-0#-4@102"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-351923058#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-351923058#623#98#3(3@113"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:-351923058#397#114#-0#-4@104"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@111"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm:2:-351923058#511#112#-0#-4@102"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-351923058#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@102"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm0000000000000000^3999"CompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/main.o36"F1B397BF-EA98-4676-970C-15E8C7194770-
+
+CCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s350442999.182908
+e350443000.331072
+r1
+xCompileC
+xbuild/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mmcefc2ef755e3b441^22c154f855e3b441^-860"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-350443000#245#92#3(36%IDEActivityLogHeaderInclusionMessage3@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:4:-350443000#0#122#-0#-23%DVTTextDocumentLocation4@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@122"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:-350443000#122#123#-0#-4@113"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-350443000#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-350443000#661#98#3(3@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h:5:-350443000#416#122#-0#-4@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@122"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm:1:-350443000#538#123#-0#-4@113"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-350443000#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@113"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm0000000000000000^4110"CompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o36"DE84E80D-B0A8-477E-9E7F-715C37096776-
+
+CCompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s351923057.148363
+e351923058.379769
+r1
+xCompileC
+xbuild/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm78282671ebf9b441^7a386172ebf9b441^-828"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-351923058#229#92#3(36%IDEActivityLogHeaderInclusionMessage3@113"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:4:-351923058#0#114#-0#-23%DVTTextDocumentLocation4@104"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@114"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:-351923058#114#115#-0#-4@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-351923058#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-351923058#629#98#3(3@113"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h:5:-351923058#400#114#-0#-4@104"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@114"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm:1:-351923058#514#115#-0#-4@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-351923058#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm0000000000000000^4014"CompileC build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/testApp.o36"78408B84-2CDC-4F68-A12C-E9F08343D145-
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png bin/data/Default.png
+s350442998.467908
+e350442998.554049
+r1
+xCopyPNGFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png
+xbin/data/Default.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"CopyPNGFile build/Debug-iphoneos/emptyExample.app/Default.png bin/data/Default.png19e377f655e3b441^588c8ef655e3b441^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Default.png0000000000000000^687"CopyPNGFile build/Debug-iphoneos/emptyExample.app/Default.png bin/data/Default.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" "" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Default.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png36"A0F48A87-C44B-4DD7-BF95-DD8AF5C656FB-
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png bin/data/Icon.png
+s350442998.467913
+e350442998.552933
+r1
+xCopyPNGFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png
+xbin/data/Icon.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"CopyPNGFile build/Debug-iphoneos/emptyExample.app/Icon.png bin/data/Icon.png75e577f655e3b441^97918ef655e3b441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Icon.png0000000000000000^675"CopyPNGFile build/Debug-iphoneos/emptyExample.app/Icon.png bin/data/Icon.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" "" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/bin/data/Icon.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png36"B9AFDE92-8E88-4DDC-856B-C92BADB5740C-
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Default.png bin/data/Default.png
+r0
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Icon.png bin/data/Icon.png
+r0
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s350442998.468566
+e350442998.516307
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plistdd0778f655e3b441^037d8ef655e3b441^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/ofxiphone-Info.plist0000000000000000^502"CopyPlistFile build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app -- ofxiphone-Info.plist36"D38D8A15-02A1-46F6-8AA7-1C742D8AC6E5-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+r0
+
+CCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig
+s350442998.523427
+e350442998.554653
+r1
+xCpResource
+x../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+xbuild/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig5d1786f655e3b441^c8958ef655e3b441^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig00f418d6dcffdf42^752"CpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/emptyExample.app/CoreOF.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app36"E4E3A64A-6A91-464D-AC91-4157622F88D9-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/emptyExample.app/ResourceRules.plist
+s350442998.433668
+e350442998.436825
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/emptyExample.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/Debug-iphoneos/emptyExample.app/ResourceRules.plista4386ff655e3b441^66dd6ff655e3b441^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist00f418d6dcffdf42^717"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/emptyExample.app/ResourceRules.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app36"FDDB89A4-9EBA-4415-9D9C-B7C493198418-
+
+CCpResource Project.xcconfig build/Debug-iphoneos/emptyExample.app/Project.xcconfig
+s350442998.468785
+e350442998.533276
+r1
+xCpResource
+xProject.xcconfig
+xbuild/Debug-iphoneos/emptyExample.app/Project.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy build/Debug-iphoneos/emptyExample.app/Project.xcconfigf27a78f655e3b441^a9858ef655e3b441^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Project.xcconfig00f418d6dcffdf42^651"CpResource Project.xcconfig build/Debug-iphoneos/emptyExample.app/Project.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/Project.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app36"F9A00922-0DE5-46D1-894A-057922FF2447-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+s350443000.831037
+e350443001.501075
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM18cfd4f855e3b441^414680f955e3b441^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM00f418d6dcffdf42^620"GenerateDSYMFile build/Debug-iphoneos/emptyExample.app.dSYM build/Debug-iphoneos/emptyExample.app/emptyExample    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM36"1A1DCEFC-67DD-45A1-8C00-5DEBDF01CEC7-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+s351923059.547176
+e351923060.174083
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYMed2a8c73ebf9b441^93902c74ebf9b441^---0#0#0#-19%DVTDocumentLocation2@134"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM/0000000000000000^596"GenerateDSYMFile build/Debug-iphoneos/emptyExample.app.dSYM build/Debug-iphoneos/emptyExample.app/emptyExample    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app.dSYM36"6FD03278-D609-497A-BE9D-9D29604402CC-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample normal armv7
+s350443000.337972
+e350443000.824178
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+xnormal
+xarmv7
+old: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file
+old: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: 32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4
+old: warning: 32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB22
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExampleed9c56f855e3b441^93fed2f855e3b441^-813"ld: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in fileld: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: 32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4ld: warning: 32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB226(21%IDEActivityLogMessage2@102"Ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file-350443000#0#116#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@126"Ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)-350443000#116#140#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@128"Ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)-350443000#256#142#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@127"Ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)-350443000#398#141#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4-350443000#539#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB22-350443000#676#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1965"Ld build/Debug-iphoneos/emptyExample.app/emptyExample normal armv7    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang++ -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList -dead_strip -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -miphoneos-version-min=3.1 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphoneos_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample36"256A3028-7B8E-4196-92FA-2AFE80D762E7-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample normal armv7
+s351923058.386084
+e351923059.540808
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample
+xnormal
+xarmv7
+old: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file
+old: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: 32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4
+old: warning: 32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB22
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample4af06272ebf9b441^fc728a73ebf9b441^-813"ld: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in fileld: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: 32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4ld: warning: 32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB226(21%IDEActivityLogMessage2@102"Ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file-351923058#0#116#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@126"Ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)-351923058#116#140#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@128"Ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)-351923058#256#142#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@127"Ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)-351923058#398#141#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001EDAE4 max is 4GB): from _inflate_table + 0x00000674 (0x000CCE10) to 0x1001EDAE4-351923059#539#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001EDB22 max is 4GB): from _inflate_table + 0x00000670 (0x000CCE10) to 0x1001EDB22-351923059#676#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1925"Ld build/Debug-iphoneos/emptyExample.app/emptyExample normal armv7    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang++ -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList -dead_strip -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -miphoneos-version-min=3.1 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphoneos_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/emptyExample36"F5096554-3890-400B-BD9F-7314D09B4DCD-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+s350443001.509137
+e350443001.525329
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'6b4583f955e3b441^397c86f955e3b441^---0#0#0#--24325"PhaseScriptExecution "Run Script" build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT armv7    setenv ARCHS_STANDARD_32_BIT armv7    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH emptyExample.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH emptyExample.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/emptyExample.dst    setenv DWARF_DSYM_FILE_NAME emptyExample.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH emptyExample.app/Executables    setenv EXECUTABLE_FOLDER_PATH emptyExample.app    setenv EXECUTABLE_NAME emptyExample    setenv EXECUTABLE_PATH emptyExample.app/emptyExample    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH emptyExample.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME emptyExample.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH emptyExample.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH emptyExample.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/emptyExample.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/emptyExample.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH emptyExample.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH emptyExample.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11C74    setenv MAC_OS_X_VERSION_ACTUAL 1072    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0702    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH emptyExample.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c++    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/PkgInfo    setenv PKGINFO_PATH emptyExample.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH armv7    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH emptyExample.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH emptyExample.app/PrivateHeaders    setenv PRODUCT_NAME emptyExample    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT emptyExample    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/emptyExample.xcodeproj    setenv PROJECT_NAME emptyExample    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH emptyExample.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH emptyExample.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_NAME iphoneos5.0    setenv SDK_PRODUCT_BUILD_VERSION 9A334    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH emptyExample.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH emptyExample.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME emptyExample    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos    setenv TARGET_NAME emptyExample    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH emptyExample.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH emptyExample.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE emptyExample_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:emptyExample  PROJECT:emptyExample-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME emptyExample.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D199    setenv XCODE_VERSION_ACTUAL 0420    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh36"E35A48AC-B123-4A3E-BECA-98F4B4176DA3-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+s351923060.182211
+e351923060.205124
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'5ddf2f74ebf9b441^c3813474ebf9b441^---0#0#0#--23982"PhaseScriptExecution "Run Script" build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT armv7    setenv ARCHS_STANDARD_32_BIT armv7    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH emptyExample.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH emptyExample.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/emptyExample.dst    setenv DWARF_DSYM_FILE_NAME emptyExample.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH emptyExample.app/Executables    setenv EXECUTABLE_FOLDER_PATH emptyExample.app    setenv EXECUTABLE_NAME emptyExample    setenv EXECUTABLE_PATH emptyExample.app/emptyExample    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH emptyExample.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME emptyExample.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH emptyExample.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH emptyExample.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/emptyExample.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/emptyExample.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH emptyExample.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal/armv7/emptyExample.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH emptyExample.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH emptyExample.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c++    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/PkgInfo    setenv PKGINFO_PATH emptyExample.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH armv7    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH emptyExample.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH emptyExample.app/PrivateHeaders    setenv PRODUCT_NAME emptyExample    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT emptyExample    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/emptyExample.xcodeproj    setenv PROJECT_NAME emptyExample    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH emptyExample.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH emptyExample.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_NAME iphoneos5.0    setenv SDK_PRODUCT_BUILD_VERSION 9A334    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH emptyExample.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH emptyExample.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME emptyExample    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos    setenv TARGET_NAME emptyExample    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH emptyExample.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH emptyExample.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE emptyExample_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:emptyExample  PROJECT:emptyExample-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME emptyExample.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D199    setenv XCODE_VERSION_ACTUAL 0420    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/Script-9255DD331112741900D6945E.sh36"6BCF622B-DD93-45BF-A76C-9F549EA182F3-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist ofxiphone-Info.plist
+s350442998.434943
+e350442998.442044
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plist8f6f6ff655e3b441^4b3b71f655e3b441^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/ofxiphone-Info.plist0000000000000000^846"ProcessInfoPlistFile build/Debug-iphoneos/emptyExample.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/ResourceRules.plist -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist36"C9456F17-3689-4DF7-B3BF-27FC7EEFC033-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/Info.plist ofxiphone-Info.plist
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/emptyExample-cfkdqwtnsqnlczfqgwtuthfisgoi/Index/PrecompiledHeaders/iPhone_Prefix-ckusjhscpuupkldzdoalturwolpd_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/emptyExample-hemgeoczxhhrqzafuzvgumagcurl/Index/PrecompiledHeaders/iPhone_Prefix-frttgeecumkyluhexygnzafylbdk_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s350442998.572466
+e350442999.175331
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pchd8b892f655e3b441^7de62cf755e3b441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/iPhone_Prefix.pch0000000000000000^4002"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-euxroyczegopnrfvcrwptyzjxoox/iPhone_Prefix.pch.d36"C2B94DE1-6F22-4B3F-A836-96B91C16CACB-
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s351923056.563628
+e351923057.140830
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pchc8789070ebf9b441^1b0d2471ebf9b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/iPhone_Prefix.pch0000000000000000^3922"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-hdybjgpgdxcyvzarawqgtfqsiask/iPhone_Prefix.pch.d36"10F5EDC4-196C-4ED1-BD24-974830CDE0A2-
+
+CProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+s350443001.551448
+e350443001.555289
+r1
+xProcessProductPackaging
+x/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection195"ProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" build/Debug-iphoneos/emptyExample.app/embedded.mobileprovisionb03b8df955e3b441^6b278ef955e3b441^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision0000000000000000^704"ProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision36"9F5D1BA5-2E07-4AFC-BAEA-CBB307421B97-
+
+CProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+s350443001.576825
+e350443001.580302
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection190"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent30bb93f955e3b441^9b8e94f955e3b441^---0#0#0#-19%DVTDocumentLocation2@176"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent00f418d6dcffdf42^720"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent36"40D35641-2172-4114-A825-B0C424C6620E-
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/emptyExample.build/Debug-iphoneos/emptyExample.build/emptyExample.xcent
+r0
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app
+s350443001.563354
+e350443001.567919
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app5b4490f955e3b441^676391f955e3b441^---0#0#0#--401"Touch build/Debug-iphoneos/emptyExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/emptyExample/build/Debug-iphoneos/emptyExample.app36"9380BC46-B41E-4D72-B4EE-3D5B244A1111-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+s351923060.246320
+e351923060.252738
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app581f3f74ebf9b441^a2b34074ebf9b441^---0#0#0#--385"Touch build/Debug-iphoneos/emptyExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/thesis/emptyExample/build/Debug-iphoneos/emptyExample.app36"832A009F-D42D-4D25-B356-71B839D1EC8F-
+
