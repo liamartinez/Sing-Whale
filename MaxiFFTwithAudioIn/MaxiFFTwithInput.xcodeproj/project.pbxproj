@@ -14,6 +14,7 @@
 		00ABBDCB145F0B3900ED7823 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ABBDC1145F0B3900ED7823 /* maxiMFCC.cpp */; };
 		00ABBDCC145F0B3900ED7823 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00ABBDC3145F0B3900ED7823 /* maximilian.cpp */; };
 		00ABBE0D145F0C7100ED7823 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ABBE0C145F0C7100ED7823 /* Accelerate.framework */; };
+		0A740620150477ED00C0A52F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74061F150477ED00C0A52F /* Default.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -68,6 +69,7 @@
 		00ABBDC4145F0B3900ED7823 /* maximilian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
 		00ABBDC6145F0B3900ED7823 /* ofxMaxim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
 		00ABBE0C145F0C7100ED7823 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0A74061F150477ED00C0A52F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* MaxiFFTwithInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxiFFTwithInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -167,6 +169,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0A74061F150477ED00C0A52F /* Default.png */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24DD8B10DA77E000E9C588 /* data */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
@@ -335,6 +338,7 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				00ABBDC7145F0B3900ED7823 /* install.xml in Resources */,
+				0A740620150477ED00C0A52F /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

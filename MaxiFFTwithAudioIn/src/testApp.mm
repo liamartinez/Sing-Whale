@@ -38,6 +38,10 @@ void testApp::setup(){
 	
 	/* Now you can put anything you would normally put in maximilian's 'setup' method in here. */
 	
+    aveHistory.assign(400, 0.0);
+	
+	smoothedAve     = 0.0;
+	scaledAve		= 0.0;
 	
     
 	fftSize = 1024;
@@ -60,17 +64,43 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    //clamp values from 0 - 50
+    smoothedAve = ofClamp(smoothedAve, 0.0, 50.0);
+    // scale the vol up to a 0-1 range 
+	scaledAve = ofMap(smoothedAve, 0.0, 0.17, 0.0, 1.0, true);
+    
+	//lets record the volume into an array
+	aveHistory.push_back( scaledAve );
+	
+	//if we are bigger the the size we want to record - lets drop the oldest value
+	if( aveHistory.size() >= 400 ){
+		aveHistory.erase(aveHistory.begin(), aveHistory.begin()+1);
+	}
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 	
+    
+    //lets draw the volume history as a graph
+    //ofSetColor(245, 58, 135);	
+    ofBeginShape();
+    for (int i = 0; i < aveHistory.size(); i++){
+        if( i == 0 ) ofVertex(i, 200);
+//        cout << aveHistory[i] << endl;
+        //ofCircle(i, 200, 50*aveHistory[i]);
+        ofVertex(i, 200 - aveHistory[i] * 200);
+        
+        if( i == aveHistory.size() -1 ) ofVertex(i, 200);
+    }
+    ofEndShape(false);	
      // here we draw volume 
-    ofTranslate(0, -50, 0);
+    //ofTranslate(0, -50, 0);
     
 	// draw the input:
 	ofSetHexColor(0x333333);
-	ofRect(70,100,256,200);
+	//ofRect(70,100,256,200);
 	ofSetHexColor(0xFFFFFF);
 	for (int i = 0; i < initialBufferSize; i++){
 		ofLine(70+i,200,70+i,200+buffer[i]*100.0f);
@@ -96,12 +126,34 @@ void testApp::draw(){
 	}
     
     //octave analyser
+    numCounted = 0;	
+    
+    float curAve = 0.0;
 	ofSetColor(255, 0, 0,100);
 	xinc = 900.0 / oct.nAverages;
 	for(int i=0; i < oct.nAverages; i++) {
 		float height = oct.averages[i] / 50.0 * 100;
+        curAve = oct.averages[i];
+        numCounted+=2;
 		ofRect( (i*xinc),200 - height,2, height);
+        
+        
+
+        
 	}
+    
+    
+    //this is how we get the mean of rms :) 
+    curAve /= (float)numCounted;
+    
+    // this is how we get the root of rms :) 
+    curAve = sqrt( curAve );
+    
+    smoothedAve *= 0.93;
+    smoothedAve += 0.07 * curAve;
+    
+    
+    
     /*
 	//draw phases
 	ofSetColor(0, 255, 0,100);
@@ -114,6 +166,9 @@ void testApp::draw(){
      */
 	
     //	cout << callTime << endl;
+    
+    //-------------
+
      
 	
 }
@@ -132,6 +187,10 @@ void testApp::audioRequested 	(float * output, int bufferSize, int nChannels){
 //--------------------------------------------------------------
 void testApp::audioReceived 	(float * input, int bufferSize, int nChannels){	
     
+    
+	
+	
+    
 	
 	if( initialBufferSize != bufferSize ){
 		ofLog(OF_LOG_ERROR, "your buffer size was set to %i - but the stream needs a buffer size of %i", initialBufferSize, bufferSize);
@@ -145,8 +204,13 @@ void testApp::audioReceived 	(float * input, int bufferSize, int nChannels){
         if (mfft.process(input[i])) {  
             mfft.magsToDB(); // calculate all the DBs  
             oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
+
+
         }  
+        
 	}
+    
+
 	bufferCounter++; //lia:what is bufferCounter for?
 }
 

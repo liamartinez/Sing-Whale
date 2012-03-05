@@ -29,39 +29,30 @@ public:
 	void audioRequested 	(float * input, int bufferSize, int nChannels); /* output method */
 	void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
 	
-	//float 	* lAudioOut; /* outputs */
-	//float   * rAudioOut;
-    
-	float * lAudioIn; /* inputs */
-	float * rAudioIn;
 	
 	int		initialBufferSize; /* buffer size */ 
 	int		sampleRate;
 	
     int		drawCounter, bufferCounter;
 	float 	* buffer;
+    
+    float   scaledAve;
+    float   smoothedAve;
 	
 	/* stick you maximilian stuff below */
-    
-	
-	double wave,sample,outputs[2], ifftVal;
-	maxiMix mymix;
-	maxiOsc osc;
 	
 	ofxMaxiFFTOctaveAnalyzer oct;
 	int nAverages;
 	float *ifftOutput;
 	int ifftSize;
-    
-	
+    	
 	ofxMaxiIFFT ifft;
 	ofxMaxiFFT mfft;
 	int fftSize;
-	int bins, dataSize;
-	
-	float callTime;
-	timeval callTS, callEndTS;
     
+    vector <float>  aveHistory; 
+
+    float numCounted;
 	
 	
 	
