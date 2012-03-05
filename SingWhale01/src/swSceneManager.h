@@ -16,7 +16,7 @@ enum scene {
     SCENE_HOME,
     SCENE_CALL,
     SCENE_SPEAK,
-    TOTAL_SCENES //Always keep this one in here and keep it last!
+    SW_TOTAL_SCENES //Always keep this one in here and keep it last!
 };
 
 class swSceneManager : public ofxSceneManager2 {

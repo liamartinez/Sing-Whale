@@ -1,0 +1,838 @@
+TSingWhale01
+v4
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Info.plist ofxiphone-Info.plist
+cCpResource bin/data/Default.png build/Debug-iphonesimulator/SingWhale01.app/Default.png
+cCpResource bin/data/Icon.png build/Debug-iphonesimulator/SingWhale01.app/Icon.png
+cCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/ofxiphone-Info.plist ofxiphone-Info.plist
+cCpResource Project.xcconfig build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig
+cCpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/SingWhale01.app/README
+cCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp
+c000000004B058D0C0000000000000F6F
+t1258654988
+s3951
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp
+c000000004BD0F856000000000000165D
+t1271986262
+s5725
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp
+c000000004E03BCD9000000000000149E
+t1308867801
+s5278
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/README
+c000000004D6DADF00000000000000119
+t1299033584
+s281
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+c000000004DDF4B1C00000000000076AC
+t1306479388
+s30380
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp
+c000000004E0139ED000000000000060D
+t1308703213
+s1549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp
+c000000004E03B9F50000000000000501
+t1308867061
+s1281
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp
+c000000004E03B9CA0000000000000124
+t1308867018
+s292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp
+c000000004D741872000000000000021C
+t1299454066
+s540
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app.dSYM
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Default.png
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Icon.png
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Info.plist
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/PkgInfo
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/README
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/SingWhale01
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/ofxiphone-Info.plist
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/SingWhale01.LinkFileList
+c000000004F4B10580000000000000A56
+t1330319448
+s2646
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Script-9255DD331112741900D6945E.sh
+c000000004F4B10580000000000000041
+t1330319448
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/ofxiphone-Info.plist
+c000000004F49B4780000000000000428
+t1330230392
+s1064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp
+c000000004F49CAC80000000000000AFC
+t1330236104
+s2812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm
+c000000004BACD928000000000000009E
+t1269618984
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp
+c000000004F49C14600000000000003BF
+t1330233670
+s959
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp
+c000000004F49CA45000000000000064C
+t1330235973
+s1612
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp
+c000000004F49C1460000000000001514
+t1330233670
+s5396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp
+c000000004F49C1460000000000000259
+t1330233670
+s601
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm
+c000000004DB3039A00000000000006D3
+t1303577498
+s1747
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a
+c000000004F3F29EC0000000001E22EB0
+t1329539564
+s31600304
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
+c000000004E99B98F0000000000000110
+t1318697359
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004E7806CF000000000018D430
+t1316488911
+s1627184
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004E72F1F200000000002F4210
+t1316155890
+s3097104
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F1CC0000000000245480
+t1316155852
+s2380928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004E78059F00000000000859A0
+t1316488607
+s547232
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004E780641000000000006B1C0
+t1316488769
+s438720
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004E72F588000000000001EA80
+t1316156808
+s125568
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F2960000000000353830
+t1316156054
+s3487792
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004E72F28F0000000000001534
+t1316156047
+s5428
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004E7807EF00000000000D89E0
+t1316489199
+s887264
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004E72F2280000000000029350
+t1316155944
+s168784
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004E72F52C000000000001D2E0
+t1316156716
+s119520
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004E72F69C00000000001A9D20
+t1316157084
+s1744160
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004E78066A0000000000000BCB
+t1316488810
+s3019
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7806AB00000000008F7390
+t1316488875
+s9401232
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth
+t2
+s0
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth
+t2
+s0
+
+Nofxiphone-Info.plist
+c000000004F49B4780000000000000428
+t1330230392
+s1064
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies703e79d847fbb441^6b0f7bd847fbb441^-116"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.1(21%IDEActivityLogMessage2@109"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.-352012248#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"668DD508-AA73-46D5-8BA5-08008280A1F1-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012248.592578
+e352012250.185763
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp8fdf97d847fbb441^ee972fda47fbb441^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp0000000000000000^4031"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o ../../../addons/ofxTweenzor/src/Tween.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tween.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tween.o36"A4E323C7-89D4-47E6-9B41-CB604C7AC9B4-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012248.592820
+e352012250.158828
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp:196:1: warning: control may reach end of non-void function [-Wreturn-type,3]
+o }
+o ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp:203:1: warning: control reaches end of non-void function [-Wreturn-type,3]
+o }
+o ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp67f097d847fbb441^25792eda47fbb441^-432"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp:196:1: warning: control may reach end of non-void function [-Wreturn-type,3] } ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp:203:1: warning: control reaches end of non-void function [-Wreturn-type,3] } ^2 warnings generated.2(21%IDEActivityLogMessage2@42"Control may reach end of non-void function-352012250#0#200#-1#-23%DVTTextDocumentLocation3@101"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxTweenzor/src/Tweenzor.cpp0000000000000000^195#0#195#0#18446744073709551615#0#14"Semantic Issue--2@40"Control reaches end of non-void function-352012250#206#198#-1#-3@101"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxTweenzor/src/Tweenzor.cpp0000000000000000^202#0#202#0#18446744073709551615#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@138"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp0000000000000000^4046"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o ../../../addons/ofxTweenzor/src/Tweenzor.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxTweenzor/src/Tweenzor.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/Tweenzor.o36"7DE51483-8A15-44F6-A78A-0C6642D5D01D-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012248.593665
+e352012250.146277
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cppf72098d847fbb441^a56b2eda47fbb441^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp0000000000000000^4070"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o ../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/baseButton.o36"715C006C-8A7D-44F6-8914-040CFC641CEA-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012252.857289
+e352012254.214941
+r0
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:26:14: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]
+o         case MNH_HOME_SCENE_FIRST:
+o              ^~~~~~~~~~~~~~~~~~~~
+o              HOME_SCENE_FIRST
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{26:14-26:34}:"HOME_SCENE_FIRST"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]
+o     HOME_SCENE_FIRST,
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:29:14: error: use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'? [3]
+o         case MNH_HOME_SCENE_SECOND:
+o              ^~~~~~~~~~~~~~~~~~~~~
+o              HOME_SCENE_SECOND
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{29:14-29:35}:"HOME_SCENE_SECOND"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:18:5: note: 'HOME_SCENE_SECOND' declared here [3]
+o     HOME_SCENE_SECOND,
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:38:21: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]
+o     mgr.setCurScene(MNH_HOME_SCENE_FIRST);
+o                     ^~~~~~~~~~~~~~~~~~~~
+o                     HOME_SCENE_FIRST
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{38:21-38:41}:"HOME_SCENE_FIRST"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]
+o     HOME_SCENE_FIRST,
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:42:5: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]
+o     homeScreen.loadImage("images/screens/01_start.png");
+o     ^~~~~~~~~~
+o     homeScene
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{42:5-42:15}:"homeScene"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3]
+o class homeScene : public swBaseScene {
+o       ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:42:15: error: expected unqualified-id [1]
+o     homeScreen.loadImage("images/screens/01_start.png");
+o               ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:43:22: error: use of undeclared identifier 'homeScreen'; did you mean 'homeScene'? [3]
+o     button.setImage(&homeScreen,&homeScreen);
+o                      ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:45:5: error: use of undeclared identifier 'postit' [3]
+o     postit.loadImage("images/screens/02_01_research.png");
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:56:5: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]
+o     homeScreen.clear();
+o     ^~~~~~~~~~
+o     homeScene
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{56:5-56:15}:"homeScene"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3]
+o class homeScene : public swBaseScene {
+o       ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:56:15: error: expected unqualified-id [1]
+o     homeScreen.clear();
+o               ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:57:5: error: use of undeclared identifier 'postit' [3]
+o     postit.clear();
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:71:14: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]
+o         case MNH_HOME_SCENE_FIRST:
+o              ^~~~~~~~~~~~~~~~~~~~
+o              HOME_SCENE_FIRST
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{71:14-71:34}:"HOME_SCENE_FIRST"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]
+o     HOME_SCENE_FIRST,
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:78:13: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]
+o             homeScreen.draw (0,0); 
+o             ^~~~~~~~~~
+o             homeScene
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{78:13-78:23}:"homeScene"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3]
+o class homeScene : public swBaseScene {
+o       ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:78:23: error: expected unqualified-id [1]
+o             homeScreen.draw (0,0); 
+o                       ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:83:14: error: use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'? [3]
+o         case MNH_HOME_SCENE_SECOND:
+o              ^~~~~~~~~~~~~~~~~~~~~
+o              HOME_SCENE_SECOND
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{83:14-83:35}:"HOME_SCENE_SECOND"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:18:5: note: 'HOME_SCENE_SECOND' declared here [3]
+o     HOME_SCENE_SECOND,
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:87:13: error: use of undeclared identifier 'postit' [3]
+o             postit.draw (0,0); 
+o             ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:121:33: error: use of undeclared identifier 'MNH_HOME_SCENE_TOTAL'; did you mean 'HOME_SCENE_TOTAL'? [3]
+o         if(mgr.getCurScene() == MNH_HOME_SCENE_TOTAL-1) {
+o                                 ^~~~~~~~~~~~~~~~~~~~
+o                                 HOME_SCENE_TOTAL
+ofix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{121:33-121:53}:"HOME_SCENE_TOTAL"
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:19:5: note: 'HOME_SCENE_TOTAL' declared here [3]
+o     HOME_SCENE_TOTAL
+o     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:122:13: error: use of undeclared identifier 'mnhSM' [3]
+o             mnhSM->setCurScene(MNH_SCENE_RESEARCH);
+o             ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:122:32: error: use of undeclared identifier 'MNH_SCENE_RESEARCH' [3]
+o             mnhSM->setCurScene(MNH_SCENE_RESEARCH);
+o                                ^
+o18 errors generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp3ba9dbdc47fbb441^3d0b5ade47fbb441^-7405"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:26:14: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]         case MNH_HOME_SCENE_FIRST:              ^~~~~~~~~~~~~~~~~~~~              HOME_SCENE_FIRSTfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{26:14-26:34}:"HOME_SCENE_FIRST"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]     HOME_SCENE_FIRST,     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:29:14: error: use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'? [3]         case MNH_HOME_SCENE_SECOND:              ^~~~~~~~~~~~~~~~~~~~~              HOME_SCENE_SECONDfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{29:14-29:35}:"HOME_SCENE_SECOND"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:18:5: note: 'HOME_SCENE_SECOND' declared here [3]     HOME_SCENE_SECOND,     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:38:21: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]     mgr.setCurScene(MNH_HOME_SCENE_FIRST);                     ^~~~~~~~~~~~~~~~~~~~                     HOME_SCENE_FIRSTfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{38:21-38:41}:"HOME_SCENE_FIRST"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]     HOME_SCENE_FIRST,     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:42:5: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]     homeScreen.loadImage("images/screens/01_start.png");     ^~~~~~~~~~     homeScenefix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{42:5-42:15}:"homeScene"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3] class homeScene : public swBaseScene {       ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:42:15: error: expected unqualified-id [1]     homeScreen.loadImage("images/screens/01_start.png");               ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:43:22: error: use of undeclared identifier 'homeScreen'; did you mean 'homeScene'? [3]     button.setImage(&homeScreen,&homeScreen);                      ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:45:5: error: use of undeclared identifier 'postit' [3]     postit.loadImage("images/screens/02_01_research.png");     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:56:5: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]     homeScreen.clear();     ^~~~~~~~~~     homeScenefix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{56:5-56:15}:"homeScene"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3] class homeScene : public swBaseScene {       ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:56:15: error: expected unqualified-id [1]     homeScreen.clear();               ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:57:5: error: use of undeclared identifier 'postit' [3]     postit.clear();     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:71:14: error: use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'? [3]         case MNH_HOME_SCENE_FIRST:              ^~~~~~~~~~~~~~~~~~~~              HOME_SCENE_FIRSTfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{71:14-71:34}:"HOME_SCENE_FIRST"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:17:5: note: 'HOME_SCENE_FIRST' declared here [3]     HOME_SCENE_FIRST,     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:78:13: error: unknown type name 'homeScreen'; did you mean 'homeScene'? [3]             homeScreen.draw (0,0);              ^~~~~~~~~~             homeScenefix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{78:13-78:23}:"homeScene"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:22:7: note: 'homeScene' declared here [3] class homeScene : public swBaseScene {       ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:78:23: error: expected unqualified-id [1]             homeScreen.draw (0,0);                        ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:83:14: error: use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'? [3]         case MNH_HOME_SCENE_SECOND:              ^~~~~~~~~~~~~~~~~~~~~              HOME_SCENE_SECONDfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{83:14-83:35}:"HOME_SCENE_SECOND"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:18:5: note: 'HOME_SCENE_SECOND' declared here [3]     HOME_SCENE_SECOND,     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:87:13: error: use of undeclared identifier 'postit' [3]             postit.draw (0,0);              ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:121:33: error: use of undeclared identifier 'MNH_HOME_SCENE_TOTAL'; did you mean 'HOME_SCENE_TOTAL'? [3]         if(mgr.getCurScene() == MNH_HOME_SCENE_TOTAL-1) {                                 ^~~~~~~~~~~~~~~~~~~~                                 HOME_SCENE_TOTALfix-it:"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp":{121:33-121:53}:"HOME_SCENE_TOTAL"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h:19:5: note: 'HOME_SCENE_TOTAL' declared here [3]     HOME_SCENE_TOTAL     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:122:13: error: use of undeclared identifier 'mnhSM' [3]             mnhSM->setCurScene(MNH_SCENE_RESEARCH);             ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp:122:32: error: use of undeclared identifier 'MNH_SCENE_RESEARCH' [3]             mnhSM->setCurScene(MNH_SCENE_RESEARCH);                                ^18 errors generated.18(21%IDEActivityLogMessage2@85"Use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'?-352012254#0#200#2(26%IDEActivityLogFixItMessage3@37"Fix-It: replace with HOME_SCENE_FIRST-352012254#302#138#-0#23"com.apple.dt.IDE.fix-it23%DVTTextDocumentLocation4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^25#13#25#33#18446744073709551615#0#---16"HOME_SCENE_FIRST2@32"'HOME_SCENE_FIRST' declared here-352012254#440#143#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^16#4#16#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^25#13#25#13#18446744073709551615#0#14"Semantic Issue--2@87"Use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'?-352012254#613#202#2(3@38"Fix-It: replace with HOME_SCENE_SECOND-352012254#920#139#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^28#13#28#34#18446744073709551615#0#---17"HOME_SCENE_SECOND2@33"'HOME_SCENE_SECOND' declared here-352012254#1059#144#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^17#4#17#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^28#13#28#13#18446744073709551615#0#14"Semantic Issue--2@85"Use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'?-352012254#1234#200#2(3@37"Fix-It: replace with HOME_SCENE_FIRST-352012254#1558#138#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^37#20#37#40#18446744073709551615#0#---16"HOME_SCENE_FIRST2@32"'HOME_SCENE_FIRST' declared here-352012254#1696#143#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^16#4#16#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^37#20#37#20#18446744073709551615#0#14"Semantic Issue--2@57"Unknown type name 'homeScreen'; did you mean 'homeScene'?-352012254#1869#171#2(3@30"Fix-It: replace with homeScene-352012254#2129#130#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^41#4#41#14#18446744073709551615#0#---9"homeScene2@25"'homeScene' declared here-352012254#2259#136#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^21#6#21#6#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^41#4#41#4#18446744073709551615#0#14"Semantic Issue--2@23"Expected unqualified-id-352012254#2444#138#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^41#14#41#14#18446744073709551615#0#11"Parse Issue--2@68"Use of undeclared identifier 'homeScreen'; did you mean 'homeScene'?-352012254#2657#183#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^42#21#42#21#18446744073709551615#0#14"Semantic Issue--2@37"Use of undeclared identifier 'postit'-352012254#2911#151#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^44#4#44#4#18446744073709551615#0#14"Semantic Issue--2@57"Unknown type name 'homeScreen'; did you mean 'homeScene'?-352012254#3129#171#2(3@30"Fix-It: replace with homeScene-352012254#3356#130#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^55#4#55#14#18446744073709551615#0#---9"homeScene2@25"'homeScene' declared here-352012254#3486#136#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^21#6#21#6#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^55#4#55#4#18446744073709551615#0#14"Semantic Issue--2@23"Expected unqualified-id-352012254#3671#138#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^55#14#55#14#18446744073709551615#0#11"Parse Issue--2@37"Use of undeclared identifier 'postit'-352012254#3851#151#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^56#4#56#4#18446744073709551615#0#14"Semantic Issue--2@85"Use of undeclared identifier 'MNH_HOME_SCENE_FIRST'; did you mean 'HOME_SCENE_FIRST'?-352012254#4030#200#2(3@37"Fix-It: replace with HOME_SCENE_FIRST-352012254#4332#138#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^70#13#70#33#18446744073709551615#0#---16"HOME_SCENE_FIRST2@32"'HOME_SCENE_FIRST' declared here-352012254#4470#143#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^16#4#16#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^70#13#70#13#18446744073709551615#0#14"Semantic Issue--2@57"Unknown type name 'homeScreen'; did you mean 'homeScene'?-352012254#4643#172#2(3@30"Fix-It: replace with homeScene-352012254#4899#131#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^77#12#77#22#18446744073709551615#0#---9"homeScene2@25"'homeScene' declared here-352012254#5030#136#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^21#6#21#6#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^77#12#77#12#18446744073709551615#0#14"Semantic Issue--2@23"Expected unqualified-id-352012254#5215#138#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^77#22#77#22#18446744073709551615#0#11"Parse Issue--2@87"Use of undeclared identifier 'MNH_HOME_SCENE_SECOND'; did you mean 'HOME_SCENE_SECOND'?-352012254#5415#202#2(3@38"Fix-It: replace with HOME_SCENE_SECOND-352012254#5722#139#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^82#13#82#34#18446744073709551615#0#---17"HOME_SCENE_SECOND2@33"'HOME_SCENE_SECOND' declared here-352012254#5861#144#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^17#4#17#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^82#13#82#13#18446744073709551615#0#14"Semantic Issue--2@37"Use of undeclared identifier 'postit'-352012254#6036#152#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^86#12#86#12#18446744073709551615#0#14"Semantic Issue--2@85"Use of undeclared identifier 'MNH_HOME_SCENE_TOTAL'; did you mean 'HOME_SCENE_TOTAL'?-352012254#6236#201#2(3@37"Fix-It: replace with HOME_SCENE_TOTAL-352012254#6600#140#-0#23"com.apple.dt.IDE.fix-it4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^120#32#120#52#18446744073709551615#0#---16"HOME_SCENE_TOTAL2@32"'HOME_SCENE_TOTAL' declared here-352012254#6740#143#-0#-4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h0000000000000000^18#4#18#4#18446744073709551615#0#14"Semantic Issue--2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^120#32#120#32#18446744073709551615#0#14"Semantic Issue--2@36"Use of undeclared identifier 'mnhSM'-352012254#6912#152#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^121#12#121#12#18446744073709551615#0#14"Semantic Issue--2@49"Use of undeclared identifier 'MNH_SCENE_RESEARCH'-352012254#7132#165#-2#-4@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^121#31#121#31#18446744073709551615#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation5@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp0000000000000000^3995"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o src/homeScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/homeScene.o36"9B6D0A89-CE35-48F1-8638-3598383F8263-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012250.147617
+e352012251.530161
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm22fe25da47fbb441^3db887db47fbb441^-834"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-352012251#232#92#3(36%IDEActivityLogHeaderInclusionMessage3@116"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:-352012251#0#117#-0#-23%DVTTextDocumentLocation4@107"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@114"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:-352012251#117#115#-0#-4@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-352012251#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-352012251#635#98#3(3@116"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:-352012251#403#117#-0#-4@107"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@114"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm:2:-352012251#520#115#-0#-4@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-352012251#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@105"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm0000000000000000^4222"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/main.o36"1F4983D4-3EAF-418C-8060-CEA003BB5C25-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012249.553604
+e352012251.346189
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:691:9: warning: unused variable 'index' [-Wunused-variable,12]
+o         GLint           index   = 0;
+o                         ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:872:8: warning: unused variable 'bNewLine' [-Wunused-variable,12]
+o                 bool bNewLine = false;
+o                      ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:965:9: warning: unused variable 'index' [-Wunused-variable,12]
+o         GLint           index   = 0;
+o                         ^
+o3 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp4be98dd947fbb441^c3a058db47fbb441^-819"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:691:9: warning: unused variable 'index' [-Wunused-variable,12]         GLint           index   = 0;                         ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:872:8: warning: unused variable 'bNewLine' [-Wunused-variable,12]                 bool bNewLine = false;                      ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:965:9: warning: unused variable 'index' [-Wunused-variable,12]         GLint           index   = 0;                         ^3 warnings generated.3(21%IDEActivityLogMessage2@23"Unused variable 'index'-352012250#0#200#-1#-23%DVTTextDocumentLocation3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^690#8#690#8#18446744073709551615#0#19"Unused Entity Issue--2@26"Unused variable 'bNewLine'-352012250#265#203#-1#-3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^871#7#871#7#18446744073709551615#0#19"Unused Entity Issue--2@23"Unused variable 'index'-352012250#532#200#-1#-3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^964#8#964#8#18446744073709551615#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@152"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^4086"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o ../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxFreeType2.o36"FF5E111E-D3BA-4624-BBBA-71CF537F5D5B-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012250.187063
+e352012251.418661
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp341330da47fbb441^e92c6bdb47fbb441^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp0000000000000000^4107"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o ../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager.o36"FDDB2BD8-AE2A-4937-A3BA-FF1170E7BE6F-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012251.347632
+e352012252.636096
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpped2d59db47fbb441^0ed7a2dc47fbb441^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp0000000000000000^4112"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o ../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManager2.o36"3A7370D7-8885-48DE-8C00-EB0A987FA694-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012251.419957
+e352012252.717907
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cppc8b36bdb47fbb441^e0d8b7dc47fbb441^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp0000000000000000^4132"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o ../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxSceneManagerScene.o36"D8168185-695F-43ED-B05E-8FB871A1F94D-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012251.531619
+e352012252.847629
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp344988db47fbb441^58fed8dc47fbb441^---0#0#0#-19%DVTDocumentLocation2@168"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp0000000000000000^4142"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o ../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxVtronImageTexture/src/ofxVtronImageTexture.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/ofxVtronImageTexture.o36"76CE2AEF-1B4E-47AD-93F1-EE3269D5EBB9-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012252.719192
+e352012253.974740
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp4d4bb8dc47fbb441^ca8af9dd47fbb441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp0000000000000000^4020"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o src/swAssetManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swAssetManager.o36"92FE723C-3C0C-46CD-B5F6-84B222799B37-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012252.849000
+e352012254.112152
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp0685d9dc47fbb441^95b61cde47fbb441^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp0000000000000000^4005"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o src/swBaseScene.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swBaseScene.o36"9061F7E9-57AA-4176-B457-69046FBE39A2-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012252.637398
+e352012254.006877
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp1860a3dc47fbb441^6ec201de47fbb441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp0000000000000000^3980"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o src/swMenu.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swMenu.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swMenu.o36"7CFC0EB3-AAF0-42B5-9733-4C8753F1FE6F-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012251.586695
+e352012252.855897
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp6f6496db47fbb441^321cdbdc47fbb441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp0000000000000000^4020"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o src/swSceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/swSceneManager.o36"B3A321F9-F998-4A1D-BF49-D180F9A771AE-
+
+CCompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012250.168082
+e352012251.585037
+r1
+xCompileC
+xbuild/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm80282cda47fbb441^cac495db47fbb441^-840"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-352012251#235#92#3(36%IDEActivityLogHeaderInclusionMessage3@116"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:4:-352012251#0#117#-0#-23%DVTTextDocumentLocation4@107"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:-352012251#117#118#-0#-4@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-352012251#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-352012251#641#98#3(3@116"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h:5:-352012251#406#117#-0#-4@107"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm:1:-352012251#523#118#-0#-4@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-352012251#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm0000000000000000^4237"CompileC build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Objects-normal/i386/testApp.o36"DB2003A0-1725-45CB-A33D-BBC05FF47611-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s352012248.516828
+e352012248.523314
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plista47184d847fbb441^d3f885d847fbb441^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/ofxiphone-Info.plist0000000000000000^511"CopyPlistFile build/Debug-iphonesimulator/SingWhale01.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app -- ofxiphone-Info.plist36"8C4CABD9-3EF0-4A0D-A117-A727E2D5B926-
+
+CCpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/SingWhale01.app/README
+s352012248.524172
+e352012248.528299
+r1
+xCpResource
+x../../../addons/ofxVtron/ofxFreeType2/README
+xbuild/Debug-iphonesimulator/SingWhale01.app/README
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/Debug-iphonesimulator/SingWhale01.app/READMEae4686d847fbb441^b74387d847fbb441^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/README00f42c37ddffdf42^701"CpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/SingWhale01.app/README    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/README /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app36"496DBFB8-555C-47D8-A158-CAF75CF1711E-
+
+CCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig
+s352012248.524171
+e352012248.526421
+r1
+xCpResource
+x../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+xbuild/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfigbb4786d847fbb441^81cc86d847fbb441^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig00f42c37ddffdf42^756"CpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/SingWhale01.app/CoreOF.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app36"BF6B6416-43F9-4DCB-B94A-A66CEC9678DC-
+
+CCpResource Project.xcconfig build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig
+s352012248.517402
+e352012248.525328
+r1
+xCpResource
+xProject.xcconfig
+xbuild/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig2f8884d847fbb441^a58286d847fbb441^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig00f42c37ddffdf42^655"CpResource Project.xcconfig build/Debug-iphonesimulator/SingWhale01.app/Project.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/Project.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app36"C357AF1C-BC91-4A30-9465-B2677C04ED72-
+
+CCpResource bin/data/Default.png build/Debug-iphonesimulator/SingWhale01.app/Default.png
+s352012248.516766
+e352012248.522911
+r1
+xCpResource
+xbin/data/Default.png
+xbuild/Debug-iphonesimulator/SingWhale01.app/Default.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/SingWhale01.app/Default.pnged6484d847fbb441^a0dd85d847fbb441^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Default.png00f42c37ddffdf42^658"CpResource bin/data/Default.png build/Debug-iphonesimulator/SingWhale01.app/Default.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/bin/data/Default.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app36"9E62CB2B-75A9-4C9E-B683-A0573FEF474D-
+
+CCpResource bin/data/Icon.png build/Debug-iphonesimulator/SingWhale01.app/Icon.png
+s352012248.516770
+e352012248.524806
+r1
+xCpResource
+xbin/data/Icon.png
+xbuild/Debug-iphonesimulator/SingWhale01.app/Icon.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphonesimulator/SingWhale01.app/Icon.png4d8184d847fbb441^9b5a86d847fbb441^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Icon.png00f42c37ddffdf42^649"CpResource bin/data/Icon.png build/Debug-iphonesimulator/SingWhale01.app/Icon.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/bin/data/Icon.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app36"BBC1AD25-5B9C-46F5-88FF-757E3DE4787F-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/SingWhale01
+r0
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/SingWhale01 normal i386
+r0
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/Script-9255DD331112741900D6945E.sh
+r0
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Info.plist ofxiphone-Info.plist
+s352012248.493389
+e352012248.506806
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plistfc8d7ed847fbb441^b6bd81d847fbb441^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/ofxiphone-Info.plist0000000000000000^703"ProcessInfoPlistFile build/Debug-iphonesimulator/SingWhale01.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app/Info.plist36"65403377-8897-4C66-B82C-E9E6D168BCB4-
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/SingWhale01-gpzgdbigvfvyinekwrxrjonhsoqr/Index/PrecompiledHeaders/iPhone_Prefix-ceguyksqngooysdzskrdywjfcblx_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/SingWhale01-gpzgdbigvfvyinekwrxrjonhsoqr/Index/PrecompiledHeaders/iPhone_Prefix-gpzhjyzwbcsjcghlemjsfmbmvtol_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012248.536568
+e352012248.585851
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pchdb8689d847fbb441^a8a6a0d847fbb441^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/iPhone_Prefix.pch0000000000000000^3873"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cmdtnussyvvsovgdzgieeeixsmqs/iPhone_Prefix.pch.d36"A98B8FF4-4946-4FB6-A840-C303D39A08BF-
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352012248.536592
+e352012249.552248
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pch628789d847fbb441^dd5f8dd947fbb441^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/iPhone_Prefix.pch0000000000000000^4127"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c++-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/SingWhale01-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/SingWhale01.build/Debug-iphonesimulator/SingWhale01.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-fyodjebvqowggrcrvmsuqxvgiyrq/iPhone_Prefix.pch.d36"1586FF14-B1CE-4E86-A416-2A101DEE4B13-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/build/Debug-iphonesimulator/SingWhale01.app
+r0
+

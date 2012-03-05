@@ -9,8 +9,15 @@
 #include "swSceneManager.h"
 
 //create the main scenes
+#include "homeScene.h"
+#include "callScene.h"
+#include "speakScene.h"
 
-//bottom menu
+// menu
+#include "swMenu.h"
+
+
+
 
 class testApp : public ofxiPhoneApp {
 	
@@ -30,6 +37,15 @@ public:
 	void gotFocus();
 	void gotMemoryWarning();
 	void deviceOrientationChanged(int newOrientation);
+    
+    swBaseScene* scenes[SW_TOTAL_SCENES];
+    
+    //Managers
+    swSceneManager* swSM;
+    swAssetManager* swAssets;
+    
+    //Menu
+    swMenu menu;
 
 };
 

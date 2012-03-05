@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A59A0D114FB4B4700A497DA /* callScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D014FB4B4700A497DA /* callScene.cpp */; };
+		0A59A0D414FB4CAF00A497DA /* speakScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D314FB4CAF00A497DA /* speakScene.cpp */; };
 		0AAB18A214F9ECA900F8209A /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB189B14F9ECA900F8209A /* Tween.cpp */; };
 		0AAB18A314F9ECA900F8209A /* Tweenzor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A014F9ECA900F8209A /* Tweenzor.cpp */; };
 		0AAB18BC14F9ED9100F8209A /* baseButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A614F9ED9100F8209A /* baseButton.cpp */; };
@@ -19,6 +21,8 @@
 		0AAB18C614F9EE1300F8209A /* swSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18C514F9EE1300F8209A /* swSceneManager.cpp */; };
 		0AAB18C914F9F2AF00F8209A /* swMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18C814F9F2AF00F8209A /* swMenu.cpp */; };
 		0AAB18CC14F9F6DE00F8209A /* swAssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18CB14F9F6DE00F8209A /* swAssetManager.cpp */; };
+		0AC14A7014FA00F3009FBAF4 /* swBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */; };
+		0AC14A7214FA0217009FBAF4 /* homeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A7114FA0217009FBAF4 /* homeScene.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -60,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A59A0CF14FB4B0300A497DA /* callScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callScene.h; sourceTree = "<group>"; };
+		0A59A0D014FB4B4700A497DA /* callScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = callScene.cpp; sourceTree = "<group>"; };
+		0A59A0D214FB4C6D00A497DA /* speakScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speakScene.h; sourceTree = "<group>"; };
+		0A59A0D314FB4CAF00A497DA /* speakScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speakScene.cpp; sourceTree = "<group>"; };
 		0AAB189A14F9ECA900F8209A /* ofxTweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweenzor.h; sourceTree = "<group>"; };
 		0AAB189B14F9ECA900F8209A /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tween.cpp; sourceTree = "<group>"; };
 		0AAB189C14F9ECA900F8209A /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 		0AAB18C814F9F2AF00F8209A /* swMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swMenu.cpp; sourceTree = "<group>"; };
 		0AAB18CA14F9F67A00F8209A /* swAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swAssetManager.h; sourceTree = "<group>"; };
 		0AAB18CB14F9F6DE00F8209A /* swAssetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swAssetManager.cpp; sourceTree = "<group>"; };
+		0AC14A6D14FA002F009FBAF4 /* homeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeScene.h; sourceTree = "<group>"; };
+		0AC14A6E14FA00A2009FBAF4 /* swBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swBaseScene.h; sourceTree = "<group>"; };
+		0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swBaseScene.cpp; sourceTree = "<group>"; };
+		0AC14A7114FA0217009FBAF4 /* homeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homeScene.cpp; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -266,8 +278,23 @@
 				0AAB18C814F9F2AF00F8209A /* swMenu.cpp */,
 				0AAB18CA14F9F67A00F8209A /* swAssetManager.h */,
 				0AAB18CB14F9F6DE00F8209A /* swAssetManager.cpp */,
+				0AC14A6E14FA00A2009FBAF4 /* swBaseScene.h */,
+				0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		0AC14A6C14FA0019009FBAF4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0AC14A6D14FA002F009FBAF4 /* homeScene.h */,
+				0AC14A7114FA0217009FBAF4 /* homeScene.cpp */,
+				0A59A0CF14FB4B0300A497DA /* callScene.h */,
+				0A59A0D214FB4C6D00A497DA /* speakScene.h */,
+				0A59A0D014FB4B4700A497DA /* callScene.cpp */,
+				0A59A0D314FB4CAF00A497DA /* speakScene.cpp */,
+			);
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -369,6 +396,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0AC14A6C14FA0019009FBAF4 /* Scenes */,
 				0AAB18C314F9EDC300F8209A /* Shared */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* testApp.mm */,
@@ -489,6 +517,10 @@
 				0AAB18C614F9EE1300F8209A /* swSceneManager.cpp in Sources */,
 				0AAB18C914F9F2AF00F8209A /* swMenu.cpp in Sources */,
 				0AAB18CC14F9F6DE00F8209A /* swAssetManager.cpp in Sources */,
+				0AC14A7014FA00F3009FBAF4 /* swBaseScene.cpp in Sources */,
+				0AC14A7214FA0217009FBAF4 /* homeScene.cpp in Sources */,
+				0A59A0D114FB4B4700A497DA /* callScene.cpp in Sources */,
+				0A59A0D414FB4CAF00A497DA /* speakScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

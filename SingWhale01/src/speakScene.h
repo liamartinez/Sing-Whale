@@ -9,6 +9,40 @@
 #ifndef SingWhale01_speakScene_h
 #define SingWhale01_speakScene_h
 
+#pragma once
 
+#include "swBaseScene.h"
+#include "baseButton.h"
+
+enum {
+    SPEAK_SCENE_FIRST,
+    SPEAK_SCENE_TOTAL
+};
+
+class speakScene : public swBaseScene {
+public:
+    void setup();
+    void update();
+    void draw();
+    
+    void activate(); 
+    void deactivate();
+    
+    void touchDown(ofTouchEventArgs &touch);
+    void touchMoved(ofTouchEventArgs &touch);
+    void touchUp(ofTouchEventArgs &touch);
+    
+    baseButton button;
+    
+private:
+    
+    ofImage speakScreen; //lia - replace pictures here. 
+    /*
+     ofImage homeScreen;
+     ofImage postit; 
+     */
+    
+    
+};
 
 #endif

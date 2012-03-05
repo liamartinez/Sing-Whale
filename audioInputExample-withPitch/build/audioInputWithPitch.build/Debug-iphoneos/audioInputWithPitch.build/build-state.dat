@@ -1,0 +1,1083 @@
+TaudioInputWithPitch
+v4
+r1
+cCheck dependencies
+cCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist
+cProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Info.plist ofxiphone-Info.plist
+cCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Icon.png bin/data/Icon.png
+cCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Default.png bin/data/Default.png
+cCpResource Project.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig
+cCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ofxiphone-Info.plist ofxiphone-Info.plist
+cCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch normal armv7
+cGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch
+cPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh
+cProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision
+cTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent
+cCodeSign /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxAccelerometer/src/ofxAccelerometer.h
+c000000004D32663E0000000000001903
+t1295148606
+s6403
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxMultiTouch/src/ofxMultiTouch.h
+c000000004D32663E0000000000000C4C
+t1295148606
+s3148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h
+c000000004DB3039A0000000000000BB7
+t1303577498
+s2999
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/ofxiPhone.h
+c000000004DB3039A0000000000000840
+t1303577498
+s2112
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/ofxiPhoneExtras.h
+c000000004DB080AC0000000000002329
+t1303412908
+s9001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/EAGLView.h
+c000000004D2F319400000000000009EE
+t1294938516
+s2542
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ESRenderer.h
+c000000004D456C18000000000000018E
+t1296395288
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/SoundEngine.h
+c000000004D3305FA0000000000004003
+t1295189498
+s16387
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h
+c000000004E0F6EA80000000000000EA8
+t1309634216
+s3752
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxOpenALSoundPlayer.h
+c000000004D5583C80000000000000F14
+t1297449928
+s3860
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h
+c000000004C3F5CBA0000000000000E48
+t1279220922
+s3656
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h
+c000000004C3F5CBA0000000000000862
+t1279220922
+s2146
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneApp.h
+c000000004DB3039A0000000000000544
+t1303577498
+s1348
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h
+c000000004D55A30A000000000000095C
+t1297457930
+s2396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h
+c000000004D5583C800000000000008A6
+t1297449928
+s2214
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h
+c000000004D3305FA0000000000000C99
+t1295189498
+s3225
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h
+c000000004E0DF6B2000000000000068E
+t1309537970
+s1678
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h
+c000000004DB3039A0000000000001634
+t1303577498
+s5684
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h
+c000000004DB3039A00000000000008AC
+t1303577498
+s2220
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo-deprecated.h
+c000000004D558E2800000000000021FA
+t1297452584
+s8698
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo-features.h
+c000000004D558E28000000000000031D
+t1297452584
+s797
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo-pdf.h
+c000000004D558E280000000000000C24
+t1297452584
+s3108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo-svg.h
+c000000004D558E280000000000000ADD
+t1297452584
+s2781
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo-version.h
+c000000004D558E280000000000000094
+t1297452584
+s148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/cairo/include/cairo/cairo.h
+c000000004D558E280000000000016BCE
+t1297452584
+s93134
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/glu/include_iphone/glu.h
+c000000004BACD92A0000000000001F99
+t1269618986
+s8089
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/3d/of3dUtils.h
+c000000004DBB0C14000000000000002B
+t1304103956
+s43
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/3d/ofCamera.h
+c000000004DF2A5B40000000000000858
+t1307747764
+s2136
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/3d/ofEasyCam.h
+c000000004D846F74000000000000053C
+t1300524916
+s1340
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/3d/ofMesh.h
+c000000004E15EDE600000000000010DD
+t1310060006
+s4317
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/3d/ofNode.h
+c000000004D59888C000000000000143C
+t1297713292
+s5180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004E0F39D00000000000000590
+t1309620688
+s1424
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/app/ofAppRunner.h
+c000000004DD7C1F8000000000000075D
+t1305985528
+s1885
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/app/ofBaseApp.h
+c000000004DD7C1F80000000000000377
+t1305985528
+s887
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/events/ofEventUtils.h
+c000000004DDA95360000000000000DAD
+t1306170678
+s3501
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/events/ofEvents.h
+c000000004F4FBFE60000000000001B99
+t1330626534
+s7065
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofFbo.h
+c000000004E2849E60000000000000E23
+t1311263206
+s3619
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofGLRenderer.h
+c000000004E19CDB00000000000001109
+t1310313904
+s4361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofGLUtils.h
+c000000004E0E0E280000000000000B79
+t1309543976
+s2937
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofLight.h
+c000000004E0F7856000000000000084C
+t1309636694
+s2124
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofMaterial.h
+c000000004E0F78560000000000000555
+t1309636694
+s1365
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofShader.h
+c000000004E0E69F00000000000000F82
+t1309567472
+s3970
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofTexture.h
+c000000004E265D2400000000000010D0
+t1311137060
+s4304
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofVbo.h
+c000000004E0F78560000000000000A19
+t1309636694
+s2585
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/gl/ofVboMesh.h
+c000000004DF2A5B40000000000000114
+t1307747764
+s276
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofCairoRenderer.h
+c000000004E25D24000000000000012BF
+t1311101504
+s4799
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofGraphics.h
+c000000004E134E620000000000001D95
+t1309888098
+s7573
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofImage.h
+c000000004E15EDE80000000000002014
+t1310060008
+s8212
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofPath.h
+c000000004E19CDB0000000000000115A
+t1310313904
+s4442
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofPixels.h
+c000000004E1630D400000000000012C3
+t1310077140
+s4803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofPolyline.h
+c000000004E19CDB00000000000000E9D
+t1310313904
+s3741
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofRendererCollection.h
+c000000004E19CDB000000000000027C6
+t1310313904
+s10182
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofTessellator.h
+c000000004DDA957A0000000000000459
+t1306170746
+s1113
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004E2327FC00000000000009F5
+t1310926844
+s2549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofMath.h
+c000000004E19CDB00000000000000B3D
+t1310313904
+s2877
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D5583C80000000000000A4C
+t1297449928
+s2636
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D846F740000000000006D64
+t1300524916
+s28004
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofQuaternion.h
+c000000004D846F7400000000000033BD
+t1300524916
+s13245
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofVec2f.h
+c000000004D923DCC000000000000407D
+t1301429708
+s16509
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofVec3f.h
+c000000004D846F7400000000000061A8
+t1300524916
+s25000
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofVec4f.h
+c000000004D5583C80000000000002EC3
+t1297449928
+s11971
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/math/ofVectorMath.h
+c000000004D2F31940000000000000099
+t1294938516
+s153
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/ofMain.h
+c000000004E2849E60000000000000643
+t1311263206
+s1603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D5583C80000000000000366
+t1297449928
+s870
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/sound/ofBaseSoundStream.h
+c000000004D8613F200000000000002D4
+t1300632562
+s724
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004E2849E60000000000000637
+t1311263206
+s1591
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/sound/ofSoundStream.h
+c000000004E2867B000000000000006DB
+t1311270832
+s1755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/sound/ofxiPhoneSoundStream.h
+c000000004E2867B00000000000000382
+t1311270832
+s898
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/types/ofBaseTypes.h
+c000000004E286F800000000000002F01
+t1311272832
+s12033
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/types/ofColor.h
+c000000004E0F785600000000000013FD
+t1309636694
+s5117
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/types/ofPoint.h
+c000000004D846F74000000000000003D
+t1300524916
+s61
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/types/ofRectangle.h
+c000000004DB07C7E0000000000000454
+t1303411838
+s1108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/types/ofTypes.h
+c000000004E0F788A0000000000000D27
+t1309636746
+s3367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofConstants.h
+c000000004E2867B000000000000034C6
+t1311270832
+s13510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofFileUtils.h
+c000000004E25D2400000000000001D56
+t1311101504
+s7510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofLog.h
+c000000004E19CDB000000000000014B0
+t1310313904
+s5296
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofSystemUtils.h
+c000000004DD7C1F200000000000001AC
+t1305985522
+s428
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofThread.h
+c000000004D326642000000000000050C
+t1295148610
+s1292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004E2849E600000000000008C4
+t1311263206
+s2244
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/utils/ofUtils.h
+c000000004E2849E60000000000001245
+t1311263206
+s4677
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/video/ofVideoGrabber.h
+c000000004E19CD4C00000000000009ED
+t1310313804
+s2541
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/video/ofVideoPlayer.h
+c000000004E19CD4C0000000000000ABD
+t1310313804
+s2749
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004E19CD4C000000000000032C
+t1310313804
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004E19CD4C0000000000000612
+t1310313804
+s1554
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/AbstractDelegate.h
+c000000004D2CAD8A0000000000000B59
+t1294773642
+s2905
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/AbstractEvent.h
+c000000004D2CAD8A0000000000002D7C
+t1294773642
+s11644
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ActiveMethod.h
+c000000004D2CAD8A0000000000001C64
+t1294773642
+s7268
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ActiveResult.h
+c000000004D2CAD8A0000000000002E66
+t1294773642
+s11878
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ActiveRunnable.h
+c000000004D2CAD8A0000000000001785
+t1294773642
+s6021
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ActiveStarter.h
+c000000004D2CAD8A0000000000000927
+t1294773642
+s2343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/AtomicCounter.h
+c000000004D846F740000000000001D13
+t1300524916
+s7443
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/AutoPtr.h
+c000000004D2CAD8A0000000000001E0C
+t1294773642
+s7692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Bugcheck.h
+c000000004D2CAD8A00000000000014A9
+t1294773642
+s5289
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/CompareFunctions.h
+c000000004D2CAD8A00000000000007EC
+t1294773642
+s2028
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Condition.h
+c000000004D2CAD8A0000000000001236
+t1294773642
+s4662
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Config.h
+c000000004D2CAD8A0000000000000E22
+t1294773642
+s3618
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Delegate.h
+c000000004D2CAD8A0000000000001828
+t1294773642
+s6184
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Event.h
+c000000004D2CAD8A0000000000000E21
+t1294773642
+s3617
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Event_POSIX.h
+c000000004D2CAD8A0000000000000A91
+t1294773642
+s2705
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Exception.h
+c000000004D5583C8000000000000283D
+t1297449928
+s10301
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Expire.h
+c000000004D2CAD8A0000000000000D0D
+t1294773642
+s3341
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/FIFOEvent.h
+c000000004D2CAD8A0000000000000B15
+t1294773642
+s2837
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/FIFOStrategy.h
+c000000004D2CAD8A0000000000001116
+t1294773642
+s4374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/File.h
+c000000004D456C1A0000000000001F91
+t1296395290
+s8081
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/File_UNIX.h
+c000000004D2CAD8A0000000000000BC1
+t1294773642
+s3009
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Foundation.h
+c000000004D5583C800000000000010BE
+t1297449928
+s4286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/FunctionDelegate.h
+c000000004D2CAD8A00000000000013C8
+t1294773642
+s5064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Mutex.h
+c000000004D2CAD8C0000000000001D9F
+t1294773644
+s7583
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D5583C80000000000000AC3
+t1297449928
+s2755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/NotificationStrategy.h
+c000000004D2CAD8C0000000000000B48
+t1294773644
+s2888
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Platform.h
+c000000004D5583C80000000000001AF7
+t1297449928
+s6903
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Platform_POSIX.h
+c000000004D2CAD8C0000000000000843
+t1294773644
+s2115
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/RefCountedObject.h
+c000000004D2CAD8C0000000000000BB1
+t1294773644
+s2993
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Runnable.h
+c000000004D2CAD8C0000000000000861
+t1294773644
+s2145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ScopedLock.h
+c000000004D456C1A0000000000000B7F
+t1296395290
+s2943
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ScopedUnlock.h
+c000000004D2CAD8C000000000000092B
+t1294773644
+s2347
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/SharedPtr.h
+c000000004D5583C80000000000002278
+t1297449928
+s8824
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/SignalHandler.h
+c000000004D2CAD8C00000000000011EB
+t1294773644
+s4587
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/SingletonHolder.h
+c000000004D2CAD8C0000000000000A67
+t1294773644
+s2663
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Thread.h
+c000000004D2CAD8C0000000000001E10
+t1294773644
+s7696
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/ThreadPool.h
+c000000004D2CAD8C0000000000001C8A
+t1294773644
+s7306
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Thread_POSIX.h
+c000000004D2CAD8C00000000000013B7
+t1294773644
+s5047
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Timestamp.h
+c000000004D2CAD8C0000000000001A41
+t1294773644
+s6721
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/poco/include/Poco/Types.h
+c000000004D5583C80000000000001926
+t1297449928
+s6438
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/tess2/include/tesselator.h
+c000000004E0E247A0000000000001C63
+t1309549690
+s7267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/Project.xcconfig
+c000000004E273F2A00000000000001C7
+t1311194922
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Default.png
+c000000004E273F2A00000000000014C6
+t1311194922
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Icon.png
+c000000004E273F2A0000000000000410
+t1311194922
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+t1330912412
+s476
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM
+t1330912411
+s102
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig
+t1330909786
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Default.png
+t1330912411
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Icon.png
+t1330912411
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Info.plist
+t1330909786
+s1001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/PkgInfo
+t1330909786
+s8
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig
+t1330909786
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist
+t1330909786
+s485
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch
+t1330912412
+s5160976
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision
+t1330909790
+s7234
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ofxiphone-Info.plist
+t1330909786
+s603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/audioInputWithPitch.LinkFileList
+c000000004F54125A0000000000000189
+t1330909786
+s393
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o
+t1330909788
+s78256
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o
+t2
+s0
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh
+c000000004F54125A0000000000000041
+t1330909786
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent
+t1330909790
+s412
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/iPhone_Prefix.pch
+c000000004E273F2A00000000000000B5
+t1311194922
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/ofxiphone-Info.plist
+c000000004E273F2A0000000000000428
+t1311194922
+s1064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm
+c000000004BACD92800000000000000A0
+t1269618984
+s160
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h
+c000000004F540C5F0000000000000354
+t1330908255
+s852
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm
+c000000004F541D13000000000000182E
+t1330912531
+s6190
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphoneos_Debug.a
+c000000004F4FC20E0000000001DD6790
+t1330627086
+s31287184
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk
+c000000004E7840290000000000000110
+t1316503593
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+c000000004E5C595800000000000001A7
+t1314675032
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+c000000004E5C595800000000000001E5
+t1314675032
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004E7807DB000000000015F8A0
+t1316489179
+s1439904
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004E72F36E00000000005AF640
+t1316156270
+s5961280
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004E72F28700000000003AB0A0
+t1316156039
+s3846304
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004E7805AD0000000000076750
+t1316488621
+s485200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004E78069100000000000748C0
+t1316488849
+s477376
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004E72F744000000000001A9B0
+t1316157252
+s108976
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004E72F3440000000000529540
+t1316156228
+s5412160
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004E72F3370000000000001534
+t1316156215
+s5428
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004E78098C00000000000AF270
+t1316489612
+s717424
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004E72F3C20000000000022660
+t1316156354
+s140896
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004E72F6E00000000000017190
+t1316157152
+s94608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004E72F8910000000000173260
+t1316157585
+s1520224
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004E7808770000000000000BCB
+t1316489335
+s3019
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004E7808C7000000000078BE50
+t1316489415
+s7913040
+
+N/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision
+c000000004F17B5E50000000000001C42
+t1326953957
+s7234
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth
+t1330909787
+s4687248
+
+Nofxiphone-Info.plist
+c000000004E273F2A0000000000000428
+t1311194922
+s1064
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm
+r0
+
+CCheck dependencies
+r0
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2d3f5c945404b541^ed4960945404b541^-116"[WARN]Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.1(21%IDEActivityLogMessage2@109"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.-352605332#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"38EF01D0-2708-414B-97FE-2955BFCFB202-
+
+CCodeSign /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+s352605335.620583
+e352605336.211009
+r1
+xCodeSign
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"CodeSign build/Debug-iphoneos/audioInputWithPitch.appc7f29e975404b541^030536985404b541^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/0000000000000000^990"CodeSign build/Debug-iphoneos/audioInputWithPitch.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign "iPhone Developer: Anna Martinez (G7MHC3HDQA)" --resource-rules=/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist --entitlements /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app36"A50DC9B7-B198-4613-9DD9-FC58F1E985B8-
+
+CCompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352602587.674167
+e352602588.872802
+r1
+xCompileC
+xbuild/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o2 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mmf1bcacdb4904b541^4c6fdfdc4904b541^-898"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^2 warnings generated.2(21%IDEActivityLogMessage2@25"'/*' within block comment-352602588#264#92#3(36%IDEActivityLogHeaderInclusionMessage3@132"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:-352602588#0#133#-0#-23%DVTTextDocumentLocation4@123"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@130"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:-352602588#133#131#-0#-4@121"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-352602588#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-352602588#699#98#3(3@132"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:-352602588#435#133#-0#-4@123"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@130"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm:2:-352602588#568#131#-0#-4@121"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-352602588#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation5@121"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm0000000000000000^4381"CompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o src/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/main.o36"B4D70ABF-1DFD-4FCF-BBBC-52CA5D98A55F-
+
+CCompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352605332.437064
+e352605333.770494
+r1
+xCompileC
+xbuild/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]
+o  /***********************************************************************
+o  ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:139:9: warning: '/*' within block comment [-Wcomment,2]
+o         /* //changed this, made it faster
+o         ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:166:22: warning: unused variable 'a3' [-Wunused-variable,12]
+o     float c,a0,a1,a2,a3,b0,b1,b2,w0,f,alpha;
+o                      ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:166:11: warning: unused variable 'c' [-Wunused-variable,12]
+o     float c,a0,a1,a2,a3,b0,b1,b2,w0,f,alpha;
+o           ^
+o5 warnings generated.
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm310870945404b541^af3fc5955404b541^-1591"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment,2]  /***********************************************************************  ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:139:9: warning: '/*' within block comment [-Wcomment,2]         /* //changed this, made it faster         ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:166:22: warning: unused variable 'a3' [-Wunused-variable,12]     float c,a0,a1,a2,a3,b0,b1,b2,w0,f,alpha;                      ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:166:11: warning: unused variable 'c' [-Wunused-variable,12]     float c,a0,a1,a2,a3,b0,b1,b2,w0,f,alpha;           ^5 warnings generated.5(21%IDEActivityLogMessage2@25"'/*' within block comment-352605333#267#92#3(36%IDEActivityLogHeaderInclusionMessage3@132"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:4:-352605333#0#133#-0#-23%DVTTextDocumentLocation4@123"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#---3@133"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:-352605333#133#134#-0#-4@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@107"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h-352605333#18446744073709551615#0#-0#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#---1#-4@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-352605333#705#98#3(3@132"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h:5:-352605333#438#133#-0#-4@123"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---3@133"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm:1:-352605333#571#134#-0#-4@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@113"'/*' within block comment in /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h-352605333#18446744073709551615#0#-0#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#---1#-4@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-352605333#882#165#-1#-4@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^138#8#138#8#18446744073709551615#0#29"Lexical or Preprocessor Issue--2@20"Unused variable 'a3'-352605333#1101#170#-1#-4@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^165#21#165#21#18446744073709551615#0#19"Unused Entity Issue--2@19"Unused variable 'c'-352605333#1341#169#-1#-4@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^165#10#165#10#18446744073709551615#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation5@124"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm0000000000000000^4396"CompileC build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o src/testApp.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.d -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/testApp.o36"9A52F3D1-CFEB-4605-A111-8C164F1341DF-
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Default.png bin/data/Default.png
+s352602586.430809
+e352602586.506996
+r1
+xCopyPNGFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Default.png
+xbin/data/Default.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile build/Debug-iphoneos/audioInputWithPitch.app/Default.png bin/data/Default.pngf1656eda4904b541^177e84da4904b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Default.png0000000000000000^734"CopyPNGFile build/Debug-iphoneos/audioInputWithPitch.app/Default.png bin/data/Default.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" "" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Default.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Default.png36"2A4B2146-6C8B-442D-B886-001A1F611E55-
+
+CCopyPNGFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Icon.png bin/data/Icon.png
+s352602586.430795
+e352602586.506412
+r1
+xCopyPNGFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Icon.png
+xbin/data/Icon.png
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile build/Debug-iphoneos/audioInputWithPitch.app/Icon.png bin/data/Icon.png6f646eda4904b541^5c7684da4904b541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Icon.png0000000000000000^722"CopyPNGFile build/Debug-iphoneos/audioInputWithPitch.app/Icon.png bin/data/Icon.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" "" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/bin/data/Icon.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Icon.png36"D2DCE513-A573-4DC9-860E-DC388088A51F-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s352602586.430845
+e352602586.433948
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plist9e616eda4904b541^33186fda4904b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/ofxiphone-Info.plist0000000000000000^538"CopyPlistFile build/Debug-iphoneos/audioInputWithPitch.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app -- ofxiphone-Info.plist36"A3CDC4F3-2116-4DC1-B155-44799F87A2EE-
+
+CCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig
+s352602586.435104
+e352602586.438265
+r1
+xCpResource
+x../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+xbuild/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig20796fda4904b541^ba3270da4904b541^---0#0#0#-19%DVTDocumentLocation2@170"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig00f42c37ddffdf42^799"CpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/CoreOF.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app36"D1BCA54B-33D3-453A-BE7D-FD575F0C6249-
+
+CCpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist
+s352602586.418680
+e352602586.423266
+r1
+xCpResource
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist213f6bda4904b541^6c5b6cda4904b541^---0#0#0#-19%DVTDocumentLocation2@174"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist00f42c37ddffdf42^753"CpResource /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/ResourceRules.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app36"80F2904F-7A43-4F36-82B6-BC20C01AA1C7-
+
+CCpResource Project.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig
+s352602586.431086
+e352602586.437433
+r1
+xCpResource
+xProject.xcconfig
+xbuild/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfigd66f6eda4904b541^c1fe6fda4904b541^---0#0#0#-19%DVTDocumentLocation2@171"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig00f42c37ddffdf42^698"CpResource Project.xcconfig build/Debug-iphoneos/audioInputWithPitch.app/Project.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/Project.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app36"BD12F5F4-EDE2-4E2F-A125-591D2DFF0F12-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch
+s352605334.929369
+e352605335.533778
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection154"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM6af9ed965404b541^37a588975404b541^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM/0000000000000000^695"GenerateDSYMFile build/Debug-iphoneos/audioInputWithPitch.app.dSYM build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app.dSYM36"FEDB1DCD-09CC-4262-9C39-9D0CA49C87BE-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch normal armv7
+s352605333.778047
+e352605334.922901
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch
+xnormal
+xarmv7
+old: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file
+old: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)
+old: warning: 32-bit absolute address out of range (0x1001F08A4 max is 4GB): from _inflate_table + 0x00000674 (0x000CD700) to 0x1001F08A4
+old: warning: 32-bit absolute address out of range (0x1001F08E2 max is 4GB): from _inflate_table + 0x00000670 (0x000CD700) to 0x1001F08E2
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection163"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch5243c7955404b541^9e44ec965404b541^-813"ld: warning: ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in fileld: warning: ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)ld: warning: 32-bit absolute address out of range (0x1001F08A4 max is 4GB): from _inflate_table + 0x00000674 (0x000CD700) to 0x1001F08A4ld: warning: 32-bit absolute address out of range (0x1001F08E2 max is 4GB): from _inflate_table + 0x00000670 (0x000CD700) to 0x1001F08E26(21%IDEActivityLogMessage2@102"Ignoring file ../../../libs/FreeImage/lib/osx/freeimage.a, missing required architecture armv7 in file-352605333#0#116#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@126"Ignoring file ../../../libs/glew/lib/osx/glew.a, file was built for archive which is not the architecture being linked (armv7)-352605333#116#140#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@128"Ignoring file ../../../libs/cairo/lib/osx/cairo.a, file was built for archive which is not the architecture being linked (armv7)-352605333#256#142#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@127"Ignoring file ../../../libs/glu/lib/iphone/glu.a, file was built for archive which is not the architecture being linked (armv7)-352605333#398#141#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001F08A4 max is 4GB): from _inflate_table + 0x00000674 (0x000CD700) to 0x1001F08A4-352605334#539#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@123"32-bit absolute address out of range (0x1001F08E2 max is 4GB): from _inflate_table + 0x00000670 (0x000CD700) to 0x1001F08E2-352605334#676#137#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--2069"Ld build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch normal armv7    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang++ -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/audioInputWithPitch.LinkFileList -dead_strip -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -miphoneos-version-min=3.1 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphoneos_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/audioInputWithPitch36"CFC406EC-5166-4E93-80CC-E220817B7938-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh
+s352605335.541972
+e352605335.571285
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'c6f98b975404b541^9f3e92975404b541^---0#0#0#--25380"PhaseScriptExecution "Run Script" build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT armv7    setenv ARCHS_STANDARD_32_BIT armv7    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH audioInputWithPitch.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH audioInputWithPitch.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/audioInputWithPitch.dst    setenv DWARF_DSYM_FILE_NAME audioInputWithPitch.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH audioInputWithPitch.app/Executables    setenv EXECUTABLE_FOLDER_PATH audioInputWithPitch.app    setenv EXECUTABLE_NAME audioInputWithPitch    setenv EXECUTABLE_PATH audioInputWithPitch.app/audioInputWithPitch    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH audioInputWithPitch.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME audioInputWithPitch.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH audioInputWithPitch.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH audioInputWithPitch.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/audioInputWithPitch.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/audioInputWithPitch.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH audioInputWithPitch.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal/armv7/audioInputWithPitch.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH audioInputWithPitch.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH audioInputWithPitch.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c++    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/PkgInfo    setenv PKGINFO_PATH audioInputWithPitch.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH armv7    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH audioInputWithPitch.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH audioInputWithPitch.app/PrivateHeaders    setenv PRODUCT_NAME audioInputWithPitch    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT audioInputWithPitch    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/audioInputWithPitch.xcodeproj    setenv PROJECT_NAME audioInputWithPitch    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH audioInputWithPitch.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH audioInputWithPitch.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk    setenv SDK_NAME iphoneos5.0    setenv SDK_PRODUCT_BUILD_VERSION 9A334    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH audioInputWithPitch.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH audioInputWithPitch.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME audioInputWithPitch    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos    setenv TARGET_NAME audioInputWithPitch    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH audioInputWithPitch.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH audioInputWithPitch.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE audioInputWithPitch_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:audioInputWithPitch  PROJECT:audioInputWithPitch-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME audioInputWithPitch.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D199    setenv XCODE_VERSION_ACTUAL 0420    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/Script-9255DD331112741900D6945E.sh36"E430ECF7-2436-4D9B-A742-46EB6AE00F48-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Info.plist ofxiphone-Info.plist
+s352602586.418682
+e352602586.422245
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Info.plist
+xofxiphone-Info.plist
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plist8a3e6bda4904b541^b5186cda4904b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/ofxiphone-Info.plist0000000000000000^918"ProcessInfoPlistFile build/Debug-iphoneos/audioInputWithPitch.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/ResourceRules.plist -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/Info.plist36"3811E3A9-1161-45F6-9AD5-691F1B24C442-
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/audioInputWithPitch-cbmhnvjblgheqecnmjcgyrxghmip/Index/PrecompiledHeaders/iPhone_Prefix-anrrxorqkjqhudamdktxpcryqbpf_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s352602586.515136
+e352602587.667830
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pchd00e84da4904b541^5ef7aadb4904b541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/iPhone_Prefix.pch0000000000000000^4224"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-arc-abi -Wc++0x-extensions -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=3.1 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources/armv7 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-edlrrgskuemeqsdbgrqhvidkkwvg/iPhone_Prefix.pch.d36"1AD3C1F8-A25A-408E-8E11-1B8DB67A6ADD-
+
+CProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision
+s352602590.551968
+e352602590.557866
+r1
+xProcessProductPackaging
+x/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection202"ProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision13638dde4904b541^74d38ede4904b541^---0#0#0#-19%DVTDocumentLocation2@179"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision0000000000000000^740"ProcessProductPackaging "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/lia/Library/MobileDevice/Provisioning Profiles/9615E2A0-2E19-431C-B157-EF163313F1AE.mobileprovision" -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app/embedded.mobileprovision36"680C5CF5-1CC2-4A6E-967E-8C050EF8852F-
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent
+s352602590.582670
+e352602590.587306
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection211"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcentb24a95de4904b541^315b96de4904b541^---0#0#0#-19%DVTDocumentLocation2@208"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent00f42c37ddffdf42^784"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/Entitlements.plist -entitlements -format xml -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/audioInputWithPitch.build/Debug-iphoneos/audioInputWithPitch.build/audioInputWithPitch.xcent36"7820009A-029A-4C8A-9A1C-1956C67A9A8A-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+s352605335.595666
+e352605335.603758
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app8b8a98975404b541^58909a975404b541^---0#0#0#--437"Touch build/Debug-iphoneos/audioInputWithPitch.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/audioInputExample-withPitch/build/Debug-iphoneos/audioInputWithPitch.app36"B5CDA155-6B0D-4927-A595-196D3014E762-
+
