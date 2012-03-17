@@ -60,7 +60,8 @@ public:
     bool                    skeleton;
     int                     numNote; 
     
-
+    
+    
 };
 
 #endif

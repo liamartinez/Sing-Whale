@@ -73,6 +73,14 @@ void testApp::setup(){
     
     resetButt.setup(); 
     resetButt.setLabel("start again", &whitneySemiBold22);
+    
+    saveButt.setup(); 
+    saveButt.setLabel("save", &whitneySemiBold22);
+    
+    loadButt.setup(); 
+    loadButt.setLabel("load", &whitneySemiBold22);
+    
+    loadMe = false;
 
 }
 
@@ -117,6 +125,9 @@ void testApp::draw(){
     beginButt.draw( 10, 10); 
     skeletonButt.draw(10, 50); 
     resetButt.draw(10, 90);
+    saveButt.draw(200, 10);
+    loadButt.draw(200, 50);
+    
     ofSetColor(78, 96, 146);
         
     ofSetColor(225);
@@ -136,6 +147,14 @@ void testApp::draw(){
             //set location to reset also
             theBins.clear(); 
         }
+    }
+    
+    if (loadMe) {
+        loadMe = false; 
+        for (int i = 0; i < savedBins.size()-1; i++){
+            grid.letsGo(i, savedBins[i]);
+        }
+        savedBins.clear(); 
     }
     
 }
@@ -175,6 +194,8 @@ void testApp::touchDown(ofTouchEventArgs &touch){
     beginButt.touchDown(touch);
     skeletonButt.touchDown(touch);
     resetButt.touchDown(touch);
+    saveButt.touchDown(touch);
+    loadButt.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -198,9 +219,20 @@ void testApp::touchUp(ofTouchEventArgs &touch){
         //grid.setupGrid(); //need to destroy old grid? 
     }
     
+    if (saveButt.isPressed()) {
+        saveSong(); 
+    }
+    
+    if (loadButt.isPressed()) {
+        loadSong(); 
+
+    }
+    
     beginButt.touchUp(touch);
     skeletonButt.touchUp(touch);
     resetButt.touchUp(touch);
+    saveButt.touchUp(touch);
+    loadButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -232,6 +264,70 @@ void testApp::deviceOrientationChanged(int newOrientation){
 void testApp::touchCancelled(ofTouchEventArgs& args){
 	
 }
+
+//--------------------------------------------------------------
+void testApp::saveSong() {
+    ofxXmlSettings positions;
+    positions.addTag("positions");
+    positions.pushTag("positions");
+    //points is a vector<ofPoint> that we want to save to a file
+    for(int i = 0; i < theBins.size(); i++){
+        //each position tag represents one point
+        //positions.addTag("position");
+        //positions.pushTag("position");
+        //so set the three values in the file
+        positions.addValue("pos", theBins[i]);
+        cout << "out " << theBins[i] << endl; 
+        //positions.popTag();//pop position
+    }
+    positions.popTag(); //pop position
+    positions.popTag(); //pop settings
+    positions.saveFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml");
+    cout << "positions.xml saved to app documents folder" << endl; 
+}
+
+//--------------------------------------------------------------
+void testApp::loadSong() {
+    ofxXmlSettings settings;
+    if(settings.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
+        settings.pushTag("positions");
+        int numberOfSavedPoints = settings.getNumTags("pos");
+        cout << numberOfSavedPoints << " total" << endl; 
+        for(int i = 0; i < numberOfSavedPoints; i++){
+            //settings.pushTag("positions", i);
+            
+            int savedBin;
+            savedBin = settings.getValue("pos", 0, i);
+            cout << "in " << savedBin << endl; 
+
+            savedBins.push_back(savedBin);
+            //settings.popTag();
+        }
+        
+        settings.popTag(); //pop position
+        
+        loadMe = true; 
+        
+    }
+    else{
+        ofLogError("Position file did not load!");
+    }
+    
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

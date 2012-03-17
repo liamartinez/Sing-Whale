@@ -6,6 +6,7 @@
 #include "ofxMaxim.h"
 #include "baseButton.h"
 #include "ofxFreeType2.h"
+#include "ofxXmlSettings.h"
 #include <sys/time.h>
 
 #include "grid.h"
@@ -70,6 +71,17 @@ public:
     baseButton      skeletonButt;
     baseButton      resetButt; 
     bool            reset; 
+    
+    baseButton      saveButt;
+    bool            saveMe; 
+    
+    baseButton      loadButt;
+    bool            loadMe; 
+    
+    //saving
+    void            saveSong(); 
+    void            loadSong(); 
+    vector<int>     savedBins; 
     
 };
 

@@ -147,6 +147,8 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/OAwithGridXML/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/OAwithGridXML/../../../addons/ofxXmlSettings/libs/tinyxml.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/OAwithGridXML/src/grid.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/OAwithGridXML/../../../addons/ofxBox2d/src/ofxBox2d.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/OAwithGridXML/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \
