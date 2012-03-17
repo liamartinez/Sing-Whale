@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "audioInputExample.app"
+               BuildableName = "audioInputWithPitch.app"
                BlueprintName = "audioInputWithPitch"
                ReferencedContainer = "container:audioInputWithPitch.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioInputExample.app"
+            BuildableName = "audioInputWithPitch.app"
             BlueprintName = "audioInputWithPitch"
             ReferencedContainer = "container:audioInputWithPitch.xcodeproj">
          </BuildableReference>
@@ -45,12 +45,13 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
       debugDocumentVersioning = "YES"
+      enablesOpenGLESFrameCapture = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioInputExample.app"
+            BuildableName = "audioInputWithPitch.app"
             BlueprintName = "audioInputWithPitch"
             ReferencedContainer = "container:audioInputWithPitch.xcodeproj">
          </BuildableReference>
@@ -68,7 +69,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioInputExample.app"
+            BuildableName = "audioInputWithPitch.app"
             BlueprintName = "audioInputWithPitch"
             ReferencedContainer = "container:audioInputWithPitch.xcodeproj">
          </BuildableReference>

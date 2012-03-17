@@ -52,7 +52,9 @@ public:
     
     vector <float>  aveHistory; 
 
-    float numCounted;
+    float   numCounted;
+    int     highest; 
+    
 	
 	
 	

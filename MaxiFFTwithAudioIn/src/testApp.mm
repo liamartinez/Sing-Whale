@@ -49,8 +49,7 @@ void testApp::setup(){
 	ifft.setup(fftSize, 1024, 256);
 	
 	
-	
-	nAverages = 12;
+	nAverages = 20;
 	oct.setup(sampleRate, fftSize/2, nAverages);
 	
 	ofxMaxiSettings::setup(sampleRate, 2, initialBufferSize);
@@ -84,13 +83,13 @@ void testApp::draw(){
 	
     
     //lets draw the volume history as a graph
-    //ofSetColor(245, 58, 135);	
+    ofSetColor(245, 58, 135);	
     ofBeginShape();
     for (int i = 0; i < aveHistory.size(); i++){
         if( i == 0 ) ofVertex(i, 200);
-//        cout << aveHistory[i] << endl;
+       //cout << aveHistory[i] << endl;
         //ofCircle(i, 200, 50*aveHistory[i]);
-        ofVertex(i, 200 - aveHistory[i] * 200);
+        ofVertex(i, 200 - aveHistory[i] * 2000);
         
         if( i == aveHistory.size() -1 ) ofVertex(i, 200);
     }
@@ -98,6 +97,7 @@ void testApp::draw(){
      // here we draw volume 
     //ofTranslate(0, -50, 0);
     
+    /*
 	// draw the input:
 	ofSetHexColor(0x333333);
 	//ofRect(70,100,256,200);
@@ -112,6 +112,7 @@ void testApp::draw(){
 	sprintf(reportString, "buffers received: %i\ndraw routines called: %i\n", bufferCounter,drawCounter);
 	ofDrawBitmapString(reportString, 70,308);
     
+    */
     
     //----------
     
@@ -120,14 +121,16 @@ void testApp::draw(){
     
 	//draw fft output
 	float xinc = 900.0 / fftSize * 2.0;
+    /*
 	for(int i=0; i < fftSize / 2; i++) {
 		float height = mfft.magnitudesDB[i] / 50.0 * 400;
 		ofRect(100 + (i*xinc),450 - height,2, height);
 	}
-    
+    */
     //octave analyser
     numCounted = 0;	
     
+    highest = 0; 
     float curAve = 0.0;
 	ofSetColor(255, 0, 0,100);
 	xinc = 900.0 / oct.nAverages;
@@ -136,12 +139,17 @@ void testApp::draw(){
         curAve = oct.averages[i];
         numCounted+=2;
 		ofRect( (i*xinc),200 - height,2, height);
-        
-        
-
-        
+        if (height > highest) highest = height; 
+        //cout << highest << endl; 
 	}
+        
+    highest = int(ofMap(highest, 35, 80, 1, 4));
+    if (highest == 1) ofSetColor(100, 100, 100);
+    if (highest == 2) ofSetColor(255, 100, 100);
+    if (highest == 3) ofSetColor(100, 255, 100);
+    if (highest == 4) ofSetColor(100, 100, 255);
     
+    ofCircle(100, 100, 50);
     
     //this is how we get the mean of rms :) 
     curAve /= (float)numCounted;
@@ -168,6 +176,10 @@ void testApp::draw(){
     //	cout << callTime << endl;
     
     //-------------
+
+    ofSetColor(225);
+	string reportString = "nAverages: "+ofToString(nAverages);
+	ofDrawBitmapString(reportString, 50, 85);
 
      
 	
@@ -226,7 +238,11 @@ void testApp::touchMoved(ofTouchEventArgs &touch){
 
 //--------------------------------------------------------------
 void testApp::touchUp(ofTouchEventArgs &touch){
-    
+    if (touch.x > ofGetHeight()/2) {
+        nAverages ++; 
+    } else if (touch.x < ofGetHeight()/2) {
+        nAverages --; 
+    }
 }
 
 //--------------------------------------------------------------
