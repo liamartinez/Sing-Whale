@@ -16,7 +16,7 @@ class grid {
     
 public:
     grid (); 
-    void                    setLocation (int location); 
+    void                    setLocation (int locationX, int locationY); 
     void                    setLength (float lenHorz_); 
     void                    setLengthDensity (int numHorz_, float incHorz_); 
     void                    setupBox2d(int gravX, int gravY); 

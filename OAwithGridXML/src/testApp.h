@@ -61,6 +61,7 @@ public:
     int             theBin;
     vector<int>     theBins;
     
+    grid            guide; 
     grid            grid; 
 
 	//UI
@@ -78,10 +79,17 @@ public:
     baseButton      loadButt;
     bool            loadMe; 
     
+    baseButton      checkButt;
+    bool            checkMe; 
+    
     //saving
     void            saveSong(); 
     void            loadSong(); 
     vector<int>     savedBins; 
+    
+    //checking
+    bool            checkSong(); 
+    string          message; 
     
 };
 

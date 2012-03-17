@@ -23,8 +23,8 @@ grid::grid() {
     anchorHeight = 200; 
 }
 
-void grid::setLocation(int location){
-    startLoc.set(location, ofGetHeight()/2);
+void grid::setLocation(int locationX, int locationY){
+    startLoc.set(locationX, locationY);
     startLocBot.set(startLoc.x, startLoc.y + lenVertz); 
     endLoc.set (startLoc.x + lenHorz, startLoc.y); 
     endLocBot.set(endLoc.x, startLocBot.y);

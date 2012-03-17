@@ -56,10 +56,19 @@ void testApp::setup(){
     //grid stuff
     grid.setLength(1000);
     grid.setLengthDensity(sampleSize, .02);
-    grid.setLocation(10);
+    grid.setLocation(10, ofGetHeight()/2);
     
     grid.setupBox2d(0, 0);
     grid.setupGrid();
+    
+    //grid stuff
+    guide.setLength(1000);
+    guide.setLengthDensity(sampleSize, .02);
+    guide.setLocation(10, ofGetHeight() - ofGetHeight()/3);
+    
+    guide.setupBox2d(0, 0);
+    guide.setupGrid();
+    
     
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
@@ -80,8 +89,12 @@ void testApp::setup(){
     loadButt.setup(); 
     loadButt.setLabel("load", &whitneySemiBold22);
     
+    checkButt.setup(); 
+    checkButt.setLabel("check", &whitneySemiBold22);
+    
     loadMe = false;
-
+    checkMe = false; 
+    message = "FIRST LOAD, THEN START, THEN CHECK!"; 
 }
 
 //--------------------------------------------------------------
@@ -116,6 +129,7 @@ void testApp::update(){
 
     }
     grid.update(); 
+    guide.update(); 
 }
 
 //--------------------------------------------------------------
@@ -127,12 +141,15 @@ void testApp::draw(){
     resetButt.draw(10, 90);
     saveButt.draw(200, 10);
     loadButt.draw(200, 50);
+    checkButt.draw(200, 90);
     
     ofSetColor(78, 96, 146);
         
     ofSetColor(225);
 
     grid.drawGrid();
+    guide.drawGrid(); 
+    
     if (begin && theBins.size() != 0) {
         for (int i = 0; i < theBins.size()-1; i++){
             grid.letsGo(i, theBins[i]);
@@ -152,11 +169,22 @@ void testApp::draw(){
     if (loadMe) {
         loadMe = false; 
         for (int i = 0; i < savedBins.size()-1; i++){
-            grid.letsGo(i, savedBins[i]);
+            guide.letsGo(i, savedBins[i]);
         }
         savedBins.clear(); 
     }
     
+    if (checkMe) {
+        checkMe = false; 
+        if (checkSong()) {
+            message = "YOU GOT IT";
+        } else {
+            message = "TRY AGAIN";
+        }
+    }
+
+    ofSetColor(200, 170, 170);
+    ofDrawBitmapString(message, 300, 50);
 }
 //--------------------------------------------------------------
 void testApp::exit(){
@@ -196,6 +224,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
     resetButt.touchDown(touch);
     saveButt.touchDown(touch);
     loadButt.touchDown(touch);
+    checkButt.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -225,7 +254,10 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     
     if (loadButt.isPressed()) {
         loadSong(); 
-
+    }
+    
+    if (checkButt.isPressed()) {
+        checkMe = true; 
     }
     
     beginButt.touchUp(touch);
@@ -233,6 +265,7 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     resetButt.touchUp(touch);
     saveButt.touchUp(touch);
     loadButt.touchUp(touch);
+    checkButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -277,7 +310,6 @@ void testApp::saveSong() {
         //positions.pushTag("position");
         //so set the three values in the file
         positions.addValue("pos", theBins[i]);
-        cout << "out " << theBins[i] << endl; 
         //positions.popTag();//pop position
     }
     positions.popTag(); //pop position
@@ -298,8 +330,6 @@ void testApp::loadSong() {
             
             int savedBin;
             savedBin = settings.getValue("pos", 0, i);
-            cout << "in " << savedBin << endl; 
-
             savedBins.push_back(savedBin);
             //settings.popTag();
         }
@@ -307,19 +337,37 @@ void testApp::loadSong() {
         settings.popTag(); //pop position
         
         loadMe = true; 
-        
     }
     else{
         ofLogError("Position file did not load!");
     }
     
-
-    
-    
 }
 
 
-
+//--------------------------------------------------------------
+bool testApp::checkSong() {
+    
+    int points = 0; 
+    
+    //lets do something that sees which one is shorter
+    int longer = 0; 
+    
+    if (savedBins.size() > theBins.size()) {
+        longer = savedBins.size();
+    } else {
+        longer = theBins.size(); 
+    }
+    
+    for (int i = 0; i < longer-1; i++) {
+        
+        if (savedBins[i] < (theBins[i] + 10) && savedBins[i] > (theBins[i] - 10)) {
+            points ++; 
+        }
+        
+    }
+    if (points > savedBins.size() - savedBins.size()/3) return true; 
+}
 
 
 
