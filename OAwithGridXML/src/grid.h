@@ -25,6 +25,7 @@ public:
     void                    drawGrid(); 
     void                    seeGrid(); 
     void                    letsGo(int num, int height); 
+    void                    clearGrid(); 
     
     ofxBox2d						box2d;	
     

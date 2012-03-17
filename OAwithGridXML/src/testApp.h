@@ -90,6 +90,7 @@ public:
     //checking
     bool            checkSong(); 
     string          message; 
+    int             threshold; 
     
 };
 

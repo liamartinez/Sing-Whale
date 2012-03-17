@@ -19,7 +19,7 @@ grid::grid() {
     circleSize  = 1; 
     
     numNote = 1; 
-    skeleton = false; 
+    skeleton = true; 
     anchorHeight = 200; 
 }
 
@@ -50,35 +50,34 @@ void grid::setupBox2d(int gravX, int gravY){
     box2d.init();
 	box2d.setGravity(gravX, gravY);
 	box2d.setFPS(30.0);
-	box2d.registerGrabbing();    
+	//box2d.registerGrabbing();    
+    box2d.setIterations(1, 1);
 }
 
 void grid::setupGrid() {
-    
-    
-	startAnchor.setup(box2d.getWorld(), startLoc.x, startLoc.y, circleSize);
+    //anchors
+    startAnchor.setup(box2d.getWorld(), startLoc.x, startLoc.y, circleSize);
     endAnchor.setup(box2d.getWorld(), endLoc.x, endLoc.y, circleSize);
     startAnchorBot.setup(box2d.getWorld(), startLocBot.x, startLocBot.y, circleSize);
     endAnchorBot.setup(box2d.getWorld(), endLocBot.x, endLocBot.y, circleSize);
     
-
-    //create the top/bot circles, top Anchors
+    //create the top/bot circles
     for (int i=0; i<numHorz-1; i++) {
         
 		ofxBox2dCircle topCircle;
-		topCircle.setPhysics(30.0, 0.003, 5);//density, bounce, friction
+		topCircle.setPhysics(30, 0.003, 5);//density, bounce, friction
 		topCircle.setup(box2d.getWorld(), startLoc.x + ((lenHorz/numHorz)* (i+1)), startLoc.y, 2); //move this by one point so it doesn't get knotted up
         topCircle.setFixedRotation(false);
 		topCircles.push_back(topCircle);
         
         ofxBox2dCircle bottomCircle;
-		bottomCircle.setPhysics(30.0, 0.003, 5);//density, bounce, friction
+		bottomCircle.setPhysics(30, 0.003, 5);//density, bounce, friction
 		bottomCircle.setup(box2d.getWorld(), startLocBot.x+((lenHorz/numHorz)* i), startLocBot.y, 2);
         bottomCircle.setFixedRotation(false);
 		bottomCircles.push_back(bottomCircle);
 	}
     
-    //create the top/bot joints, topAnchorJoints
+    //create the top/bot joints
     for (int i = 0; i < topCircles.size(); i++) {
         ofxBox2dJoint topJoint; 
         ofxBox2dJoint heightJoint;
@@ -187,7 +186,7 @@ void grid::drawGrid() {
     endAnchor.draw();
     endAnchorBot.draw(); 
     
-    if (!skeleton) {
+    if (skeleton) {
         
         for(int i=0; i<topCircles.size(); i++) {
             ofFill();
@@ -203,7 +202,7 @@ void grid::drawGrid() {
             topJoints[i].draw(); 
             bottomJoints[i].draw(); 
             //drawing these joints will cause errors. Don't know why 
-            heightJoints[i].draw(); 
+            //heightJoints[i].draw(); 
         }
         
         for(int i=0; i<leftCircles.size(); i++) {
@@ -222,7 +221,7 @@ void grid::drawGrid() {
         }
     }
     
-    if (skeleton) {
+    if (!skeleton) {
         ofFill();
         ofSetColor(79, 178, 245);
         ofBeginShape();
@@ -273,3 +272,44 @@ void grid::letsGo(int num, int height){
     numNote = num; 
     heightJoints[numNote].setLength(height);
 }
+
+void grid::clearGrid(){
+    topCircles.clear();
+    bottomCircles.clear(); 
+    leftCircles.clear();
+    rightCircles.clear(); 
+    
+    topJoints.clear();
+    bottomJoints.clear(); 
+    heightJoints.clear(); 
+    rightJoints.clear();
+    leftJoints.clear(); 
+    //what about anchors?
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

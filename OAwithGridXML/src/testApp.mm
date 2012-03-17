@@ -21,8 +21,9 @@ void testApp::setup(){
 	ofEnableAlphaBlending();
     ofEnableSmoothing();
 	ofSetupScreen();
-	ofBackground(34, 45, 73);
-	ofSetFrameRate(60);
+	ofBackground(193, 217, 197);
+	ofSetFrameRate(30);
+    ofSetVerticalSync(true);
 	
 	/* This is stuff you always need.*/
 	
@@ -34,7 +35,9 @@ void testApp::setup(){
 
 	/* Now you can put anything you would normally put in maximilian's 'setup' method in here. */
 	
-    sampleSize      = 200; 
+    sampleSize      = 70; 
+    threshold       = 5; 
+    int gridLen     = 1000; 
     
     heightHistory.assign(sampleSize, 0.0);
 	
@@ -51,20 +54,19 @@ void testApp::setup(){
      
 	ofSoundStreamSetup(0,1, this, sampleRate, initialBufferSize, 4);/* Call this last ! */
 	
-	ofSetVerticalSync(true);
     
     //grid stuff
-    grid.setLength(1000);
-    grid.setLengthDensity(sampleSize, .02);
+    grid.setLength(gridLen);
+    grid.setLengthDensity(sampleSize, gridLen/sampleSize);
     grid.setLocation(10, ofGetHeight()/2);
     
     grid.setupBox2d(0, 0);
     grid.setupGrid();
     
     //grid stuff
-    guide.setLength(1000);
-    guide.setLengthDensity(sampleSize, .02);
-    guide.setLocation(10, ofGetHeight() - ofGetHeight()/3);
+    guide.setLength(gridLen);
+    guide.setLengthDensity(sampleSize, gridLen/sampleSize);
+    guide.setLocation(10, ofGetHeight() - ofGetHeight()/4);
     
     guide.setupBox2d(0, 0);
     guide.setupGrid();
@@ -74,27 +76,34 @@ void testApp::setup(){
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
     
     beginButt.setup(); 
+    beginButt.setColor(ofColor(232, 58, 37));
     beginButt.setLabel("start/ stop", &whitneySemiBold22);
     begin = false; 
     
     skeletonButt.setup(); 
+    skeletonButt.setColor(ofColor(232, 58, 37));
     skeletonButt.setLabel("show grid", &whitneySemiBold22);
     
     resetButt.setup(); 
+    resetButt.setColor(ofColor(232, 58, 37));
     resetButt.setLabel("start again", &whitneySemiBold22);
     
     saveButt.setup(); 
+    saveButt.setColor(ofColor(232, 58, 37));
     saveButt.setLabel("save", &whitneySemiBold22);
     
     loadButt.setup(); 
+    loadButt.setColor(ofColor(232, 58, 37));
     loadButt.setLabel("load", &whitneySemiBold22);
     
     checkButt.setup(); 
+    checkButt.setColor(ofColor(232, 58, 37));
     checkButt.setLabel("check", &whitneySemiBold22);
     
     loadMe = false;
     checkMe = false; 
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
+    
 }
 
 //--------------------------------------------------------------
@@ -163,6 +172,8 @@ void testApp::draw(){
             grid.letsGo(i, grid.lenVertz);
             //set location to reset also
             theBins.clear(); 
+            //grid.clearGrid(); 
+            //grid.setupGrid(); //need to destroy old grid? 
         }
     }
     
@@ -183,7 +194,7 @@ void testApp::draw(){
         }
     }
 
-    ofSetColor(200, 170, 170);
+    ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
 }
 //--------------------------------------------------------------
@@ -241,11 +252,12 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     
     if (skeletonButt.isPressed()) {
         grid.seeGrid(); 
+        guide.seeGrid(); 
     }
     
     if (resetButt.isPressed()) {
         reset = true; 
-        //grid.setupGrid(); //need to destroy old grid? 
+
     }
     
     if (saveButt.isPressed()) {
@@ -361,10 +373,9 @@ bool testApp::checkSong() {
     
     for (int i = 0; i < longer-1; i++) {
         
-        if (savedBins[i] < (theBins[i] + 10) && savedBins[i] > (theBins[i] - 10)) {
+        if (savedBins[i] < (theBins[i] + threshold) && savedBins[i] > (theBins[i] - threshold)) {
             points ++; 
-        }
-        
+        }        
     }
     if (points > savedBins.size() - savedBins.size()/3) return true; 
 }
