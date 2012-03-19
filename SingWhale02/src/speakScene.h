@@ -12,12 +12,25 @@
 #pragma once
 
 #include "swBaseScene.h"
+#include "songBaseScene.h"
 #include "baseButton.h"
 
+#include "songSceneManager.h"
+
+//create the main scenes
+#include "songOne.h"
+#include "songTwo.h"
+#include "songThree.h"
+
+// menu
+#include "swMenu.h"
+
+/*
 enum {
     SPEAK_SCENE_FIRST,
     SPEAK_SCENE_TOTAL
 };
+ */
 
 class speakScene : public swBaseScene {
 public:
@@ -33,6 +46,15 @@ public:
     void touchUp(ofTouchEventArgs &touch);
     
     baseButton button;
+    
+    songBaseScene* songs[SONG_TOTAL_SCENES];
+    
+    //Managers
+    songSceneManager* songSM;
+    //swAssetManager* swAssets;
+    
+    //Menu
+    swMenu songMenu;
     
 private:
     

@@ -24,6 +24,11 @@
 		0AC14A7014FA00F3009FBAF4 /* swBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */; };
 		0AC14A7214FA0217009FBAF4 /* homeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A7114FA0217009FBAF4 /* homeScene.cpp */; };
 		0ADDCE8115170AD200B32146 /* callSceneName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE8015170AD200B32146 /* callSceneName.cpp */; };
+		0ADDCE83151716D900B32146 /* songSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE82151716D900B32146 /* songSceneManager.cpp */; };
+		0ADDCE881517A8CD00B32146 /* songOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE871517A8CD00B32146 /* songOne.cpp */; };
+		0ADDCE8E1517A91B00B32146 /* songThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE8D1517A91A00B32146 /* songThree.cpp */; };
+		0ADDCE911517A98800B32146 /* songTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE901517A98800B32146 /* songTwo.cpp */; };
+		0ADDCE951517EBA200B32146 /* songBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE941517EBA100B32146 /* songBaseScene.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -103,6 +108,16 @@
 		0AC14A7114FA0217009FBAF4 /* homeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homeScene.cpp; sourceTree = "<group>"; };
 		0ADDCE7F15170AC500B32146 /* callSceneName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = callSceneName.h; sourceTree = "<group>"; };
 		0ADDCE8015170AD200B32146 /* callSceneName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = callSceneName.cpp; sourceTree = "<group>"; };
+		0ADDCE82151716D900B32146 /* songSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songSceneManager.cpp; sourceTree = "<group>"; };
+		0ADDCE84151716E300B32146 /* songSceneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songSceneManager.h; sourceTree = "<group>"; };
+		0ADDCE861517A8C200B32146 /* songOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songOne.h; sourceTree = "<group>"; };
+		0ADDCE871517A8CD00B32146 /* songOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songOne.cpp; sourceTree = "<group>"; };
+		0ADDCE8D1517A91A00B32146 /* songThree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songThree.cpp; sourceTree = "<group>"; };
+		0ADDCE8F1517A95700B32146 /* songTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = songTwo.h; path = ../songTwo.h; sourceTree = "<group>"; };
+		0ADDCE901517A98800B32146 /* songTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songTwo.cpp; sourceTree = "<group>"; };
+		0ADDCE921517A99F00B32146 /* songThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songThree.h; sourceTree = "<group>"; };
+		0ADDCE931517EB9700B32146 /* songBaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songBaseScene.h; sourceTree = "<group>"; };
+		0ADDCE941517EBA100B32146 /* songBaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songBaseScene.cpp; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -290,16 +305,34 @@
 		0AC14A6C14FA0019009FBAF4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0ADDCE851517183B00B32146 /* songScenes */,
 				0AC14A6D14FA002F009FBAF4 /* homeScene.h */,
 				0AC14A7114FA0217009FBAF4 /* homeScene.cpp */,
-				0A59A0CF14FB4B0300A497DA /* callScene.h */,
 				0A59A0D214FB4C6D00A497DA /* speakScene.h */,
-				0A59A0D014FB4B4700A497DA /* callScene.cpp */,
 				0A59A0D314FB4CAF00A497DA /* speakScene.cpp */,
+				0A59A0CF14FB4B0300A497DA /* callScene.h */,
+				0A59A0D014FB4B4700A497DA /* callScene.cpp */,
 				0ADDCE7F15170AC500B32146 /* callSceneName.h */,
 				0ADDCE8015170AD200B32146 /* callSceneName.cpp */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		0ADDCE851517183B00B32146 /* songScenes */ = {
+			isa = PBXGroup;
+			children = (
+				0ADDCE82151716D900B32146 /* songSceneManager.cpp */,
+				0ADDCE84151716E300B32146 /* songSceneManager.h */,
+				0ADDCE861517A8C200B32146 /* songOne.h */,
+				0ADDCE871517A8CD00B32146 /* songOne.cpp */,
+				0ADDCE8F1517A95700B32146 /* songTwo.h */,
+				0ADDCE901517A98800B32146 /* songTwo.cpp */,
+				0ADDCE921517A99F00B32146 /* songThree.h */,
+				0ADDCE8D1517A91A00B32146 /* songThree.cpp */,
+				0ADDCE931517EB9700B32146 /* songBaseScene.h */,
+				0ADDCE941517EBA100B32146 /* songBaseScene.cpp */,
+			);
+			name = songScenes;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -527,6 +560,11 @@
 				0A59A0D114FB4B4700A497DA /* callScene.cpp in Sources */,
 				0A59A0D414FB4CAF00A497DA /* speakScene.cpp in Sources */,
 				0ADDCE8115170AD200B32146 /* callSceneName.cpp in Sources */,
+				0ADDCE83151716D900B32146 /* songSceneManager.cpp in Sources */,
+				0ADDCE881517A8CD00B32146 /* songOne.cpp in Sources */,
+				0ADDCE8E1517A91B00B32146 /* songThree.cpp in Sources */,
+				0ADDCE911517A98800B32146 /* songTwo.cpp in Sources */,
+				0ADDCE951517EBA200B32146 /* songBaseScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
