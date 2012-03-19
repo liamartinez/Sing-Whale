@@ -15,6 +15,7 @@
 enum scene {
     SCENE_HOME,
     SCENE_CALL,
+    SCENE_CALL_NAME,
     SCENE_SPEAK,
     SW_TOTAL_SCENES //Always keep this one in here and keep it last!
 };

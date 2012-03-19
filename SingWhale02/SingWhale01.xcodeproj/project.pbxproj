@@ -23,6 +23,7 @@
 		0AAB18CC14F9F6DE00F8209A /* swAssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18CB14F9F6DE00F8209A /* swAssetManager.cpp */; };
 		0AC14A7014FA00F3009FBAF4 /* swBaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */; };
 		0AC14A7214FA0217009FBAF4 /* homeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A7114FA0217009FBAF4 /* homeScene.cpp */; };
+		0ADDCE8115170AD200B32146 /* callSceneName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE8015170AD200B32146 /* callSceneName.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -100,6 +101,8 @@
 		0AC14A6E14FA00A2009FBAF4 /* swBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swBaseScene.h; sourceTree = "<group>"; };
 		0AC14A6F14FA00F3009FBAF4 /* swBaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swBaseScene.cpp; sourceTree = "<group>"; };
 		0AC14A7114FA0217009FBAF4 /* homeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homeScene.cpp; sourceTree = "<group>"; };
+		0ADDCE7F15170AC500B32146 /* callSceneName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = callSceneName.h; sourceTree = "<group>"; };
+		0ADDCE8015170AD200B32146 /* callSceneName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = callSceneName.cpp; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -293,6 +296,8 @@
 				0A59A0D214FB4C6D00A497DA /* speakScene.h */,
 				0A59A0D014FB4B4700A497DA /* callScene.cpp */,
 				0A59A0D314FB4CAF00A497DA /* speakScene.cpp */,
+				0ADDCE7F15170AC500B32146 /* callSceneName.h */,
+				0ADDCE8015170AD200B32146 /* callSceneName.cpp */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 				0AC14A7214FA0217009FBAF4 /* homeScene.cpp in Sources */,
 				0A59A0D114FB4B4700A497DA /* callScene.cpp in Sources */,
 				0A59A0D414FB4CAF00A497DA /* speakScene.cpp in Sources */,
+				0ADDCE8115170AD200B32146 /* callSceneName.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

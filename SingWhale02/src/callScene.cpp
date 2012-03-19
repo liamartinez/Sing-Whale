@@ -13,7 +13,8 @@
 //------------------------------------------------------------------
 void callScene::setup() {
     
-
+    hasReturned = false; 
+    
 }
 
 
@@ -36,11 +37,17 @@ void callScene::update() {
 //------------------------------------------------------------------
 void callScene::activate() {
     //start with the first scene when activated. 
-    mgr.setCurScene(CALL_SCENE_FIRST);
+    
+    if (hasReturned) {
+        mgr.setCurScene(CALL_SCENE_THIRD);
+    } else {
+        mgr.setCurScene(CALL_SCENE_FIRST);
+    }
     
     //load here, not setup
     callScreen.loadImage("images/wires-02.png");
     next.setLabel("NEXT", &swAssets->nevis22);
+    tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
     song = " -> SONG INTERFACE HERE <- " ; 
 
 
@@ -64,28 +71,36 @@ void callScene::draw() {
     
     ofSetColor(255, 255, 255);
     callScreen.draw(0,0);
-    next.draw(ofGetWidth() - 200, ofGetHeight()-100); 
-
-
+    
     string message = "";
+    next.draw(ofGetWidth() - 550, ofGetHeight()-100); 
+    
+
+    
+    
     switch(mgr.getCurScene()) {
         case CALL_SCENE_FIRST:
             message = "Hi! Before anything else, let's call Plulu"; 
+
             break;
             
         case CALL_SCENE_SECOND:
             message = "This is how you say her name."; 
+            tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
+            next.setLabel("CORRECT", &swAssets->nevis22);
             ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+
             break;
             
         case CALL_SCENE_THIRD:
             message = "Wheee! You did it! Here comes Plulu!"; 
+            next.setLabel("NEXT", &swAssets->nevis22);
             break;
     }
     
-
     ofSetColor(8, 44, 49);
     ofDrawBitmapString(message, 300, ofGetHeight()/3); 
+
     
 }
 
@@ -96,12 +111,14 @@ void callScene::draw() {
 
 //--------------------------------------------------------------
 void callScene::touchDown(ofTouchEventArgs &touch){
+    tryAgain.touchDown(touch);
     next.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void callScene::touchMoved(ofTouchEventArgs &touch){
+    tryAgain.touchMoved(touch);
     next.touchMoved(touch);
 }
 
@@ -118,5 +135,12 @@ void callScene::touchUp(ofTouchEventArgs &touch){
             mgr.setCurScene(mgr.getCurScene() + 1);      
         }
     }
+    
+    if(tryAgain.isPressed()) {
+        swSM->setCurScene(SCENE_CALL_NAME); 
+        hasReturned = true;
+    }
+
+    tryAgain.touchUp(touch);
     next.touchUp(touch);
 }

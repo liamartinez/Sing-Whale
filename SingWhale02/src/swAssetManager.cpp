@@ -33,7 +33,7 @@ swAssetManager::swAssetManager() {
 void swAssetManager::loadFonts() {
 	whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
     nevis22.loadFont("fonts/nevis.ttf", 22);
-    nevis22.loadFont("fonts/nevis.ttf", 48);
+    nevis48.loadFont("fonts/nevis.ttf", 48);
 }
 
 

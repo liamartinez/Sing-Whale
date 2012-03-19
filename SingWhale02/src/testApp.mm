@@ -26,6 +26,7 @@ void testApp::setup(){
         
         scenes[SCENE_HOME]      = new homeScene();
         scenes[SCENE_CALL]      = new callScene();
+        scenes[SCENE_CALL_NAME] = new callSceneName();
         scenes[SCENE_SPEAK]     = new speakScene();
         
         

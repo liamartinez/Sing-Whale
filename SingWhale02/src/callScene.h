@@ -33,22 +33,18 @@ public:
     void touchMoved(ofTouchEventArgs &touch);
     void touchUp(ofTouchEventArgs &touch);
     
-private:
-    
     ofImage callScreen; //lia - replace pictures here. 
     
     baseButton  next;
-    baseButton  correct;
     baseButton  tryAgain; 
     
-    ofVec2f textLoc;
-    
-    /*
-     ofImage homeScreen;
-     ofImage postit; 
-     */
-    
     string song; 
+    
+    
+private:
+    
+    bool    hasReturned; 
+
 };
 
 #endif
