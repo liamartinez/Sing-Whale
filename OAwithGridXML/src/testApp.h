@@ -53,7 +53,9 @@ public:
 	int fftSize;
     
     vector <float>  heightHistory; 
+    int     gridLen; 
     int     sampleSize; 
+    int     tightness; 
 
     float   numCounted;
     int     highest; 

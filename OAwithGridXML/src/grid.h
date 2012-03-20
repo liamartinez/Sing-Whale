@@ -17,7 +17,7 @@ class grid {
 public:
     grid (); 
     void                    setLocation (int locationX, int locationY); 
-    void                    setLength (float lenHorz_); 
+    void                    setLength (float lenHorz_);  
     void                    setLengthDensity (int numHorz_, float incHorz_); 
     void                    setupBox2d(int gravX, int gravY); 
     void                    setupGrid(); //put location arguments
@@ -25,7 +25,9 @@ public:
     void                    drawGrid(); 
     void                    seeGrid(); 
     void                    letsGo(int num, int height); 
+    void                    letsReset(int nowLocTop_);
     void                    clearGrid(); 
+    void                    attractReset(); 
     
     ofxBox2d						box2d;	
     
@@ -40,6 +42,7 @@ public:
     int                 numHorz, numVertz;
     float               incHorz, incVertz; 
     int                 lenHorz, lenVertz; 
+    float               damping, frequency; 
     int                 circleSize; 
     int                 anchorHeight; 
     

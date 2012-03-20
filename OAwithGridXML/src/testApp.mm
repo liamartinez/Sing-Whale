@@ -35,9 +35,10 @@ void testApp::setup(){
 
 	/* Now you can put anything you would normally put in maximilian's 'setup' method in here. */
 	
-    sampleSize      = 70; 
-    threshold       = 5; 
-    int gridLen     = 1000; 
+    sampleSize      = 70; //number of points in the line
+    tightness       = .002;
+    threshold       = 5; //make this an adjustable option
+    gridLen     = 1000; 
     
     heightHistory.assign(sampleSize, 0.0);
 	
@@ -57,7 +58,7 @@ void testApp::setup(){
     
     //grid stuff
     grid.setLength(gridLen);
-    grid.setLengthDensity(sampleSize, gridLen/sampleSize);
+    grid.setLengthDensity(sampleSize, tightness);
     grid.setLocation(10, ofGetHeight()/2);
     
     grid.setupBox2d(0, 0);
@@ -65,7 +66,7 @@ void testApp::setup(){
     
     //grid stuff
     guide.setLength(gridLen);
-    guide.setLengthDensity(sampleSize, gridLen/sampleSize);
+    guide.setLengthDensity(sampleSize, tightness);
     guide.setLocation(10, ofGetHeight() - ofGetHeight()/4);
     
     guide.setupBox2d(0, 0);
@@ -102,6 +103,7 @@ void testApp::setup(){
     
     loadMe = false;
     checkMe = false; 
+    reset   = false; 
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
     
 }
@@ -170,7 +172,10 @@ void testApp::draw(){
         begin = false; 
         for (int i = 0; i < sampleSize-1; i++){
             grid.letsGo(i, grid.lenVertz);
+            //attractors
+            //grid.attractReset(); 
             //set location to reset also
+            grid.letsReset(i); 
             theBins.clear(); 
             //grid.clearGrid(); 
             //grid.setupGrid(); //need to destroy old grid? 

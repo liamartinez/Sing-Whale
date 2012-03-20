@@ -12,15 +12,18 @@
 
 grid::grid() {
     
-    incVertz    = .2;   //spaces between joints
-    numVertz    = 3;   //number of circles
-    lenVertz    = 30;   //total length
+    incVertz        = .2;   //spaces between joints
+    numVertz        = 3;   //number of circles
+    lenVertz        = 30;   //total length
     
-    circleSize  = 1; 
+    circleSize      = 1; 
     
-    numNote = 1; 
-    skeleton = true; 
-    anchorHeight = 200; 
+    numNote         = 1; 
+    skeleton        = true; 
+    anchorHeight    = 200; 
+    
+    damping         = .1;
+    frequency       = 1; 
 }
 
 void grid::setLocation(int locationX, int locationY){
@@ -34,7 +37,6 @@ void grid::setLength(float lenHorz_){
     lenHorz = lenHorz_;
     //lenHorz     = 820;  //total length
 }
-
 
 void grid::setLengthDensity(int numHorz_, float incHorz_){
     numHorz = numHorz_;
@@ -65,13 +67,13 @@ void grid::setupGrid() {
     for (int i=0; i<numHorz-1; i++) {
         
 		ofxBox2dCircle topCircle;
-		topCircle.setPhysics(30, 0.003, 5);//density, bounce, friction
+		topCircle.setPhysics(100, 0, 5);//density, bounce, friction
 		topCircle.setup(box2d.getWorld(), startLoc.x + ((lenHorz/numHorz)* (i+1)), startLoc.y, 2); //move this by one point so it doesn't get knotted up
         topCircle.setFixedRotation(false);
 		topCircles.push_back(topCircle);
         
         ofxBox2dCircle bottomCircle;
-		bottomCircle.setPhysics(30, 0.003, 5);//density, bounce, friction
+		bottomCircle.setPhysics(100, 0, 5);//density, bounce, friction
 		bottomCircle.setup(box2d.getWorld(), startLocBot.x+((lenHorz/numHorz)* i), startLocBot.y, 2);
         bottomCircle.setFixedRotation(false);
 		bottomCircles.push_back(bottomCircle);
@@ -86,23 +88,23 @@ void grid::setupGrid() {
         ofxBox2dJoint connectJointBot; 
         
         if (i == 0 ) {
-            topJoint.setup (box2d.getWorld(), startAnchor.body, topCircles[i].body); 
-            connectJointTop.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body);
+            topJoint.setup (box2d.getWorld(), startAnchor.body, topCircles[i].body, frequency, damping, false); 
+            connectJointTop.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
             
-            bottomJoint.setup (box2d.getWorld(), startAnchorBot.body, bottomCircles[i].body); 
-            connectJointBot.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body);
+            bottomJoint.setup (box2d.getWorld(), startAnchorBot.body, bottomCircles[i].body,frequency, damping, false); 
+            connectJointBot.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
         }
         
         else if (i == topCircles.size()-1) {
-            topJoint.setup(box2d.getWorld(), topCircles[i].body, endAnchor.body);
+            topJoint.setup(box2d.getWorld(), topCircles[i].body, endAnchor.body, frequency, damping, false);
             
-            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, endAnchorBot.body);
+            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, endAnchorBot.body,frequency, damping, false);
         }
         
         else {
-            topJoint.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body);
+            topJoint.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
             
-            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body);
+            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
             }
         
         //the height joints will grow later depending on octave analysis
@@ -273,6 +275,36 @@ void grid::letsGo(int num, int height){
     heightJoints[numNote].setLength(height);
 }
 
+void grid::letsReset(int nowLocTop_){
+    /*
+    int nowLoc = nowLocTop_;
+    bool isDone = false; 
+    ofVec2f nowLocTop; 
+    nowLocTop.y = topCircles[nowLoc].getPosition().y; 
+    
+    ofVec2f origTop;
+    ofVec2f origBot;
+    
+    origTop.set(startLoc.x + ((lenHorz/numHorz)* (numNote+1)), startLoc.y);
+    origBot.set(startLocBot.x+((lenHorz/numHorz)* numNote), startLocBot.y);
+
+    for (int i = nowLocTop.y; i < origTop.y; i++) {
+        //topCircles[i].setPosition(origTop.x, i);
+        if (i == origTop.y-1) isDone = true; 
+        cout << i << endl; 
+        cout << isDone << endl;
+    }
+   
+    if (isDone) {
+      isDone = false; 
+    
+     */
+    topCircles[numNote].setPosition(startLoc.x + ((lenHorz/numHorz)* (numNote+1)), startLoc.y);
+    bottomCircles[numNote].setPosition(startLocBot.x+((lenHorz/numHorz)* numNote), startLocBot.y);
+    //}
+    
+}
+
 void grid::clearGrid(){
     topCircles.clear();
     bottomCircles.clear(); 
@@ -288,7 +320,26 @@ void grid::clearGrid(){
 }
 
 
+void grid::attractReset() {
 
+    
+	for(int i=0; i<topCircles.size(); i++) {
+
+        ofVec2f pointsAbove; 
+        pointsAbove.x =  topCircles[i].getPosition().x;
+        pointsAbove.y = startLoc.y - 100;
+        
+        ofVec2f pointsBelow; 
+        pointsBelow.x =  topCircles[i].getPosition().x;
+        pointsBelow.y = startLoc.y +100;
+        
+        topCircles[i].addAttractionPoint(pointsAbove, .3);
+        bottomCircles[i].addAttractionPoint(pointsBelow, .3);
+		
+		
+	}
+
+}
 
 
 
