@@ -292,8 +292,6 @@
 			children = (
 				0AAB18C414F9EDF500F8209A /* swSceneManager.h */,
 				0AAB18C514F9EE1300F8209A /* swSceneManager.cpp */,
-				0AAB18C714F9F0A600F8209A /* swMenu.h */,
-				0AAB18C814F9F2AF00F8209A /* swMenu.cpp */,
 				0AAB18CA14F9F67A00F8209A /* swAssetManager.h */,
 				0AAB18CB14F9F6DE00F8209A /* swAssetManager.cpp */,
 				0AC14A6E14FA00A2009FBAF4 /* swBaseScene.h */,
@@ -321,6 +319,8 @@
 		0ADDCE851517183B00B32146 /* songScenes */ = {
 			isa = PBXGroup;
 			children = (
+				0AAB18C714F9F0A600F8209A /* swMenu.h */,
+				0AAB18C814F9F2AF00F8209A /* swMenu.cpp */,
 				0ADDCE82151716D900B32146 /* songSceneManager.cpp */,
 				0ADDCE84151716E300B32146 /* songSceneManager.h */,
 				0ADDCE861517A8C200B32146 /* songOne.h */,

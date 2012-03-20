@@ -13,7 +13,7 @@
 #include "ofMain.h"
 #include "baseButton.h"
 #include "swAssetManager.h"
-#include "swSceneManager.h"
+#include "songSceneManager.h"
 #include "Tweenzor.h"
 
 enum buttonTypes { //fill this with the different words he can say. 
@@ -46,7 +46,7 @@ public:
     baseButton buttons[MENU_TOTAL];
     
     swAssetManager* swAssets;
-    swSceneManager* swSM;
+    songSceneManager* songSM;
     
     bool touchMenuRes; 
     

@@ -13,9 +13,10 @@
 
 #include "swBaseScene.h"
 #include "songBaseScene.h"
-#include "baseButton.h"
 
 #include "songSceneManager.h"
+
+#include "ofxTweenzor.h"
 
 //create the main scenes
 #include "songOne.h"
@@ -53,12 +54,14 @@ public:
     songSceneManager* songSM;
     //swAssetManager* swAssets;
     
+    
     //Menu
     swMenu songMenu;
+     
     
 private:
     
-    ofImage speakScreen; //lia - replace pictures here. 
+    //ofImage speakScreen; //lia - replace pictures here. 
     /*
      ofImage homeScreen;
      ofImage postit; 

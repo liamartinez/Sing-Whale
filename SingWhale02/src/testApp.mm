@@ -40,18 +40,12 @@ void testApp::setup(){
     } else {
         cout << "Could not load the data!" << endl;
     }
-    
-    
-    
-    //Setup Menu
-    //menu.setup();
-    //menu.show();
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-    
-   // Tweenzor::update();
+
     if(swSM->getCurSceneChanged()) {
         for(int i=0; i<SW_TOTAL_SCENES; i++) {
             scenes[i]->deactivate();
@@ -61,8 +55,7 @@ void testApp::update(){
     }
     
     scenes[swSM->getCurScene()]->update();
-    
-    menu.update();
+
      
 
 }
@@ -73,9 +66,7 @@ void testApp::draw(){
     if(!swSM->getCurSceneChanged(false)) {
         scenes[swSM->getCurScene()]->draw();
     }
-    
-    //menu.draw();
-     
+         
 }
 
 //--------------------------------------------------------------
@@ -87,8 +78,7 @@ void testApp::exit(){
 void testApp::touchDown(ofTouchEventArgs &touch){
     
     scenes[swSM->getCurScene()]->touchDown(touch);
-    
-    menu.touchDown(touch);
+
      
 }
 
@@ -96,25 +86,14 @@ void testApp::touchDown(ofTouchEventArgs &touch){
 void testApp::touchMoved(ofTouchEventArgs &touch){
     
     scenes[swSM->getCurScene()]->touchMoved(touch);
-    
-    menu.touchMoved(touch);
-     
+
 }
 
 //--------------------------------------------------------------
 void testApp::touchUp(ofTouchEventArgs &touch){
     
     scenes[swSM->getCurScene()]->touchUp(touch);
-    menu.touchUp(touch);
-    
-    if(menu.touchMenuRes){
-        
-        cout<<"touch menu res true"<<endl;
-        scenes[swSM->getCurScene()]->activate();
-        
-    }
-    menu.touchMenuRes = false;
-     
+
 }
 
 //--------------------------------------------------------------

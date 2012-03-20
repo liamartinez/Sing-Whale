@@ -4,8 +4,6 @@
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
 
-#include "ofxTweenzor.h"
-
 #include "swSceneManager.h"
 
 //create the main scenes
@@ -13,11 +11,6 @@
 #include "callScene.h"
 #include "callSceneName.h"
 #include "speakScene.h"
-
-// menu
-#include "swMenu.h"
-
-
 
 
 class testApp : public ofxiPhoneApp {
@@ -45,8 +38,6 @@ public:
     swSceneManager* swSM;
     swAssetManager* swAssets;
     
-    //Menu
-    swMenu menu;
 
 };
 

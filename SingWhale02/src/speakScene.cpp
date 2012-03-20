@@ -31,14 +31,19 @@ void speakScene::setup() {
             cout << "View not intitialized! Please make sure every scene is created above!" << endl;
         }
     
+    Tweenzor::init(); 
     
+    songMenu.setup();
+    songMenu.show(); 
 }
 
 
 
 //------------------------------------------------------------------
 void speakScene::update() {
-           // Tweenzor::update();
+    
+    Tweenzor::update();
+    
     if(songSM->getCurSceneChanged()) {
         for(int i=0; i<SONG_TOTAL_SCENES; i++) {
             songs[i]->deactivate();
@@ -49,7 +54,8 @@ void speakScene::update() {
     
     songs[songSM->getCurScene()]->update();
     
-    //menu.update();
+    songMenu.update();
+    
 }
 
 //------------------------------------------------------------------
@@ -62,8 +68,10 @@ void speakScene::activate() {
     speakScreen.loadImage("images/wires-03.png");
     button.setImage(&speakScreen,&speakScreen);
     
+         */
+    
     cout << "Activate Speak" << endl;
-    */
+
     
 }
 
@@ -71,20 +79,19 @@ void speakScene::activate() {
 void speakScene::deactivate() {
     cout << "Deactivate Speak" << endl;
     
-    speakScreen.clear();
+    //speakScreen.clear();
     
 }
 
 
 //------------------------------------------------------------------
 void speakScene::draw() {
-    cout << "Drawing Speak screen" << endl;
     
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();
     }
     
-    //menu.draw();
+    songMenu.draw(); 
     
     /*
     drawGrid();
@@ -110,10 +117,6 @@ void speakScene::draw() {
     
 }
 
-
-
-
-
 //--------------------------------------------------------------
 //Event Listeners
 
@@ -123,14 +126,15 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     
     songs[songSM->getCurScene()]->touchDown(touch);
     
-    //menu.touchDown(touch);
+    songMenu.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void speakScene::touchMoved(ofTouchEventArgs &touch){
     //button.touchMoved(touch);
-        songs[songSM->getCurScene()]->touchDown(touch);
+    songs[songSM->getCurScene()]->touchDown(touch);
+    songMenu.touchMoved(touch);
 }
 
 
@@ -138,26 +142,29 @@ void speakScene::touchMoved(ofTouchEventArgs &touch){
 void speakScene::touchUp(ofTouchEventArgs &touch){
     //Switch Scenes
     /*
-    if(button.isPressed()) {
-        if(mgr.getCurScene() == SPEAK_SCENE_TOTAL-1) {
-            swSM->setCurScene(SCENE_HOME);
-        } else  {
-            mgr.setCurScene(mgr.getCurScene() + 1);      
-        }
-    }
-    button.touchUp(touch);
+     if(button.isPressed()) {
+     if(mgr.getCurScene() == SPEAK_SCENE_TOTAL-1) {
+     swSM->setCurScene(SCENE_HOME);
+     } else  {
+     mgr.setCurScene(mgr.getCurScene() + 1);      
+     }
+     }
+     button.touchUp(touch);
      */
     
     songs[songSM->getCurScene()]->touchUp(touch);
-    //menu.touchUp(touch);
+    songMenu.touchUp(touch);
     
-    /*
-    if(menu.touchMenuRes){
-        
-        cout<<"touch menu res true"<<endl;
-        scenes[swSM->getCurScene()]->activate();
-        
-    }
-    menu.touchMenuRes = false;
-     */
+    
+     if(songMenu.touchMenuRes){
+     
+     cout<<"touch menu res true"<<endl;
+     songs[songSM->getCurScene()]->activate();
+     
+     }
+     songMenu.touchMenuRes = false;
+     
 }
+
+
+

@@ -56,6 +56,7 @@ void songThree::draw() {
     
     
     drawGrid();
+    ofDrawBitmapString("SONG THREE", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
     
     string sceneName = "";

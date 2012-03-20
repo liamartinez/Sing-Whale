@@ -55,7 +55,7 @@ void songOne::draw() {
     
     
     drawGrid();
-    
+    ofDrawBitmapString("SONG ONE", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
     string sceneName = "";
     switch(mgr.getCurScene()) {
@@ -66,7 +66,7 @@ void songOne::draw() {
             sceneName = "First Sub Scene!";
             
             ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0); 
+            //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();
             
             break;

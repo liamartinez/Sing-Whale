@@ -15,29 +15,45 @@ songBaseScene::songBaseScene() {
     this->songSM = songSceneManager::getInstance(); //lia - find out what this means
     this->swAssets = swAssetManager::getInstance();
     
+    speakScreen.loadImage("images/wires-03.png");
     sceneName = "Scene Name not Set!";
+
 }
 
 
 //------------------------------------------------------------------
 void songBaseScene::setup() {
+    
+    //setup stuff goes here. Do I need an "activate"? 
+    
 }
 
 
 
 //------------------------------------------------------------------
 void songBaseScene::update() {
+
+
 }
 
 
 
 //------------------------------------------------------------------
 void songBaseScene::draw() {
+
 }
 
 
 //------------------------------------------------------------------
 void songBaseScene::drawGrid() {  //dont need this, but keep for now just in case. 
+    
+    ofSetColor(255, 255, 255); 
+    ofEnableAlphaBlending();
+    speakScreen.draw (0,0); 
+    ofDisableAlphaBlending();
+    ofDrawBitmapString("SPEAK SCENE", ofGetWidth()/2, ofGetHeight()/2);
+    
+    /*
     int gridWidth = ofGetWidth() + MNH_GRID_CELL_SIZE; // lia - where is it getting these values?
     int gridHeight = ofGetHeight() + MNH_GRID_CELL_SIZE;
     
@@ -57,6 +73,6 @@ void songBaseScene::drawGrid() {  //dont need this, but keep for now just in cas
     }
     
     glPopMatrix();
+     */ 
 }
-
 

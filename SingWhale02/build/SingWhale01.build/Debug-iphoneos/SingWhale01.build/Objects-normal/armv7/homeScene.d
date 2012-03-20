@@ -1,9 +1,9 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.cpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/homeScene.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swBaseScene.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swSceneManager.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/src/homeScene.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/src/homeScene.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/src/swBaseScene.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/src/swSceneManager.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManager2.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \
@@ -111,9 +111,9 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/src/swAssetManager.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/../../../addons/ofxVtron/ofxSceneManager/src/ofxSceneManagerScene.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/src/swAssetManager.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
   ../../../libs/freetype/include/ft2build.h \
   ../../../libs/freetype/include/freetype2/freetype/config/ftheader.h \
   ../../../libs/freetype/include/freetype2/freetype/freetype.h \
@@ -127,4 +127,4 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale01/../../../addons/ofxVtron/ofxBaseButton/baseButton.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale02/../../../addons/ofxVtron/ofxBaseButton/baseButton.h

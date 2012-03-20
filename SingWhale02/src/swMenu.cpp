@@ -14,7 +14,7 @@
 void swMenu::setup() {
     //Get Managers
     swAssets   = swAssetManager::getInstance();
-    swSM       = swSceneManager::getInstance();
+    songSM       = songSceneManager::getInstance();
     
     touchMenuRes = false; 
     
@@ -30,13 +30,13 @@ void swMenu::setup() {
     
     //Menu BG
     disableBG();
-    bgImage.loadImage("images/menu/menuBG.png");        //load menu background
+    bgImage.loadImage("images/menuBG.png");        //load menu background
     
     
     //Set Labels
-    labels[MENU_ONE]        = "One";           //put text on the menu
-    labels[MENU_TWO]        = "Two";       //put text on the menu
-    labels[MENU_THREE]      = "Three";       //put text on the menu
+    labels[MENU_ONE]        = "ONE";           //put text on the menu
+    labels[MENU_TWO]        = "TWO";       //put text on the menu
+    labels[MENU_THREE]      = "THREE";       //put text on the menu
     
     //Create Buttons
     
@@ -47,7 +47,7 @@ void swMenu::setup() {
     bgOnColor.a = 50;                                   //draw 50% of black when touching
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
-        buttons[i].setLabel(labels[i], &swAssets->whitneySemiBold22);
+        buttons[i].setLabel(labels[i], &swAssets->nevis22);
         buttons[i].setSize(MENU_BTN_W, rect.height);
         buttons[i].setColor(bgOffColor, bgOnColor);
         disableBG();
@@ -145,22 +145,22 @@ void swMenu::touchMoved(ofTouchEventArgs &touch){
 void swMenu::touchUp(ofTouchEventArgs &touch){
     
     //lia - replace these with real menu options
-    /*
+    
     if(bShowing) {
         for(int i=0; i<MENU_TOTAL; i++) {
             if(buttons[i].isPressed()) {
                 switch (i) {
-                    case MNH_BTM_MENU_HOME:
-                        mnhSM->setCurScene(MNH_SCENE_HOME);
+                    case  MENU_ONE:
+                        songSM->setCurScene(SONG_ONE);
                         touchMenuRes = true; 
                         break;
-                    case MNH_BTM_MENU_RESEARCH:
-                        mnhSM->setCurScene(MNH_SCENE_RESEARCH);
+                    case  MENU_TWO:
+                        songSM->setCurScene(SONG_TWO);
                         touchMenuRes = true; 
                         //                        cout<<"press Resouce"<<endl;
                         break;
-                    case MNH_BTM_MENU_ACTIVITY:
-                        mnhSM->setCurScene(MNH_SCENE_ACTIVITY);
+                    case  MENU_THREE:
+                        songSM->setCurScene(SONG_THREE);
                         touchMenuRes = true; 
                         break;
                     default:
@@ -177,6 +177,6 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
             buttons[i].touchUp(touch);
         }
     }
-     */
+     
      
 }

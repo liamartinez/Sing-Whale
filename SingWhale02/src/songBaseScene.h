@@ -13,6 +13,7 @@
 #include "songSceneManager.h"
 #include "swAssetManager.h"
 #include "ofxSceneManagerScene.h"
+//#include "baseButton.h"
 
 class songSceneManager; //why is there a class declared here? 
 
@@ -29,8 +30,13 @@ public:
     swAssetManager* swAssets;
     
     ofxSceneManager2 mgr;
-protected:
     void drawGrid();
+    ofImage speakScreen;
+    
+    bool    drawSongMenu; 
+    
+protected:
+    
 };
 
 #endif
