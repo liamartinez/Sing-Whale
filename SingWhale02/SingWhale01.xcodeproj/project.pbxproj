@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0A59A0D114FB4B4700A497DA /* callScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D014FB4B4700A497DA /* callScene.cpp */; };
 		0A59A0D414FB4CAF00A497DA /* speakScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D314FB4CAF00A497DA /* speakScene.cpp */; };
+		0A8B03A515194E280065D05B /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0A8B039C15194E280065D05B /* install.xml */; };
+		0A8B03A615194E280065D05B /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B039E15194E280065D05B /* tinyxml.cpp */; };
+		0A8B03A715194E280065D05B /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B03A015194E280065D05B /* tinyxmlerror.cpp */; };
+		0A8B03A815194E280065D05B /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B03A115194E280065D05B /* tinyxmlparser.cpp */; };
+		0A8B03A915194E280065D05B /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B03A315194E280065D05B /* ofxXmlSettings.cpp */; };
 		0AAB18A214F9ECA900F8209A /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB189B14F9ECA900F8209A /* Tween.cpp */; };
 		0AAB18A314F9ECA900F8209A /* Tweenzor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A014F9ECA900F8209A /* Tweenzor.cpp */; };
 		0AAB18BC14F9ED9100F8209A /* baseButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A614F9ED9100F8209A /* baseButton.cpp */; };
@@ -74,6 +79,13 @@
 		0A59A0D014FB4B4700A497DA /* callScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = callScene.cpp; sourceTree = "<group>"; };
 		0A59A0D214FB4C6D00A497DA /* speakScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speakScene.h; sourceTree = "<group>"; };
 		0A59A0D314FB4CAF00A497DA /* speakScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speakScene.cpp; sourceTree = "<group>"; };
+		0A8B039C15194E280065D05B /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		0A8B039E15194E280065D05B /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		0A8B039F15194E280065D05B /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		0A8B03A015194E280065D05B /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		0A8B03A115194E280065D05B /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		0A8B03A315194E280065D05B /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		0A8B03A415194E280065D05B /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 		0AAB189A14F9ECA900F8209A /* ofxTweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweenzor.h; sourceTree = "<group>"; };
 		0AAB189B14F9ECA900F8209A /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tween.cpp; sourceTree = "<group>"; };
 		0AAB189C14F9ECA900F8209A /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
@@ -169,6 +181,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A8B039B15194E280065D05B /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				0A8B039C15194E280065D05B /* install.xml */,
+				0A8B039D15194E280065D05B /* libs */,
+				0A8B03A215194E280065D05B /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		0A8B039D15194E280065D05B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				0A8B039E15194E280065D05B /* tinyxml.cpp */,
+				0A8B039F15194E280065D05B /* tinyxml.h */,
+				0A8B03A015194E280065D05B /* tinyxmlerror.cpp */,
+				0A8B03A115194E280065D05B /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		0A8B03A215194E280065D05B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0A8B03A315194E280065D05B /* ofxXmlSettings.cpp */,
+				0A8B03A415194E280065D05B /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		0AAB189814F9ECA900F8209A /* ofxTweenzor */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,6 +430,7 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				0A8B039B15194E280065D05B /* ofxXmlSettings */,
 				0AAB18A414F9ED9100F8209A /* ofxVtron */,
 				0AAB189814F9ECA900F8209A /* ofxTweenzor */,
 			);
@@ -516,6 +560,7 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				0AAB18BD14F9ED9100F8209A /* README in Resources */,
+				0A8B03A515194E280065D05B /* install.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +610,10 @@
 				0ADDCE8E1517A91B00B32146 /* songThree.cpp in Sources */,
 				0ADDCE911517A98800B32146 /* songTwo.cpp in Sources */,
 				0ADDCE951517EBA200B32146 /* songBaseScene.cpp in Sources */,
+				0A8B03A615194E280065D05B /* tinyxml.cpp in Sources */,
+				0A8B03A715194E280065D05B /* tinyxmlerror.cpp in Sources */,
+				0A8B03A815194E280065D05B /* tinyxmlparser.cpp in Sources */,
+				0A8B03A915194E280065D05B /* ofxXmlSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -231,6 +231,8 @@ void testApp::audioReceived 	(float * input, int bufferSize, int nChannels){
         }  
     }
 	bufferCounter++; //lia:what is bufferCounter for?
+    
+
 }
 
 //--------------------------------------------------------------
