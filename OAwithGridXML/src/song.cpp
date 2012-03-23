@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 liamartinez.com. All rights reserved.
 //
 
+#include "ofMain.h"
 #include <iostream>
 #include "song.h"
 

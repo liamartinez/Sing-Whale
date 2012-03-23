@@ -185,8 +185,8 @@ void testApp::draw(){
         loadMe = false; 
         int whichSong = 0; 
 
-        for (int i = 0; i < songCount[whichSong].size()-1; i++){
-            guide.letsGo(i, songCount[whichSong][i]);
+        for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
+            guide.letsGo(i, songs[whichSong].savedBins[i]);
         }
         //savedBins.clear(); //then clear it 
          
@@ -348,6 +348,8 @@ void testApp::loadSong() {
     ofxXmlSettings gotSongs;
     ofxXmlSettings songList; 
     
+    song tempSong; 
+    
     if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
         
         songList.pushTag("songList");
@@ -357,8 +359,9 @@ void testApp::loadSong() {
         
         for(int i = 0; i < numberOfSongs; i++){
         
-            int gotSong = songList.getAttribute("songs", "song",0);
-            cout << "got song" << gotSong << endl; 
+            int songID = songList.getAttribute("songs", "song",0);
+            
+            tempSong.songNum = songID; 
             
             songList.pushTag("songs",i);
             int numberOfSavedPoints = songList.getNumTags("pos");
@@ -369,11 +372,13 @@ void testApp::loadSong() {
                 
                 int savedBin;
                 savedBin = songList.getValue("pos", 0, i);
-                savedBins.push_back(savedBin);
+                tempSong.savedBins.push_back(savedBin);
+                //savedBins.push_back(savedBin);
            
             }
             
-            songCount.push_back(savedBins);
+            songs.push_back(tempSong);
+            //songCount.push_back(savedBins);
             //cout << i << " " << songCount[i].size() << endl; 
             cout << "songcount size" << songCount.size() << endl; 
 
