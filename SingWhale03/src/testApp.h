@@ -44,6 +44,9 @@ public:
     swSceneManager* swSM;
     swAssetManager* swAssets;
     
+
+    //int counterVariable; 
+    
 };
 
 

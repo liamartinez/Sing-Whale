@@ -62,6 +62,7 @@
 		0A5425B715142182001C6434 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0A5425B215142182001C6434 /* README */; };
 		0A5425B815142182001C6434 /* ofxFreeType2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A5425B415142182001C6434 /* ofxFreeType2.cpp */; };
 		0A740620150477ED00C0A52F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74061F150477ED00C0A52F /* Default.png */; };
+		0A8B0442151D1DF10065D05B /* song.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B0441151D1DF10065D05B /* song.cpp */; };
 		0A911EB11514630900FB54E4 /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0A911EA81514630900FB54E4 /* install.xml */; };
 		0A911EB21514630900FB54E4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A911EAA1514630900FB54E4 /* tinyxml.cpp */; };
 		0A911EB31514630900FB54E4 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A911EAC1514630900FB54E4 /* tinyxmlerror.cpp */; };
@@ -224,6 +225,8 @@
 		0A5425B415142182001C6434 /* ofxFreeType2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFreeType2.cpp; sourceTree = "<group>"; };
 		0A5425B515142182001C6434 /* ofxFreeType2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFreeType2.h; sourceTree = "<group>"; };
 		0A74061F150477ED00C0A52F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0A8B043F151D1DE50065D05B /* song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = song.h; sourceTree = "<group>"; };
+		0A8B0441151D1DF10065D05B /* song.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = song.cpp; sourceTree = "<group>"; };
 		0A911EA81514630900FB54E4 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		0A911EAA1514630900FB54E4 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
 		0A911EAB1514630900FB54E4 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
@@ -679,6 +682,8 @@
 				E4D8936C11527B74007E1F53 /* testApp.h */,
 				0A542507151299FA001C6434 /* grid.h */,
 				0A5425A31512AF05001C6434 /* grid.mm */,
+				0A8B043F151D1DE50065D05B /* song.h */,
+				0A8B0441151D1DF10065D05B /* song.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -842,6 +847,7 @@
 				0A911EB31514630900FB54E4 /* tinyxmlerror.cpp in Sources */,
 				0A911EB41514630900FB54E4 /* tinyxmlparser.cpp in Sources */,
 				0A911EB51514630900FB54E4 /* ofxXmlSettings.cpp in Sources */,
+				0A8B0442151D1DF10065D05B /* song.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

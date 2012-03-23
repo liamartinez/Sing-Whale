@@ -106,6 +106,8 @@ void testApp::setup(){
     reset   = false; 
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
     
+    numSong = 1; 
+    
 }
 
 //--------------------------------------------------------------
@@ -172,24 +174,25 @@ void testApp::draw(){
         begin = false; 
         for (int i = 0; i < sampleSize-1; i++){
             grid.letsGo(i, grid.lenVertz);
-            //attractors
-            //grid.attractReset(); 
-            //set location to reset also
+
             grid.letsReset(i); 
             theBins.clear(); 
-            //grid.clearGrid(); 
-            //grid.setupGrid(); //need to destroy old grid? 
+
         }
     }
     
     if (loadMe) {
         loadMe = false; 
-        for (int i = 0; i < savedBins.size()-1; i++){
-            guide.letsGo(i, savedBins[i]);
+        int whichSong = 0; 
+
+        for (int i = 0; i < songCount[whichSong].size()-1; i++){
+            guide.letsGo(i, songCount[whichSong][i]);
         }
-        savedBins.clear(); 
+        //savedBins.clear(); //then clear it 
+         
     }
     
+    /*
     if (checkMe) {
         checkMe = false; 
         if (checkSong()) {
@@ -198,7 +201,7 @@ void testApp::draw(){
             message = "TRY AGAIN";
         }
     }
-
+     */
     ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
 }
@@ -268,7 +271,8 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     }
     
     if (saveButt.isPressed()) {
-        saveSong(); 
+        numSong ++; 
+        saveSong(numSong); 
     }
     
     if (loadButt.isPressed()) {
@@ -318,42 +322,64 @@ void testApp::touchCancelled(ofTouchEventArgs& args){
 }
 
 //--------------------------------------------------------------
-void testApp::saveSong() {
+void testApp::saveSong(int numSong_) {
+    
+    //ofxXmlSettings songs;
     ofxXmlSettings positions;
-    positions.addTag("positions");
-    positions.pushTag("positions");
-    //points is a vector<ofPoint> that we want to save to a file
+    
+    positions.addTag("songList");
+    positions.pushTag("songList");
+    positions.addTag("songs");
+    positions.addAttribute("songs", "song", numSong_,0);
+    positions.pushTag("songs");
+ 
     for(int i = 0; i < theBins.size(); i++){
-        //each position tag represents one point
-        //positions.addTag("position");
-        //positions.pushTag("position");
-        //so set the three values in the file
         positions.addValue("pos", theBins[i]);
-        //positions.popTag();//pop position
     }
+    
     positions.popTag(); //pop position
-    positions.popTag(); //pop settings
+    positions.popTag(); 
     positions.saveFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml");
     cout << "positions.xml saved to app documents folder" << endl; 
 }
 
 //--------------------------------------------------------------
 void testApp::loadSong() {
-    ofxXmlSettings settings;
-    if(settings.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
-        settings.pushTag("positions");
-        int numberOfSavedPoints = settings.getNumTags("pos");
-        cout << numberOfSavedPoints << " total" << endl; 
-        for(int i = 0; i < numberOfSavedPoints; i++){
-            //settings.pushTag("positions", i);
-            
-            int savedBin;
-            savedBin = settings.getValue("pos", 0, i);
-            savedBins.push_back(savedBin);
-            //settings.popTag();
-        }
+    ofxXmlSettings gotSongs;
+    ofxXmlSettings songList; 
+    
+    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
         
-        settings.popTag(); //pop position
+        songList.pushTag("songList");
+        numberOfSongs = songList.getNumTags("songs");
+        cout << "total" << numberOfSongs << endl; 
+        //songCount.resize(numberOfSongs);
+        
+        for(int i = 0; i < numberOfSongs; i++){
+        
+            int gotSong = songList.getAttribute("songs", "song",0);
+            cout << "got song" << gotSong << endl; 
+            
+            songList.pushTag("songs",i);
+            int numberOfSavedPoints = songList.getNumTags("pos");
+            
+            vector <int> savedBins; 
+            
+            for(int i = 0; i < numberOfSavedPoints; i++){
+                
+                int savedBin;
+                savedBin = songList.getValue("pos", 0, i);
+                savedBins.push_back(savedBin);
+           
+            }
+            
+            songCount.push_back(savedBins);
+            //cout << i << " " << songCount[i].size() << endl; 
+            cout << "songcount size" << songCount.size() << endl; 
+
+        }
+        songList.popTag(); //pop position
+        songList.popTag(); 
         
         loadMe = true; 
     }
@@ -363,7 +389,7 @@ void testApp::loadSong() {
     
 }
 
-
+/*
 //--------------------------------------------------------------
 bool testApp::checkSong() {
     
@@ -388,7 +414,7 @@ bool testApp::checkSong() {
 }
 
 
-
+*/
 
 
 

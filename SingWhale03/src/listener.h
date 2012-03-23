@@ -11,10 +11,10 @@
 
 #include "ofMain.h"
 
-class testApp; 
+//class testApp; 
 
 class listener {
-    listener(); 
+   // listener(); 
     listener(testApp app); 
     void method();
 

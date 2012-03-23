@@ -44,7 +44,8 @@ void testApp::setup(){
     ofSoundStreamSetup(0,1, this, 44100, 512, 4);/* Call this last ! */
     
     //initialize the listener
-    listener *listen =new listener(this); 
+    //listener *listen =new listener(this); 
+    //counterVariable = 10; 
 
 }
 

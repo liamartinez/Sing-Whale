@@ -13,11 +13,13 @@
 
 
 #include "ofMain.h"
+#include "ofxiPhoneExtras.h"
 #include <Accelerate/Accelerate.h>
 #include "ofxMaxim.h"
 #include "baseButton.h"
 #include "ofxFreeType2.h"
 #include "ofxXmlSettings.h"
+#include "ofxiPhoneFile.h"
 //#include <sys/time.h>
 
 #include "grid.h"
@@ -98,12 +100,13 @@ public:
     bool            checkMe; 
     
     //saving
-    //void            saveSong(); 
-    //void            loadSong(); 
+    void            saveSong(); 
+    void            loadSong(); 
     vector<int>     savedBins; 
+    ofxiPhoneFile   songData; 
     
     //checking
-    //bool            checkSong(); 
+    bool            checkSong(); 
     string          message; 
     int             threshold; 
     

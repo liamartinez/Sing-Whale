@@ -1,5 +1,5 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleSong.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleSong.mm \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleSong.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
@@ -108,6 +108,24 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
+  ../../../addons/ofxiPhone/ofxiPhoneExtras.h \
+  ../../../addons/ofxiPhone/ofxiPhone.h \
+  ../../../addons/ofxAccelerometer/src/ofxAccelerometer.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneApp.h \
+  ../../../addons/ofxMultiTouch/src/ofxMultiTouch.h \
+  ../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h \
+  ../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h \
+  ../../../libs/openFrameworks/app/ofAppBaseWindow.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h \
+  ../../../addons/ofxiPhone/src/EAGLView.h \
+  ../../../addons/ofxiPhone/src/ESRenderer.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxMaxim/src/ofxMaxim.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxMaxim/libs/maximilian.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxMaxim/libs/maxiFFT.h \
@@ -131,6 +149,7 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/libs/tinyxml.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxiPhoneFile/ofxiPhoneFile.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/grid.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2d.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \

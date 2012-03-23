@@ -10,6 +10,7 @@
 #include <sys/time.h>
 
 #include "grid.h"
+#include "song.h"
 
 
 class testApp : public ofxiPhoneApp{
@@ -85,12 +86,17 @@ public:
     bool            checkMe; 
     
     //saving
-    void            saveSong(); 
+    void            saveSong(int numSong); 
     void            loadSong(); 
-    vector<int>     savedBins; 
+    //vector<int>     savedBins; 
+    int             numberOfSongs; 
+    vector<vector<int> >     songCount; 
+    int             numSong; //counter outside
+    vector<song>    songs; 
+    
     
     //checking
-    bool            checkSong(); 
+    //bool            checkSong(); 
     string          message; 
     int             threshold; 
     

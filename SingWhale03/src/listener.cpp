@@ -9,13 +9,11 @@
 #include <iostream>
 #include "listener.h"
 
-listener::listener() {
-}
 
 listener::listener(testApp app){
    this->myTestApp=app;
 }
 
 void listener::method(){
-    int theCounter = myTestApp->counterVariable;
+    int theCounter = myTestApp->audiofromEventListener;
 }
