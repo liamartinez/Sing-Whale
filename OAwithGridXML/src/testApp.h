@@ -85,6 +85,9 @@ public:
     baseButton      checkButt;
     bool            checkMe; 
     
+    baseButton      nextButt; 
+    bool            nextMe; 
+    
     //saving
     void            saveSong(int numSong); 
     void            loadSong(); 
@@ -93,10 +96,11 @@ public:
     vector<vector<int> >     songCount; 
     int             numSong; //counter outside
     vector<song>    songs; 
+    int             whichSong; 
     
     
     //checking
-    //bool            checkSong(); 
+    bool            checkSong(); 
     string          message; 
     int             threshold; 
     

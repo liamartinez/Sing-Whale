@@ -107,6 +107,7 @@ void testApp::setup(){
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
     
     numSong = 1; 
+    whichSong = 0; 
     
 }
 
@@ -155,6 +156,7 @@ void testApp::draw(){
     saveButt.draw(200, 10);
     loadButt.draw(200, 50);
     checkButt.draw(200, 90);
+    nextButt.draw(200, 130); 
     
     ofSetColor(78, 96, 146);
         
@@ -183,30 +185,16 @@ void testApp::draw(){
     
     if (loadMe) {
         loadMe = false; 
-        int whichSong = 1; 
-        
-        /*
-        for (int i = 0; i < songs.size(); i++) {
-            cout << songs[i].songNum << " " << i << endl; 
-            cout << songs[i].songWords << " " << i << endl; 
-            cout << "SIZE " << songs[i].savedBins.size() << endl; 
-            for (int j = 0; j< songs[i].savedBins.size(); j++) {
-                cout << songs[i].savedBins[j] << " " << j << endl; 
-            }
-        }
-        */
         
         for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
             guide.letsGo(i, songs[whichSong].savedBins[i]);
             cout << "NUMBER " << songs[whichSong].songNum << endl; 
             cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
         }
-         
-        //savedBins.clear(); //then clear it 
-         
+
     }
     
-    /*
+    
     if (checkMe) {
         checkMe = false; 
         if (checkSong()) {
@@ -215,7 +203,7 @@ void testApp::draw(){
             message = "TRY AGAIN";
         }
     }
-     */
+     
     ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
 }
@@ -260,6 +248,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
     saveButt.touchDown(touch);
     loadButt.touchDown(touch);
     checkButt.touchDown(touch);
+    nextButt.touchDown(touch); 
 }
 
 //--------------------------------------------------------------
@@ -297,12 +286,22 @@ void testApp::touchUp(ofTouchEventArgs &touch){
         checkMe = true; 
     }
     
+    if (nextButt.isPressed()) {
+        
+        if (whichSong <3) {
+            whichSong ++ ;            
+        } else {
+            whichSong = 0; 
+        }
+    }
+    
     beginButt.touchUp(touch);
     skeletonButt.touchUp(touch);
     resetButt.touchUp(touch);
     saveButt.touchUp(touch);
     loadButt.touchUp(touch);
     checkButt.touchUp(touch);
+    nextButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -410,7 +409,7 @@ void testApp::loadSong() {
     
 }
 
-/*
+
 //--------------------------------------------------------------
 bool testApp::checkSong() {
     
@@ -419,23 +418,24 @@ bool testApp::checkSong() {
     //lets do something that sees which one is shorter
     int longer = 0; 
     
-    if (savedBins.size() > theBins.size()) {
-        longer = savedBins.size();
+    if (songs[whichSong].savedBins.size() > theBins.size()) {
+        longer = songs[whichSong].savedBins.size();
     } else {
         longer = theBins.size(); 
     }
     
+    //compare against the longer one 
     for (int i = 0; i < longer-1; i++) {
         
-        if (savedBins[i] < (theBins[i] + threshold) && savedBins[i] > (theBins[i] - threshold)) {
+        if (songs[whichSong].savedBins[i] < (theBins[i] + threshold) && songs[whichSong].savedBins[i] > (theBins[i] - threshold)) {
             points ++; 
         }        
     }
-    if (points > savedBins.size() - savedBins.size()/3) return true; 
+    if (points > songs[whichSong].savedBins.size() - songs[whichSong].savedBins.size()/3) return true; 
 }
 
 
-*/
+
 
 
 
