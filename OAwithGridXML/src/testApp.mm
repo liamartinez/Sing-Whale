@@ -183,11 +183,25 @@ void testApp::draw(){
     
     if (loadMe) {
         loadMe = false; 
-        int whichSong = 0; 
-
+        int whichSong = 1; 
+        
+        /*
+        for (int i = 0; i < songs.size(); i++) {
+            cout << songs[i].songNum << " " << i << endl; 
+            cout << songs[i].songWords << " " << i << endl; 
+            cout << "SIZE " << songs[i].savedBins.size() << endl; 
+            for (int j = 0; j< songs[i].savedBins.size(); j++) {
+                cout << songs[i].savedBins[j] << " " << j << endl; 
+            }
+        }
+        */
+        
         for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
             guide.letsGo(i, songs[whichSong].savedBins[i]);
+            cout << "NUMBER " << songs[whichSong].songNum << endl; 
+            cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
         }
+         
         //savedBins.clear(); //then clear it 
          
     }
@@ -353,39 +367,41 @@ void testApp::loadSong() {
     if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
         
         songList.pushTag("songList");
-        numberOfSongs = songList.getNumTags("songs");
-        cout << "total" << numberOfSongs << endl; 
-        //songCount.resize(numberOfSongs);
-        
-        for(int i = 0; i < numberOfSongs; i++){
-        
-            int songID = songList.getAttribute("songs", "song",0);
-            
-            tempSong.songNum = songID; 
-            
-            songList.pushTag("songs",i);
-            int numberOfSavedPoints = songList.getNumTags("pos");
-            
-            vector <int> savedBins; 
-            
-            for(int i = 0; i < numberOfSavedPoints; i++){
-                
-                int savedBin;
-                savedBin = songList.getValue("pos", 0, i);
-                tempSong.savedBins.push_back(savedBin);
-                //savedBins.push_back(savedBin);
-           
-            }
-            
-            songs.push_back(tempSong);
-            //songCount.push_back(savedBins);
-            //cout << i << " " << songCount[i].size() << endl; 
-            cout << "songcount size" << songCount.size() << endl; 
+            cout << "PUSH INTO SONGLIST " << endl; 
+            numberOfSongs = songList.getNumTags("songs");
+            cout << "FOUND NUMBER OF SONGS " << numberOfSongs << endl; 
 
-        }
-        songList.popTag(); //pop position
-        songList.popTag(); 
+            for(int i = 0; i < numberOfSongs; i++){
         
+                cout << "IN SONG LOOP " << i << endl; 
+                int songID = songList.getAttribute("songs", "song",0, i);
+                
+                cout << songID << endl; 
+                string songWords = songList.getAttribute("songs", "words", "nothing",i);
+                cout << songWords << endl; 
+                tempSong.songNum = songID; 
+                tempSong.songWords = songWords; 
+                
+                songList.pushTag("songs",i);
+
+            
+                    int numberOfSavedPoints = songList.getNumTags("pos");
+                    for(int j = 0; j < numberOfSavedPoints; j++){
+
+                        int savedBin;
+                        savedBin = songList.getValue("pos", 0,j);
+                        cout << "IN POS LOOP " << j << savedBin << endl; 
+                        tempSong.savedBins.push_back(savedBin);
+
+                    }
+            
+                songs.push_back(tempSong);
+                songList.popTag(); 
+                tempSong.savedBins.clear(); 
+                
+                 
+        }
+        songList.popTag(); //pop songlist    
         loadMe = true; 
     }
     else{
