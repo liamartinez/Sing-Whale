@@ -12,6 +12,7 @@
 #pragma once
 #include "swBaseScene.h"
 #include "baseButton.h"
+#include "whaleSong.h"
 
 enum {
     CALL_SCENE_FIRST,
@@ -39,6 +40,8 @@ public:
     
     string song; 
     ofVec2f     textStart; 
+    
+    whaleSong   nameSong; 
     
 private:
     

@@ -15,7 +15,7 @@ songBaseScene::songBaseScene() {
     this->songSM = songSceneManager::getInstance(); //lia - find out what this means
     this->swAssets = swAssetManager::getInstance();
     
-    speakScreen.loadImage("images/wires-03.png");
+    speakScreen.loadImage("images/BG.png");
     sceneName = "Scene Name not Set!";
     
 }
@@ -55,7 +55,6 @@ void songBaseScene::drawGrid() {  //dont need this, but keep for now just in cas
     ofEnableAlphaBlending();
     speakScreen.draw (0,0); 
     ofDisableAlphaBlending();
-    ofDrawBitmapString("SPEAK SCENE", ofGetWidth()/2, ofGetHeight()/2);
     
     /*
     int gridWidth = ofGetWidth() + MNH_GRID_CELL_SIZE; // lia - where is it getting these values?

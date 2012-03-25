@@ -62,7 +62,7 @@ void speakScene::update() {
     songMenu.update();
     
     wSong.update(); 
-    wSong.loadSong();
+    wSong.loadSong("positions.xml");
     
 }
 

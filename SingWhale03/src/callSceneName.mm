@@ -19,6 +19,8 @@ void callSceneName::setup() {
 
 //------------------------------------------------------------------
 void callSceneName::update() {
+    
+    nameSong.update(); 
     switch(mgr.getCurScene()) {
         case CALL_SCENE_FIRST:
             //Do stuff
@@ -37,7 +39,7 @@ void callSceneName::activate() {
     //start with the first scene when activated. 
     mgr.setCurScene(ofRandom(CALL_SCENE_NAME_TOTAL));
     
-    
+    nameSong.setup(); 
     
     //load here, not setup
     callScreen.loadImage("images/BG.png");
@@ -45,11 +47,10 @@ void callSceneName::activate() {
     callPail.loadImage("images/call3.png");
     next.setLabel("CORRECT", &swAssets->nevis22);
     tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
-    song = " -> SONG INTERFACE HERE <- " ; 
 
     cout << "Activate CallName" << endl;
     
-    
+    textStart.set(ofGetWidth()/2, ofGetHeight()/3);
 }
 
 //------------------------------------------------------------------
@@ -70,8 +71,9 @@ void callSceneName::draw() {
     ofSetColor(255, 255, 255);
     callScreen.draw(0,0);
     
-    
     string message = "";
+    int textW = swAssets->nevis48.getStringWidth(message);
+
     next.draw(ofGetWidth() - 550, ofGetHeight()-100); 
     tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
 
@@ -97,9 +99,14 @@ void callSceneName::draw() {
     }
     
     ofSetColor(8, 44, 49);
-    ofDrawBitmapString(message, 300, ofGetHeight()/3); 
-    ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+
+    textW = swAssets->nevis48.getStringWidth(message);
+    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     
+    nameSong.draw(); 
+    nameSong.loadSong("name.xml");
+    nameSong.setSong(0);
+    ofSetColor(255, 255, 255);
     
 }
 
@@ -112,6 +119,7 @@ void callSceneName::draw() {
 void callSceneName::touchDown(ofTouchEventArgs &touch){
     tryAgain.touchDown(touch);
     next.touchDown(touch);
+    nameSong.touchDown(touch);
 }
 
 
@@ -119,6 +127,7 @@ void callSceneName::touchDown(ofTouchEventArgs &touch){
 void callSceneName::touchMoved(ofTouchEventArgs &touch){
     tryAgain.touchMoved(touch);
     next.touchMoved(touch);
+    nameSong.touchMoved(touch);
 }
 
 
@@ -131,4 +140,5 @@ void callSceneName::touchUp(ofTouchEventArgs &touch){
 
     tryAgain.touchUp(touch);
     next.touchUp(touch);
+    nameSong.touchUp(touch);
 }

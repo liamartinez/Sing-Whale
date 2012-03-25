@@ -33,6 +33,9 @@ void songOne::activate() {
     
     cout << "Activate Song One" << endl;
     
+    songOne.loadImage("images/speak_med.png");
+    textStart.set(ofGetWidth()-200, ofGetHeight()-550);
+    
     
 }
 
@@ -48,15 +51,17 @@ void songOne::draw() {
 
         
     drawGrid();
-    ofDrawBitmapString("SONG ONE", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
-    string sceneName = "";
+    string message = "";
+    int textW = swAssets->nevis48.getStringWidth(message);
+    
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
             
             ofEnableAlphaBlending();
             
-            sceneName = "First Sub Scene!";
+            message = "I like tacos."; 
+            songOne.draw(0,0);
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
@@ -66,7 +71,8 @@ void songOne::draw() {
             
     }
     
-    
+    textW = swAssets->nevis48.getStringWidth(message);
+    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     
 }
 

@@ -103,16 +103,13 @@ void whaleSong::setup(){
     checkButt.setColor(ofColor(232, 58, 37));
     checkButt.setLabel("check", &whitneySemiBold22);
     
-    nextButt.setup(); 
-    nextButt.setColor(ofColor(232, 58, 37));
-    nextButt.setLabel("next", &whitneySemiBold22);
-    
     loadMe = false;
     checkMe = false; 
     reset   = false; 
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
     
     whichSong = 0; 
+    showGrid = true; 
     
 }
 
@@ -147,7 +144,7 @@ void whaleSong::update(){
         }
         
     }
-    grid.update(); 
+    if (showGrid) grid.update(); 
     guide.update(); 
 }
 
@@ -156,24 +153,24 @@ void whaleSong::draw(){
     
     
     //buttons
-    beginButt.draw( 10, 10); 
+    if (showGrid) beginButt.draw( 10, 10); 
     skeletonButt.draw(10, 50); 
     resetButt.draw(10, 90);
-    saveButt.draw(200, 10);
     loadButt.draw(200, 50);
     checkButt.draw(200, 90);
-    nextButt.draw(200, 130); 
     
     ofSetColor(78, 96, 146);
     
     ofSetColor(225);
     
-    grid.drawGrid();
+    if (showGrid) grid.drawGrid();
     guide.drawGrid(); 
     
-    if (begin && theBins.size() != 0) {
-        for (int i = 0; i < theBins.size()-1; i++){
-            grid.letsGo(i, theBins[i]);
+    if (showGrid) {
+        if (begin && theBins.size() != 0) {
+            for (int i = 0; i < theBins.size()-1; i++){
+                grid.letsGo(i, theBins[i]);
+            }
         }
     }
     
@@ -182,27 +179,11 @@ void whaleSong::draw(){
         begin = false; 
         for (int i = 0; i < sampleSize-1; i++){
             grid.letsGo(i, grid.lenVertz);
-            //attractors
-            //grid.attractReset(); 
-            //set location to reset also
             grid.letsReset(i); 
             theBins.clear(); 
-            //grid.clearGrid(); 
-            //grid.setupGrid(); //need to destroy old grid? 
         }
     }
-    /* //removing because it should only happen when set
-    if (loadMe) {
-        loadMe = false; 
-        
-        for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
-            guide.letsGo(i, songs[whichSong].savedBins[i]);
-            cout << "NUMBER " << songs[whichSong].songNum << endl; 
-            cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
-        }
-        
-    }
-    */
+
     /*
     if (checkMe) {
         checkMe = false; 
@@ -281,7 +262,6 @@ void whaleSong::touchDown(ofTouchEventArgs &touch){
     resetButt.touchDown(touch);
     loadButt.touchDown(touch);
     checkButt.touchDown(touch);
-    nextButt.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -307,29 +287,18 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
     }
 
     if (loadButt.isPressed()) {
-        loadSong(); 
+        loadSong("positions.xml"); 
     }
     
     if (checkButt.isPressed()) {
         checkMe = true; 
     }
-    
-    if (nextButt.isPressed()) {
         
-        if (whichSong <3) {
-            whichSong ++ ;            
-        } else {
-            whichSong = 0; 
-        }
-    }
-    
-    
     beginButt.touchUp(touch);
     skeletonButt.touchUp(touch);
     resetButt.touchUp(touch);
     loadButt.touchUp(touch);
     checkButt.touchUp(touch);
-    nextButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -363,13 +332,13 @@ void whaleSong::touchCancelled(ofTouchEventArgs& args){
 }
 
 //--------------------------------------------------------------
-void whaleSong::loadSong() {
+void whaleSong::loadSong(string XMLname) {
     ofxXmlSettings gotSongs;
     ofxXmlSettings songList; 
     
     songPhrase tempSong; 
     
-    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
+    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + XMLname)){
         songList.pushTag("songList");
         numberOfSongs = songList.getNumTags("songs");
         
@@ -449,6 +418,7 @@ void whaleSong::setSong(int whichSong_){
     }
 }
 
+//-------------------------------------------------------------
 void whaleSong::letsReset() {
     for (int i = 0; i < sampleSize-1; i++){
     guide.letsReset(i);

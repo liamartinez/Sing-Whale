@@ -40,14 +40,7 @@ private:
     
     ofImage callPail; 
     ofImage callDuck; 
-    
-    /*
-    //maybe put these buttons in base scene? 
-    baseButton  next;
-    baseButton  tryAgain; 
-    
-    string song; 
-     */
+
 };
 
 #endif

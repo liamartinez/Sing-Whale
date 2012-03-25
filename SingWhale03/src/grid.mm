@@ -19,7 +19,7 @@ grid::grid() {
     circleSize      = 1; 
     
     numNote         = 1; 
-    skeleton        = true; 
+    skeleton        = false; 
     anchorHeight    = 200; 
     
     damping         = .1;
@@ -197,15 +197,17 @@ void grid::drawGrid() {
             topCircles[i].setRadius(circleSize);
             bottomCircles[i].draw();
             bottomCircles[i].setRadius(circleSize);
+            heightJoints[i].draw(); 
         }
         
         ofSetColor(0); 
         for (int i = 0; i < topJoints.size(); i++) {
             topJoints[i].draw(); 
             bottomJoints[i].draw(); 
-            //drawing these joints will cause errors. Don't know why 
-            //heightJoints[i].draw(); 
+           
+            
         }
+            
         
         for(int i=0; i<leftCircles.size(); i++) {
             ofFill();

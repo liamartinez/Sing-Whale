@@ -43,7 +43,7 @@ public:
     
     bool    drawSongMenu; 
     
-
+    ofVec2f textStart; 
     
     
 protected:

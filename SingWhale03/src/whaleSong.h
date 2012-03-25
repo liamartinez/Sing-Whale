@@ -81,6 +81,7 @@ public:
     
     grid            guide; 
     grid            grid; 
+    bool            showGrid;
     
 	//UI
     baseButton      beginButt; 
@@ -99,12 +100,9 @@ public:
     
     baseButton      checkButt;
     bool            checkMe; 
-    
-    baseButton      nextButt; 
-    bool            nextMe; 
-    
+
     //saving
-    void            loadSong(); 
+    void            loadSong(string XMLname); 
     vector<int>     savedBins; 
     //ofxiPhoneFile   songData; 
     int             numberOfSongs; 

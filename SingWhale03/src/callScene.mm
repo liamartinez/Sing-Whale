@@ -26,9 +26,10 @@ void callScene::update() {
             //Do stuff
             break;  
         case CALL_SCENE_SECOND:
-            //Do stuff
+            nameSong.update(); 
             break;    
         case CALL_SCENE_THIRD:
+            nameSong.update(); 
             //Do stuff
             break;    
         case CALL_SCENE_FOURTH:
@@ -56,6 +57,8 @@ void callScene::activate() {
 
     cout << "Activate Call" << endl;
     textStart.set(ofGetWidth()/2, ofGetHeight()/3);
+    
+    nameSong.setup(); 
     
 }
 
@@ -88,14 +91,18 @@ void callScene::draw() {
             
         case CALL_SCENE_SECOND:
             message = "This is how you say her name."; 
-            ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+            nameSong.showGrid = false; 
+            nameSong.draw(); 
+            nameSong.loadSong("name.xml");
+            nameSong.setSong(0);
             break;
             
         case CALL_SCENE_THIRD:
             message = "Now you try."; 
             tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
             next.setLabel("CORRECT", &swAssets->nevis22);
-            ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+            nameSong.showGrid = true; 
+            nameSong.draw(); 
             break;
             
         case CALL_SCENE_FOURTH:
@@ -122,6 +129,7 @@ void callScene::draw() {
 void callScene::touchDown(ofTouchEventArgs &touch){
     tryAgain.touchDown(touch);
     next.touchDown(touch);
+    nameSong.touchDown(touch);
 }
 
 
@@ -129,6 +137,7 @@ void callScene::touchDown(ofTouchEventArgs &touch){
 void callScene::touchMoved(ofTouchEventArgs &touch){
     tryAgain.touchMoved(touch);
     next.touchMoved(touch);
+    nameSong.touchMoved(touch);
 }
 
 
@@ -152,4 +161,5 @@ void callScene::touchUp(ofTouchEventArgs &touch){
 
     tryAgain.touchUp(touch);
     next.touchUp(touch);
+    nameSong.touchUp(touch);
 }

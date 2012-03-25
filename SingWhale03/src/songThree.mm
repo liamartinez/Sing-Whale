@@ -31,13 +31,14 @@ void songThree::update() {
 void songThree::activate() {
     mgr.setCurScene(SONG_THREE_FIRST);
     
-    
+    songThree.loadImage("images/speak_sleepy.png");
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
     
     cout << "Activate Song Three" << endl;
-    
+    textStart.set(ofGetWidth()-200, ofGetHeight()-600);
+
     
 }
 
@@ -55,26 +56,28 @@ void songThree::draw() {
 
     
     drawGrid();
-    ofDrawBitmapString("SONG THREE", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
+    string message = "";
+    int textW = swAssets->nevis48.getStringWidth(message);
     
-    string sceneName = "";
     switch(mgr.getCurScene()) {
-        case SONG_THREE_FIRST:
+        case SONG_ONE_FIRST:
             
             ofEnableAlphaBlending();
             
-            sceneName = "First Sub Scene!";
+            message = "zZZzz"; 
+            songThree.draw(0,0);
             
             ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0); 
+            //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();
             
             break;
             
     }
     
-    
+    textW = swAssets->nevis48.getStringWidth(message);
+    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     
 }
 

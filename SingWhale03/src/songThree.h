@@ -32,7 +32,7 @@ public:
     
 private:
     
-    
+    ofImage songThree; 
 };
 
 #endif

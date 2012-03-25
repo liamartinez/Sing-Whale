@@ -29,14 +29,15 @@ void songTwo::update() {
 //------------------------------------------------------------------
 void songTwo::activate() {
     mgr.setCurScene(SONG_TWO_FIRST);
-    
+    songTwo.loadImage("images/speak_sad.png");
     
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
     
     cout << "Activate Song Two" << endl;
-    
+    textStart.set(ofGetWidth()-200, ofGetHeight()-450);
+
     
 }
 
@@ -52,34 +53,31 @@ void songTwo::deactivate() {
 //------------------------------------------------------------------
 void songTwo::draw() {
 
-    
     drawGrid();
-    ofDrawBitmapString("SONG TWO", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
-    
-    string sceneName = "";
+    string message = "";
+    int textW = swAssets->nevis48.getStringWidth(message);
+
     switch(mgr.getCurScene()) {
-        case SONG_TWO_FIRST:
+        case SONG_ONE_FIRST:
             
             ofEnableAlphaBlending();
             
-            sceneName = "First Sub Scene!";
+            message = "You're really mean"; 
+            songTwo.draw(0,0);
             
             ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0); 
+            //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();
             
             break;
             
     }
     
-    
-    
+    textW = swAssets->nevis22.getStringWidth(message);
+    swAssets->nevis22.drawString(message, textStart.x - textW/2, textStart.y);
+
 }
-
-
-
-
 
 //--------------------------------------------------------------
 //Event Listeners
