@@ -74,6 +74,7 @@ void songTwo::draw() {
             
     }
     
+    ofSetColor(0);
     textW = swAssets->nevis22.getStringWidth(message);
     swAssets->nevis22.drawString(message, textStart.x - textW/2, textStart.y);
 

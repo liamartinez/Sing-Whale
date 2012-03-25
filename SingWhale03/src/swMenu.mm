@@ -20,10 +20,10 @@ void swMenu::setup() {
     
     
     rect.width  = ofGetWidth();                         //width of BTM_MENU  
-    rect.height = 50;                                   //height
+    rect.height = 70;                                   //height
     
     rect.x = 0;                                         //position x of BTM_MENU
-    rect.y = ofGetHeight();                             //position y 0f BTM_MENU
+    rect.y = ofGetHeight() - rect.height;                //position y 0f BTM_MENU
     
     bShowing = false;                                   //not showing as normal
     showingY = ofGetHeight() - rect.height;             //showing scene 
@@ -34,9 +34,9 @@ void swMenu::setup() {
     
     
     //Set Labels
-    labels[MENU_ONE]        = "ONE";           //put text on the menu
-    labels[MENU_TWO]        = "TWO";       //put text on the menu
-    labels[MENU_THREE]      = "THREE";       //put text on the menu
+    labels[MENU_ONE]        = "Do you like \n  bananas?";           //put text on the menu
+    labels[MENU_TWO]        = "Whales are \n   stupid";       //put text on the menu
+    labels[MENU_THREE]      = "La la la";       //put text on the menu
     
     //Create Buttons
     
@@ -57,52 +57,55 @@ void swMenu::setup() {
 
 //------------------------------------------------------------------
 void swMenu::show() {
-    Tweenzor::add(rect.y, rect.y, showingY, 0, 30, EASE_OUT_QUAD);      
+    //Tweenzor::add(rect.y, rect.y, showingY, 0, 30, EASE_OUT_QUAD);      
     bShowing = true;
 }
 
 
 //------------------------------------------------------------------
 void swMenu::hide() {
-    Tweenzor::add(rect.y, rect.y, ofGetHeight(), 0, 30, EASE_OUT_QUAD);
+    //Tweenzor::add(rect.y, rect.y, ofGetHeight(), 0, 30, EASE_OUT_QUAD);
     bShowing = false;
 }
 
 
 //------------------------------------------------------------------
 void swMenu::update() {
-}
+    int dragLimitStart = 100; 
+    int dragLimitEnd = -300.0f;
+    
+    //bounce back at the end
+	if( !bDragging ){
 
+		if( drag.x > dragLimitStart ){
+			drag.x *= 0.9;
+		}
+
+		if( drag.x < dragLimitEnd){
+			drag.x *= 0.9;
+			drag.x += dragLimitEnd * 0.1;
+		}
+	
+	}
+
+}
 
 
 //------------------------------------------------------------------
 void swMenu::draw() {
-    baseButton::draw();
-    
-    //Draw BG Image (Flip Vertical to use same BG as top menu)
-    glPushMatrix();
-    glTranslatef(0, rect.y + rect.height, 0);
-    glRotatef(180, 1, 0, 0);
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255);
-    bgImage.draw(0,0,ofGetWidth(), bgImage.height);
-    ofDisableAlphaBlending();   
-    glPopMatrix();
-    
-    //Draw buttons relative to overall menu, with line before each
+       
     int startX = rect.width/2 - (MENU_BTN_W * MENU_TOTAL)/2;    // find the starting point for the botton
     int curX = startX;                                                          // 
     for(int i=0; i<MENU_TOTAL; i++) {
-        curX = drawSeparatorLine(curX);
+        //curX = drawSeparatorLine(curX);
         
-        buttons[i].setPos(curX, rect.y);
-        buttons[i].draw();
+        //buttons[i].setPos(curX, 0);
+        buttons[i].draw(curX+drag.x,rect.y);
         
         curX += buttons[i].rect.width;
     }
     
-    //Draw final line
-    drawSeparatorLine(curX);
+    
 }
 
 
@@ -122,9 +125,14 @@ int swMenu::drawSeparatorLine(int x) {
 //--------------------------------------------------------------
 void swMenu::touchDown(ofTouchEventArgs &touch){
     if(bShowing) {
-        baseButton::touchDown(touch);
+        
         for(int i=0; i<MENU_TOTAL; i++) {
             buttons[i].touchDown(touch);
+        }
+        
+        if( touch.id == 0 ){
+            touchPt.x = touch.x;
+            bDragging = true;
         }
     }
 }
@@ -133,9 +141,16 @@ void swMenu::touchDown(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void swMenu::touchMoved(ofTouchEventArgs &touch){
     if(bShowing) {
-        baseButton::touchMoved(touch);
+        
         for(int i=0; i<MENU_TOTAL; i++) {
             buttons[i].touchMoved(touch);
+        }
+        
+        if( touch.id == 0 ){
+            ofPoint pt( touch.x, touch.y );
+            drag += pt - touchPt;
+            
+            touchPt = pt;
         }
     }
 }
@@ -171,10 +186,13 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
             }
         }
         
-        baseButton::touchUp(touch);
         
         for(int i=0; i<MENU_TOTAL; i++) {
             buttons[i].touchUp(touch);
+        }
+        
+        if( touch.id == 0 ){
+            bDragging = false;
         }
     }
      

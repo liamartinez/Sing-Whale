@@ -34,7 +34,7 @@ void songOne::activate() {
     cout << "Activate Song One" << endl;
     
     songOne.loadImage("images/speak_med.png");
-    textStart.set(ofGetWidth()-200, ofGetHeight()-550);
+    textStart.set(ofGetWidth()-200, ofGetHeight()-530);
     
     
 }
@@ -71,6 +71,7 @@ void songOne::draw() {
             
     }
     
+    ofSetColor(0);
     textW = swAssets->nevis48.getStringWidth(message);
     swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     

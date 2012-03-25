@@ -35,6 +35,10 @@ void homeScene::activate() {
     
     homeScreen.loadImage("images/title.png");
     button.setImage(&homeScreen,&homeScreen);
+    callButton.setLabel("INTRO",&swAssets->nevis22);
+    callButton.disableBG();
+    speakButton.setLabel("SPEAK TO \n   WHALE", &swAssets->nevis22);
+    speakButton.disableBG();
         
     cout << "Activate Home" << endl;
     
@@ -55,7 +59,7 @@ void homeScene::draw() {
     cout << "Drawing home screen" << endl;
     
     
-    drawGrid();
+    //drawGrid();
     
     
     string sceneName = "";
@@ -68,14 +72,15 @@ void homeScene::draw() {
             
             ofSetColor(255, 255, 255); 
             homeScreen.draw (0,0); 
+
+            callButton.draw(ofGetWidth()/4, ofGetHeight() - ofGetHeight()/3);
+            speakButton.draw(ofGetWidth()/4*2,ofGetHeight() - ofGetHeight()/3);
             ofDisableAlphaBlending();
 
             break;
 
     }
-    
-    
-    
+
 }
 
 
@@ -88,18 +93,23 @@ void homeScene::draw() {
 //--------------------------------------------------------------
 void homeScene::touchDown(ofTouchEventArgs &touch){
     button.touchDown(touch);
+    callButton.touchDown(touch);
+    speakButton.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void homeScene::touchMoved(ofTouchEventArgs &touch){
     button.touchMoved(touch);
+    callButton.touchDown(touch);
+    speakButton.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void homeScene::touchUp(ofTouchEventArgs &touch){
     //Switch Scenes
+    /*
     if(button.isPressed()) {
         if(mgr.getCurScene() == HOME_SCENE_TOTAL-1) {
             swSM->setCurScene(SCENE_CALL);
@@ -107,5 +117,13 @@ void homeScene::touchUp(ofTouchEventArgs &touch){
             mgr.setCurScene(mgr.getCurScene() + 1);      
         }
     }
+     */
+    
+    if(callButton.isPressed()) swSM->setCurScene(SCENE_CALL);
+    if(speakButton.isPressed()) swSM->setCurScene(SCENE_SPEAK);
+
+    
+    speakButton.touchUp(touch);
     button.touchUp(touch);
+    callButton.touchUp(touch);
 }

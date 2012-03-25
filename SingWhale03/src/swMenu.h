@@ -24,7 +24,7 @@ enum buttonTypes { //fill this with the different words he can say.
 };
 
 
-#define MENU_BTN_W 125                          // width of each button in BTM_MENU
+#define MENU_BTN_W 160                          // width of each button in BTM_MENU
 #define MENU_BTN_H 60                           // height
 
 class swMenu : public baseButton {
@@ -50,6 +50,9 @@ public:
     
     bool touchMenuRes; 
     
+    ofPoint touchPt;
+	ofPoint drag;
+	bool bDragging;
     
 private:
     bool bShowing;

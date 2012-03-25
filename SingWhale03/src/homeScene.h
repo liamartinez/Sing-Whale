@@ -32,6 +32,8 @@ public:
     void touchUp(ofTouchEventArgs &touch);
     
     baseButton button;
+    baseButton callButton; 
+    baseButton speakButton; 
     
 private:
     

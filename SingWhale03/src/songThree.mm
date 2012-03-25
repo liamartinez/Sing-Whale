@@ -76,6 +76,7 @@ void songThree::draw() {
             
     }
     
+    ofSetColor(0);
     textW = swAssets->nevis48.getStringWidth(message);
     swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     
