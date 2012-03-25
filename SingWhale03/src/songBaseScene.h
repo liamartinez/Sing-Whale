@@ -13,6 +13,7 @@
 #include "songSceneManager.h"
 #include "swAssetManager.h"
 #include "ofxSceneManagerScene.h"
+
 //#include "baseButton.h"
 
 class songSceneManager; //why is there a class declared here? 
@@ -24,6 +25,11 @@ public:
     virtual void update();
     virtual void draw();
     
+    void touchDown(ofTouchEventArgs &touch);
+    void touchMoved(ofTouchEventArgs &touch);
+    void touchUp(ofTouchEventArgs &touch);    
+    void audioReceived 	(float * input, int bufferSize, int nChannels);
+    
     string sceneName; //?
     
     songSceneManager* songSM;
@@ -31,9 +37,14 @@ public:
     
     ofxSceneManager2 mgr;
     void drawGrid();
+
+    
     ofImage speakScreen;
     
     bool    drawSongMenu; 
+    
+
+    
     
 protected:
     

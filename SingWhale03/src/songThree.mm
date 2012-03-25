@@ -52,8 +52,7 @@ void songThree::deactivate() {
 
 //------------------------------------------------------------------
 void songThree::draw() {
-    cout << "Drawing songThree screen" << endl;
-    
+
     
     drawGrid();
     ofDrawBitmapString("SONG THREE", ofGetWidth()/2, ofGetHeight()/2 + 20);

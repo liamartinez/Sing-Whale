@@ -17,6 +17,7 @@ enum {
     CALL_SCENE_FIRST,
     CALL_SCENE_SECOND,
     CALL_SCENE_THIRD,
+    CALL_SCENE_FOURTH,
     CALL_SCENE_TOTAL
 };
 
@@ -32,18 +33,18 @@ public:
     void touchDown(ofTouchEventArgs &touch);
     void touchMoved(ofTouchEventArgs &touch);
     void touchUp(ofTouchEventArgs &touch);
-    
-    ofImage callScreen; //lia - replace pictures here. 
-    
+
     baseButton  next;
     baseButton  tryAgain; 
     
     string song; 
-    
+    ofVec2f     textStart; 
     
 private:
     
     bool    hasReturned; 
+    ofImage callScreen; //lia - replace pictures here. 
+    ofImage callWhale; 
 
 };
 

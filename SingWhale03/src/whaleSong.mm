@@ -95,10 +95,6 @@ void whaleSong::setup(){
     resetButt.setColor(ofColor(232, 58, 37));
     resetButt.setLabel("start again", &whitneySemiBold22);
     
-    saveButt.setup(); 
-    saveButt.setColor(ofColor(232, 58, 37));
-    saveButt.setLabel("save", &whitneySemiBold22);
-    
     loadButt.setup(); 
     loadButt.setColor(ofColor(232, 58, 37));
     loadButt.setLabel("load", &whitneySemiBold22);
@@ -107,10 +103,16 @@ void whaleSong::setup(){
     checkButt.setColor(ofColor(232, 58, 37));
     checkButt.setLabel("check", &whitneySemiBold22);
     
+    nextButt.setup(); 
+    nextButt.setColor(ofColor(232, 58, 37));
+    nextButt.setLabel("next", &whitneySemiBold22);
+    
     loadMe = false;
     checkMe = false; 
     reset   = false; 
     message = "FIRST LOAD, THEN START, THEN CHECK!"; 
+    
+    whichSong = 0; 
     
 }
 
@@ -152,10 +154,6 @@ void whaleSong::update(){
 //--------------------------------------------------------------
 void whaleSong::draw(){
     
-    for (int i = 0; i < 512; i++){
-        cout << "BUFFER" << buffer[i]<< endl; 
-    }
-
     
     //buttons
     beginButt.draw( 10, 10); 
@@ -164,6 +162,7 @@ void whaleSong::draw(){
     saveButt.draw(200, 10);
     loadButt.draw(200, 50);
     checkButt.draw(200, 90);
+    nextButt.draw(200, 130); 
     
     ofSetColor(78, 96, 146);
     
@@ -192,15 +191,18 @@ void whaleSong::draw(){
             //grid.setupGrid(); //need to destroy old grid? 
         }
     }
-    
+    /* //removing because it should only happen when set
     if (loadMe) {
         loadMe = false; 
-        for (int i = 0; i < savedBins.size()-1; i++){
-            guide.letsGo(i, savedBins[i]);
+        
+        for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
+            guide.letsGo(i, songs[whichSong].savedBins[i]);
+            cout << "NUMBER " << songs[whichSong].songNum << endl; 
+            cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
         }
-        savedBins.clear(); 
+        
     }
-    
+    */
     /*
     if (checkMe) {
         checkMe = false; 
@@ -277,9 +279,9 @@ void whaleSong::touchDown(ofTouchEventArgs &touch){
     beginButt.touchDown(touch);
     skeletonButt.touchDown(touch);
     resetButt.touchDown(touch);
-    saveButt.touchDown(touch);
     loadButt.touchDown(touch);
     checkButt.touchDown(touch);
+    nextButt.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -303,12 +305,7 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
         reset = true; 
         
     }
-    
-    
-    if (saveButt.isPressed()) {
-        saveSong(); 
-    }
-    
+
     if (loadButt.isPressed()) {
         loadSong(); 
     }
@@ -317,13 +314,22 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
         checkMe = true; 
     }
     
+    if (nextButt.isPressed()) {
+        
+        if (whichSong <3) {
+            whichSong ++ ;            
+        } else {
+            whichSong = 0; 
+        }
+    }
+    
     
     beginButt.touchUp(touch);
     skeletonButt.touchUp(touch);
     resetButt.touchUp(touch);
-    saveButt.touchUp(touch);
     loadButt.touchUp(touch);
     checkButt.touchUp(touch);
+    nextButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -356,53 +362,52 @@ void whaleSong::touchCancelled(ofTouchEventArgs& args){
 	
 }
 
-
-//--------------------------------------------------------------
-void whaleSong::saveSong() {
-    ofxXmlSettings positions;
-    positions.addTag("positions");
-    positions.pushTag("positions");
-    //points is a vector<ofPoint> that we want to save to a file
-    for(int i = 0; i < theBins.size(); i++){
-        //each position tag represents one point
-        //positions.addTag("position");
-        //positions.pushTag("position");
-        //so set the three values in the file
-        positions.addValue("pos", theBins[i]);
-        //positions.popTag();//pop position
-    }
-    positions.popTag(); //pop position
-    positions.popTag(); //pop settings
-    positions.saveFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml");
-    
-    //positions.saveFile(songData.write()); 
-    //songData.write(positions.saveFile());
-    cout << "positions.xml saved to app documents folder" << endl; 
-}
-
 //--------------------------------------------------------------
 void whaleSong::loadSong() {
-    ofxXmlSettings settings;
-    songData.open("positions.xml",1); 
-    //settings.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")
-    settings.loadFromBuffer (string(songData.read())); 
-        settings.pushTag("positions");
-        int numberOfSavedPoints = settings.getNumTags("pos");
-        cout << numberOfSavedPoints << " total" << endl; 
-        for(int i = 0; i < numberOfSavedPoints; i++){
-            //settings.pushTag("positions", i);
-            
-            int savedBin;
-            savedBin = settings.getValue("pos", 0, i);
-            savedBins.push_back(savedBin);
-            //settings.popTag();
-        }
-        
-        settings.popTag(); //pop position
-        
-        loadMe = true; 
+    ofxXmlSettings gotSongs;
+    ofxXmlSettings songList; 
     
+    songPhrase tempSong; 
+    
+    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "positions.xml")){
+        songList.pushTag("songList");
+        numberOfSongs = songList.getNumTags("songs");
+        
+        for(int i = 0; i < numberOfSongs; i++){
 
+            int songID = songList.getAttribute("songs", "song",0, i);
+            
+            cout << "SONG ID" <<songID << endl; 
+            string songWords = songList.getAttribute("songs", "words", "nothing",i);
+            cout << songWords << endl; 
+            tempSong.songNum = songID; 
+            tempSong.songWords = songWords; 
+            
+            songList.pushTag("songs",i);
+            
+            
+            int numberOfSavedPoints = songList.getNumTags("pos");
+            for(int j = 0; j < numberOfSavedPoints; j++){
+                
+                int savedBin;
+                savedBin = songList.getValue("pos", 0,j);
+
+                tempSong.savedBins.push_back(savedBin);
+                
+            }
+            
+            songs.push_back(tempSong);
+            songList.popTag(); 
+            tempSong.savedBins.clear(); 
+            
+            
+        }
+        songList.popTag(); //pop songlist    
+        loadMe = true; 
+    }
+    else{
+        ofLogError("Position file did not load!");
+    }
     
 }
 
@@ -415,27 +420,40 @@ bool whaleSong::checkSong() {
     //lets do something that sees which one is shorter
     int longer = 0; 
     
-    if (savedBins.size() > theBins.size()) {
-        longer = savedBins.size();
+    if (songs[whichSong].savedBins.size() > theBins.size()) {
+        longer = songs[whichSong].savedBins.size();
     } else {
         longer = theBins.size(); 
     }
     
+    //compare against the longer one 
     for (int i = 0; i < longer-1; i++) {
         
-        if (savedBins[i] < (theBins[i] + threshold) && savedBins[i] > (theBins[i] - threshold)) {
+        if (songs[whichSong].savedBins[i] < (theBins[i] + threshold) && songs[whichSong].savedBins[i] > (theBins[i] - threshold)) {
             points ++; 
         }        
     }
-    if (points > savedBins.size() - savedBins.size()/3) return true; 
+    if (points > songs[whichSong].savedBins.size() - songs[whichSong].savedBins.size()/3) return true; 
 }
 
 
+//-------------------------------------------------------------
+void whaleSong::setSong(int whichSong_){
+    
+    whichSong = whichSong_; 
+    
+    for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
+        guide.letsGo(i, songs[whichSong].savedBins[i]);
+        cout << "NUMBER " << songs[whichSong].songNum << endl; 
+        cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
+    }
+}
 
-
-
-
-
+void whaleSong::letsReset() {
+    for (int i = 0; i < sampleSize-1; i++){
+    guide.letsReset(i);
+    }
+}
 
 
 

@@ -28,8 +28,8 @@ public:
     swSceneManager* swSM;
     swAssetManager* swAssets;
     
-    
     ofxSceneManager2 mgr;
+    
 protected:
     void drawGrid();
 };

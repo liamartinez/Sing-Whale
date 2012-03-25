@@ -29,6 +29,7 @@
 //whalesong
 #include "whaleSong.h"
 
+
 /*
 enum {
     SPEAK_SCENE_FIRST,
@@ -61,13 +62,12 @@ public:
     songSceneManager* songSM;
     //swAssetManager* swAssets;
     
-    
     //Menu
     swMenu songMenu;
     
     //whalesong
     whaleSong wSong; 
-     
+
     
 private:
     

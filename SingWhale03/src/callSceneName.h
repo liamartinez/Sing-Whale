@@ -38,6 +38,9 @@ public:
 private:
     ofImage callScreen; //lia - replace pictures here. 
     
+    ofImage callPail; 
+    ofImage callDuck; 
+    
     /*
     //maybe put these buttons in base scene? 
     baseButton  next;

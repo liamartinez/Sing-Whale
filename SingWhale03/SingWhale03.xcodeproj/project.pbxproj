@@ -79,6 +79,7 @@
 		0AAB18C614F9EE1300F8209A /* swSceneManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18C514F9EE1300F8209A /* swSceneManager.mm */; };
 		0AAB18C914F9F2AF00F8209A /* swMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18C814F9F2AF00F8209A /* swMenu.mm */; };
 		0AAB18CC14F9F6DE00F8209A /* swAssetManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18CB14F9F6DE00F8209A /* swAssetManager.mm */; };
+		0ABF79C5151E8905006DA884 /* songPhrase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF79C4151E8905006DA884 /* songPhrase.cpp */; };
 		0AC14A7014FA00F3009FBAF4 /* swBaseScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A6F14FA00F3009FBAF4 /* swBaseScene.mm */; };
 		0AC14A7214FA0217009FBAF4 /* homeScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AC14A7114FA0217009FBAF4 /* homeScene.mm */; };
 		0ADDCE8115170AD200B32146 /* callSceneName.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE8015170AD200B32146 /* callSceneName.mm */; };
@@ -281,6 +282,8 @@
 		0AAB18C814F9F2AF00F8209A /* swMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = swMenu.mm; sourceTree = "<group>"; };
 		0AAB18CA14F9F67A00F8209A /* swAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swAssetManager.h; sourceTree = "<group>"; };
 		0AAB18CB14F9F6DE00F8209A /* swAssetManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = swAssetManager.mm; sourceTree = "<group>"; };
+		0ABF79B5151E5FC1006DA884 /* songPhrase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songPhrase.h; sourceTree = "<group>"; };
+		0ABF79C4151E8905006DA884 /* songPhrase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = songPhrase.cpp; sourceTree = "<group>"; };
 		0AC14A6D14FA002F009FBAF4 /* homeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeScene.h; sourceTree = "<group>"; };
 		0AC14A6E14FA00A2009FBAF4 /* swBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swBaseScene.h; sourceTree = "<group>"; };
 		0AC14A6F14FA00F3009FBAF4 /* swBaseScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = swBaseScene.mm; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				0A8B0414151956C00065D05B /* whaleSong.mm */,
 				0A8B0410151956830065D05B /* grid.h */,
 				0A8B04111519569A0065D05B /* grid.mm */,
+				0ABF79B5151E5FC1006DA884 /* songPhrase.h */,
+				0ABF79C4151E8905006DA884 /* songPhrase.cpp */,
 			);
 			name = whaleSong;
 			sourceTree = "<group>";
@@ -1087,6 +1092,7 @@
 				0A8B04121519569A0065D05B /* grid.mm in Sources */,
 				0A8B0415151956C00065D05B /* whaleSong.mm in Sources */,
 				0A8B0439151BFD1C0065D05B /* ofxiPhoneFile.mm in Sources */,
+				0ABF79C5151E8905006DA884 /* songPhrase.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

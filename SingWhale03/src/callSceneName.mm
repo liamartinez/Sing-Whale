@@ -40,7 +40,9 @@ void callSceneName::activate() {
     
     
     //load here, not setup
-    callScreen.loadImage("images/wires-02.png");
+    callScreen.loadImage("images/BG.png");
+    callDuck.loadImage("images/call1.png");
+    callPail.loadImage("images/call3.png");
     next.setLabel("CORRECT", &swAssets->nevis22);
     tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
     song = " -> SONG INTERFACE HERE <- " ; 
@@ -55,6 +57,8 @@ void callSceneName::deactivate() {
     cout << "Deactivate CallName" << endl;
     
     callScreen.clear();
+    callDuck.clear(); 
+    callPail.clear(); 
     
 }
 
@@ -66,16 +70,24 @@ void callSceneName::draw() {
     ofSetColor(255, 255, 255);
     callScreen.draw(0,0);
     
+    
     string message = "";
     next.draw(ofGetWidth() - 550, ofGetHeight()-100); 
     tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
 
     switch(mgr.getCurScene()) {
         case CALL_SCENE_NAME_DUCK:
+            ofEnableAlphaBlending();
+            callDuck.draw(0,0);
+            ofDisableAlphaBlending(); 
             message = "You did it wrong! You called a duck!"; 
             break;
             
         case CALL_SCENE_NAME_PAIL:
+            ofEnableAlphaBlending();
+            ofSetColor(255, 255, 255);
+            callPail.draw(0,0);
+            ofDisableAlphaBlending(); 
             message = "You called a pail! A pail is not a WHALE"; 
             break;
             
@@ -87,6 +99,7 @@ void callSceneName::draw() {
     ofSetColor(8, 44, 49);
     ofDrawBitmapString(message, 300, ofGetHeight()/3); 
     ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+    
     
 }
 

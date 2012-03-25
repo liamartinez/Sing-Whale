@@ -62,6 +62,7 @@ void speakScene::update() {
     songMenu.update();
     
     wSong.update(); 
+    wSong.loadSong();
     
 }
 
@@ -135,7 +136,9 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     songs[songSM->getCurScene()]->touchDown(touch);
     
     songMenu.touchDown(touch);
+    
     wSong.touchDown(touch);
+
 }
 
 
@@ -144,7 +147,9 @@ void speakScene::touchMoved(ofTouchEventArgs &touch){
     //button.touchMoved(touch);
     songs[songSM->getCurScene()]->touchDown(touch);
     songMenu.touchMoved(touch);
+    
     wSong.touchMoved(touch);
+
 }
 
 
@@ -168,15 +173,21 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
     
      if(songMenu.touchMenuRes){
      
-     cout<<"touch menu res true"<<endl;
+     cout<<"touch menu res true "<<songSM->getCurScene() <<endl;
      songs[songSM->getCurScene()]->activate();
+     //wSong.letsReset(); 
+     wSong.setSong(songSM->getCurScene());
+          
+         
+         
      
      }
      songMenu.touchMenuRes = false;
-    wSong.touchUp(touch);
 
+     wSong.touchUp(touch);
     
 }
+
 
 void speakScene::audioReceived 	(float * input, int bufferSize, int nChannels){
     wSong.audioReceived(input, bufferSize, nChannels); 

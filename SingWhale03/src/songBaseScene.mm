@@ -25,7 +25,8 @@ songBaseScene::songBaseScene() {
 void songBaseScene::setup() {
     
     //setup stuff goes here. Do I need an "activate"? 
-    
+
+  
 }
 
 
@@ -33,6 +34,7 @@ void songBaseScene::setup() {
 //------------------------------------------------------------------
 void songBaseScene::update() {
 
+ 
 
 }
 
@@ -40,7 +42,9 @@ void songBaseScene::update() {
 
 //------------------------------------------------------------------
 void songBaseScene::draw() {
+    
 
+    
 }
 
 
@@ -75,4 +79,41 @@ void songBaseScene::drawGrid() {  //dont need this, but keep for now just in cas
     glPopMatrix();
      */ 
 }
+
+
+//--------------------------------------------------------------
+//Event Listeners
+
+//--------------------------------------------------------------
+void songBaseScene::touchDown(ofTouchEventArgs &touch){
+
+
+    
+}
+
+
+//--------------------------------------------------------------
+void songBaseScene::touchMoved(ofTouchEventArgs &touch){
+
+    //wSong.touchMoved(touch);
+    
+}
+
+
+//--------------------------------------------------------------
+void songBaseScene::touchUp(ofTouchEventArgs &touch){
+
+    //wSong.touchUp(touch);
+    
+    
+}
+
+void songBaseScene::audioReceived 	(float * input, int bufferSize, int nChannels){
+    //wSong.audioReceived(input, bufferSize, nChannels); 
+    //cout << "from speakscene" << input << endl; 
+}
+
+
+
+
 

@@ -171,7 +171,7 @@ dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxMaxim/libs/maxiMFCC.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/libs/tinyxml.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxiPhoneFile/ofxiPhoneFile.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/songPhrase.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/grid.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2d.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \
@@ -216,5 +216,4 @@ dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dJoint.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dJointRevolute.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dRender.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dContactListener.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/listener.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dContactListener.h

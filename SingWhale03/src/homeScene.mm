@@ -33,7 +33,7 @@ void homeScene::activate() {
     
     
     
-    homeScreen.loadImage("images/wires-01.png");
+    homeScreen.loadImage("images/title.png");
     button.setImage(&homeScreen,&homeScreen);
         
     cout << "Activate Home" << endl;

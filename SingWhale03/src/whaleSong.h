@@ -12,14 +12,15 @@
 #pragma once
 
 
-#include "ofMain.h"
-#include "ofxiPhoneExtras.h"
+//#include "ofMain.h"
+#include "ofxiPhoneExtras.h" //this is to access iphone documents directory
 #include <Accelerate/Accelerate.h>
 #include "ofxMaxim.h"
 #include "baseButton.h"
 #include "ofxFreeType2.h"
 #include "ofxXmlSettings.h"
-#include "ofxiPhoneFile.h"
+//#include "ofxiPhoneFile.h"
+#include "songPhrase.h"
 //#include <sys/time.h>
 
 #include "grid.h"
@@ -99,17 +100,27 @@ public:
     baseButton      checkButt;
     bool            checkMe; 
     
+    baseButton      nextButt; 
+    bool            nextMe; 
+    
     //saving
-    void            saveSong(); 
     void            loadSong(); 
     vector<int>     savedBins; 
-    ofxiPhoneFile   songData; 
+    //ofxiPhoneFile   songData; 
+    int             numberOfSongs; 
+    vector<songPhrase>    songs; 
+    int             whichSong;
     
     //checking
     bool            checkSong(); 
     string          message; 
     int             threshold; 
     
+    //setting
+    void            setSong(int whichSong_);
+    
+    //clearing
+    void            letsReset(); 
 };
 
 #endif

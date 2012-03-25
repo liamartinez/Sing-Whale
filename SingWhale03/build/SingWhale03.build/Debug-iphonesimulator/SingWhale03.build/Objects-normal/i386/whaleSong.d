@@ -1,6 +1,7 @@
 dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleSong.mm \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleSong.h \
+  ../../../addons/ofxiPhone/ofxiPhoneExtras.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \
@@ -108,7 +109,6 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  ../../../addons/ofxiPhone/ofxiPhoneExtras.h \
   ../../../addons/ofxiPhone/ofxiPhone.h \
   ../../../addons/ofxAccelerometer/src/ofxAccelerometer.h \
   ../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h \
@@ -149,7 +149,7 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/libs/tinyxml.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxiPhoneFile/ofxiPhoneFile.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/songPhrase.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/grid.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2d.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \

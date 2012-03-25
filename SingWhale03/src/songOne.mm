@@ -29,11 +29,7 @@ void songOne::update() {
 //------------------------------------------------------------------
 void songOne::activate() {
     mgr.setCurScene(SONG_ONE_FIRST);
-    
-    
-    
-    //homeScreen.loadImage("images/wires-01.png");
-    //button.setImage(&homeScreen,&homeScreen);
+
     
     cout << "Activate Song One" << endl;
     
@@ -43,17 +39,14 @@ void songOne::activate() {
 //------------------------------------------------------------------
 void songOne::deactivate() {
     cout << "Deactivate songOne" << endl;
-    
-    //homeScreen.clear();
-    
+   
 }
 
 
 //------------------------------------------------------------------
 void songOne::draw() {
-    cout << "Drawing songOne screen" << endl;
-    
-    
+
+        
     drawGrid();
     ofDrawBitmapString("SONG ONE", ofGetWidth()/2, ofGetHeight()/2 + 20);
     
@@ -86,28 +79,17 @@ void songOne::draw() {
 
 //--------------------------------------------------------------
 void songOne::touchDown(ofTouchEventArgs &touch){
-    //button.touchDown(touch);
+
 }
 
 
 //--------------------------------------------------------------
 void songOne::touchMoved(ofTouchEventArgs &touch){
-    //button.touchMoved(touch);
+
 }
 
 
 //--------------------------------------------------------------
 void songOne::touchUp(ofTouchEventArgs &touch){
-    //Switch Scenes
-    /*
-    if(button.isPressed()) {
-        if(mgr.getCurScene() == SONG_ONE_TOTAL-1) {
-            swSM->setCurScene(SCENE_CALL);
-        } else  {
-            mgr.setCurScene(mgr.getCurScene() + 1);      
-        }
-    }
-    button.touchUp(touch);
-     
-     */
+
 }

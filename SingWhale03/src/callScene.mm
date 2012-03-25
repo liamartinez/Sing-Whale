@@ -31,6 +31,9 @@ void callScene::update() {
         case CALL_SCENE_THIRD:
             //Do stuff
             break;    
+        case CALL_SCENE_FOURTH:
+            //Do stuff
+            break;    
     }
 }
 
@@ -39,20 +42,20 @@ void callScene::activate() {
     //start with the first scene when activated. 
     
     if (hasReturned) {
-        mgr.setCurScene(CALL_SCENE_THIRD);
+        mgr.setCurScene(CALL_SCENE_FOURTH);
     } else {
         mgr.setCurScene(CALL_SCENE_FIRST);
     }
     
     //load here, not setup
-    callScreen.loadImage("images/wires-02.png");
+    callScreen.loadImage("images/BG.png");
+    callWhale.loadImage("images/call2.png");
     next.setLabel("NEXT", &swAssets->nevis22);
     tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
     song = " -> SONG INTERFACE HERE <- " ; 
 
-
     cout << "Activate Call" << endl;
-    
+    textStart.set(ofGetWidth()/2, ofGetHeight()/3);
     
 }
 
@@ -73,34 +76,40 @@ void callScene::draw() {
     callScreen.draw(0,0);
     
     string message = "";
+    int textW = swAssets->nevis48.getStringWidth(message);
+    
     next.draw(ofGetWidth() - 550, ofGetHeight()-100); 
-    
 
-    
-    
     switch(mgr.getCurScene()) {
         case CALL_SCENE_FIRST:
-            message = "Hi! Before anything else, let's call Plulu"; 
+            message = "Hi! Before anything else, \n     let's call Plulu"; 
 
             break;
             
         case CALL_SCENE_SECOND:
             message = "This is how you say her name."; 
-            tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
-            next.setLabel("CORRECT", &swAssets->nevis22);
             ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
-
             break;
             
         case CALL_SCENE_THIRD:
-            message = "Wheee! You did it! Here comes Plulu!"; 
+            message = "Now you try."; 
+            tryAgain.draw(ofGetWidth()/2 - 300, ofGetHeight()-100); 
+            next.setLabel("CORRECT", &swAssets->nevis22);
+            ofDrawBitmapString(song, ofGetWidth()/2 - 300, ofGetHeight() - ofGetHeight()/4);
+            break;
+            
+        case CALL_SCENE_FOURTH:
+            message = "Wheee! You did it! \nHere comes Plulu!"; 
+            ofEnableAlphaBlending();
+            callWhale.draw(0,0);
             next.setLabel("NEXT", &swAssets->nevis22);
+            ofDisableAlphaBlending();
             break;
     }
     
-    ofSetColor(8, 44, 49);
-    ofDrawBitmapString(message, 300, ofGetHeight()/3); 
-
+    
+    textW = swAssets->nevis48.getStringWidth(message);
+    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
     
 }
 

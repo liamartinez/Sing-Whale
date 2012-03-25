@@ -13,7 +13,6 @@
 #include "callSceneName.h"
 #include "speakScene.h"
 
-#include "listener.h"
 
 
 class testApp : public ofxiPhoneApp {

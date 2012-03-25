@@ -51,8 +51,7 @@ void songTwo::deactivate() {
 
 //------------------------------------------------------------------
 void songTwo::draw() {
-    cout << "Drawing songTwo screen" << endl;
-    
+
     
     drawGrid();
     ofDrawBitmapString("SONG TWO", ofGetWidth()/2, ofGetHeight()/2 + 20);
