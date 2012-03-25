@@ -339,6 +339,14 @@ void whaleSong::loadSong(string XMLname) {
     songPhrase tempSong; 
     
     if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + XMLname)){
+        cout <<  XMLname <<  " loaded from documents folder!" << endl; 
+    } else if (songList.loadFile(XMLname)){
+        cout << XMLname << " loaded from data folder!" << endl; 
+    } else {
+        cout << "unable to load " << XMLname << endl; 
+    }
+    
+    
         songList.pushTag("songList");
         numberOfSongs = songList.getNumTags("songs");
         
@@ -373,10 +381,8 @@ void whaleSong::loadSong(string XMLname) {
         }
         songList.popTag(); //pop songlist    
         loadMe = true; 
-    }
-    else{
-        ofLogError("Position file did not load!");
-    }
+    
+
     
 }
 
