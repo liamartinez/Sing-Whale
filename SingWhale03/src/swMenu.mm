@@ -34,7 +34,7 @@ void swMenu::setup() {
     
     
     //Set Labels
-    labels[MENU_ONE]        = "Do you like \n  bananas?";           //put text on the menu
+    labels[MENU_ONE]        = "Plulu!";           //put text on the menu
     labels[MENU_TWO]        = "Whales are \n   stupid";       //put text on the menu
     labels[MENU_THREE]      = "La la la";       //put text on the menu
     
@@ -164,18 +164,21 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
     if(bShowing) {
         for(int i=0; i<MENU_TOTAL; i++) {
             if(buttons[i].isPressed()) {
+                songPressed = i; 
                 switch (i) {
                     case  MENU_ONE:
-                        songSM->setCurScene(SONG_ONE);
+                        //songSM->setCurScene(SONG_ONE);
+                        
                         touchMenuRes = true; 
                         break;
                     case  MENU_TWO:
-                        songSM->setCurScene(SONG_TWO);
+                        //songSM->setCurScene(SONG_TWO);
+                        
                         touchMenuRes = true; 
                         //                        cout<<"press Resouce"<<endl;
                         break;
                     case  MENU_THREE:
-                        songSM->setCurScene(SONG_THREE);
+                        //songSM->setCurScene(SONG_THREE);
                         touchMenuRes = true; 
                         break;
                     default:
@@ -197,4 +200,9 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
     }
      
      
+}
+
+//-------------------------------------------------------------------
+int swMenu::getSongPressed() {
+    return songPressed; 
 }

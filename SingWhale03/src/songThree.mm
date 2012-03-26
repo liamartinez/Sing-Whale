@@ -61,7 +61,7 @@ void songThree::draw() {
     int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
-        case SONG_ONE_FIRST:
+        case SONG_THREE_FIRST:
             
             ofEnableAlphaBlending();
             

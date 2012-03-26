@@ -22,6 +22,8 @@ void songOne::update() {
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
             //Do stuff
+        case SONG_ONE_SECOND:
+            //Do stuff
             break;            
     }
 }
@@ -30,7 +32,6 @@ void songOne::update() {
 void songOne::activate() {
     mgr.setCurScene(SONG_ONE_FIRST);
 
-    
     cout << "Activate Song One" << endl;
     
     songOne.loadImage("images/speak_med.png");
@@ -57,16 +58,19 @@ void songOne::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
-            
             ofEnableAlphaBlending();
             
-            message = "I like tacos."; 
+            message = "  Hi there \n funny looking"; 
             songOne.draw(0,0);
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();
             
+            break; 
+        case SONG_ONE_SECOND:
+            
+
             break;
             
     }

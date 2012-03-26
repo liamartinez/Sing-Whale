@@ -94,19 +94,28 @@ void whaleSong::setup(){
     resetButt.setup(); 
     resetButt.setColor(ofColor(232, 58, 37));
     resetButt.setLabel("start again", &whitneySemiBold22);
-    
-    loadButt.setup(); 
-    loadButt.setColor(ofColor(232, 58, 37));
-    loadButt.setLabel("load", &whitneySemiBold22);
-    
+
     checkButt.setup(); 
     checkButt.setColor(ofColor(232, 58, 37));
-    checkButt.setLabel("check", &whitneySemiBold22);
+    checkButt.setLabel("check Song", &whitneySemiBold22);
     
-    loadMe = false;
+    correctButt.setup(); 
+    correctButt.setColor(ofColor(232, 58, 37));
+    correctButt.setLabel("correct", &whitneySemiBold22);
+    
+    tryAgainButt.setup(); 
+    tryAgainButt.setColor(ofColor(232, 58, 37));
+    tryAgainButt.setLabel("try again", &whitneySemiBold22);
+    
+    checkDebugButt.setup(); 
+    checkDebugButt.setColor(ofColor(232, 58, 37));
+    checkDebugButt.setLabel("check debug", &whitneySemiBold22);
+        
     checkMe = false; 
     reset   = false; 
-    message = "FIRST LOAD, THEN START, THEN CHECK!"; 
+    correct = false; 
+    checked = false; 
+    message = "TEMPORARY DEBUG CONTROLS"; 
     
     whichSong = 0; 
     showGrid = true; 
@@ -156,9 +165,11 @@ void whaleSong::draw(){
     if (showGrid) beginButt.draw( 10, 10); 
     skeletonButt.draw(10, 50); 
     resetButt.draw(10, 90);
-    loadButt.draw(200, 50);
     checkButt.draw(200, 90);
-    
+    correctButt.draw(200, 10); 
+    tryAgainButt.draw(200,50); 
+    checkDebugButt.draw(200,90); 
+        
     ofSetColor(78, 96, 146);
     
     ofSetColor(225);
@@ -228,7 +239,7 @@ void whaleSong::audioReceived 	(float * input, int bufferSize, int nChannels){
             oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
         }  
     }
-	bufferCounter++; //lia:what is bufferCounter for?
+	//bufferCounter++; //lia:what is bufferCounter for?
 }
 
 /*//old method
@@ -260,8 +271,10 @@ void whaleSong::touchDown(ofTouchEventArgs &touch){
     beginButt.touchDown(touch);
     skeletonButt.touchDown(touch);
     resetButt.touchDown(touch);
-    loadButt.touchDown(touch);
     checkButt.touchDown(touch);
+    tryAgainButt.touchDown(touch);
+    correctButt.touchDown(touch);
+    checkDebugButt.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -285,20 +298,25 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
         reset = true; 
         
     }
-
-    if (loadButt.isPressed()) {
-        loadSong("positions.xml"); 
-    }
     
     if (checkButt.isPressed()) {
         checkMe = true; 
     }
+    
+    if (correctButt.isPressed()) correct = true; 
+    if (tryAgainButt.isPressed()) correct = false; 
+    if (checkDebugButt.isPressed()) {
+        checked = true;    
+    }
+    
         
     beginButt.touchUp(touch);
     skeletonButt.touchUp(touch);
     resetButt.touchUp(touch);
-    loadButt.touchUp(touch);
     checkButt.touchUp(touch);
+    correctButt.touchUp(touch);
+    tryAgainButt.touchUp(touch);
+    checkDebugButt.touchUp(touch);
 }
 
 //--------------------------------------------------------------
@@ -380,7 +398,6 @@ void whaleSong::loadSong(string XMLname) {
             
         }
         songList.popTag(); //pop songlist    
-        loadMe = true; 
     
 
     

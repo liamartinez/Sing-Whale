@@ -95,11 +95,14 @@ public:
     baseButton      saveButt;
     bool            saveMe; 
     
-    baseButton      loadButt;
-    bool            loadMe; 
-    
     baseButton      checkButt;
     bool            checkMe; 
+    
+    baseButton      correctButt;
+    baseButton      tryAgainButt; 
+    bool            correct;
+    baseButton      checkDebugButt; 
+    bool            checked; 
 
     //saving
     void            loadSong(string XMLname); 

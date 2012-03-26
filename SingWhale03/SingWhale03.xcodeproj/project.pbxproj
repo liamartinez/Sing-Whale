@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3349CE1520C210007FD88D /* songFour.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A3349CD1520C210007FD88D /* songFour.mm */; };
 		0A59A0D114FB4B4700A497DA /* callScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D014FB4B4700A497DA /* callScene.mm */; };
 		0A59A0D414FB4CAF00A497DA /* speakScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D314FB4CAF00A497DA /* speakScene.mm */; };
 		0A8B0344151949830065D05B /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0A8B02DA151949830065D05B /* install.xml */; };
@@ -129,6 +130,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3349CC1520C206007FD88D /* songFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songFour.h; sourceTree = "<group>"; };
+		0A3349CD1520C210007FD88D /* songFour.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = songFour.mm; sourceTree = "<group>"; };
 		0A59A0CF14FB4B0300A497DA /* callScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callScene.h; sourceTree = "<group>"; };
 		0A59A0D014FB4B4700A497DA /* callScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = callScene.mm; sourceTree = "<group>"; };
 		0A59A0D214FB4C6D00A497DA /* speakScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speakScene.h; sourceTree = "<group>"; };
@@ -793,6 +796,8 @@
 				0ADDCE901517A98800B32146 /* songTwo.mm */,
 				0ADDCE921517A99F00B32146 /* songThree.h */,
 				0ADDCE8D1517A91A00B32146 /* songThree.mm */,
+				0A3349CC1520C206007FD88D /* songFour.h */,
+				0A3349CD1520C210007FD88D /* songFour.mm */,
 				0ADDCE931517EB9700B32146 /* songBaseScene.h */,
 				0ADDCE941517EBA100B32146 /* songBaseScene.mm */,
 			);
@@ -1093,6 +1098,7 @@
 				0A8B0415151956C00065D05B /* whaleSong.mm in Sources */,
 				0A8B0439151BFD1C0065D05B /* ofxiPhoneFile.mm in Sources */,
 				0ABF79C5151E8905006DA884 /* songPhrase.cpp in Sources */,
+				0A3349CE1520C210007FD88D /* songFour.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

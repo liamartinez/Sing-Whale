@@ -41,6 +41,7 @@ public:
     void touchDown(ofTouchEventArgs &touch);
     void touchMoved(ofTouchEventArgs &touch);
     void touchUp(ofTouchEventArgs &touch);
+    int getSongPressed(); 
     
     string labels[MENU_TOTAL];
     baseButton buttons[MENU_TOTAL];
@@ -53,6 +54,8 @@ public:
     ofPoint touchPt;
 	ofPoint drag;
 	bool bDragging;
+    
+    int songPressed; 
     
 private:
     bool bShowing;

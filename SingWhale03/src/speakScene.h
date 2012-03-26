@@ -22,6 +22,7 @@
 #include "songOne.h"
 #include "songTwo.h"
 #include "songThree.h"
+#include "songFour.h"
 
 // menu
 #include "swMenu.h"

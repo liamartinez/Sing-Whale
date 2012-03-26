@@ -15,6 +15,7 @@ enum song {
     SONG_ONE,
     SONG_TWO,
     SONG_THREE,
+    SONG_FOUR,
     SONG_TOTAL_SCENES //Always keep this one in here and keep it last!
 };
 

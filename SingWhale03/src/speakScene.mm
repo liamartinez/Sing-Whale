@@ -22,6 +22,8 @@ void speakScene::setup() {
         songs[SONG_ONE]      = new songOne();
         songs[SONG_TWO]      = new songTwo();
         songs[SONG_THREE]    = new songThree();
+        songs[SONG_FOUR]     = new songFour(); 
+        
 
         try {
             for(int i=0; i<SONG_TOTAL_SCENES; i++) {
@@ -63,6 +65,22 @@ void speakScene::update() {
     
     wSong.update(); 
     wSong.loadSong("positions.xml");
+    
+    //if the user song is correct, then activate that scene. 
+    //if the user is wrong, make fun of them in song 4. 
+    if(wSong.checked) {
+        if (wSong.correct) {
+            songSM->setCurScene(songMenu.getSongPressed());
+            songs[songSM->getCurScene()]->activate();
+            wSong.checked = false; 
+        } else {
+            songSM->setCurScene(SONG_FOUR);  
+            songs[songSM->getCurScene()]->activate();
+            wSong.checked = false;
+        }
+    }
+    
+
     
 }
 
@@ -131,7 +149,6 @@ void speakScene::draw() {
 
 //--------------------------------------------------------------
 void speakScene::touchDown(ofTouchEventArgs &touch){
-    //button.touchDown(touch);
     
     songs[songSM->getCurScene()]->touchDown(touch);
     
@@ -144,7 +161,7 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
 
 //--------------------------------------------------------------
 void speakScene::touchMoved(ofTouchEventArgs &touch){
-    //button.touchMoved(touch);
+
     songs[songSM->getCurScene()]->touchDown(touch);
     songMenu.touchMoved(touch);
     
@@ -174,12 +191,9 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
      if(songMenu.touchMenuRes){
      
      cout<<"touch menu res true "<<songSM->getCurScene() <<endl;
-     songs[songSM->getCurScene()]->activate();
+     //songs[songSM->getCurScene()]->activate();
      //wSong.letsReset(); 
-     wSong.setSong(songSM->getCurScene());
-          
-         
-         
+     wSong.setSong(songMenu.getSongPressed());
      
      }
      songMenu.touchMenuRes = false;
