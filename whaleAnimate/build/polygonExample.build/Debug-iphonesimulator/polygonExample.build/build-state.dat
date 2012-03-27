@@ -1,0 +1,1873 @@
+TpolygonExample
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Info.plist ofxiphone-Info.plist
+cCpResource bin/data/Default.png build/Debug-iphonesimulator/polygonExample.app/Default.png
+cCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+cCpResource Project.xcconfig build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig
+cCpResource bin/data/Icon.png build/Debug-iphonesimulator/polygonExample.app/Icon.png
+cCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample normal i386
+cGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+cPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+cTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004F453DF80000000000000110
+t1329937912
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004F6157B40000000000182900
+t1331779508
+s1583360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004F6157B400000000002FDC30
+t1331779508
+s3136560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F6157B50000000000244490
+t1331779509
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004F6157B40000000000089510
+t1331779508
+s562448
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004F6157B50000000000069670
+t1331779509
+s431728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004F6157B5000000000001EAD0
+t1331779509
+s125648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F6157B60000000000353830
+t1331779510
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004F6157B60000000000001534
+t1331779510
+s5428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004F6157B900000000000D9D60
+t1331779513
+s892256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004F6157B90000000000029350
+t1331779513
+s168784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004F6157B9000000000001D2E0
+t1331779513
+s119520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F6157BA00000000001AB190
+t1331779514
+s1749392
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004F6157BA0000000000000BF5
+t1331779514
+s3061
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F6157BC0000000000905E40
+t1331779516
+s9461312
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxAccelerometer/src/ofxAccelerometer.h
+c000000004D32663E0000000000001903
+t1295148606
+s6403
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxMultiTouch/src/ofxMultiTouch.h
+c000000004D32663E0000000000000C4C
+t1295148606
+s3148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h
+c000000004DB3039A0000000000000BB7
+t1303577498
+s2999
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/ofxiPhone.h
+c000000004DB3039A0000000000000840
+t1303577498
+s2112
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/ofxiPhoneExtras.h
+c000000004DB080AC0000000000002329
+t1303412908
+s9001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/EAGLView.h
+c000000004D2F319400000000000009EE
+t1294938516
+s2542
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ESRenderer.h
+c000000004D456C18000000000000018E
+t1296395288
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/SoundEngine.h
+c000000004D3305FA0000000000004003
+t1295189498
+s16387
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h
+c000000004E0F6EA80000000000000EA8
+t1309634216
+s3752
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxOpenALSoundPlayer.h
+c000000004D5583C80000000000000F14
+t1297449928
+s3860
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h
+c000000004C3F5CBA0000000000000E48
+t1279220922
+s3656
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h
+c000000004C3F5CBA0000000000000862
+t1279220922
+s2146
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneApp.h
+c000000004DB3039A0000000000000544
+t1303577498
+s1348
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h
+c000000004D55A30A000000000000095C
+t1297457930
+s2396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h
+c000000004D5583C800000000000008A6
+t1297449928
+s2214
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h
+c000000004D3305FA0000000000000C99
+t1295189498
+s3225
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h
+c000000004E0DF6B2000000000000068E
+t1309537970
+s1678
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h
+c000000004DB3039A0000000000001634
+t1303577498
+s5684
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h
+c000000004DB3039A00000000000008AC
+t1303577498
+s2220
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-deprecated.h
+c000000004D558E2800000000000021FA
+t1297452584
+s8698
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-features.h
+c000000004D558E28000000000000031D
+t1297452584
+s797
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-pdf.h
+c000000004D558E280000000000000C24
+t1297452584
+s3108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-svg.h
+c000000004D558E280000000000000ADD
+t1297452584
+s2781
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-version.h
+c000000004D558E280000000000000094
+t1297452584
+s148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo.h
+c000000004D558E280000000000016BCE
+t1297452584
+s93134
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/glu/include_iphone/glu.h
+c000000004BACD92A0000000000001F99
+t1269618986
+s8089
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/of3dUtils.h
+c000000004DBB0C14000000000000002B
+t1304103956
+s43
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofCamera.h
+c000000004DF2A5B40000000000000858
+t1307747764
+s2136
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofEasyCam.h
+c000000004D846F74000000000000053C
+t1300524916
+s1340
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofMesh.h
+c000000004E15EDE600000000000010DD
+t1310060006
+s4317
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofNode.h
+c000000004D59888C000000000000143C
+t1297713292
+s5180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004E0F39D00000000000000590
+t1309620688
+s1424
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofAppRunner.h
+c000000004DD7C1F8000000000000075D
+t1305985528
+s1885
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofBaseApp.h
+c000000004DD7C1F80000000000000377
+t1305985528
+s887
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/events/ofEventUtils.h
+c000000004DDA95360000000000000DAD
+t1306170678
+s3501
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/events/ofEvents.h
+c000000004F4FBFE60000000000001B99
+t1330626534
+s7065
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofFbo.h
+c000000004E2849E60000000000000E23
+t1311263206
+s3619
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofGLRenderer.h
+c000000004E19CDB00000000000001109
+t1310313904
+s4361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofGLUtils.h
+c000000004E0E0E280000000000000B79
+t1309543976
+s2937
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofLight.h
+c000000004E0F7856000000000000084C
+t1309636694
+s2124
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofMaterial.h
+c000000004E0F78560000000000000555
+t1309636694
+s1365
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofShader.h
+c000000004E0E69F00000000000000F82
+t1309567472
+s3970
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofTexture.h
+c000000004E265D2400000000000010D0
+t1311137060
+s4304
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofVbo.h
+c000000004E0F78560000000000000A19
+t1309636694
+s2585
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofVboMesh.h
+c000000004DF2A5B40000000000000114
+t1307747764
+s276
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofCairoRenderer.h
+c000000004E25D24000000000000012BF
+t1311101504
+s4799
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofGraphics.h
+c000000004E134E620000000000001D95
+t1309888098
+s7573
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofImage.h
+c000000004E15EDE80000000000002014
+t1310060008
+s8212
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPath.h
+c000000004E19CDB0000000000000115A
+t1310313904
+s4442
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPixels.h
+c000000004E1630D400000000000012C3
+t1310077140
+s4803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPolyline.h
+c000000004E19CDB00000000000000E9D
+t1310313904
+s3741
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofRendererCollection.h
+c000000004E19CDB000000000000027C6
+t1310313904
+s10182
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofTessellator.h
+c000000004DDA957A0000000000000459
+t1306170746
+s1113
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004E2327FC00000000000009F5
+t1310926844
+s2549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMath.h
+c000000004E19CDB00000000000000B3D
+t1310313904
+s2877
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D5583C80000000000000A4C
+t1297449928
+s2636
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D846F740000000000006D64
+t1300524916
+s28004
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofQuaternion.h
+c000000004D846F7400000000000033BD
+t1300524916
+s13245
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec2f.h
+c000000004D923DCC000000000000407D
+t1301429708
+s16509
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec3f.h
+c000000004D846F7400000000000061A8
+t1300524916
+s25000
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec4f.h
+c000000004D5583C80000000000002EC3
+t1297449928
+s11971
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVectorMath.h
+c000000004D2F31940000000000000099
+t1294938516
+s153
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/ofMain.h
+c000000004E2849E60000000000000643
+t1311263206
+s1603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D5583C80000000000000366
+t1297449928
+s870
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofBaseSoundStream.h
+c000000004D8613F200000000000002D4
+t1300632562
+s724
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004E2849E60000000000000637
+t1311263206
+s1591
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofSoundStream.h
+c000000004E2867B000000000000006DB
+t1311270832
+s1755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofxiPhoneSoundStream.h
+c000000004E2867B00000000000000382
+t1311270832
+s898
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofBaseTypes.h
+c000000004E286F800000000000002F01
+t1311272832
+s12033
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofColor.h
+c000000004E0F785600000000000013FD
+t1309636694
+s5117
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofPoint.h
+c000000004D846F74000000000000003D
+t1300524916
+s61
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofRectangle.h
+c000000004DB07C7E0000000000000454
+t1303411838
+s1108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofTypes.h
+c000000004E0F788A0000000000000D27
+t1309636746
+s3367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofConstants.h
+c000000004E2867B000000000000034C6
+t1311270832
+s13510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofFileUtils.h
+c000000004E25D2400000000000001D56
+t1311101504
+s7510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofLog.h
+c000000004E19CDB000000000000014B0
+t1310313904
+s5296
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofSystemUtils.h
+c000000004DD7C1F200000000000001AC
+t1305985522
+s428
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofThread.h
+c000000004D326642000000000000050C
+t1295148610
+s1292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004E2849E600000000000008C4
+t1311263206
+s2244
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofUtils.h
+c000000004E2849E60000000000001245
+t1311263206
+s4677
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofVideoGrabber.h
+c000000004E19CD4C00000000000009ED
+t1310313804
+s2541
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofVideoPlayer.h
+c000000004E19CD4C0000000000000ABD
+t1310313804
+s2749
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004E19CD4C000000000000032C
+t1310313804
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004E19CD4C0000000000000612
+t1310313804
+s1554
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AbstractDelegate.h
+c000000004D2CAD8A0000000000000B59
+t1294773642
+s2905
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AbstractEvent.h
+c000000004D2CAD8A0000000000002D7C
+t1294773642
+s11644
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveMethod.h
+c000000004D2CAD8A0000000000001C64
+t1294773642
+s7268
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveResult.h
+c000000004D2CAD8A0000000000002E66
+t1294773642
+s11878
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveRunnable.h
+c000000004D2CAD8A0000000000001785
+t1294773642
+s6021
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveStarter.h
+c000000004D2CAD8A0000000000000927
+t1294773642
+s2343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AtomicCounter.h
+c000000004D846F740000000000001D13
+t1300524916
+s7443
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AutoPtr.h
+c000000004D2CAD8A0000000000001E0C
+t1294773642
+s7692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Bugcheck.h
+c000000004D2CAD8A00000000000014A9
+t1294773642
+s5289
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/CompareFunctions.h
+c000000004D2CAD8A00000000000007EC
+t1294773642
+s2028
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Condition.h
+c000000004D2CAD8A0000000000001236
+t1294773642
+s4662
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Config.h
+c000000004D2CAD8A0000000000000E22
+t1294773642
+s3618
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Delegate.h
+c000000004D2CAD8A0000000000001828
+t1294773642
+s6184
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Event.h
+c000000004D2CAD8A0000000000000E21
+t1294773642
+s3617
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Event_POSIX.h
+c000000004D2CAD8A0000000000000A91
+t1294773642
+s2705
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Exception.h
+c000000004D5583C8000000000000283D
+t1297449928
+s10301
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Expire.h
+c000000004D2CAD8A0000000000000D0D
+t1294773642
+s3341
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FIFOEvent.h
+c000000004D2CAD8A0000000000000B15
+t1294773642
+s2837
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FIFOStrategy.h
+c000000004D2CAD8A0000000000001116
+t1294773642
+s4374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/File.h
+c000000004D456C1A0000000000001F91
+t1296395290
+s8081
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/File_UNIX.h
+c000000004D2CAD8A0000000000000BC1
+t1294773642
+s3009
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Foundation.h
+c000000004D5583C800000000000010BE
+t1297449928
+s4286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FunctionDelegate.h
+c000000004D2CAD8A00000000000013C8
+t1294773642
+s5064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Mutex.h
+c000000004D2CAD8C0000000000001D9F
+t1294773644
+s7583
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D5583C80000000000000AC3
+t1297449928
+s2755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/NotificationStrategy.h
+c000000004D2CAD8C0000000000000B48
+t1294773644
+s2888
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Platform.h
+c000000004D5583C80000000000001AF7
+t1297449928
+s6903
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Platform_POSIX.h
+c000000004D2CAD8C0000000000000843
+t1294773644
+s2115
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/RefCountedObject.h
+c000000004D2CAD8C0000000000000BB1
+t1294773644
+s2993
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Runnable.h
+c000000004D2CAD8C0000000000000861
+t1294773644
+s2145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ScopedLock.h
+c000000004D456C1A0000000000000B7F
+t1296395290
+s2943
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ScopedUnlock.h
+c000000004D2CAD8C000000000000092B
+t1294773644
+s2347
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SharedPtr.h
+c000000004D5583C80000000000002278
+t1297449928
+s8824
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SignalHandler.h
+c000000004D2CAD8C00000000000011EB
+t1294773644
+s4587
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SingletonHolder.h
+c000000004D2CAD8C0000000000000A67
+t1294773644
+s2663
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Thread.h
+c000000004D2CAD8C0000000000001E10
+t1294773644
+s7696
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ThreadPool.h
+c000000004D2CAD8C0000000000001C8A
+t1294773644
+s7306
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Thread_POSIX.h
+c000000004D2CAD8C00000000000013B7
+t1294773644
+s5047
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Timestamp.h
+c000000004D2CAD8C0000000000001A41
+t1294773644
+s6721
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Types.h
+c000000004D5583C80000000000001926
+t1297449928
+s6438
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/tess2/include/tesselator.h
+c000000004E0E247A0000000000001C63
+t1309549690
+s7267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app
+t1332869722
+s374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM
+t1332869722
+s102
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig
+t1332865404
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Default.png
+t1332869722
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Icon.png
+t1332869722
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Info.plist
+t1332866451
+s820
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/PkgInfo
+t1332866451
+s8
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig
+t1332865404
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist
+t1332866451
+s692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+t1332869721
+s7630604
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o
+t1332869263
+s106820
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList
+c000000004F71ED1E0000000000000163
+t1332866334
+s355
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o
+t1332869719
+s199524
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+c000000004F71E97C0000000000000041
+t1332865404
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist
+c000000004F71ED8400000000000004A5
+t1332866436
+s1189
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+c000000004BACD92A000000000000009E
+t1269618986
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h
+c000000004F71F82A00000000000002D6
+t1332869162
+s726
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+c000000004F71FBE3000000000000121A
+t1332870115
+s4634
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxAccelerometer/src/ofxAccelerometer.h
+c000000004D32663E0000000000001903
+t1295148606
+s6403
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxMultiTouch/src/ofxMultiTouch.h
+c000000004D32663E0000000000000C4C
+t1295148606
+s3148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h
+c000000004DB3039A0000000000000BB7
+t1303577498
+s2999
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/ofxiPhone.h
+c000000004DB3039A0000000000000840
+t1303577498
+s2112
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/ofxiPhoneExtras.h
+c000000004DB080AC0000000000002329
+t1303412908
+s9001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/EAGLView.h
+c000000004D2F319400000000000009EE
+t1294938516
+s2542
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ESRenderer.h
+c000000004D456C18000000000000018E
+t1296395288
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/SoundEngine.h
+c000000004D3305FA0000000000004003
+t1295189498
+s16387
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h
+c000000004E0F6EA80000000000000EA8
+t1309634216
+s3752
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxOpenALSoundPlayer.h
+c000000004D5583C80000000000000F14
+t1297449928
+s3860
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h
+c000000004C3F5CBA0000000000000E48
+t1279220922
+s3656
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h
+c000000004C3F5CBA0000000000000862
+t1279220922
+s2146
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneApp.h
+c000000004DB3039A0000000000000544
+t1303577498
+s1348
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h
+c000000004D55A30A000000000000095C
+t1297457930
+s2396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h
+c000000004D5583C800000000000008A6
+t1297449928
+s2214
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h
+c000000004D3305FA0000000000000C99
+t1295189498
+s3225
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h
+c000000004E0DF6B2000000000000068E
+t1309537970
+s1678
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h
+c000000004DB3039A0000000000001634
+t1303577498
+s5684
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h
+c000000004DB3039A00000000000008AC
+t1303577498
+s2220
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo-deprecated.h
+c000000004D558E2800000000000021FA
+t1297452584
+s8698
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo-features.h
+c000000004D558E28000000000000031D
+t1297452584
+s797
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo-pdf.h
+c000000004D558E280000000000000C24
+t1297452584
+s3108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo-svg.h
+c000000004D558E280000000000000ADD
+t1297452584
+s2781
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo-version.h
+c000000004D558E280000000000000094
+t1297452584
+s148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/cairo/include/cairo/cairo.h
+c000000004D558E280000000000016BCE
+t1297452584
+s93134
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/glu/include_iphone/glu.h
+c000000004BACD92A0000000000001F99
+t1269618986
+s8089
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/3d/of3dUtils.h
+c000000004DBB0C14000000000000002B
+t1304103956
+s43
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/3d/ofCamera.h
+c000000004DF2A5B40000000000000858
+t1307747764
+s2136
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/3d/ofEasyCam.h
+c000000004D846F74000000000000053C
+t1300524916
+s1340
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/3d/ofMesh.h
+c000000004E15EDE600000000000010DD
+t1310060006
+s4317
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/3d/ofNode.h
+c000000004D59888C000000000000143C
+t1297713292
+s5180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004E0F39D00000000000000590
+t1309620688
+s1424
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/app/ofAppRunner.h
+c000000004DD7C1F8000000000000075D
+t1305985528
+s1885
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/app/ofBaseApp.h
+c000000004DD7C1F80000000000000377
+t1305985528
+s887
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/events/ofEventUtils.h
+c000000004DDA95360000000000000DAD
+t1306170678
+s3501
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/events/ofEvents.h
+c000000004F4FBFE60000000000001B99
+t1330626534
+s7065
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofFbo.h
+c000000004E2849E60000000000000E23
+t1311263206
+s3619
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofGLRenderer.h
+c000000004E19CDB00000000000001109
+t1310313904
+s4361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofGLUtils.h
+c000000004E0E0E280000000000000B79
+t1309543976
+s2937
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofLight.h
+c000000004E0F7856000000000000084C
+t1309636694
+s2124
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofMaterial.h
+c000000004E0F78560000000000000555
+t1309636694
+s1365
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofShader.h
+c000000004E0E69F00000000000000F82
+t1309567472
+s3970
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofTexture.h
+c000000004E265D2400000000000010D0
+t1311137060
+s4304
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofVbo.h
+c000000004E0F78560000000000000A19
+t1309636694
+s2585
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/gl/ofVboMesh.h
+c000000004DF2A5B40000000000000114
+t1307747764
+s276
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofCairoRenderer.h
+c000000004E25D24000000000000012BF
+t1311101504
+s4799
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofGraphics.h
+c000000004E134E620000000000001D95
+t1309888098
+s7573
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofImage.h
+c000000004E15EDE80000000000002014
+t1310060008
+s8212
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofPath.h
+c000000004E19CDB0000000000000115A
+t1310313904
+s4442
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofPixels.h
+c000000004E1630D400000000000012C3
+t1310077140
+s4803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofPolyline.h
+c000000004E19CDB00000000000000E9D
+t1310313904
+s3741
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofRendererCollection.h
+c000000004E19CDB000000000000027C6
+t1310313904
+s10182
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofTessellator.h
+c000000004DDA957A0000000000000459
+t1306170746
+s1113
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004E2327FC00000000000009F5
+t1310926844
+s2549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofMath.h
+c000000004E19CDB00000000000000B3D
+t1310313904
+s2877
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D5583C80000000000000A4C
+t1297449928
+s2636
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D846F740000000000006D64
+t1300524916
+s28004
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofQuaternion.h
+c000000004D846F7400000000000033BD
+t1300524916
+s13245
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofVec2f.h
+c000000004D923DCC000000000000407D
+t1301429708
+s16509
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofVec3f.h
+c000000004D846F7400000000000061A8
+t1300524916
+s25000
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofVec4f.h
+c000000004D5583C80000000000002EC3
+t1297449928
+s11971
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/math/ofVectorMath.h
+c000000004D2F31940000000000000099
+t1294938516
+s153
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/ofMain.h
+c000000004E2849E60000000000000643
+t1311263206
+s1603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D5583C80000000000000366
+t1297449928
+s870
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/sound/ofBaseSoundStream.h
+c000000004D8613F200000000000002D4
+t1300632562
+s724
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004E2849E60000000000000637
+t1311263206
+s1591
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/sound/ofSoundStream.h
+c000000004E2867B000000000000006DB
+t1311270832
+s1755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/sound/ofxiPhoneSoundStream.h
+c000000004E2867B00000000000000382
+t1311270832
+s898
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/types/ofBaseTypes.h
+c000000004E286F800000000000002F01
+t1311272832
+s12033
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/types/ofColor.h
+c000000004E0F785600000000000013FD
+t1309636694
+s5117
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/types/ofPoint.h
+c000000004D846F74000000000000003D
+t1300524916
+s61
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/types/ofRectangle.h
+c000000004DB07C7E0000000000000454
+t1303411838
+s1108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/types/ofTypes.h
+c000000004E0F788A0000000000000D27
+t1309636746
+s3367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofConstants.h
+c000000004E2867B000000000000034C6
+t1311270832
+s13510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofFileUtils.h
+c000000004E25D2400000000000001D56
+t1311101504
+s7510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofLog.h
+c000000004E19CDB000000000000014B0
+t1310313904
+s5296
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofSystemUtils.h
+c000000004DD7C1F200000000000001AC
+t1305985522
+s428
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofThread.h
+c000000004D326642000000000000050C
+t1295148610
+s1292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004E2849E600000000000008C4
+t1311263206
+s2244
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/utils/ofUtils.h
+c000000004E2849E60000000000001245
+t1311263206
+s4677
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/video/ofVideoGrabber.h
+c000000004E19CD4C00000000000009ED
+t1310313804
+s2541
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/video/ofVideoPlayer.h
+c000000004E19CD4C0000000000000ABD
+t1310313804
+s2749
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004E19CD4C000000000000032C
+t1310313804
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004E19CD4C0000000000000612
+t1310313804
+s1554
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/AbstractDelegate.h
+c000000004D2CAD8A0000000000000B59
+t1294773642
+s2905
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/AbstractEvent.h
+c000000004D2CAD8A0000000000002D7C
+t1294773642
+s11644
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ActiveMethod.h
+c000000004D2CAD8A0000000000001C64
+t1294773642
+s7268
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ActiveResult.h
+c000000004D2CAD8A0000000000002E66
+t1294773642
+s11878
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ActiveRunnable.h
+c000000004D2CAD8A0000000000001785
+t1294773642
+s6021
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ActiveStarter.h
+c000000004D2CAD8A0000000000000927
+t1294773642
+s2343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/AtomicCounter.h
+c000000004D846F740000000000001D13
+t1300524916
+s7443
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/AutoPtr.h
+c000000004D2CAD8A0000000000001E0C
+t1294773642
+s7692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Bugcheck.h
+c000000004D2CAD8A00000000000014A9
+t1294773642
+s5289
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/CompareFunctions.h
+c000000004D2CAD8A00000000000007EC
+t1294773642
+s2028
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Condition.h
+c000000004D2CAD8A0000000000001236
+t1294773642
+s4662
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Config.h
+c000000004D2CAD8A0000000000000E22
+t1294773642
+s3618
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Delegate.h
+c000000004D2CAD8A0000000000001828
+t1294773642
+s6184
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Event.h
+c000000004D2CAD8A0000000000000E21
+t1294773642
+s3617
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Event_POSIX.h
+c000000004D2CAD8A0000000000000A91
+t1294773642
+s2705
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Exception.h
+c000000004D5583C8000000000000283D
+t1297449928
+s10301
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Expire.h
+c000000004D2CAD8A0000000000000D0D
+t1294773642
+s3341
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/FIFOEvent.h
+c000000004D2CAD8A0000000000000B15
+t1294773642
+s2837
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/FIFOStrategy.h
+c000000004D2CAD8A0000000000001116
+t1294773642
+s4374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/File.h
+c000000004D456C1A0000000000001F91
+t1296395290
+s8081
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/File_UNIX.h
+c000000004D2CAD8A0000000000000BC1
+t1294773642
+s3009
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Foundation.h
+c000000004D5583C800000000000010BE
+t1297449928
+s4286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/FunctionDelegate.h
+c000000004D2CAD8A00000000000013C8
+t1294773642
+s5064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Mutex.h
+c000000004D2CAD8C0000000000001D9F
+t1294773644
+s7583
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D5583C80000000000000AC3
+t1297449928
+s2755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/NotificationStrategy.h
+c000000004D2CAD8C0000000000000B48
+t1294773644
+s2888
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Platform.h
+c000000004D5583C80000000000001AF7
+t1297449928
+s6903
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Platform_POSIX.h
+c000000004D2CAD8C0000000000000843
+t1294773644
+s2115
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/RefCountedObject.h
+c000000004D2CAD8C0000000000000BB1
+t1294773644
+s2993
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Runnable.h
+c000000004D2CAD8C0000000000000861
+t1294773644
+s2145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ScopedLock.h
+c000000004D456C1A0000000000000B7F
+t1296395290
+s2943
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ScopedUnlock.h
+c000000004D2CAD8C000000000000092B
+t1294773644
+s2347
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/SharedPtr.h
+c000000004D5583C80000000000002278
+t1297449928
+s8824
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/SignalHandler.h
+c000000004D2CAD8C00000000000011EB
+t1294773644
+s4587
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/SingletonHolder.h
+c000000004D2CAD8C0000000000000A67
+t1294773644
+s2663
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Thread.h
+c000000004D2CAD8C0000000000001E10
+t1294773644
+s7696
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/ThreadPool.h
+c000000004D2CAD8C0000000000001C8A
+t1294773644
+s7306
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Thread_POSIX.h
+c000000004D2CAD8C00000000000013B7
+t1294773644
+s5047
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Timestamp.h
+c000000004D2CAD8C0000000000001A41
+t1294773644
+s6721
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/poco/include/Poco/Types.h
+c000000004D5583C80000000000001926
+t1297449928
+s6438
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/tess2/include/tesselator.h
+c000000004E0E247A0000000000001C63
+t1309549690
+s7267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app
+t1332866121
+s374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM
+t1332865412
+s102
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig
+t1332865404
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Default.png
+t1332866121
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Icon.png
+t1332866121
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Info.plist
+t1332865404
+s731
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/PkgInfo
+t1332865404
+s8
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig
+t1332865404
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist
+t1332865404
+s603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+t1332865411
+s7615940
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o
+t1332865409
+s88708
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList
+c000000004F71E97C000000000000016F
+t1332865404
+s367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o
+t1332865409
+s177148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+c000000004F71E97C0000000000000041
+t1332865404
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/ofxiphone-Info.plist
+c000000004E273F2C0000000000000428
+t1311194924
+s1064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm
+c000000004BACD92A000000000000009E
+t1269618986
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h
+c000000004D3DD2EE000000000000027F
+t1295897326
+s639
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm
+c000000004F71EC7B0000000000002C7A
+t1332866171
+s11386
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a
+c000000004F6E514C0000000001F3D938
+t1332629836
+s32758072
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth
+t1332866336
+s4806152
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-davgvfpwniaqoiaqiwxkzeqyffpz/iPhone_Prefix.pch.pth
+t2
+s0
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.pth
+t1332865406
+s4852720
+
+Nofxiphone-Info.plist
+c000000004F71ED8400000000000004A5
+t1332866436
+s1189
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies9126ea633322b541^f722f2633322b541^-110"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.1(21%IDEActivityLogMessage2@109"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.-354562915#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"D8AF01CB-8602-4F23-B5A5-FD29AA75B084-
+
+CCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354562061.697314
+e354562064.035759
+r1
+xCompileC
+xbuild/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm6fd4b20d3022b541^cd0615103022b541^-830"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354562064#18446744073709551615#0#2(2@115"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:-354562064#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:-354562064#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354562064#18446744073709551615#0#2(2@115"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:-354562064#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:-354562064#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^4969"CompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o36"2E3B387A-FEED-4848-9368-5535792E4CCA-
+
+CCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354558206.911164
+e354558209.312840
+r1
+xCompileC
+xbuild/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm137ee9fe2022b541^142650012122b541^-854"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354558209#18446744073709551615#0#2(2@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:-354558209#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@123"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:-354558209#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354558209#18446744073709551615#0#2(2@121"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm:2:-354558209#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@123"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:-354558209#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm0000000000000000^5047"CompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/main.o36"FAB7472D-63F2-4CA4-9CBB-06151AA58B78-
+
+CCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354562915.973316
+e354562917.764329
+r1
+xCompileC
+xbuild/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm8a00fb633322b541^f4a9c3653322b541^-836"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354562917#18446744073709551615#0#2(2@118"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:-354562917#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:-354562917#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354562917#18446744073709551615#0#2(2@118"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:-354562917#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:-354562917#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^4987"CompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o36"E17A198B-6488-46FB-9AFE-17A263B48F88-
+
+CCompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354558971.817831
+e354558973.953852
+r1
+xCompileC
+xbuild/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm569dd1fb2322b541^c217fafd2322b541^-860"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354558973#18446744073709551615#0#2(2@124"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:-354558973#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@123"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:4:-354558973#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354558973#18446744073709551615#0#2(2@124"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm:1:-354558973#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@123"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h:5:-354558973#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@114"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm0000000000000000^5065"CompileC build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/testApp.o36"30446369-86D5-47B9-B425-F65FFFEDD3BF-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s354559251.945230
+e354559251.950431
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plistbe14f2132522b541^d333f9132522b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist0000000000000000^583"CopyPlistFile build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app -- ofxiphone-Info.plist36"E0D56F52-AFB3-48A8-AF86-9CE9929AFD4A-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s354558204.465669
+e354558204.470195
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plist2b5077fc2022b541^05fb9ffc2022b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/ofxiphone-Info.plist0000000000000000^595"CopyPlistFile build/Debug-iphonesimulator/polygonExample.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app -- ofxiphone-Info.plist36"642A090D-C7C1-45D6-AEE2-C681C4BE18D4-
+
+CCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig
+s354558204.471539
+e354558204.551197
+r1
+xCpResource
+x../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+xbuild/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfigd1cf78fc2022b541^f52ca0fc2022b541^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig000000000080d041^952"CpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/polygonExample.app/CoreOF.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app36"C7405E29-38B6-4430-820F-736234A2A778-
+
+CCpResource Project.xcconfig build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig
+s354558204.471478
+e354558204.550902
+r1
+xCpResource
+xProject.xcconfig
+xbuild/Debug-iphonesimulator/polygonExample.app/Project.xcconfig
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig6ccf78fc2022b541^5323a0fc2022b541^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig000000000080d041^851"CpResource Project.xcconfig build/Debug-iphonesimulator/polygonExample.app/Project.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/Project.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app36"416EAC43-EAA7-40E8-A509-77E3341358F3-
+
+CCpResource bin/data/Default.png build/Debug-iphonesimulator/polygonExample.app/Default.png
+s354558204.414812
+e354558204.471285
+r1
+xCpResource
+xbin/data/Default.png
+xbuild/Debug-iphonesimulator/polygonExample.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Debug-iphonesimulator/polygonExample.app/Default.pnga94f6afc2022b541^b2f29ffc2022b541^---0#0#0#-19%DVTDocumentLocation2@159"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Default.png000000000080d041^854"CpResource bin/data/Default.png build/Debug-iphonesimulator/polygonExample.app/Default.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/bin/data/Default.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app36"FDFA8856-C146-4A8B-8738-C09E7B3ED470-
+
+CCpResource bin/data/Icon.png build/Debug-iphonesimulator/polygonExample.app/Icon.png
+s354558204.415178
+e354558204.464350
+r1
+xCpResource
+xbin/data/Icon.png
+xbuild/Debug-iphonesimulator/polygonExample.app/Icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/polygonExample.app/Icon.pngeb726afc2022b541^55dd9ffc2022b541^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Icon.png000000000080d041^845"CpResource bin/data/Icon.png build/Debug-iphonesimulator/polygonExample.app/Icon.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/bin/data/Icon.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app36"FC0CD095-DA6B-4E52-B210-5135FE721DAD-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+s354562919.997767
+e354562920.946289
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYMa984ff673322b541^e90efa683322b541^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM/0000000000000000^796"GenerateDSYMFile build/Debug-iphonesimulator/polygonExample.app.dSYM build/Debug-iphonesimulator/polygonExample.app/polygonExample    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app.dSYM36"98712B5C-7BA8-4A74-BE76-9708D53A6C64-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+s354558976.013162
+e354558977.095689
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM487003002422b541^b28118012422b541^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM/0000000000000000^814"GenerateDSYMFile build/Debug-iphonesimulator/polygonExample.app.dSYM build/Debug-iphonesimulator/polygonExample.app/polygonExample    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app.dSYM36"0D6DEC13-FA99-4FEE-ABAD-B3F36182D703-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample normal i386
+s354562917.773158
+e354562919.922772
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+xnormal
+xi386
+old: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample7b14c6653322b541^069dec673322b541^-231"ld: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in fileld: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file2(21%IDEActivityLogMessage2@104"Ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file-354562918#0#118#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--2@99"Ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file-354562918#118#113#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#0#--2239"Ld build/Debug-iphonesimulator/polygonExample.app/polygonExample normal i386    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/polygonExample36"415F1005-6EB6-47E0-8E82-EBD8482F2445-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample normal i386
+s354558973.960683
+e354558976.006336
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample
+xnormal
+xi386
+old: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample2714f6fd2322b541^7ba001002422b541^-231"ld: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in fileld: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file2(21%IDEActivityLogMessage2@104"Ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file-354558974#0#118#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--2@99"Ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file-354558974#118#113#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#0#--2269"Ld build/Debug-iphonesimulator/polygonExample.app/polygonExample normal i386    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/polygonExample36"1F214022-2940-4BF3-99E3-52AD4209E175-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+s354562920.955861
+e354562921.038185
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'86e2f6683322b541^e7c509693322b541^---0#0#0#--25508"PhaseScriptExecution "Run Script" build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH polygonExample.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH polygonExample.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/polygonExample.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME polygonExample.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH polygonExample.app/Executables    setenv EXECUTABLE_FOLDER_PATH polygonExample.app    setenv EXECUTABLE_NAME polygonExample    setenv EXECUTABLE_PATH polygonExample.app/polygonExample    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH polygonExample.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME polygonExample.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH polygonExample.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH polygonExample.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/polygonExample.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/polygonExample.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH polygonExample.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH polygonExample.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH polygonExample.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c++    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/PkgInfo    setenv PKGINFO_PATH polygonExample.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH polygonExample.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH polygonExample.app/PrivateHeaders    setenv PRODUCT_NAME polygonExample    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT polygonExample    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/polygonExample.xcodeproj    setenv PROJECT_NAME polygonExample    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build    setenv PUBLIC_HEADERS_FOLDER_PATH polygonExample.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH polygonExample.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_NAME iphonesimulator5.1    setenv SDK_PRODUCT_BUILD_VERSION 9B176    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH polygonExample.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH polygonExample.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 2    setenv TARGETNAME polygonExample    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv TARGET_NAME polygonExample    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH polygonExample.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH polygonExample.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE polygonExample_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:polygonExample  PROJECT:polygonExample-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME polygonExample.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4E1019    setenv XCODE_VERSION_ACTUAL 0431    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0430    setenv YACC yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh36"56EA77DE-F13A-468B-B858-561805A90064-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+s354558977.103817
+e354558977.158473
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'77ba1b012422b541^0c9028012422b541^---0#0#0#--25766"PhaseScriptExecution "Run Script" build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH polygonExample.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH polygonExample.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/polygonExample.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME polygonExample.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH polygonExample.app/Executables    setenv EXECUTABLE_FOLDER_PATH polygonExample.app    setenv EXECUTABLE_NAME polygonExample    setenv EXECUTABLE_PATH polygonExample.app/polygonExample    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH polygonExample.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME polygonExample.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH polygonExample.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH polygonExample.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/polygonExample.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/polygonExample.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH polygonExample.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal/i386/polygonExample.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH polygonExample.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH polygonExample.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c++    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/PkgInfo    setenv PKGINFO_PATH polygonExample.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH polygonExample.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH polygonExample.app/PrivateHeaders    setenv PRODUCT_NAME polygonExample    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT polygonExample    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/polygonExample.xcodeproj    setenv PROJECT_NAME polygonExample    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build    setenv PUBLIC_HEADERS_FOLDER_PATH polygonExample.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH polygonExample.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_NAME iphonesimulator5.1    setenv SDK_PRODUCT_BUILD_VERSION 9B176    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH polygonExample.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH polygonExample.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME polygonExample    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator    setenv TARGET_NAME polygonExample    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH polygonExample.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH polygonExample.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE polygonExample_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:polygonExample  PROJECT:polygonExample-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME polygonExample.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4E1019    setenv XCODE_VERSION_ACTUAL 0431    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0430    setenv YACC yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/Script-9255DD331112741900D6945E.sh36"4214D652-FB62-4708-8F06-E78325477CA2-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Info.plist ofxiphone-Info.plist
+s354559251.851647
+e354559251.892126
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plistf931da132522b541^c91de6132522b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist0000000000000000^779"ProcessInfoPlistFile build/Debug-iphonesimulator/polygonExample.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app/Info.plist36"D15D4324-96C2-46A3-BEE3-C042FA965BE1-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Info.plist ofxiphone-Info.plist
+s354558204.402474
+e354558204.406754
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plist6c2267fc2022b541^5c5669fc2022b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/ofxiphone-Info.plist0000000000000000^797"ProcessInfoPlistFile build/Debug-iphonesimulator/polygonExample.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app/Info.plist36"F25C8C75-10EF-4FC3-ABA6-4B28AD8F0D18-
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/polygonExample-azrhpxmvmffnvbcawmmrilvnoifr/Index/PrecompiledHeaders/iPhone_Prefix-gizfrjpyvgojkxbannekdgplvnwp_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/polygonExample-grtebjmwsybluocdhrfkapubejzm/Index/PrecompiledHeaders/iPhone_Prefix-bbriojjgstlojgciryrcoxxdyyao_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/polygonExample-grtebjmwsybluocdhrfkapubejzm/Index/PrecompiledHeaders/iPhone_Prefix-bvmrcbezveqgrvcyiqufexkpdeco_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354559134.636870
+e354559136.576838
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pchc45fa39e2422b541^601dd3a02422b541^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch0000000000000000^4835"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.d36"54A1B6FE-D909-40C7-BDB1-0886AD3C92D2-
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-davgvfpwniaqoiaqiwxkzeqyffpz/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354558204.636948
+e354558206.901890
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pch92cea4fc2022b541^00e2e6fe2022b541^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/iPhone_Prefix.pch0000000000000000^4895"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/polygonExample-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/polygonExample.build/Debug-iphonesimulator/polygonExample.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-gcqnnteooydmztcttygolalnzkav/iPhone_Prefix.pch.d36"B2DDFE09-CB67-40B8-A7C2-B1545B8E516F-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app
+s354562921.141586
+e354562921.157642
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app7b3025693322b541^145c28693322b541^---0#0#0#--482"Touch build/Debug-iphonesimulator/polygonExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/polygonExample.app36"21479F7B-1517-4F9D-8F95-497D51122CDC-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app
+s354558977.166608
+e354558977.179448
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.appbebe2a012422b541^f6f02d012422b541^---0#0#0#--494"Touch build/Debug-iphonesimulator/polygonExample.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/iPhoneExamples/polygonExample/build/Debug-iphonesimulator/polygonExample.app36"B9E45EDC-2E94-4716-B838-1B7DC5741B18-
+

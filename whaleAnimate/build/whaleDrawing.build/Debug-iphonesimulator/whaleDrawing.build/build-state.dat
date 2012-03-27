@@ -1,0 +1,1311 @@
+TwhaleDrawing
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Info.plist ofxiphone-Info.plist
+cCpResource bin/data/Default.png build/Debug-iphonesimulator/whaleDrawing.app/Default.png
+cCpResource bin/data/Icon.png build/Debug-iphonesimulator/whaleDrawing.app/Icon.png
+cCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/ofxiphone-Info.plist ofxiphone-Info.plist
+cCpResource Project.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig
+cCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig
+cCpResource ../../../addons/ofxXmlSettings/install.xml build/Debug-iphonesimulator/whaleDrawing.app/install.xml
+cCpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/whaleDrawing.app/README
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing normal i386
+cGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing
+cPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh
+cTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004F453DF80000000000000110
+t1329937912
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004F6157B40000000000182900
+t1331779508
+s1583360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004F6157B400000000002FDC30
+t1331779508
+s3136560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F6157B50000000000244490
+t1331779509
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004F6157B40000000000089510
+t1331779508
+s562448
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004F6157B50000000000069670
+t1331779509
+s431728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004F6157B5000000000001EAD0
+t1331779509
+s125648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F6157B60000000000353830
+t1331779510
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004F6157B60000000000001534
+t1331779510
+s5428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004F6157B900000000000D9D60
+t1331779513
+s892256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004F6157B90000000000029350
+t1331779513
+s168784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004F6157B9000000000001D2E0
+t1331779513
+s119520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004F6157BA00000000001AB190
+t1331779514
+s1749392
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004F6157BA0000000000000BF5
+t1331779514
+s3061
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F6157BC0000000000905E40
+t1331779516
+s9461312
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxAccelerometer/src/ofxAccelerometer.h
+c000000004D32663E0000000000001903
+t1295148606
+s6403
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxMultiTouch/src/ofxMultiTouch.h
+c000000004D32663E0000000000000C4C
+t1295148606
+s3148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h
+c000000004DB3039A0000000000000BB7
+t1303577498
+s2999
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/README
+c000000004D6DADF00000000000000119
+t1299033584
+s281
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+c000000004DDF4B1C00000000000076AC
+t1306479388
+s30380
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h
+c000000004D709DDC0000000000000B67
+t1299226076
+s2919
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp
+c000000004F68D196000000000000148A
+t1332269462
+s5258
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.h
+c000000004E03BCE10000000000000648
+t1308867809
+s1608
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/install.xml
+c000000004B1A40720000000000000479
+t1260011634
+s1145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp
+c000000004AE15F320000000000009064
+t1256283954
+s36964
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.h
+c000000004D456C18000000000000FD05
+t1296395288
+s64773
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp
+c000000004AE15F320000000000000712
+t1256283954
+s1810
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp
+c000000004B1A4AE20000000000009B7B
+t1260014306
+s39803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp
+c000000004DB07C7C0000000000004F3E
+t1303411836
+s20286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h
+c000000004DB07C7C0000000000001ADF
+t1303411836
+s6879
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/ofxiPhone.h
+c000000004DB3039A0000000000000840
+t1303577498
+s2112
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/ofxiPhoneExtras.h
+c000000004DB080AC0000000000002329
+t1303412908
+s9001
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/EAGLView.h
+c000000004D2F319400000000000009EE
+t1294938516
+s2542
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ESRenderer.h
+c000000004D456C18000000000000018E
+t1296395288
+s398
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/SoundEngine.h
+c000000004D3305FA0000000000004003
+t1295189498
+s16387
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h
+c000000004E0F6EA80000000000000EA8
+t1309634216
+s3752
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxOpenALSoundPlayer.h
+c000000004D5583C80000000000000F14
+t1297449928
+s3860
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h
+c000000004C3F5CBA0000000000000E48
+t1279220922
+s3656
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h
+c000000004C3F5CBA0000000000000862
+t1279220922
+s2146
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneApp.h
+c000000004DB3039A0000000000000544
+t1303577498
+s1348
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h
+c000000004D55A30A000000000000095C
+t1297457930
+s2396
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h
+c000000004D5583C800000000000008A6
+t1297449928
+s2214
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h
+c000000004D3305FA0000000000000C99
+t1295189498
+s3225
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h
+c000000004E0DF6B2000000000000068E
+t1309537970
+s1678
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h
+c000000004DB3039A0000000000001634
+t1303577498
+s5684
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h
+c000000004DB3039A00000000000008AC
+t1303577498
+s2220
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-deprecated.h
+c000000004D558E2800000000000021FA
+t1297452584
+s8698
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-features.h
+c000000004D558E28000000000000031D
+t1297452584
+s797
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-pdf.h
+c000000004D558E280000000000000C24
+t1297452584
+s3108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-svg.h
+c000000004D558E280000000000000ADD
+t1297452584
+s2781
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo-version.h
+c000000004D558E280000000000000094
+t1297452584
+s148
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/cairo/include/cairo/cairo.h
+c000000004D558E280000000000016BCE
+t1297452584
+s93134
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/config/ftconfig.h
+c000000004D2CAD880000000000004A46
+t1294773640
+s19014
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/config/ftheader.h
+c000000004D2CAD8800000000000060B9
+t1294773640
+s24761
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/config/ftoption.h
+c000000004D2CAD88000000000000B2AB
+t1294773640
+s45739
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/config/ftstdlib.h
+c000000004D2CAD880000000000001C6B
+t1294773640
+s7275
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/freetype.h
+c000000004D456C1A000000000003BA89
+t1296395290
+s244361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/fterrdef.h
+c000000004D2CAD8A0000000000002F2C
+t1294773642
+s12076
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/fterrors.h
+c0000000049BBC30600000000000024F0
+t1237041926
+s9456
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/ftglyph.h
+c000000004D2CAD8A0000000000009969
+t1294773642
+s39273
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/ftimage.h
+c000000004D2CAD8A0000000000014276
+t1294773642
+s82550
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/ftmoderr.h
+c0000000049BBC3060000000000001D06
+t1237041926
+s7430
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/ftsystem.h
+c000000004D2CAD8A00000000000027D5
+t1294773642
+s10197
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/freetype2/freetype/fttypes.h
+c000000004D2CAD8A00000000000088A0
+t1294773642
+s34976
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/freetype/include/ft2build.h
+c000000004D2CAD8A0000000000000889
+t1294773642
+s2185
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/glu/include_iphone/glu.h
+c000000004BACD92A0000000000001F99
+t1269618986
+s8089
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/of3dUtils.h
+c000000004DBB0C14000000000000002B
+t1304103956
+s43
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofCamera.h
+c000000004DF2A5B40000000000000858
+t1307747764
+s2136
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofEasyCam.h
+c000000004D846F74000000000000053C
+t1300524916
+s1340
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofMesh.h
+c000000004E15EDE600000000000010DD
+t1310060006
+s4317
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/3d/ofNode.h
+c000000004D59888C000000000000143C
+t1297713292
+s5180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004E0F39D00000000000000590
+t1309620688
+s1424
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofAppRunner.h
+c000000004DD7C1F8000000000000075D
+t1305985528
+s1885
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/app/ofBaseApp.h
+c000000004DD7C1F80000000000000377
+t1305985528
+s887
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/events/ofEventUtils.h
+c000000004DDA95360000000000000DAD
+t1306170678
+s3501
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/events/ofEvents.h
+c000000004F4FBFE60000000000001B99
+t1330626534
+s7065
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofFbo.h
+c000000004E2849E60000000000000E23
+t1311263206
+s3619
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofGLRenderer.h
+c000000004E19CDB00000000000001109
+t1310313904
+s4361
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofGLUtils.h
+c000000004E0E0E280000000000000B79
+t1309543976
+s2937
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofLight.h
+c000000004E0F7856000000000000084C
+t1309636694
+s2124
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofMaterial.h
+c000000004E0F78560000000000000555
+t1309636694
+s1365
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofShader.h
+c000000004E0E69F00000000000000F82
+t1309567472
+s3970
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofTexture.h
+c000000004E265D2400000000000010D0
+t1311137060
+s4304
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofVbo.h
+c000000004E0F78560000000000000A19
+t1309636694
+s2585
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/gl/ofVboMesh.h
+c000000004DF2A5B40000000000000114
+t1307747764
+s276
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofCairoRenderer.h
+c000000004E25D24000000000000012BF
+t1311101504
+s4799
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofGraphics.h
+c000000004E134E620000000000001D95
+t1309888098
+s7573
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofImage.h
+c000000004E15EDE80000000000002014
+t1310060008
+s8212
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPath.h
+c000000004E19CDB0000000000000115A
+t1310313904
+s4442
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPixels.h
+c000000004E1630D400000000000012C3
+t1310077140
+s4803
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofPolyline.h
+c000000004E19CDB00000000000000E9D
+t1310313904
+s3741
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofRendererCollection.h
+c000000004E19CDB000000000000027C6
+t1310313904
+s10182
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofTessellator.h
+c000000004DDA957A0000000000000459
+t1306170746
+s1113
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004E2327FC00000000000009F5
+t1310926844
+s2549
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMath.h
+c000000004E19CDB00000000000000B3D
+t1310313904
+s2877
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMatrix3x3.h
+c000000004D5583C80000000000000A4C
+t1297449928
+s2636
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofMatrix4x4.h
+c000000004D846F740000000000006D64
+t1300524916
+s28004
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofQuaternion.h
+c000000004D846F7400000000000033BD
+t1300524916
+s13245
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec2f.h
+c000000004D923DCC000000000000407D
+t1301429708
+s16509
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec3f.h
+c000000004D846F7400000000000061A8
+t1300524916
+s25000
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVec4f.h
+c000000004D5583C80000000000002EC3
+t1297449928
+s11971
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/math/ofVectorMath.h
+c000000004D2F31940000000000000099
+t1294938516
+s153
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/ofMain.h
+c000000004E2849E60000000000000643
+t1311263206
+s1603
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofBaseSoundPlayer.h
+c000000004D5583C80000000000000366
+t1297449928
+s870
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofBaseSoundStream.h
+c000000004D8613F200000000000002D4
+t1300632562
+s724
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004E2849E60000000000000637
+t1311263206
+s1591
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofSoundStream.h
+c000000004E2867B000000000000006DB
+t1311270832
+s1755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/sound/ofxiPhoneSoundStream.h
+c000000004E2867B00000000000000382
+t1311270832
+s898
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofBaseTypes.h
+c000000004E286F800000000000002F01
+t1311272832
+s12033
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofColor.h
+c000000004E0F785600000000000013FD
+t1309636694
+s5117
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofPoint.h
+c000000004D846F74000000000000003D
+t1300524916
+s61
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofRectangle.h
+c000000004DB07C7E0000000000000454
+t1303411838
+s1108
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/types/ofTypes.h
+c000000004E0F788A0000000000000D27
+t1309636746
+s3367
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofConstants.h
+c000000004E2867B000000000000034C6
+t1311270832
+s13510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofFileUtils.h
+c000000004E25D2400000000000001D56
+t1311101504
+s7510
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofLog.h
+c000000004E19CDB000000000000014B0
+t1310313904
+s5296
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofSystemUtils.h
+c000000004DD7C1F200000000000001AC
+t1305985522
+s428
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofThread.h
+c000000004D326642000000000000050C
+t1295148610
+s1292
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofURLFileLoader.h
+c000000004E2849E600000000000008C4
+t1311263206
+s2244
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/utils/ofUtils.h
+c000000004E2849E60000000000001245
+t1311263206
+s4677
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofVideoGrabber.h
+c000000004E19CD4C00000000000009ED
+t1310313804
+s2541
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofVideoPlayer.h
+c000000004E19CD4C0000000000000ABD
+t1310313804
+s2749
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofiPhoneVideoGrabber.h
+c000000004E19CD4C000000000000032C
+t1310313804
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h
+c000000004E19CD4C0000000000000612
+t1310313804
+s1554
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+c000000004E23274400000000000008B9
+t1310926660
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AbstractDelegate.h
+c000000004D2CAD8A0000000000000B59
+t1294773642
+s2905
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AbstractEvent.h
+c000000004D2CAD8A0000000000002D7C
+t1294773642
+s11644
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveMethod.h
+c000000004D2CAD8A0000000000001C64
+t1294773642
+s7268
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveResult.h
+c000000004D2CAD8A0000000000002E66
+t1294773642
+s11878
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveRunnable.h
+c000000004D2CAD8A0000000000001785
+t1294773642
+s6021
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ActiveStarter.h
+c000000004D2CAD8A0000000000000927
+t1294773642
+s2343
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AtomicCounter.h
+c000000004D846F740000000000001D13
+t1300524916
+s7443
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/AutoPtr.h
+c000000004D2CAD8A0000000000001E0C
+t1294773642
+s7692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Bugcheck.h
+c000000004D2CAD8A00000000000014A9
+t1294773642
+s5289
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/CompareFunctions.h
+c000000004D2CAD8A00000000000007EC
+t1294773642
+s2028
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Condition.h
+c000000004D2CAD8A0000000000001236
+t1294773642
+s4662
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Config.h
+c000000004D2CAD8A0000000000000E22
+t1294773642
+s3618
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Delegate.h
+c000000004D2CAD8A0000000000001828
+t1294773642
+s6184
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Event.h
+c000000004D2CAD8A0000000000000E21
+t1294773642
+s3617
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Event_POSIX.h
+c000000004D2CAD8A0000000000000A91
+t1294773642
+s2705
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Exception.h
+c000000004D5583C8000000000000283D
+t1297449928
+s10301
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Expire.h
+c000000004D2CAD8A0000000000000D0D
+t1294773642
+s3341
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FIFOEvent.h
+c000000004D2CAD8A0000000000000B15
+t1294773642
+s2837
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FIFOStrategy.h
+c000000004D2CAD8A0000000000001116
+t1294773642
+s4374
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/File.h
+c000000004D456C1A0000000000001F91
+t1296395290
+s8081
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/File_UNIX.h
+c000000004D2CAD8A0000000000000BC1
+t1294773642
+s3009
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Foundation.h
+c000000004D5583C800000000000010BE
+t1297449928
+s4286
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/FunctionDelegate.h
+c000000004D2CAD8A00000000000013C8
+t1294773642
+s5064
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Mutex.h
+c000000004D2CAD8C0000000000001D9F
+t1294773644
+s7583
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Mutex_POSIX.h
+c000000004D5583C80000000000000AC3
+t1297449928
+s2755
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/NotificationStrategy.h
+c000000004D2CAD8C0000000000000B48
+t1294773644
+s2888
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Platform.h
+c000000004D5583C80000000000001AF7
+t1297449928
+s6903
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Platform_POSIX.h
+c000000004D2CAD8C0000000000000843
+t1294773644
+s2115
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/RefCountedObject.h
+c000000004D2CAD8C0000000000000BB1
+t1294773644
+s2993
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Runnable.h
+c000000004D2CAD8C0000000000000861
+t1294773644
+s2145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ScopedLock.h
+c000000004D456C1A0000000000000B7F
+t1296395290
+s2943
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ScopedUnlock.h
+c000000004D2CAD8C000000000000092B
+t1294773644
+s2347
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SharedPtr.h
+c000000004D5583C80000000000002278
+t1297449928
+s8824
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SignalHandler.h
+c000000004D2CAD8C00000000000011EB
+t1294773644
+s4587
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/SingletonHolder.h
+c000000004D2CAD8C0000000000000A67
+t1294773644
+s2663
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Thread.h
+c000000004D2CAD8C0000000000001E10
+t1294773644
+s7696
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/ThreadPool.h
+c000000004D2CAD8C0000000000001C8A
+t1294773644
+s7306
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Thread_POSIX.h
+c000000004D2CAD8C00000000000013B7
+t1294773644
+s5047
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Timestamp.h
+c000000004D2CAD8C0000000000001A41
+t1294773644
+s6721
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/poco/include/Poco/Types.h
+c000000004D5583C80000000000001926
+t1297449928
+s6438
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/tess2/include/tesselator.h
+c000000004E0E247A0000000000001C63
+t1309549690
+s7267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/Project.xcconfig
+c000000004E273F2C00000000000001C7
+t1311194924
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Default.png
+c000000004E273F2C00000000000014C6
+t1311194924
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Icon.png
+c000000004E273F2C0000000000000410
+t1311194924
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app
+t1332875998
+s476
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM
+t1332875998
+s102
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig
+t1332871642
+s2233
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Default.png
+t1332875998
+s5318
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Icon.png
+t1332875998
+s1040
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Info.plist
+t1332871642
+s812
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/PkgInfo
+t1332871642
+s8
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig
+t1332871642
+s455
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/README
+t1332871665
+s281
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/install.xml
+t1332871642
+s1145
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/ofxiphone-Info.plist
+t1332871642
+s692
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing
+t1332875997
+s8686032
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o
+t1332871672
+s167152
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o
+t1332872867
+s319556
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o
+t1332871673
+s332968
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o
+t1332871645
+s231468
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o
+t1332875995
+s427164
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o
+t1332871644
+s214180
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o
+t1332871645
+s76880
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o
+t1332871667
+s150828
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/whaleDrawing.LinkFileList
+c000000004F7201F1000000000000058F
+t1332871665
+s1423
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh
+c000000004F7201DA0000000000000041
+t1332871642
+s65
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch
+c000000004E273F2C00000000000000B5
+t1311194924
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist
+c000000004F71ED8400000000000004A5
+t1332866436
+s1189
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+c000000004BACD92A000000000000009E
+t1269618986
+s158
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h
+c000000004F7206A000000000000003B1
+t1332872864
+s945
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+c000000004F7212D9000000000000187B
+t1332875993
+s6267
+
+N/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a
+c000000004F6E514C0000000001F3D938
+t1332629836
+s32758072
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth
+t1332866336
+s4806152
+
+N/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth
+t1332871643
+s77244
+
+Nofxiphone-Info.plist
+c000000004F71ED8400000000000004A5
+t1332866436
+s1189
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+r0
+
+CBuild AST from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesed7d5a744a22b541^f2ec5e744a22b541^-110"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.1(21%IDEActivityLogMessage2@109"Warning: The Copy Bundle Resources build phase contains this target's Info.plist file 'ofxiphone-Info.plist'.-354568820#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"D88BCC90-F088-4C10-9514-2DD3EEB2690A-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564465.889404
+e354564473.002919
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection158"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cppb9e1e3713922b541^99d414793922b541^---0#0#0#-19%DVTDocumentLocation2@166"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp0000000000000000^4681"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o ../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/../ofxVtron/ofxBaseButton/baseButton.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/baseButton.o36"3A6E8CD8-E845-4459-9083-E3803712784D-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354565664.498953
+e354565667.081834
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mma66180203e22b541^06f214233e22b541^-830"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354565667#18446744073709551615#0#2(2@115"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:-354565667#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:-354565667#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354565667#18446744073709551615#0#2(2@115"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm:2:-354565667#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^1#9#1#9#29#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:-354565667#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@106"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm0000000000000000^4921"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o src/main.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/main.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/main.o36"6C968EB9-D884-44E7-B01D-B4EC6DEC6609-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564467.571109
+e354564473.239981
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:691:9: warning: unused variable 'index' [-Wunused-variable]
+o        GLint           index   = 0;
+o                        ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:872:8: warning: unused variable 'bNewLine' [-Wunused-variable]
+o                bool bNewLine = false;
+o                     ^
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:965:9: warning: unused variable 'index' [-Wunused-variable]
+o        GLint           index   = 0;
+o                        ^
+o3 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cppd27092733922b541^fca53d793922b541^-807"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:691:9: warning: unused variable 'index' [-Wunused-variable]        GLint           index   = 0;                        ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:872:8: warning: unused variable 'bNewLine' [-Wunused-variable]                bool bNewLine = false;                     ^/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp:965:9: warning: unused variable 'index' [-Wunused-variable]        GLint           index   = 0;                        ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@23"Unused variable 'index'-354564473#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^690#8#690#8#19998#0#19"Unused Entity Issue--2@26"Unused variable 'bNewLine'-354564473#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^871#7#871#7#24007#0#19"Unused Entity Issue--2@23"Unused variable 'index'-354564473#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^964#8#964#8#26444#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@153"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp0000000000000000^4663"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o ../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxFreeType2.o36"621BB4DA-D281-4F5B-83BE-B5D28968EDE4-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564443.074267
+e354564445.529074
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp0536135b3922b541^4293b05d3922b541^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp0000000000000000^4661"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o ../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/ofxXmlSettings.o36"7A2AF082-7F8C-4A95-9BBA-4FEDB5DF6206-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354568793.985357
+e354568795.771013
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:
+o../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:
+oIn file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:
+o../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment]
+o /***********************************************************************
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm2f6dfc594a22b541^895fc55b4a22b541^-836"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:../../../addons/ofxiPhone/ofxiPhone.h:8:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:../../../addons/ofxiPhone/ofxiPhoneExtras.h:9:2: warning: '/*' within block comment [-Wcomment] /*********************************************************************** ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@25"'/*' within block comment-354568795#18446744073709551615#0#2(2@118"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:-354568795#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:4:-354568795#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^3#9#3#9#43#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhone.h0000000000000000^7#1#7#1#147#0#29"Lexical or Preprocessor Issue--2@25"'/*' within block comment-354568795#18446744073709551615#0#2(2@118"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm:1:-354568795#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^0#9#0#9#9#0#30"Apple LLVM compiler 3.1 Notice--2@117"In file included from /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h:5:-354568795#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@108"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.h0000000000000000^4#9#4#9#66#0#30"Apple LLVM compiler 3.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@100"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxiPhone/ofxiPhoneExtras.h0000000000000000^8#1#8#1#235#0#29"Lexical or Preprocessor Issue--0#0#0#-19%DVTDocumentLocation4@109"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm0000000000000000^4939"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o src/testApp.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-protocol -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/src/testApp.mm -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/testApp.o36"F942E82F-1AB7-4044-A6EB-56F4C673F566-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564443.075029
+e354564444.763862
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cppe99c135b3922b541^6a86c45c3922b541^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp0000000000000000^4621"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o ../../../addons/ofxXmlSettings/libs/tinyxml.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxml.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxml.o36"0092A134-41C0-4D2E-8C33-0CCF172EEF5B-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564444.802080
+e354564445.827682
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cppe6ccce5c3922b541^6154d65d3922b541^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp0000000000000000^4651"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o ../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlerror.o36"E8BCB861-601D-4178-9507-887BAB4574E8-
+
+CCompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564465.887281
+e354564467.569756
+r1
+xCompileC
+xbuild/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp:357:14: warning: '&&' within '||' [-Wlogical-op-parentheses]
+o                while ( *p && IsWhiteSpace( *p ) || *p == '\n' || *p =='\r' )
+o                        ~~~^~~~~~~~~~~~~~~~~~~~~ ~~
+o/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp:357:14: note: place parentheses around the '&&' expression to silence this warning
+o                while ( *p && IsWhiteSpace( *p ) || *p == '\n' || *p =='\r' )
+o                           ^
+o                        (                       )
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Compile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp6153e3713922b541^350992733922b541^-718"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp:357:14: warning: '&&' within '||' [-Wlogical-op-parentheses]                while ( *p && IsWhiteSpace( *p ) || *p == '\n' || *p =='\r' )                        ~~~^~~~~~~~~~~~~~~~~~~~~ ~~/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp:357:14: note: place parentheses around the '&&' expression to silence this warning                while ( *p && IsWhiteSpace( *p ) || *p == '\n' || *p =='\r' )                           ^                        (                       )1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@16"'&&' within '||'-354564467#18446744073709551615#0#1(2@68"Place parentheses around the '&&' expression to silence this warning-354564467#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#13#356#13#9052#0#14"Semantic Issue2(3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#10#356#10#9049#0#3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#34#356#34#9073#0#-1#27"com.apple.dt.IDE.diagnostic3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#13#356#13#9052#0#14"Semantic Issue2(3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#10#356#34#9049#23#3@110"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^356#35#356#37#9074#0#-0#0#0#-19%DVTDocumentLocation4@148"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^4657"CompileC build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o ../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -include /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch -MMD -MT dependencies -MF /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.d --serialize-diagnostics /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/tinyxmlparser.o36"4756EB37-DF36-4CAF-93D1-11A51DEC99B9-
+
+CCopyPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/ofxiphone-Info.plist ofxiphone-Info.plist
+s354564442.641465
+e354564442.653658
+r1
+xCopyPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/ofxiphone-Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection25"Copy ofxiphone-Info.plist66a2a45a3922b541^d61eaa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist0000000000000000^579"CopyPlistFile build/Debug-iphonesimulator/whaleDrawing.app/ofxiphone-Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app -- ofxiphone-Info.plist36"7442B90C-34DA-4909-8E33-79A8ECB51570-
+
+CCpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/whaleDrawing.app/README
+s354564465.862248
+e354564465.866236
+r1
+xCpResource
+x../../../addons/ofxVtron/ofxFreeType2/README
+xbuild/Debug-iphonesimulator/whaleDrawing.app/README
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/whaleDrawing.app/README4ed2dc713922b541^c4ccde713922b541^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/README000000000080d041^875"CpResource ../../../addons/ofxVtron/ofxFreeType2/README build/Debug-iphonesimulator/whaleDrawing.app/README    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxVtron/ofxFreeType2/README /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"996586ED-BA1E-48A4-8178-EC3B8AADCC07-
+
+CCpResource ../../../addons/ofxXmlSettings/install.xml build/Debug-iphonesimulator/whaleDrawing.app/install.xml
+s354564442.655376
+e354564442.659997
+r1
+xCpResource
+x../../../addons/ofxXmlSettings/install.xml
+xbuild/Debug-iphonesimulator/whaleDrawing.app/install.xml
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/whaleDrawing.app/install.xml7fdba75a3922b541^9d2faa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/install.xml000000000080d041^876"CpResource ../../../addons/ofxXmlSettings/install.xml build/Debug-iphonesimulator/whaleDrawing.app/install.xml    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../addons/ofxXmlSettings/install.xml /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"F35B4457-BCD1-465E-9F5C-7F46EF3C00EE-
+
+CCpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig
+s354564442.654648
+e354564442.658396
+r1
+xCpResource
+x../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig
+xbuild/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfigc8b3a75a3922b541^dd28aa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig000000000080d041^930"CpResource ../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/CoreOF.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/../../../libs/openFrameworksCompiled/project/iphone/CoreOF.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"F2793DBB-E1E1-4C47-967E-46204392DCE4-
+
+CCpResource Project.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig
+s354564442.641647
+e354564442.653211
+r1
+xCpResource
+xProject.xcconfig
+xbuild/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig9356a45a3922b541^560daa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig000000000080d041^829"CpResource Project.xcconfig build/Debug-iphonesimulator/whaleDrawing.app/Project.xcconfig    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/Project.xcconfig /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"284993AF-C465-4C52-A13D-7A3F1E88D77B-
+
+CCpResource bin/data/Default.png build/Debug-iphonesimulator/whaleDrawing.app/Default.png
+s354564442.640827
+e354564442.653100
+r1
+xCpResource
+xbin/data/Default.png
+xbuild/Debug-iphonesimulator/whaleDrawing.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/whaleDrawing.app/Default.png9e25a45a3922b541^9207aa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Default.png000000000080d041^832"CpResource bin/data/Default.png build/Debug-iphonesimulator/whaleDrawing.app/Default.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Default.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"F81CB449-F536-47F2-B468-64530E636B6F-
+
+CCpResource bin/data/Icon.png build/Debug-iphonesimulator/whaleDrawing.app/Icon.png
+s354564442.640914
+e354564442.653414
+r1
+xCpResource
+xbin/data/Icon.png
+xbuild/Debug-iphonesimulator/whaleDrawing.app/Icon.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphonesimulator/whaleDrawing.app/Icon.pngdc2aa45a3922b541^1a17aa5a3922b541^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Icon.png000000000080d041^823"CpResource bin/data/Icon.png build/Debug-iphonesimulator/whaleDrawing.app/Icon.png    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/bin/data/Icon.png /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"3BC2052C-AC34-41B9-952F-F492B7BEFC8D-
+
+CGenerateDSYMFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing
+s354568797.195810
+e354568798.136750
+r1
+xGenerateDSYMFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Generating /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYMc32e325d4a22b541^3201235e4a22b541^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM/0000000000000000^784"GenerateDSYMFile build/Debug-iphonesimulator/whaleDrawing.app.dSYM build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/dsymutil /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app.dSYM36"AA4CD6D7-F6C0-40F1-B395-F23B2C287EB0-
+
+CLd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing normal i386
+s354568795.778680
+e354568797.188103
+r1
+xLd
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing
+xnormal
+xi386
+old: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file
+old: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Link /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawingb96dc75b4a22b541^1729305d4a22b541^-231"ld: warning: ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in fileld: warning: ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file2(21%IDEActivityLogMessage2@104"Ignoring file ../../../libs/FreeImage/lib/iphone/freeimage.a, missing required architecture i386 in file-354568795#0#118#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--2@99"Ignoring file ../../../libs/glu/lib/iphone/glu-iphone.a, missing required architecture i386 in file-354568796#118#113#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#0#--2225"Ld build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing normal i386    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator -filelist /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/whaleDrawing.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -ObjC ../../../libs/freetype/lib/iphone/freetype.a ../../../libs/FreeImage/lib/osx/freeimage.a ../../../libs/FreeImage/lib/iphone/freeimage.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/poco/lib/iphone/PocoFoundation.a ../../../libs/poco/lib/iphone/PocoNet.a ../../../libs/poco/lib/iphone/PocoXML.a ../../../libs/poco/lib/iphone/PocoUtil.a ../../../libs/tess2/lib/iphone/tess2.a ../../../libs/glu/lib/iphone/glu.a ../../../libs/glu/lib/iphone/glu-iphone.a -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/libs/openFrameworksCompiled/lib/iphone/libofxiPhone_iphonesimulator_Debug.a -framework Foundation -framework UIKit -framework CoreGraphics -framework OpenGLES -framework QuartzCore -framework AudioToolbox -framework OpenAL -framework CoreLocation -framework CoreGraphics -framework AVFoundation -framework CoreMedia -framework CoreVideo -framework MapKit -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/whaleDrawing36"F11E0793-89EC-4DE0-BC37-9BB369008237-
+
+CPhaseScriptExecution "Run Script" /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh
+s354568820.469610
+e354568820.545751
+r1
+xPhaseScriptExecution
+xRun Script
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'15aa7b744a22b541^248192744a22b541^---0#0#0#--25348"PhaseScriptExecution "Run Script" build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lia    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv BUILD_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES NO    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH whaleDrawing.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources    setenv DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH whaleDrawing.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/whaleDrawing.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME whaleDrawing.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH whaleDrawing.app/Executables    setenv EXECUTABLE_FOLDER_PATH whaleDrawing.app    setenv EXECUTABLE_NAME whaleDrawing    setenv EXECUTABLE_PATH whaleDrawing.app/whaleDrawing    setenv FILE_LIST /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH whaleDrawing.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME whaleDrawing.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER iPhone_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ABOUT_POINTER_SIGNEDNESS NO    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_PROTOTYPE_CONVERSION NO    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLU "\"../../../libs/glu/include_iphone\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_OFXACCELEROMETER "\"../../../addons/ofxAccelerometer/**\""    setenv HEADER_OFXIPHONE "\"../../../addons/ofxiPhone/**\""    setenv HEADER_OFXMULTITOUCH "\"../../../addons/ofxMultiTouch/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include\" \"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE ofxiphone-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH whaleDrawing.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH whaleDrawing.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/whaleDrawing.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lia    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/whaleDrawing.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH whaleDrawing.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv LIB_CAIRO "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREEIMAGE_IPHONE "\"../../../libs/FreeImage/lib/iphone/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/iphone/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLU "\"../../../libs/glu/lib/iphone/glu.a\""    setenv LIB_GLU_IPHONE "\"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv LIB_POCOFOUNDATION_IPHONE "\"../../../libs/poco/lib/iphone/PocoFoundation.a\""    setenv LIB_POCONET_IPHONE "\"../../../libs/poco/lib/iphone/PocoNet.a\""    setenv LIB_POCOUTIL_IPHONE "\"../../../libs/poco/lib/iphone/PocoUtil.a\""    setenv LIB_POCOXML_IPHONE "\"../../../libs/poco/lib/iphone/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LIB_TESS_IPHONE "\"../../../libs/tess2/lib/iphone/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal/i386/whaleDrawing.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH whaleDrawing.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50b    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv MISC_FLAGS "\"-ObjC\""    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects    setenv OBJECT_FILE_DIR_normal /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Objects-normal    setenv OBJROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../addons/ofxiPhone/**\" \"../../../addons/ofxMultiTouch/**\" \"../../../addons/ofxAccelerometer/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../libs/glu/include_iphone\""    setenv OF_CORE_LIBS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "\"-ObjC\" \"../../../libs/freetype/lib/iphone/freetype.a\" \"../../../libs/FreeImage/lib/osx/freeimage.a\" \"../../../libs/FreeImage/lib/iphone/freeimage.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/poco/lib/iphone/PocoFoundation.a\" \"../../../libs/poco/lib/iphone/PocoNet.a\" \"../../../libs/poco/lib/iphone/PocoXML.a\" \"../../../libs/poco/lib/iphone/PocoUtil.a\" \"../../../libs/tess2/lib/iphone/tess2.a\"     \"../../../libs/glu/lib/iphone/glu.a\" \"../../../libs/glu/lib/iphone/glu-iphone.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH whaleDrawing.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c++ objective-c++"    setenv PKGINFO_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/PkgInfo    setenv PKGINFO_PATH whaleDrawing.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH whaleDrawing.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH whaleDrawing.app/PrivateHeaders    setenv PRODUCT_NAME whaleDrawing    setenv PRODUCT_SETTINGS_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT whaleDrawing    setenv PROJECT_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/DerivedSources    setenv PROJECT_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PROJECT_FILE_PATH /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/whaleDrawing.xcodeproj    setenv PROJECT_NAME whaleDrawing    setenv PROJECT_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build    setenv PUBLIC_HEADERS_FOLDER_PATH whaleDrawing.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH whaleDrawing.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_NAME iphonesimulator5.1    setenv SDK_PRODUCT_BUILD_VERSION 9B176    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH whaleDrawing.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH whaleDrawing.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv SRCROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 2    setenv TARGETNAME whaleDrawing    setenv TARGET_BUILD_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator    setenv TARGET_NAME whaleDrawing    setenv TARGET_TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build    setenv TEMP_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build    setenv TEMP_FILES_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build    setenv TEMP_FILE_DIR /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build    setenv TEMP_ROOT /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH whaleDrawing.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lia    setenv USER_APPS_DIR /Users/lia/Applications    setenv USER_LIBRARY_DIR /Users/lia/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH whaleDrawing.app/version.plist    setenv VERSION_INFO_BUILDER lia    setenv VERSION_INFO_FILE whaleDrawing_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:whaleDrawing  PROJECT:whaleDrawing-\""    setenv WARNING_LDFLAGS -no_arch_warnings    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME whaleDrawing.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4E1019    setenv XCODE_VERSION_ACTUAL 0431    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0430    setenv YACC yacc    /bin/sh -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/Script-9255DD331112741900D6945E.sh36"4F589E75-160F-4598-8371-821FB9475485-
+
+CProcessInfoPlistFile /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Info.plist ofxiphone-Info.plist
+s354564442.621446
+e354564442.632371
+r1
+xProcessInfoPlistFile
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Info.plist
+xofxiphone-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process ofxiphone-Info.plist6613a05a3922b541^22faa95a3922b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/ofxiphone-Info.plist0000000000000000^773"ProcessInfoPlistFile build/Debug-iphonesimulator/whaleDrawing.app/Info.plist ofxiphone-Info.plist    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ofxiphone-Info.plist -genpkginfo /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app/Info.plist36"DB00F4F0-F56F-4138-9D16-076FABB7F3C3-
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/whaleDrawing-fofuwiuvndfoqaezyglgwdhuygsz/Index/PrecompiledHeaders/iPhone_Prefix-bvmrcbezveqgrvcyiqufexkpdeco_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/lia/Library/Developer/Xcode/DerivedData/whaleDrawing-fofuwiuvndfoqaezyglgwdhuygsz/Index/PrecompiledHeaders/iPhone_Prefix-dnhhjvzddxywnsekrqbvshytetbz_ast/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cqnuxounftevdigoukudghxqkmll/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s354564442.667587
+e354564443.067444
+r1
+xProcessPCH++
+x/var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth
+xiPhone_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile iPhone_Prefix.pch1d1dab5a3922b541^a758115b3922b541^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch0000000000000000^4419"ProcessPCH++ /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth iPhone_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-generated-files.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-own-target-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-all-target-headers.hmap -iquote /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/whaleDrawing-project-headers.hmap -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../addons/ofxiPhone -I../../../addons/ofxiPhone/src -I../../../addons/ofxMultiTouch -I../../../addons/ofxMultiTouch/src -I../../../addons/ofxAccelerometer -I../../../addons/ofxAccelerometer/src -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../libs/glu/include_iphone -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources/i386 -I/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/whaleDrawing.build/Debug-iphonesimulator/whaleDrawing.build/DerivedSources -F/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.dia -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/iPhone_Prefix.pch -o /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/np/bmm2m30923gfdvhs15zd484r0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-dxwdfwkcyrjjzggnroxbhqaupvqn/iPhone_Prefix.pch.d36"5EC12E4E-1C6E-4F66-99A8-5FF951B9ABD1-
+
+CTouch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app
+s354568798.202327
+e354568798.210266
+r1
+xTouch
+x/Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Touch /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app94de335e4a22b541^41d4355e4a22b541^---0#0#0#--478"Touch build/Debug-iphonesimulator/whaleDrawing.app    cd /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/whaleAnimate/build/Debug-iphonesimulator/whaleDrawing.app36"BB1F4906-DCB4-4D3F-9AA4-965F24D0CEF3-
+

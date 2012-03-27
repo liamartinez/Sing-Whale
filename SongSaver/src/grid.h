@@ -30,7 +30,6 @@ public:
     void                    letsReset(int nowLocTop_);
     void                    clearGrid(); 
     void                    attractReset(); 
-    void                    drawWater(int num, int height); 
     
     ofxBox2d						box2d;	
     
@@ -61,7 +60,7 @@ public:
     vector<ofxBox2dJoint>   leftJoints;
     vector<ofxBox2dJoint>   rightJoints;
     
-    vector<ofxBox2dCircle>  waters; 
+    //vector<ofxBox2dCircle>  waters; 
     
     //controls
     bool                    skeleton;
