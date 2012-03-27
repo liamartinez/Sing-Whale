@@ -137,8 +137,13 @@ void testApp::touchCancelled(ofTouchEventArgs& args){
 
 void testApp::audioReceived(float * input, int bufferSize, int nChannels) /* input method */
 { 
-    
-  
+    ofAudioEventArgs args;
+    args.buffer = input;
+    args.bufferSize = bufferSize;
+    args.nChannels = nChannels;
+    ofNotifyEvent(ofEvents.audioReceived, args);
+
+ // cout << "this happened?\n";
    
 
 }  

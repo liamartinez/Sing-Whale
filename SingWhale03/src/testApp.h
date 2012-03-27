@@ -32,6 +32,7 @@ public:
     void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
 
 
+
 	void lostFocus();
 	void gotFocus();
 	void gotMemoryWarning();

@@ -10,9 +10,7 @@
 #define SingWhale03_whaleSong_h
 
 #pragma once
-
-
-//#include "ofMain.h"
+//include "ofMain.h"
 #include "ofxiPhoneExtras.h" //this is to access iphone documents directory
 #include <Accelerate/Accelerate.h>
 #include "ofxMaxim.h"
@@ -48,8 +46,8 @@ public:
 	void deviceOrientationChanged(int newOrientation);
 	
 	void audioRequested 	(float * input, int bufferSize, int nChannels); /* output method */
-	void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
-	//void audioReceived(ofAudioEventArgs & audio);
+	//void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
+	void audioReceivedIn(ofAudioEventArgs &args);
 	
 	int		initialBufferSize; /* buffer size */ 
 	int		sampleRate;

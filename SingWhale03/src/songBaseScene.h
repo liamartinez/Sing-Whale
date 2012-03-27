@@ -45,6 +45,8 @@ public:
     
     ofVec2f textStart; 
     
+    void drawCircle(); 
+    ofVec2f  circleLoc; 
     
 protected:
     

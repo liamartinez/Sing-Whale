@@ -18,6 +18,8 @@ songBaseScene::songBaseScene() {
     speakScreen.loadImage("images/BG.png");
     sceneName = "Scene Name not Set!";
     
+    circleLoc.set(ofGetWidth()/2, ofGetHeight()/2); 
+    
 }
 
 
@@ -26,7 +28,7 @@ void songBaseScene::setup() {
     
     //setup stuff goes here. Do I need an "activate"? 
 
-  
+
 }
 
 
@@ -47,6 +49,13 @@ void songBaseScene::draw() {
     
 }
 
+//------------------------------------------------------------------
+void songBaseScene::drawCircle() {
+    ofSetColor(255, 100, 100);
+    ofCircle(circleLoc, 100);
+    
+    
+}
 
 //------------------------------------------------------------------
 void songBaseScene::drawGrid() {  //dont need this, but keep for now just in case. 

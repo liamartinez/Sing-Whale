@@ -19,6 +19,7 @@ void songOne::setup() {
 
 //------------------------------------------------------------------
 void songOne::update() {
+        
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
             //Do stuff
@@ -50,7 +51,7 @@ void songOne::deactivate() {
 //------------------------------------------------------------------
 void songOne::draw() {
 
-        
+       
     drawGrid();
     
     string message = "";
@@ -66,8 +67,9 @@ void songOne::draw() {
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();
-            
+
             break; 
+            
         case SONG_ONE_SECOND:
             
 

@@ -4,7 +4,7 @@
 
 //-------------------------------------------------------------
 whaleSong::whaleSong() {
-
+//    ofAddListener(ofEvents.audioReceived,this,&whaleSong::audioReceivedIn); 
 }
 
 //-------------------------------------------------------------
@@ -60,7 +60,7 @@ void whaleSong::setup(){
 	/*ofSoundStreamSetup(0,1, this, sampleRate, initialBufferSize, 4); */
      /* Call this last ! */
 
-    //ofAddListener(ofEvents.audioReceived,this,&whaleSong::audioReceived);  
+    ofAddListener(ofEvents.audioReceived,this,&whaleSong::audioReceivedIn);  
     
     //grid stuff
     grid.setLength(gridLen);
@@ -120,6 +120,9 @@ void whaleSong::setup(){
     whichSong = 0; 
     showGrid = true; 
     
+    //ofSoundStreamSetup(0, 1);
+    //ofSoundStreamSetup(0,1, this, 44100, 512, 4);/* Call this last ! */
+
 }
 
 //--------------------------------------------------------------
@@ -221,6 +224,7 @@ void whaleSong::audioRequested 	(float * output, int bufferSize, int nChannels){
 
 
 //--------------------------------------------------------------
+/*
 void whaleSong::audioReceived 	(float * input, int bufferSize, int nChannels){	
     
     cout << "AUDIOOO" << endl; 
@@ -239,33 +243,35 @@ void whaleSong::audioReceived 	(float * input, int bufferSize, int nChannels){
             oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
         }  
     }
-	//bufferCounter++; //lia:what is bufferCounter for?
+	bufferCounter++; //lia:what is bufferCounter for?
 }
+ */
 
-/*//old method
-void whaleSong::audioReceived(ofAudioEventArgs &audio){  
+
+
+
+
+//old method
+void whaleSong::audioReceivedIn(ofAudioEventArgs &args){  
     
-    if( initialBufferSize != audio.bufferSize ){
-		ofLog(OF_LOG_ERROR, "your buffer size was set to %i - but the stream needs a buffer size of %i", initialBufferSize, audio.bufferSize);
+    cout << "AUDIO!" << endl; 
+    
+    if( initialBufferSize != args.bufferSize ){
+		ofLog(OF_LOG_ERROR, "your buffer size was set to %i - but the stream needs a buffer size of %i", initialBufferSize, args.bufferSize);
 		return;
 	}	
 	
 	// samples are "interleaved"
-	for (int i = 0; i < audio.bufferSize; i++){
-		buffer[i] = audio.buffer[i];
-        
-        
-        
-        if (mfft.process(audio.buffer[i])) {  
+	for (int i = 0; i < args.bufferSize; i++){
+		buffer[i] = args.buffer[i];
+        cout << "buffer " << args.buffer[i] << endl; 
+        if (mfft.process(args.buffer[i])) {  
             mfft.magsToDB(); // calculate all the DBs  
             oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
         }  
     }
-	bufferCounter++; //lia:what is bufferCounter for?
-    
-
 }
-*/
+
 //--------------------------------------------------------------
 void whaleSong::touchDown(ofTouchEventArgs &touch){
     beginButt.touchDown(touch);
@@ -357,11 +363,11 @@ void whaleSong::loadSong(string XMLname) {
     songPhrase tempSong; 
     
     if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + XMLname)){
-        cout <<  XMLname <<  " loaded from documents folder!" << endl; 
+        //cout <<  XMLname <<  " loaded from documents folder!" << endl; 
     } else if (songList.loadFile(XMLname)){
-        cout << XMLname << " loaded from data folder!" << endl; 
+        //cout << XMLname << " loaded from data folder!" << endl; 
     } else {
-        cout << "unable to load " << XMLname << endl; 
+        //cout << "unable to load " << XMLname << endl; 
     }
     
     
@@ -371,10 +377,8 @@ void whaleSong::loadSong(string XMLname) {
         for(int i = 0; i < numberOfSongs; i++){
 
             int songID = songList.getAttribute("songs", "song",0, i);
-            
-            cout << "SONG ID" <<songID << endl; 
+
             string songWords = songList.getAttribute("songs", "words", "nothing",i);
-            cout << songWords << endl; 
             tempSong.songNum = songID; 
             tempSong.songWords = songWords; 
             

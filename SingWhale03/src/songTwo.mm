@@ -19,7 +19,9 @@ void songTwo::setup() {
 
 //------------------------------------------------------------------
 void songTwo::update() {
+
     switch(mgr.getCurScene()) {
+               
         case SONG_TWO_FIRST:
             //Do stuff
             break;            
@@ -37,6 +39,8 @@ void songTwo::activate() {
     
     cout << "Activate Song Two" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-450);
+    
+
 
     
 }
