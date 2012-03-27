@@ -6,16 +6,7 @@
 #include "ofxXmlSettings.h"
 #include "baseButton.h"
 #include "ofxFreeType2.h"
-
-typedef struct {
-
-	float 	x;
-	float 	y;
-	bool 	bBeingDragged;
-	bool 	bOver;
-	float 	radius;
-	
-}	draggableVertex;
+#include "vertex.h"
 
 
 class testApp : public ofxiPhoneApp {
@@ -33,7 +24,7 @@ public:
 
     void loadXML(string name); 
     void saveXML(string name); 
-    vector<draggableVertex> whaleParts; 
+    vector<vertex> whaleParts; 
     //vector<draggableVertex> whaleLines; 
     
     ofxXmlSettings XML;
@@ -48,10 +39,19 @@ public:
     baseButton resetButton; 
     baseButton deleteLastButton; 
     baseButton insertButton; 
+    baseButton fillButton; 
     bool        insertOn; 
+    bool        fillOn; 
+    int         nearestOne; 
+    int         thisOne; 
+    baseButton  showImgButton; 
+    bool        showImg; 
+    baseButton  floatButton; 
+    bool        floatOn; 
     
     ofxFreeType2 font; 
     
+    ofImage     whaleGuide; 
 };
 
 
