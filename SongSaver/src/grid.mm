@@ -24,6 +24,9 @@ grid::grid() {
     
     damping         = .1;
     frequency       = 1; 
+    
+    savedNum        =0; 
+    counter         = 0; 
 }
 
 void grid::setLocation(int locationX, int locationY){
@@ -31,6 +34,10 @@ void grid::setLocation(int locationX, int locationY){
     startLocBot.set(startLoc.x, startLoc.y + lenVertz); 
     endLoc.set (startLoc.x + lenHorz, startLoc.y); 
     endLocBot.set(endLoc.x, startLocBot.y);
+}
+
+ofVec2f grid::getLocation () {
+    return startLoc;
 }
 
 void grid::setLength(float lenHorz_){
@@ -45,6 +52,10 @@ void grid::setLengthDensity(int numHorz_, float incHorz_){
     incHorz     = .2;    //spaces between joints
     numHorz     = 100;  //number of circles
     */
+}
+
+float grid::returnIncHorz () {
+    return incHorz; 
 }
 
 void grid::setupBox2d(int gravX, int gravY){
@@ -197,6 +208,7 @@ void grid::drawGrid() {
             topCircles[i].setRadius(circleSize);
             bottomCircles[i].draw();
             bottomCircles[i].setRadius(circleSize);
+            heightJoints[i].draw(); 
         }
         
         ofSetColor(0); 
@@ -204,7 +216,7 @@ void grid::drawGrid() {
             topJoints[i].draw(); 
             bottomJoints[i].draw(); 
             //drawing these joints will cause errors. Don't know why 
-            //heightJoints[i].draw(); 
+            //
         }
         
         for(int i=0; i<leftCircles.size(); i++) {
@@ -227,6 +239,12 @@ void grid::drawGrid() {
         ofFill();
         ofSetColor(79, 178, 245);
         ofBeginShape();
+        
+        for(int i=0; i<waters.size(); i++) {
+            ofFill();
+            ofSetHexColor(0xf6c738);
+            waters[i].draw();
+        }
         
         for (int i = 0; i < topCircles.size(); i++) {
             ofVec2f pos; 
@@ -259,11 +277,7 @@ void grid::drawGrid() {
         
     }
     
-    for(int i=0; i<waters.size(); i++) {
-		ofFill();
-		ofSetHexColor(0xf6c738);
-		waters[i].draw();
-	}
+
 }
 
 void grid::seeGrid() {
@@ -273,35 +287,40 @@ void grid::seeGrid() {
 void grid::letsGo(int num, int height){
     numNote = num; 
     heightJoints[numNote].setLength(height);
+    
+    
+    //for (int i = 0; i < 3; i++) {
+       
+    
+    if (savedNum == num) {
+        cout << "YEP" << endl; 
+        counter ++; 
+        savedNum = num;  
+        cout << "counter " << counter << endl; 
+    } else {
+        counter = 0; 
+        savedNum = num;  
+    }
+    
+    if (counter < height/10) {
+    //cout << "numnote " << numNote << endl;; 
+    ofxBox2dCircle circle;
+    circle.setPhysics(3.0, 0.53, 0.1);
+    circle.setup(box2d.getWorld(), startLoc.x + ((lenHorz/numHorz)* (numNote+1)), ofGetHeight()/2 + (startLocBot.y -startLoc.y)/2 + ofRandom(-height/2, height/2), 8);
+    waters.push_back(circle);
+        cout << "                 " << waters.size() << endl; 
+
+    }
+    
 }
 
 void grid::letsReset(int nowLocTop_){
-    /*
-    int nowLoc = nowLocTop_;
-    bool isDone = false; 
-    ofVec2f nowLocTop; 
-    nowLocTop.y = topCircles[nowLoc].getPosition().y; 
-    
-    ofVec2f origTop;
-    ofVec2f origBot;
-    
-    origTop.set(startLoc.x + ((lenHorz/numHorz)* (numNote+1)), startLoc.y);
-    origBot.set(startLocBot.x+((lenHorz/numHorz)* numNote), startLocBot.y);
 
-    for (int i = nowLocTop.y; i < origTop.y; i++) {
-        //topCircles[i].setPosition(origTop.x, i);
-        if (i == origTop.y-1) isDone = true; 
-        cout << i << endl; 
-        cout << isDone << endl;
-    }
-   
-    if (isDone) {
-      isDone = false; 
+    waters.clear(); 
     
-     */
     topCircles[numNote].setPosition(startLoc.x + ((lenHorz/numHorz)* (numNote+1)), startLoc.y);
     bottomCircles[numNote].setPosition(startLocBot.x+((lenHorz/numHorz)* numNote), startLocBot.y);
-    //}
+
     
 }
 
@@ -341,8 +360,14 @@ void grid::attractReset() {
 
 }
 
-
-
+void grid::drawWater(int num, int height){
+    numNote = num; 
+    //make water
+    ofxBox2dCircle circle;
+    circle.setPhysics(3.0, 0.53, 0.1);
+    circle.setup(box2d.getWorld(), startLoc.x + ((lenHorz/numHorz)* (numNote+1)), ofGetHeight()/2 + (startLocBot.y -startLoc.y)/2 + ofRandom(-height/2, height/2), 8);
+    waters.push_back(circle);
+}
 
 
 

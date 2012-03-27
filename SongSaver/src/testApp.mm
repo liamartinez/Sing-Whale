@@ -123,7 +123,6 @@ void testApp::update(){
     float xinc = 900.0 / fftSize * 2.0;
     
     //octave analyser
-
     highest = 0; 
 
 	xinc = 500 / oct.nAverages;
@@ -140,12 +139,12 @@ void testApp::update(){
                 }
             }
         }
-        
-        
-        if (theBin != 0) {
-            theBin = ofMap(theBin, 30, 50, 30, 100);
+
+        //disable this because I want to count silences
+        //if (theBin != 0) { 
+            theBin = ofMap(theBin, 0, 50, 30, 100);
             if (theBins.size() < sampleSize) theBins.push_back(theBin);
-        }
+        //}
 
     }
     grid.update(); 
@@ -175,9 +174,15 @@ void testApp::draw(){
     guide.drawGrid(); 
     
     if (begin && theBins.size() != 0) {
+        
         for (int i = 0; i < theBins.size()-1; i++){
-            grid.letsGo(i, theBins[i]);
+            cout << "i " << theBins.size() << endl; 
+            grid.letsGo(theBins.size(), theBins[i]);
+            ofSetColor(255, 100, 100);
+            ofCircle (grid.startLoc.x + ((grid.lenHorz/grid.numHorz)* (i+1)), grid.getLocation().y - 10, 5, 5); 
+
         }
+
     }
     
     if (reset) {
@@ -185,7 +190,7 @@ void testApp::draw(){
         begin = false; 
         for (int i = 0; i < sampleSize-1; i++){
             grid.letsGo(i, grid.lenVertz);
-
+            //grid.drawWater(i, grid.lenVertz);
             grid.letsReset(i); 
             theBins.clear(); 
 

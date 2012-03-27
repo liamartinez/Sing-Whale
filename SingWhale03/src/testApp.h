@@ -28,10 +28,8 @@ public:
 	void touchUp(ofTouchEventArgs &touch);
 	void touchDoubleTap(ofTouchEventArgs &touch);
 	void touchCancelled(ofTouchEventArgs &touch);
-    //void audioRecieved(ofAudioEventArgs &audio); //this wont work!
+
     void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
-
-
 
 	void lostFocus();
 	void gotFocus();

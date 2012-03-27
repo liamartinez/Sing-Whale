@@ -17,8 +17,10 @@ class grid {
 public:
     grid (); 
     void                    setLocation (int locationX, int locationY); 
+    ofVec2f                 getLocation(); 
     void                    setLength (float lenHorz_);  
     void                    setLengthDensity (int numHorz_, float incHorz_); 
+    float                   returnIncHorz(); 
     void                    setupBox2d(int gravX, int gravY); 
     void                    setupGrid(); //put location arguments
     void                    update(); 
@@ -28,6 +30,7 @@ public:
     void                    letsReset(int nowLocTop_);
     void                    clearGrid(); 
     void                    attractReset(); 
+    void                    drawWater(int num, int height); 
     
     ofxBox2d						box2d;	
     
@@ -63,7 +66,9 @@ public:
     //controls
     bool                    skeleton;
     int                     numNote; 
-    
+    int                     savedNum; 
+    int                     counter; 
+    bool                    yesMore; 
 
 };
 

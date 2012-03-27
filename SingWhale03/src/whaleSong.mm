@@ -223,48 +223,17 @@ void whaleSong::audioRequested 	(float * output, int bufferSize, int nChannels){
 }
 
 
-//--------------------------------------------------------------
-/*
-void whaleSong::audioReceived 	(float * input, int bufferSize, int nChannels){	
-    
-    cout << "AUDIOOO" << endl; 
-    
-	if( initialBufferSize != bufferSize ){
-		ofLog(OF_LOG_ERROR, "your buffer size was set to %i - but the stream needs a buffer size of %i", initialBufferSize, bufferSize);
-		return;
-	}	
-	
-	// samples are "interleaved"
-	for (int i = 0; i < bufferSize; i++){
-		buffer[i] = input[i];
-        
-        if (mfft.process(input[i])) {  
-            mfft.magsToDB(); // calculate all the DBs  
-            oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
-        }  
-    }
-	bufferCounter++; //lia:what is bufferCounter for?
-}
- */
-
-
-
-
-
 //old method
 void whaleSong::audioReceivedIn(ofAudioEventArgs &args){  
-    
-    cout << "AUDIO!" << endl; 
-    
+ 
     if( initialBufferSize != args.bufferSize ){
 		ofLog(OF_LOG_ERROR, "your buffer size was set to %i - but the stream needs a buffer size of %i", initialBufferSize, args.bufferSize);
 		return;
-	}	
-	
+	}		
 	// samples are "interleaved"
 	for (int i = 0; i < args.bufferSize; i++){
 		buffer[i] = args.buffer[i];
-        cout << "buffer " << args.buffer[i] << endl; 
+
         if (mfft.process(args.buffer[i])) {  
             mfft.magsToDB(); // calculate all the DBs  
             oct.calculate(mfft.magnitudesDB); // this will store the DBs of each octave range  
