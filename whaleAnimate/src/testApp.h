@@ -41,9 +41,14 @@ public:
     
     string xmlStructure;
     string message;
+    string insertMode; 
     
     baseButton saveButton;
     baseButton loadButton; 
+    baseButton resetButton; 
+    baseButton deleteLastButton; 
+    baseButton insertButton; 
+    bool        insertOn; 
     
     ofxFreeType2 font; 
     

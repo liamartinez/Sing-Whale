@@ -16,6 +16,12 @@ void testApp::setup(){
     saveButton.setLabel("SAVE", &font);
     loadButton.setup(); 
     loadButton.setLabel("LOAD", &font);
+    resetButton.setup(); 
+    resetButton.setLabel("RESET", &font);
+    deleteLastButton.setup(); 
+    deleteLastButton.setLabel("DELETE LAST", &font);
+    insertButton.setup(); 
+    insertButton.setLabel("INSERT", &font);
     
 
 }
@@ -31,6 +37,14 @@ void testApp::draw(){
 
     saveButton.draw(100, 100);
     loadButton.draw(100, 150); 
+    resetButton.draw(200, 100); 
+    deleteLastButton.draw(200, 150); 
+    insertButton.draw(200, 200); 
+    if (insertOn) {
+        insertMode = "ON";
+    } else {
+        insertMode = "OFF"; 
+    }
 
     ofFill();
 	ofSetHexColor(0xe0be21);
@@ -87,6 +101,7 @@ void testApp::draw(){
 	//-------------------------------------
 
     TTF.drawString("Status: "+message, 10, ofGetHeight() - 9);
+    TTF.drawString("Insert: "+ insertMode, 10, ofGetHeight() - 29);
 }
 //--------------------------------------------------------------
 void testApp::touchDown(ofTouchEventArgs &touch){
@@ -98,7 +113,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
                 float diffx = touch.x - whaleParts[i].x;
                 float diffy = touch.y - whaleParts[i].y;
                 float dist = sqrt(diffx*diffx + diffy*diffy);
-                if (dist < 45 ){
+                if (dist < 10 ){
                     whaleParts[i].bBeingDragged = true;
                 } else {
                     whaleParts[i].bBeingDragged = false;
@@ -110,6 +125,9 @@ void testApp::touchDown(ofTouchEventArgs &touch){
     
     saveButton.touchDown(touch);
     loadButton.touchDown(touch);
+    resetButton.touchDown(touch);
+    deleteLastButton.touchDown(touch);
+    insertButton.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -140,11 +158,15 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     
     if (saveButton.isPressed()) saveXML("whaleParts.xml");
     if (loadButton.isPressed()) loadXML("whaleParts.xml");
-    
-    
-    
+    if (resetButton.isPressed()) whaleParts.clear(); 
+    if (deleteLastButton.isPressed()) whaleParts.erase(whaleParts.end());
+    if (insertButton.isPressed()) insertOn = !insertOn; 
+        
     saveButton.touchUp(touch);
     loadButton.touchDown(touch);
+    resetButton.touchDown(touch);
+    insertButton.touchDown(touch);
+    deleteLastButton.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -158,13 +180,26 @@ void testApp::touchDoubleTap(ofTouchEventArgs &touch){
     whalePoint.bBeingDragged 	= false;
     whalePoint.radius           = 10;
     
+    if (!insertOn) {
+        
     whaleParts.push_back(whalePoint);
-    
-    cout << whaleParts.size() << endl; 
-    
-
-    
-    
+    } else {
+        int nearest = ofGetWidth();
+        int nearestOne = 0; 
+         
+        for (int i = 0; i < whaleParts.size(); i++) {
+            int distance = 0;
+            distance = ofDist(whalePoint.x, whalePoint.y, whaleParts[i].x, whaleParts[i].y); 
+            cout << distance << " " << i << endl; 
+            if (distance < nearest) {
+                nearest = distance; 
+                nearestOne = i; 
+            }
+            
+        }    
+        cout << "nearest " << nearestOne << endl; 
+        whaleParts.insert(whaleParts.begin() + nearestOne, whalePoint);
+    }
 }
 
 //--------------------------------------------------------------
