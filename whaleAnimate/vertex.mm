@@ -26,7 +26,6 @@ void vertex::wriggle(float thetaVar) {
         // For every x value, calculate a y value with sine function
         float x = theta;
 
-
             floatValue = sin(x)*amplitude;
             x+=dx;
 

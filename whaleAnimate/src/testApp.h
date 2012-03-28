@@ -8,6 +8,7 @@
 #include "ofxFreeType2.h"
 #include "vertex.h"
 
+#define MOUTH_EDGE 38
 
 class testApp : public ofxiPhoneApp {
 	
@@ -25,6 +26,8 @@ public:
     void loadXML(string name); 
     void saveXML(string name); 
     void letsFloat(); 
+    void smile(int amt); 
+    void frown(int amt); 
     vector<vertex> whaleParts; 
     //vector<draggableVertex> whaleLines; 
     
@@ -52,6 +55,11 @@ public:
     baseButton  TfloatButton; 
     bool        translateFloat; 
     baseButton  loadWhale; 
+    baseButton  smileButton; 
+    bool        smileOn; 
+    baseButton  frownButton;
+    bool        frownOn; 
+    
     
     void        setupAllButtons(); 
     void        drawAllButtons(); 
@@ -61,6 +69,7 @@ public:
     ofxFreeType2 font; 
     
     ofImage     whaleGuide; 
+    
     //animating
     ofVec2f     whaleLoc; 
     float       floatY; 
@@ -69,6 +78,7 @@ public:
     float       dx;
     float       theta; 
     int         touchThresh; 
+    int         mouthPos; 
 };
 
 
