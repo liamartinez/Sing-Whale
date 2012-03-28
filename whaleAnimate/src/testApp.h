@@ -28,6 +28,7 @@ public:
     void letsFloat(); 
     void smile(int amt); 
     void frown(int amt); 
+    void drawMode(); 
     vector<vertex> whaleParts; 
     //vector<draggableVertex> whaleLines; 
     
@@ -59,6 +60,8 @@ public:
     bool        smileOn; 
     baseButton  frownButton;
     bool        frownOn; 
+    baseButton  drawModeButton; 
+    bool        drawOn; 
     
     
     void        setupAllButtons(); 

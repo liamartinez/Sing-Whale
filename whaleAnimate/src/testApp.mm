@@ -23,6 +23,7 @@ void testApp::setup(){
     translateFloat = false; 
     smileOn = false; 
     frownOn = false; 
+    drawOn = false; 
     
     amplitude = 20; 
     period = 500; 
@@ -30,7 +31,7 @@ void testApp::setup(){
     theta += 0.02;
     whaleLoc.set(0, 0);
     
-    touchThresh = 5; 
+    touchThresh = 40; 
     mouthPos = 0; 
 }
 
@@ -83,75 +84,80 @@ void testApp::draw(){
     ofPushMatrix(); 
     ofTranslate(whaleLoc);
 
-    //draw the main shape
-    if (whaleParts.size() != 0) {
+    
+    if (drawOn) {
+        drawMode(); 
+    } else {
         
-        if (fillOn) {
-            ofFill();
-        } else {
-            ofNoFill(); 
-        }
-        
-        ofBeginShape();
-        
-        for (int i = 0; i < whaleParts.size(); i++){
-            whaleParts[i].wriggle(i);
+        //draw the main shape
+        if (whaleParts.size() != 0) {
             
-        if (i == 0){
-            ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y); // we need to duplicate 0 for the curve to start at point 0
-            ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y); // we need to duplicate 0 for the curve to start at point 0
-        } else if (i == whaleParts.size()-1){
-            ofCurveVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
-            ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y);	// to draw a curve from pt 6 to pt 0
-            ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y);	// we duplicate the first point twice
-        } else {
-            ofCurveVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
-        }
-    }
-    
-        ofEndShape(false);
-    
-    //draw eye
-    ofSetColor(100); 
-    ofCircle(whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y, 4);
-    //ofCircle(50, 50, 10);
-  
-
-	// show a faint the non-curve version of the same polygon:
-	ofEnableAlphaBlending();
-    ofNoFill();
-    ofSetColor(0,0,0,40);
-    ofBeginShape();
-	
-    
-        for (int i = 0; i < whaleParts.size(); i++){
-            ofVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
-        }
-    
-    ofEndShape(false);
-    
-    
-    ofSetColor(0,0,0,80);
-    
-    
-        for (int i = 0; i < whaleParts.size(); i++){
-            if (whaleParts[i].bOver == true) ofFill();
-            else ofNoFill();
-            ofCircle(whaleParts[i].newPos.x, whaleParts[i].newPos.y,4);
-
-            TTF.drawString(ofToString(i), whaleParts[i].newPos.x, whaleParts[i].newPos.y - 10); 
-            
-            if (i == thisOne) {
-                ofFill(); 
-                ofSetColor(255, 100, 100);
-                ofCircle(whaleParts[i].newPos.x, whaleParts[i].newPos.y,4);
+            if (fillOn) {
+                ofFill();
+            } else {
+                ofNoFill(); 
             }
+            
+            ofBeginShape();
+            
+            for (int i = 0; i < whaleParts.size(); i++){
+                whaleParts[i].wriggle(i);
+                
+                if (i == 0){
+                    ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y); // we need to duplicate 0 for the curve to start at point 0
+                    ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y); // we need to duplicate 0 for the curve to start at point 0
+                } else if (i == whaleParts.size()-1){
+                    ofCurveVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
+                    ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y);	// to draw a curve from pt 6 to pt 0
+                    ofCurveVertex(whaleParts[0].newPos.x, whaleParts[0].newPos.y);	// we duplicate the first point twice
+                } else {
+                    ofCurveVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
+                }
+            }
+            
+            ofEndShape(false);
+            
+            //draw eye
+            ofSetColor(100); 
+            ofCircle(whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y, 4);
+            //ofCircle(50, 50, 10);
+            
+            
+            // show a faint the non-curve version of the same polygon:
+            ofEnableAlphaBlending();
+            ofNoFill();
+            ofSetColor(0,0,0,40);
+            ofBeginShape();
+            
+            
+            for (int i = 0; i < whaleParts.size(); i++){
+                ofVertex(whaleParts[i].newPos.x, whaleParts[i].newPos.y);
+            }
+            
+            ofEndShape(false);
+            
+            
             ofSetColor(0,0,0,80);
+            
+            
+            for (int i = 0; i < whaleParts.size(); i++){
+                if (whaleParts[i].bOver == true) ofFill();
+                else ofNoFill();
+                ofCircle(whaleParts[i].newPos.x, whaleParts[i].newPos.y,4);
+                
+                TTF.drawString(ofToString(i), whaleParts[i].newPos.x, whaleParts[i].newPos.y - 10); 
+                
+                if (i == thisOne) {
+                    ofFill(); 
+                    ofSetColor(255, 100, 100);
+                    ofCircle(whaleParts[i].newPos.x, whaleParts[i].newPos.y,4);
+                }
+                ofSetColor(0,0,0,80);
+            }
+            
+            
         }
-        
-        
     }
-    
     ofDisableAlphaBlending();
     ofPopMatrix(); 
     
@@ -232,6 +238,7 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     if (TfloatButton.isPressed()) translateFloat = !translateFloat; 
     if (smileButton.isPressed()) smileOn = !smileOn;
     if (frownButton.isPressed()) frownOn = !frownOn;
+    if (drawModeButton.isPressed()) drawOn = !drawOn; 
         
     touchUpAllButtons(touch);
 }
@@ -274,6 +281,7 @@ void testApp::touchCancelled(ofTouchEventArgs &touch){
 
 }
 
+//--------------------------------------------------------------
 
 void testApp::loadXML(string name) {
     
@@ -315,7 +323,7 @@ void testApp::loadXML(string name) {
 }
 
 
-
+//--------------------------------------------------------------
 
 void testApp::saveXML(string name) {
     
@@ -340,11 +348,15 @@ void testApp::saveXML(string name) {
     
 }
 
+//--------------------------------------------------------------
+
 void testApp::letsFloat() {
-        floatY = sin(theta)*amplitude;
-        theta+=dx;    
-    cout << "x " << theta << endl; 
+    
+    floatY = sin(theta)*amplitude;
+    theta+=dx;    
+
 }
+//--------------------------------------------------------------
 
 void testApp::smile(int amt) {
     if (mouthPos < amt) {
@@ -359,6 +371,7 @@ void testApp::smile(int amt) {
     if (mouthPos == amt) smileOn = false;
     if (!smileOn) mouthPos = 0; 
 }
+//--------------------------------------------------------------
 
 void testApp::frown(int amt) {
     if (mouthPos < amt) {
@@ -372,6 +385,7 @@ void testApp::frown(int amt) {
     if (mouthPos == amt) frownOn = false;
     if (!frownOn) mouthPos = 0; 
 }
+//--------------------------------------------------------------
 
 void testApp::setupAllButtons() {
     saveButton.setup(); 
@@ -380,6 +394,8 @@ void testApp::setupAllButtons() {
     loadButton.setLabel("LOAD", &font);
     loadWhale.setup(); 
     loadWhale.setLabel("LOAD WHALE", &font);
+    drawModeButton.setup(); 
+    drawModeButton.setLabel("DRAW MODE", &font);
     resetButton.setup(); 
     resetButton.setLabel("RESET", &font);
     deleteLastButton.setup(); 
@@ -404,6 +420,7 @@ void testApp::drawAllButtons() {
     saveButton.draw(100, 10);
     loadButton.draw(100, 60); 
     loadWhale.draw(100, 110); 
+    drawModeButton.draw(100, 210);
     showImgButton.draw(100, 160);
     resetButton.draw(300, 10); 
     deleteLastButton.draw(300, 60); 
@@ -413,6 +430,7 @@ void testApp::drawAllButtons() {
     TfloatButton.draw(600, 60); 
     frownButton.draw(600, 110);
     smileButton.draw(600, 160);
+
 }
 
 void testApp::touchDownAllButtons(ofTouchEventArgs &touch) {
@@ -428,6 +446,7 @@ void testApp::touchDownAllButtons(ofTouchEventArgs &touch) {
     TfloatButton.touchDown(touch);
     smileButton.touchDown(touch);
     frownButton.touchDown(touch);
+    drawModeButton.touchDown(touch);
 }
 
 void testApp::touchUpAllButtons(ofTouchEventArgs &touch) {
@@ -443,4 +462,82 @@ void testApp::touchUpAllButtons(ofTouchEventArgs &touch) {
     TfloatButton.touchUp(touch);
     smileButton.touchUp(touch); 
     frownButton.touchUp(touch); 
+    drawModeButton.touchUp(touch);
+}
+
+void testApp::drawMode() {
+    
+    //draw the main shape
+    if (whaleParts.size() != 0) {
+        
+        if (fillOn) {
+            ofFill();
+        } else {
+            ofNoFill(); 
+        }
+        
+        ofBeginShape();
+        
+        for (int i = 0; i < whaleParts.size(); i++){
+            whaleParts[i].wriggle(i);
+            
+            if (i == 0){
+                ofCurveVertex(whaleParts[0].pos.x, whaleParts[0].pos.y); // we need to duplicate 0 for the curve to start at point 0
+                ofCurveVertex(whaleParts[0].pos.x, whaleParts[0].pos.y); // we need to duplicate 0 for the curve to start at point 0
+            } else if (i == whaleParts.size()-1){
+                ofCurveVertex(whaleParts[i].pos.x, whaleParts[i].pos.y);
+                ofCurveVertex(whaleParts[0].pos.x, whaleParts[0].pos.y);	// to draw a curve from pt 6 to pt 0
+                ofCurveVertex(whaleParts[0].pos.x, whaleParts[0].pos.y);	// we duplicate the first point twice
+            } else {
+                ofCurveVertex(whaleParts[i].pos.x, whaleParts[i].pos.y);
+            }
+        }
+        
+        ofEndShape(false);
+        
+        //draw eye
+        ofSetColor(100); 
+        ofCircle(whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y, 4);
+        //ofCircle(50, 50, 10);
+        
+        
+        // show a faint the non-curve version of the same polygon:
+        ofEnableAlphaBlending();
+        ofNoFill();
+        ofSetColor(0,0,0,40);
+        ofBeginShape();
+        
+        
+        for (int i = 0; i < whaleParts.size(); i++){
+            ofVertex(whaleParts[i].pos.x, whaleParts[i].pos.y);
+        }
+        
+        ofEndShape(false);
+        
+        
+        ofSetColor(0,0,0,80);
+        
+        
+        for (int i = 0; i < whaleParts.size(); i++){
+            if (whaleParts[i].bOver == true) ofFill();
+            else ofNoFill();
+            ofCircle(whaleParts[i].pos.x, whaleParts[i].pos.y,4);
+            
+            TTF.drawString(ofToString(i), whaleParts[i].pos.x, whaleParts[i].pos.y - 10); 
+            
+            if (i == thisOne) {
+                ofFill(); 
+                ofSetColor(255, 100, 100);
+                ofCircle(whaleParts[i].pos.x, whaleParts[i].pos.y,4);
+            }
+            ofSetColor(0,0,0,80);
+        }
+        
+        
+    }
+    
+    ofDisableAlphaBlending();
+    ofPopMatrix(); 
+
+    
 }
