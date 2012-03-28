@@ -1,3 +1,9 @@
+/* Draw & Animate
+ Created by Lia Martinez 03/27/2011
+ Nature of Code 2012 */
+
+
+
 #include "testApp.h"
 
 //--------------------------------------------------------------
@@ -13,17 +19,26 @@ void testApp::setup(){
     
     font.loadFont("mono.ttf", 22);
     TTF.loadFont("mono.ttf", 7);
-
+    
+    //buttons
     setupAllButtons();
+    
+    //boids
+    for(int i=0; i<10; i++) {
+		Boid b;
+		boids.push_back( b );
+	}
     
     thisOne = 0; 
     whaleGuide.loadImage("whaleguide.png"); 
-    //fillOn = true; 
+    fillOn = false; 
     wriggleOn = false; 
     translateFloat = false; 
     smileOn = false; 
     frownOn = false; 
     drawOn = false; 
+    boidsOn = false; 
+    blowHoleOn = false; 
     
     amplitude = 20; 
     period = 500; 
@@ -33,6 +48,10 @@ void testApp::setup(){
     
     touchThresh = 40; 
     mouthPos = 0; 
+    
+    //particles
+    gravity.y = 0.2;	
+    
 }
 
 
@@ -56,18 +75,36 @@ void testApp::update(){
         insertMode = "OFF"; 
     }
     
-    if (smileOn) {
-        //
-        smile(8);  
-        //mouthPos = 0; 
-        
+    if (smileOn) smile(8);  
+    if (frownOn) frown(8);
+    
+    //boids
+    if (boidsOn) {
+        for(int i=0; i<boids.size(); i++)
+        {
+            if(i<5) {
+                boids[i].seek( ofPoint(mouseX, mouseY) );
+            } else {
+                boids[i].arrive( ofPoint(mouseX, mouseY) );
+            }
+            
+            boids[i].update();
+        }
     }
-    if (frownOn) {
-        //frownOn = false; 
-        frown(8);
-        //mouthPos = 0; 
+    
+    //particles
+    if (blowHoleOn) {
+        cout << "IM ON!" << endl; 
+        ps.applyForce(gravity);
+        ps.update();
         
+        for(int i=0; i<10; i++) {
+            ps.addParticle(whaleParts[BLOWHOLE].newPos.x + whaleLoc.x, whaleParts[BLOWHOLE].newPos.y + whaleLoc.y);
+        }
     }
+    
+
+
 }
 
 //--------------------------------------------------------------
@@ -119,8 +156,21 @@ void testApp::draw(){
             
             //draw eye
             ofSetColor(100); 
-            ofCircle(whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y, 4);
-            //ofCircle(50, 50, 10);
+            
+            ofPushMatrix();
+                ofTranslate(eyeLoc);
+                ofVec2f touchLoc; 
+                touchLoc.set(mouseX, mouseY);
+                //touchLoc -= eyeLoc; 
+                touchLoc = touchLoc -= eyeLoc; 
+                touchLoc.normalize(); 
+                touchLoc *= 10; 
+
+                ofCircle(touchLoc, 4);
+            ofPopMatrix();
+            
+            //particles
+            if (blowHoleOn) ps.draw();
             
             
             // show a faint the non-curve version of the same polygon:
@@ -162,8 +212,20 @@ void testApp::draw(){
     ofPopMatrix(); 
     
     
-
-
+    ofSetColor(100); 
+    
+    if (drawOn) TTF.drawString("DrawMode: ON", 10, ofGetHeight() - 39);
+    else TTF.drawString("DrawMode: OFF", 10, ofGetHeight() - 39);
+    
+    
+    //boids
+    if (boidsOn) {
+        for(int i=0; i<boids.size(); i++) {
+            boids[i].draw();
+        }
+    }
+    
+    
     TTF.drawString("Status: "+message, 10, ofGetHeight() - 9);
     TTF.drawString("Insert: "+ insertMode, 10, ofGetHeight() - 29);
 }
@@ -185,8 +247,11 @@ void testApp::touchDown(ofTouchEventArgs &touch){
                 }	
             }
         }
-        
+        mouseX = touch.x; 
+        mouseY = touch.y; 
 	}
+    
+
     
     touchDownAllButtons(touch);
 }
@@ -202,7 +267,11 @@ void testApp::touchMoved(ofTouchEventArgs &touch){
                 }
             }
         
+        
+        mouseX = touch.x; 
+        mouseY = touch.y; 
 	}
+
     
 }
 
@@ -215,6 +284,8 @@ void testApp::touchUp(ofTouchEventArgs &touch){
                 whaleParts[i].bBeingDragged = false;	
             }
         }
+        mouseX = touch.x; 
+        mouseY = touch.y; 
 	}
     
     if (saveButton.isPressed()) saveXML("new.xml");
@@ -223,13 +294,6 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     if (resetButton.isPressed()) whaleParts.clear(); 
     if (deleteLastButton.isPressed()) {
         whaleParts.erase(whaleParts.begin()+thisOne);
-        /*
-        if (!insertOn) {
-            whaleParts.erase(whaleParts.end()) ;
-        } else {
-            whaleParts.erase(whaleParts.begin() + nearestOne); 
-        }
-         */
     }
     if (insertButton.isPressed()) insertOn = !insertOn; 
     if (fillButton.isPressed()) fillOn = !fillOn; 
@@ -239,7 +303,9 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     if (smileButton.isPressed()) smileOn = !smileOn;
     if (frownButton.isPressed()) frownOn = !frownOn;
     if (drawModeButton.isPressed()) drawOn = !drawOn; 
-        
+    if (boidsButton.isPressed()) boidsOn = !boidsOn; 
+    if (blowHoleButton.isPressed()) blowHoleOn = !blowHoleOn; 
+
     touchUpAllButtons(touch);
 }
 
@@ -320,6 +386,10 @@ void testApp::loadXML(string name) {
             whaleParts[i].newPos = whaleParts[i].pos;   
         }
     }
+    
+    //set the eye location
+    eyeLoc.set (whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y); 
+
 }
 
 
@@ -414,6 +484,10 @@ void testApp::setupAllButtons() {
     smileButton.setLabel("SMILE!", &font);
     frownButton.setup(); 
     frownButton.setLabel("FROWN!", &font);
+    boidsButton.setup();
+    boidsButton.setLabel("BOIDS!", &font);
+    blowHoleButton.setup();
+    blowHoleButton.setLabel("BLOWHOLE!", &font);
 }
 
 void testApp::drawAllButtons() {
@@ -425,11 +499,14 @@ void testApp::drawAllButtons() {
     resetButton.draw(300, 10); 
     deleteLastButton.draw(300, 60); 
     insertButton.draw(300, 110); 
-    fillButton.draw(300, 160);     
-    wriggleButton.draw(600, 10); 
-    TfloatButton.draw(600, 60); 
-    frownButton.draw(600, 110);
-    smileButton.draw(600, 160);
+    fillButton.draw(300, 160); 
+    
+    wriggleButton.draw(600, ofGetHeight() - 210); 
+    TfloatButton.draw(600, ofGetHeight() - 60); 
+    frownButton.draw(600, ofGetHeight() - 110);
+    smileButton.draw(600, ofGetHeight() - 160);
+    boidsButton.draw(800, ofGetHeight() - 210);
+    blowHoleButton.draw(800, ofGetHeight() - 60);
 
 }
 
@@ -447,6 +524,8 @@ void testApp::touchDownAllButtons(ofTouchEventArgs &touch) {
     smileButton.touchDown(touch);
     frownButton.touchDown(touch);
     drawModeButton.touchDown(touch);
+    boidsButton.touchDown(touch);
+    blowHoleButton.touchDown(touch);
 }
 
 void testApp::touchUpAllButtons(ofTouchEventArgs &touch) {
@@ -463,6 +542,8 @@ void testApp::touchUpAllButtons(ofTouchEventArgs &touch) {
     smileButton.touchUp(touch); 
     frownButton.touchUp(touch); 
     drawModeButton.touchUp(touch);
+    boidsButton.touchUp(touch);
+    blowHoleButton.touchUp(touch);
 }
 
 void testApp::drawMode() {

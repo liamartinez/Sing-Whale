@@ -7,9 +7,12 @@
 #include "baseButton.h"
 #include "ofxFreeType2.h"
 #include "vertex.h"
+#include "Boid.h"
+#include "Particle.h"
+#include "ParticleSystem.h"
 
 #define MOUTH_EDGE 38
-
+#define BLOWHOLE 44
 class testApp : public ofxiPhoneApp {
 	
 public:
@@ -62,7 +65,10 @@ public:
     bool        frownOn; 
     baseButton  drawModeButton; 
     bool        drawOn; 
-    
+    baseButton  boidsButton;
+    bool        boidsOn; 
+    baseButton  blowHoleButton;
+    bool        blowHoleOn; 
     
     void        setupAllButtons(); 
     void        drawAllButtons(); 
@@ -82,6 +88,16 @@ public:
     float       theta; 
     int         touchThresh; 
     int         mouthPos; 
+    ofVec2f     eyeLoc; 
+    
+    //boids
+    vector<Boid> boids;
+    int mouseX, mouseY; 
+    
+    //particles
+    ParticleSystem ps;
+    ofPoint gravity;
+
 };
 
 

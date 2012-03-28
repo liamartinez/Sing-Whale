@@ -16,6 +16,10 @@
 		0A334A271522396F007FD88D /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0A334A231522396F007FD88D /* README */; };
 		0A334A281522396F007FD88D /* ofxFreeType2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A334A251522396F007FD88D /* ofxFreeType2.cpp */; };
 		0A593FF815226F9000A6868A /* vertex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A593FF715226F9000A6868A /* vertex.mm */; };
+		0AC6019115235076009053CD /* Boid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6019015235076009053CD /* Boid.mm */; };
+		0AC6019A15235951009053CD /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6019415235950009053CD /* Particle.cpp */; };
+		0AC6019B15235951009053CD /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6019615235950009053CD /* ParticleSystem.cpp */; };
+		0AC6019C15235951009053CD /* Repeller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6019815235950009053CD /* Repeller.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -71,6 +75,14 @@
 		0A334A261522396F007FD88D /* ofxFreeType2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFreeType2.h; sourceTree = "<group>"; };
 		0A593FF615226F8300A6868A /* vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vertex.h; path = ../vertex.h; sourceTree = "<group>"; };
 		0A593FF715226F9000A6868A /* vertex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = vertex.mm; path = ../vertex.mm; sourceTree = "<group>"; };
+		0AC6019015235076009053CD /* Boid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Boid.mm; sourceTree = "<group>"; };
+		0AC601931523507D009053CD /* Boid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		0AC6019415235950009053CD /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		0AC6019515235950009053CD /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		0AC6019615235950009053CD /* ParticleSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
+		0AC6019715235950009053CD /* ParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleSystem.h; sourceTree = "<group>"; };
+		0AC6019815235950009053CD /* Repeller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Repeller.cpp; sourceTree = "<group>"; };
+		0AC6019915235951009053CD /* Repeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repeller.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* whaleAnimate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whaleAnimate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -183,6 +195,28 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		0AC6019D1523595A009053CD /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6019415235950009053CD /* Particle.cpp */,
+				0AC6019515235950009053CD /* Particle.h */,
+				0AC6019615235950009053CD /* ParticleSystem.cpp */,
+				0AC6019715235950009053CD /* ParticleSystem.h */,
+				0AC6019815235950009053CD /* Repeller.cpp */,
+				0AC6019915235951009053CD /* Repeller.h */,
+			);
+			name = particles;
+			sourceTree = "<group>";
+		};
+		0AC6019E1523596C009053CD /* boids */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6019015235076009053CD /* Boid.mm */,
+				0AC601931523507D009053CD /* Boid.h */,
+			);
+			name = boids;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,11 +316,13 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0AC6019E1523596C009053CD /* boids */,
 				0A593FF715226F9000A6868A /* vertex.mm */,
 				0A593FF615226F8300A6868A /* vertex.h */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
-				E4D8936D11527B74007E1F53 /* testApp.mm */,
 				E4D8936C11527B74007E1F53 /* testApp.h */,
+				E4D8936D11527B74007E1F53 /* testApp.mm */,
+				0AC6019D1523595A009053CD /* particles */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -400,6 +436,10 @@
 				0A334A211522389F007FD88D /* baseButton.cpp in Sources */,
 				0A334A281522396F007FD88D /* ofxFreeType2.cpp in Sources */,
 				0A593FF815226F9000A6868A /* vertex.mm in Sources */,
+				0AC6019115235076009053CD /* Boid.mm in Sources */,
+				0AC6019A15235951009053CD /* Particle.cpp in Sources */,
+				0AC6019B15235951009053CD /* ParticleSystem.cpp in Sources */,
+				0AC6019C15235951009053CD /* Repeller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
