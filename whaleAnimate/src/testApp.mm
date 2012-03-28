@@ -13,26 +13,8 @@ void testApp::setup(){
     
     font.loadFont("mono.ttf", 22);
     TTF.loadFont("mono.ttf", 7);
-    saveButton.setup(); 
-    saveButton.setLabel("SAVE", &font);
-    loadButton.setup(); 
-    loadButton.setLabel("LOAD", &font);
-    loadWhale.setup(); 
-    loadWhale.setLabel("LOAD WHALE", &font);
-    resetButton.setup(); 
-    resetButton.setLabel("RESET", &font);
-    deleteLastButton.setup(); 
-    deleteLastButton.setLabel("DELETE SELECTED", &font);
-    insertButton.setup(); 
-    insertButton.setLabel("INSERT", &font);
-    fillButton.setup(); 
-    fillButton.setLabel("FILL ON", &font);
-    showImgButton.setup(); 
-    showImgButton.setLabel("SHOW IMG", &font);
-    wriggleButton.setup(); 
-    wriggleButton.setLabel("WRIGGLE!", &font);
-    TfloatButton.setup(); 
-    TfloatButton.setLabel("FLOAT!", &font);
+
+    setupAllButtons();
     
     thisOne = 0; 
     whaleGuide.loadImage("whaleguide.png"); 
@@ -45,6 +27,8 @@ void testApp::setup(){
     dx = (TWO_PI / period);
     theta += 0.02;
     whaleLoc.set(0, 0);
+    
+    touchThresh = 5; 
 }
 
 
@@ -70,6 +54,12 @@ void testApp::update(){
     } else {
         ofNoFill(); 
     }
+    
+    if (insertOn) {
+        insertMode = "ON";
+    } else {
+        insertMode = "OFF"; 
+    }
 }
 
 //--------------------------------------------------------------
@@ -79,23 +69,7 @@ void testApp::draw(){
     ofSetColor(255);
     if (showImg) whaleGuide.draw(0,0);
     
-    saveButton.draw(100, 10);
-    loadButton.draw(100, 60); 
-    loadWhale.draw(100, 110); 
-    showImgButton.draw(300, 160);
-    resetButton.draw(300, 10); 
-    deleteLastButton.draw(300, 60); 
-    insertButton.draw(300, 110); 
-    if (insertOn) {
-        insertMode = "ON";
-    } else {
-        insertMode = "OFF"; 
-    }
-    fillButton.draw(300, 160);     
-    wriggleButton.draw(600, 10); 
-    TfloatButton.draw(600, 60); 
-    
-
+    drawAllButtons(); 
 
 	ofSetHexColor(0xe0be21);
 
@@ -178,7 +152,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
                 float diffx = touch.x - whaleParts[i].pos.x;
                 float diffy = touch.y - whaleParts[i].pos.y;
                 float dist = sqrt(diffx*diffx + diffy*diffy);
-                if (dist < 40 ){
+                if (dist < touchThresh ){
                     whaleParts[i].bBeingDragged = true;
                     thisOne = i; 
                 } else {
@@ -189,16 +163,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
         
 	}
     
-    saveButton.touchDown(touch);
-    loadButton.touchDown(touch);
-    loadWhale.touchDown(touch);
-    resetButton.touchDown(touch);
-    deleteLastButton.touchDown(touch);
-    insertButton.touchDown(touch);
-    fillButton.touchDown(touch);
-    showImgButton.touchDown(touch);
-    wriggleButton.touchDown(touch);
-    TfloatButton.touchDown(touch);
+    touchDownAllButtons(touch);
 }
 
 //--------------------------------------------------------------
@@ -247,16 +212,7 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     if (wriggleButton.isPressed()) wriggleOn = !wriggleOn;
     if (TfloatButton.isPressed()) translateFloat = !translateFloat; 
         
-    saveButton.touchUp(touch);
-    loadButton.touchDown(touch);
-    loadWhale.touchDown(touch);
-    resetButton.touchDown(touch);
-    insertButton.touchDown(touch);
-    deleteLastButton.touchDown(touch);
-    fillButton.touchDown(touch);
-    showImgButton.touchDown(touch);
-    wriggleButton.touchDown(touch);
-    TfloatButton.touchDown(touch);
+    touchUpAllButtons(touch);
 }
 
 //--------------------------------------------------------------
@@ -369,4 +325,66 @@ void testApp::letsFloat() {
     cout << "x " << theta << endl; 
     
 
+}
+
+void testApp::setupAllButtons() {
+    saveButton.setup(); 
+    saveButton.setLabel("SAVE", &font);
+    loadButton.setup(); 
+    loadButton.setLabel("LOAD", &font);
+    loadWhale.setup(); 
+    loadWhale.setLabel("LOAD WHALE", &font);
+    resetButton.setup(); 
+    resetButton.setLabel("RESET", &font);
+    deleteLastButton.setup(); 
+    deleteLastButton.setLabel("DELETE SELECTED", &font);
+    insertButton.setup(); 
+    insertButton.setLabel("INSERT", &font);
+    fillButton.setup(); 
+    fillButton.setLabel("FILL ON", &font);
+    showImgButton.setup(); 
+    showImgButton.setLabel("SHOW IMG", &font);
+    wriggleButton.setup(); 
+    wriggleButton.setLabel("WRIGGLE!", &font);
+    TfloatButton.setup(); 
+    TfloatButton.setLabel("FLOAT!", &font);
+}
+
+void testApp::drawAllButtons() {
+    saveButton.draw(100, 10);
+    loadButton.draw(100, 60); 
+    loadWhale.draw(100, 110); 
+    showImgButton.draw(100, 160);
+    resetButton.draw(300, 10); 
+    deleteLastButton.draw(300, 60); 
+    insertButton.draw(300, 110); 
+    fillButton.draw(300, 160);     
+    wriggleButton.draw(600, 10); 
+    TfloatButton.draw(600, 60); 
+}
+
+void testApp::touchDownAllButtons(ofTouchEventArgs &touch) {
+    saveButton.touchDown(touch);
+    loadButton.touchDown(touch);
+    loadWhale.touchDown(touch);
+    resetButton.touchDown(touch);
+    deleteLastButton.touchDown(touch);
+    insertButton.touchDown(touch);
+    fillButton.touchDown(touch);
+    showImgButton.touchDown(touch);
+    wriggleButton.touchDown(touch);
+    TfloatButton.touchDown(touch);
+}
+
+void testApp::touchUpAllButtons(ofTouchEventArgs &touch) {
+    saveButton.touchUp(touch);
+    loadButton.touchDown(touch);
+    loadWhale.touchDown(touch);
+    resetButton.touchDown(touch);
+    insertButton.touchDown(touch);
+    deleteLastButton.touchDown(touch);
+    fillButton.touchDown(touch);
+    showImgButton.touchDown(touch);
+    wriggleButton.touchDown(touch);
+    TfloatButton.touchDown(touch);
 }

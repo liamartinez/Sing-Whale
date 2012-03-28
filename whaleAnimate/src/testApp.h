@@ -53,6 +53,11 @@ public:
     bool        translateFloat; 
     baseButton  loadWhale; 
     
+    void        setupAllButtons(); 
+    void        drawAllButtons(); 
+    void        touchUpAllButtons(ofTouchEventArgs &touch); 
+    void        touchDownAllButtons(ofTouchEventArgs &touch); 
+    
     ofxFreeType2 font; 
     
     ofImage     whaleGuide; 
@@ -63,6 +68,7 @@ public:
     float       period; 
     float       dx;
     float       theta; 
+    int         touchThresh; 
 };
 
 
