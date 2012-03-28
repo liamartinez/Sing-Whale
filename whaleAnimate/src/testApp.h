@@ -24,6 +24,7 @@ public:
 
     void loadXML(string name); 
     void saveXML(string name); 
+    void letsFloat(); 
     vector<vertex> whaleParts; 
     //vector<draggableVertex> whaleLines; 
     
@@ -46,12 +47,22 @@ public:
     int         thisOne; 
     baseButton  showImgButton; 
     bool        showImg; 
-    baseButton  floatButton; 
-    bool        floatOn; 
+    baseButton  wriggleButton; 
+    bool        wriggleOn; 
+    baseButton  TfloatButton; 
+    bool        translateFloat; 
+    baseButton  loadWhale; 
     
     ofxFreeType2 font; 
     
     ofImage     whaleGuide; 
+    //animating
+    ofVec2f     whaleLoc; 
+    float       floatY; 
+    float       amplitude;
+    float       period; 
+    float       dx;
+    float       theta; 
 };
 
 

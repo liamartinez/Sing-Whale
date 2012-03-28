@@ -9,6 +9,7 @@ void testApp::setup(){
 
 	ofBackground(255,255,255);	
 	ofSetFrameRate(60);
+    ofEnableSmoothing(); 
     
     font.loadFont("mono.ttf", 22);
     TTF.loadFont("mono.ttf", 7);
@@ -16,6 +17,8 @@ void testApp::setup(){
     saveButton.setLabel("SAVE", &font);
     loadButton.setup(); 
     loadButton.setLabel("LOAD", &font);
+    loadWhale.setup(); 
+    loadWhale.setLabel("LOAD WHALE", &font);
     resetButton.setup(); 
     resetButton.setLabel("RESET", &font);
     deleteLastButton.setup(); 
@@ -26,11 +29,22 @@ void testApp::setup(){
     fillButton.setLabel("FILL ON", &font);
     showImgButton.setup(); 
     showImgButton.setLabel("SHOW IMG", &font);
-    floatButton.setup(); 
-    floatButton.setLabel("FLOAT!", &font);
+    wriggleButton.setup(); 
+    wriggleButton.setLabel("WRIGGLE!", &font);
+    TfloatButton.setup(); 
+    TfloatButton.setLabel("FLOAT!", &font);
     
     thisOne = 0; 
     whaleGuide.loadImage("whaleguide.png"); 
+    //fillOn = true; 
+    wriggleOn = false; 
+    translateFloat = false; 
+    
+    amplitude = 20; 
+    period = 500; 
+    dx = (TWO_PI / period);
+    theta += 0.02;
+    whaleLoc.set(0, 0);
 }
 
 
@@ -39,8 +53,22 @@ void testApp::update(){
 
     if (whaleParts.size() !=0) {
         for (int i = 0; i < whaleParts.size(); i++) {
-            if (floatOn) whaleParts[i].newPos.y = whaleParts[i].pos.y + whaleParts[i].floatValue;
-        }
+            if (wriggleOn) {
+                whaleParts[i].newPos.y = whaleParts[i].pos.y + whaleParts[i].floatValue;
+            } else {
+                whaleParts[i].newPos.y = whaleParts[i].pos.y + 0;             }
+        } 
+    }
+
+    if (translateFloat) {
+        letsFloat(); 
+        whaleLoc.y = floatY; 
+    }
+    
+    if (fillOn) {
+        ofFill();
+    } else {
+        ofNoFill(); 
     }
 }
 
@@ -52,33 +80,35 @@ void testApp::draw(){
     if (showImg) whaleGuide.draw(0,0);
     
     saveButton.draw(100, 10);
-    loadButton.draw(100, 40); 
-    resetButton.draw(200, 10); 
-    deleteLastButton.draw(200, 40); 
-    insertButton.draw(220, 70); 
+    loadButton.draw(100, 60); 
+    loadWhale.draw(100, 110); 
+    showImgButton.draw(300, 160);
+    resetButton.draw(300, 10); 
+    deleteLastButton.draw(300, 60); 
+    insertButton.draw(300, 110); 
     if (insertOn) {
         insertMode = "ON";
     } else {
         insertMode = "OFF"; 
     }
-    fillButton.draw(200, 100); 
-    showImgButton.draw(320, 10);
-    floatButton.draw(320, 40); 
+    fillButton.draw(300, 160);     
+    wriggleButton.draw(600, 10); 
+    TfloatButton.draw(600, 60); 
     
 
-    if (fillOn) {
-        ofFill();
-    } else {
-        ofNoFill(); 
-    }
+
 	ofSetHexColor(0xe0be21);
-    //ofSetHexColor(0x2bdbe6);
+
+    ofPushMatrix(); 
+    ofTranslate(whaleLoc);
+
+    
 	ofBeginShape();
 	
     if (whaleParts.size() != 0) {
          
     for (int i = 0; i < whaleParts.size(); i++){
-        whaleParts[i].floating();
+        whaleParts[i].wriggle(i);
 
         if (i == 0){
             ofCurveVertex(whaleParts[0].pos.x, whaleParts[0].newPos.y); // we need to duplicate 0 for the curve to start at point 0
@@ -94,7 +124,7 @@ void testApp::draw(){
     }
         ofEndShape(false);
     
-   
+    
 	
 	
 	// show a faint the non-curve version of the same polygon:
@@ -129,10 +159,11 @@ void testApp::draw(){
             ofSetColor(0,0,0,80);
         }
     }
+    ofDisableAlphaBlending();
+    ofPopMatrix(); 
     
+	
 
-	ofDisableAlphaBlending();
-	//-------------------------------------
 
     TTF.drawString("Status: "+message, 10, ofGetHeight() - 9);
     TTF.drawString("Insert: "+ insertMode, 10, ofGetHeight() - 29);
@@ -147,7 +178,7 @@ void testApp::touchDown(ofTouchEventArgs &touch){
                 float diffx = touch.x - whaleParts[i].pos.x;
                 float diffy = touch.y - whaleParts[i].pos.y;
                 float dist = sqrt(diffx*diffx + diffy*diffy);
-                if (dist < 5 ){
+                if (dist < 40 ){
                     whaleParts[i].bBeingDragged = true;
                     thisOne = i; 
                 } else {
@@ -160,12 +191,14 @@ void testApp::touchDown(ofTouchEventArgs &touch){
     
     saveButton.touchDown(touch);
     loadButton.touchDown(touch);
+    loadWhale.touchDown(touch);
     resetButton.touchDown(touch);
     deleteLastButton.touchDown(touch);
     insertButton.touchDown(touch);
     fillButton.touchDown(touch);
     showImgButton.touchDown(touch);
-    floatButton.touchDown(touch);
+    wriggleButton.touchDown(touch);
+    TfloatButton.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -194,8 +227,9 @@ void testApp::touchUp(ofTouchEventArgs &touch){
         }
 	}
     
-    if (saveButton.isPressed()) saveXML("whaleParts.xml");
-    if (loadButton.isPressed()) loadXML("whaleParts.xml");
+    if (saveButton.isPressed()) saveXML("new.xml");
+    if (loadWhale.isPressed()) loadXML("whaleParts.xml");
+    if (loadButton.isPressed()) loadXML("new.xml");
     if (resetButton.isPressed()) whaleParts.clear(); 
     if (deleteLastButton.isPressed()) {
         whaleParts.erase(whaleParts.begin()+thisOne);
@@ -210,16 +244,19 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     if (insertButton.isPressed()) insertOn = !insertOn; 
     if (fillButton.isPressed()) fillOn = !fillOn; 
     if (showImgButton.isPressed()) showImg = !showImg; 
-    if (floatButton.isPressed()) floatOn = !floatOn;
+    if (wriggleButton.isPressed()) wriggleOn = !wriggleOn;
+    if (TfloatButton.isPressed()) translateFloat = !translateFloat; 
         
     saveButton.touchUp(touch);
     loadButton.touchDown(touch);
+    loadWhale.touchDown(touch);
     resetButton.touchDown(touch);
     insertButton.touchDown(touch);
     deleteLastButton.touchDown(touch);
     fillButton.touchDown(touch);
     showImgButton.touchDown(touch);
-    floatButton.touchDown(touch);
+    wriggleButton.touchDown(touch);
+    TfloatButton.touchDown(touch);
 }
 
 //--------------------------------------------------------------
@@ -317,4 +354,19 @@ void testApp::saveXML(string name) {
     
     message = "saved XML" ; 
     
+}
+
+void testApp::letsFloat() {
+    
+
+    
+    // For every x value, calculate a y value with sine function
+    //float x = theta;
+
+        floatY = sin(theta)*amplitude;
+        theta+=dx;
+    
+    cout << "x " << theta << endl; 
+    
+
 }

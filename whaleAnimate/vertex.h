@@ -21,7 +21,7 @@ public:
     float 	radius;
     
     //floating
-    void    floating(); 
+    void    wriggle(float thetaVar); 
     float   theta;
     float   dx;
     float   period; 

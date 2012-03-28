@@ -11,24 +11,25 @@
 
 vertex::vertex() {
     theta = 0.0; 
-    period = 500; 
+    period = 200; 
     dx = (TWO_PI / period) ;
-    amplitude = 20; 
+    amplitude = 3; 
     floatValue = 0; 
+    newPos.set(0, 0);
 }
 
-void vertex::floating() {
+void vertex::wriggle(float thetaVar) {
     
         // Increment theta (try different values for 'angular velocity' here
-        theta += 0.02;
+        theta += 0.02 * thetaVar;
         
         // For every x value, calculate a y value with sine function
         float x = theta;
 
-    for (int i = 0; i < 20; i ++) {
+
             floatValue = sin(x)*amplitude;
             x+=dx;
-        cout << x << endl; 
-    }
+
+
 
 }
