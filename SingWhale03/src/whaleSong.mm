@@ -65,8 +65,10 @@ void whaleSong::setup(){
     //grid stuff
     grid.setLength(gridLen);
     grid.setLengthDensity(sampleSize, tightness);
-    grid.setLocation(10, ofGetHeight()/2);
+    //grid.setLocation(10, ofGetHeight()/2);
+    grid.setLocation(10, ofGetHeight() - ofGetHeight()/4);
     
+    grid.setWorld(1);
     grid.setupBox2d(0, 0);
     grid.setupGrid();
     
@@ -75,8 +77,12 @@ void whaleSong::setup(){
     guide.setLengthDensity(sampleSize, tightness);
     guide.setLocation(10, ofGetHeight() - ofGetHeight()/4);
     
+    guide.setWorld(2);
     guide.setupBox2d(0, 0);
     guide.setupGrid();
+
+    
+
     
     
     //interface
@@ -122,11 +128,11 @@ void whaleSong::update(){
             }
         }
         
-        
-        if (theBin != 0) {
-            theBin = ofMap(theBin, 30, 50, 30, 100);
+        //disable this because I want to count silences
+        //if (theBin != 0) {
+            theBin = ofMap(theBin, 0, 50, 30, 100);
             if (theBins.size() < sampleSize) theBins.push_back(theBin);
-        }
+        //}
         
     }
     if (showGrid) grid.update(); 
@@ -144,8 +150,12 @@ void whaleSong::draw(){
     
     ofSetColor(225);
     
-    if (showGrid) grid.drawGrid();
+    if (showGrid) {
+        grid.drawGrid();
+        grid.fillSong = false; 
+    }
     guide.drawGrid(); 
+    guide.fillSong = true; 
     
     if (showGrid) {
         if (begin && theBins.size() != 0) {

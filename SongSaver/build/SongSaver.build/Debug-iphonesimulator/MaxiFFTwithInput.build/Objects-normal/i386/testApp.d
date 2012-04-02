@@ -194,4 +194,5 @@ dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dJointRevolute.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dRender.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dContactListener.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/src/Vertex.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/src/song.h

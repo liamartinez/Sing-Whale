@@ -22,7 +22,7 @@ void songThree::setup() {
 void songThree::update() {
     switch(mgr.getCurScene()) {
         case SONG_THREE_FIRST:
-            //Do stuff
+            theWhale.update();
             break;            
     }
 }
@@ -65,8 +65,12 @@ void songThree::draw() {
             
             ofEnableAlphaBlending();
             
-            message = "zZZzz"; 
-            songThree.draw(0,0);
+            //message = "zZZzz"; 
+            //songThree.draw(0,0);
+            
+            theWhale.draw(); 
+            theWhale.translateFloat = true; 
+            theWhale.blowHoleOn = true; 
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    

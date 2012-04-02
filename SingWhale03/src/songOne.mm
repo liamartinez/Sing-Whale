@@ -37,7 +37,8 @@ void songOne::activate() {
     
     songOne.loadImage("images/speak_med.png");
     textStart.set(ofGetWidth()-200, ofGetHeight()-530);
-    theWhale.setup(); 
+    //theWhale.setup(); 
+    //theWhale.smileOn = true; 
     
     
 }
@@ -62,9 +63,11 @@ void songOne::draw() {
         case SONG_ONE_FIRST:
             ofEnableAlphaBlending();
             
-            message = "  Hi there \n funny looking"; 
-            songOne.draw(0,0);
+            //message = "  Hi there \n funny looking"; 
+            //songOne.draw(0,0);
             theWhale.draw(); 
+            theWhale.translateFloat = true; 
+            
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    

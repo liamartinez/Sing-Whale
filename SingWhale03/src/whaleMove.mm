@@ -29,6 +29,8 @@ void whaleMove::setup(){
     font.loadFont("mono.ttf", 22);
     TTF.loadFont("mono.ttf", 7);
     
+    loadXML("whaleParts.xml");
+    
     //buttons
     setupAllButtons();
     
@@ -79,13 +81,7 @@ void whaleMove::update(){
         letsFloat(); 
         whaleLoc.y = floatY; 
     }
-    
-    if (insertOn) {
-        insertMode = "ON";
-    } else {
-        insertMode = "OFF"; 
-    }
-    
+        
     if (smileOn) smile(8);  
     if (frownOn) frown(8);
     
@@ -133,9 +129,7 @@ void whaleMove::draw(){
     ofTranslate(whaleLoc);
     
     
-    if (drawOn) {
-        drawMode(); 
-    } else {
+
         
         //draw the main shape
         if (whaleParts.size() != 0) {
@@ -147,6 +141,7 @@ void whaleMove::draw(){
             }
             
             ofSetColor(60); 
+            ofSetLineWidth(5);
             
             ofBeginShape();
             
@@ -221,7 +216,7 @@ void whaleMove::draw(){
                 }
                 
             }   
-        }
+        
     }
     ofDisableAlphaBlending();
     ofPopMatrix(); 
@@ -248,6 +243,7 @@ void whaleMove::draw(){
 void whaleMove::touchDown(ofTouchEventArgs &touch){
 	if( touch.id == 0 ){
         
+        /*
         if (whaleParts.size()!=0) {
             
             for (int i = 0; i < whaleParts.size(); i++){
@@ -262,6 +258,8 @@ void whaleMove::touchDown(ofTouchEventArgs &touch){
                 }	
             }
         }
+         
+         */
         mouseX = touch.x; 
         mouseY = touch.y; 
 	}
@@ -275,12 +273,14 @@ void whaleMove::touchDown(ofTouchEventArgs &touch){
 void whaleMove::touchMoved(ofTouchEventArgs &touch){
 	if( touch.id == 0 ){
         
+        /*
         for (int i = 0; i < whaleParts.size(); i++){
             if (whaleParts[i].bBeingDragged == true){
                 whaleParts[i].pos.x = touch.x;
                 whaleParts[i].pos.y = touch.y;
             }
         }
+         */
         
         
         mouseX = touch.x; 
@@ -294,17 +294,20 @@ void whaleMove::touchMoved(ofTouchEventArgs &touch){
 void whaleMove::touchUp(ofTouchEventArgs &touch){
 	if( touch.id == 0 ){
         
+        /*
         if (whaleParts.size()!=0) {
             for (int i = 0; i < whaleParts.size(); i++){
                 whaleParts[i].bBeingDragged = false;	
             }
         }
+         */
         mouseX = touch.x; 
         mouseY = touch.y; 
 	}
     
+    /*
     if (saveButton.isPressed()) saveXML("new.xml");
-    if (loadWhale.isPressed()) loadXML("whaleParts.xml");
+
     if (loadButton.isPressed()) loadXML("new.xml");
     if (resetButton.isPressed()) whaleParts.clear(); 
     if (deleteLastButton.isPressed()) {
@@ -313,6 +316,7 @@ void whaleMove::touchUp(ofTouchEventArgs &touch){
     if (insertButton.isPressed()) insertOn = !insertOn; 
     if (fillButton.isPressed()) fillOn = !fillOn; 
     if (showImgButton.isPressed()) showImg = !showImg; 
+     
     if (wriggleButton.isPressed()) wriggleOn = !wriggleOn;
     if (TfloatButton.isPressed()) translateFloat = !translateFloat; 
     if (smileButton.isPressed()) smileOn = !smileOn;
@@ -321,12 +325,15 @@ void whaleMove::touchUp(ofTouchEventArgs &touch){
     if (boidsButton.isPressed()) boidsOn = !boidsOn; 
     if (blowHoleButton.isPressed()) blowHoleOn = !blowHoleOn; 
     
+    */ 
+     
     touchUpAllButtons(touch);
 }
 
 //--------------------------------------------------------------
 void whaleMove::touchDoubleTap(ofTouchEventArgs &touch){
     
+    /*
     vertex whalePoint; 
     whalePoint.pos.x = touch.x; 
     whalePoint.pos.y = touch.y; 
@@ -355,6 +362,8 @@ void whaleMove::touchDoubleTap(ofTouchEventArgs &touch){
         cout << "nearest " << nearestOne << endl; 
         whaleParts.insert(whaleParts.begin() + nearestOne, whalePoint);
     }
+     
+     */
 }
 
 //--------------------------------------------------------------
@@ -412,6 +421,7 @@ void whaleMove::loadXML(string name) {
 
 void whaleMove::saveXML(string name) {
     
+    /*
     ofxXmlSettings positions;
     positions.addTag("strokes");
     positions.pushTag("strokes");
@@ -430,6 +440,8 @@ void whaleMove::saveXML(string name) {
     positions.saveFile( ofxiPhoneGetDocumentsDirectory() + name);
     
     message = "saved XML" ; 
+     
+     */
     
 }
 
@@ -473,24 +485,31 @@ void whaleMove::frown(int amt) {
 //--------------------------------------------------------------
 
 void whaleMove::setupAllButtons() {
-    saveButton.setup(); 
-    saveButton.setLabel("SAVE", &font);
-    loadButton.setup(); 
-    loadButton.setLabel("LOAD", &font);
-    loadWhale.setup(); 
+    /*
+     saveButton.setup(); 
+     saveButton.setLabel("SAVE", &font);
+     loadButton.setup(); 
+     loadButton.setLabel("LOAD", &font);
+     loadWhale.setup(); 
+     drawModeButton.setLabel("DRAW MODE", &font);
+     resetButton.setup(); 
+     resetButton.setLabel("RESET", &font);
+     deleteLastButton.setup(); 
+     deleteLastButton.setLabel("DELETE SELECTED", &font);
+     insertButton.setup(); 
+     insertButton.setLabel("INSERT", &font);
+     fillButton.setup(); 
+     fillButton.setLabel("FILL ON", &font);
+     showImgButton.setup(); 
+     showImgButton.setLabel("SHOW IMG", &font);
+     
+     
+    
+    //should not be a button
     loadWhale.setLabel("LOAD WHALE", &font);
     drawModeButton.setup(); 
-    drawModeButton.setLabel("DRAW MODE", &font);
-    resetButton.setup(); 
-    resetButton.setLabel("RESET", &font);
-    deleteLastButton.setup(); 
-    deleteLastButton.setLabel("DELETE SELECTED", &font);
-    insertButton.setup(); 
-    insertButton.setLabel("INSERT", &font);
-    fillButton.setup(); 
-    fillButton.setLabel("FILL ON", &font);
-    showImgButton.setup(); 
-    showImgButton.setLabel("SHOW IMG", &font);
+    
+
     wriggleButton.setup(); 
     wriggleButton.setLabel("WRIGGLE!", &font);
     TfloatButton.setup(); 
@@ -503,18 +522,23 @@ void whaleMove::setupAllButtons() {
     boidsButton.setLabel("BOIDS!", &font);
     blowHoleButton.setup();
     blowHoleButton.setLabel("BLOWHOLE!", &font);
+     */
 }
 
 void whaleMove::drawAllButtons() {
+    
+    /*
     saveButton.draw(100, 10);
-    loadButton.draw(100, 60); 
-    loadWhale.draw(100, 110); 
+    loadButton.draw(100, 60);      
     drawModeButton.draw(100, 210);
     showImgButton.draw(100, 160);
     resetButton.draw(300, 10); 
     deleteLastButton.draw(300, 60); 
     insertButton.draw(300, 110); 
     fillButton.draw(300, 160); 
+     
+     
+     loadWhale.draw(100, 110);
     
     wriggleButton.draw(600, ofGetHeight() - 210); 
     TfloatButton.draw(600, ofGetHeight() - 60); 
@@ -522,18 +546,26 @@ void whaleMove::drawAllButtons() {
     smileButton.draw(600, ofGetHeight() - 160);
     boidsButton.draw(800, ofGetHeight() - 210);
     blowHoleButton.draw(800, ofGetHeight() - 60);
+     
+     */
     
 }
 
 void whaleMove::touchDownAllButtons(ofTouchEventArgs &touch) {
+    
+    /*
     saveButton.touchDown(touch);
     loadButton.touchDown(touch);
-    loadWhale.touchDown(touch);
+    
     resetButton.touchDown(touch);
     deleteLastButton.touchDown(touch);
     insertButton.touchDown(touch);
     fillButton.touchDown(touch);
     showImgButton.touchDown(touch);
+     
+     
+    loadWhale.touchDown(touch);
+    
     wriggleButton.touchDown(touch);
     TfloatButton.touchDown(touch);
     smileButton.touchDown(touch);
@@ -541,17 +573,24 @@ void whaleMove::touchDownAllButtons(ofTouchEventArgs &touch) {
     drawModeButton.touchDown(touch);
     boidsButton.touchDown(touch);
     blowHoleButton.touchDown(touch);
+     
+     */
 }
 
 void whaleMove::touchUpAllButtons(ofTouchEventArgs &touch) {
+    /*
     saveButton.touchUp(touch);
     loadButton.touchUp(touch);
-    loadWhale.touchUp(touch);
+    
     resetButton.touchUp(touch);
     insertButton.touchUp(touch);
     deleteLastButton.touchUp(touch);
     fillButton.touchUp(touch);
     showImgButton.touchUp(touch);
+     
+    
+    loadWhale.touchUp(touch);
+    
     wriggleButton.touchUp(touch);
     TfloatButton.touchUp(touch);
     smileButton.touchUp(touch); 
@@ -559,6 +598,8 @@ void whaleMove::touchUpAllButtons(ofTouchEventArgs &touch) {
     drawModeButton.touchUp(touch);
     boidsButton.touchUp(touch);
     blowHoleButton.touchUp(touch);
+     
+     */
 }
 
 void whaleMove::drawMode() {

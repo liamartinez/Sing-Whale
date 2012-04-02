@@ -12,6 +12,8 @@
 #include "ofMain.h"
 #include "ofxBox2d.h"
 
+#include "Vertex.h"
+
 class grid {
     
 public:
@@ -68,6 +70,12 @@ public:
     int                     savedNum; 
     int                     counter; 
     bool                    yesMore; 
+    
+    //just a shape
+    vector<Vertex>          songPoints;
+    void                    setupSong(); 
+    void                    drawSong(); 
+    void                    letsgoSong(int num, int height); 
 
 };
 

@@ -24,6 +24,7 @@ void songTwo::update() {
                
         case SONG_TWO_FIRST:
             //Do stuff
+            theWhale.update();
             break;            
     }
 }
@@ -39,6 +40,7 @@ void songTwo::activate() {
     
     cout << "Activate Song Two" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-450);
+    theWhale.frownOn = true; 
     
 
 
@@ -67,8 +69,12 @@ void songTwo::draw() {
             
             ofEnableAlphaBlending();
             
-            message = "You're really mean"; 
-            songTwo.draw(0,0);
+            //message = "You're really mean"; 
+            //songTwo.draw(0,0);
+            
+            theWhale.draw();
+            theWhale.translateFloat = true; 
+            
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    

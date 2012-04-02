@@ -16,6 +16,7 @@ class grid {
     
 public:
     grid (); 
+    void                    setWorld(int num); 
     void                    setLocation (int locationX, int locationY); 
     void                    setLength (float lenHorz_);  
     void                    setLengthDensity (int numHorz_, float incHorz_); 
@@ -28,8 +29,12 @@ public:
     void                    letsReset(int nowLocTop_);
     void                    clearGrid(); 
     void                    attractReset(); 
+
     
-    ofxBox2d						box2d;	
+    ofxBox2d				box2d;	
+    ofxBox2d                box2dDupe; 
+     
+    ofxBox2d                theWorld; 
     
     //anchors
     ofxBox2dCircle          startAnchor, startAnchorBot; 
@@ -63,6 +68,7 @@ public:
     //controls
     bool                    skeleton;
     int                     numNote; 
+    bool                    fillSong; 
     
     
 };

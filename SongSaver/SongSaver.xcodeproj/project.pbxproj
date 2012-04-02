@@ -122,6 +122,7 @@
 		00ABBDC4145F0B3900ED7823 /* maximilian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
 		00ABBDC6145F0B3900ED7823 /* ofxMaxim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
 		00ABBE0C145F0C7100ED7823 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0A2600D51529F705008E0C1B /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		0A542507151299FA001C6434 /* grid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grid.h; sourceTree = "<group>"; };
 		0A54250E1512ADFD001C6434 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		0A5425121512ADFD001C6434 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -682,6 +683,7 @@
 				E4D8936C11527B74007E1F53 /* testApp.h */,
 				0A542507151299FA001C6434 /* grid.h */,
 				0A5425A31512AF05001C6434 /* grid.mm */,
+				0A2600D51529F705008E0C1B /* Vertex.h */,
 				0A8B043F151D1DE50065D05B /* song.h */,
 				0A8B0441151D1DF10065D05B /* song.cpp */,
 			);

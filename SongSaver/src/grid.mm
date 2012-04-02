@@ -360,7 +360,50 @@ void grid::attractReset() {
 }
 
 
+void grid::letsgoSong(int num, int height) {
+    
+    height = ofGetHeight()/2 + height; 
+    
+    Vertex songPoint; 
+    songPoint.pos.x = num * 10; 
+    songPoint.pos.y = height; 
+    
+    songPoints.push_back(songPoint); 
+    
+    /*
+    if (songPoints.size() <2 ) {
+        songPoints.push_back(songPoint); 
+    } else {
+        songPoints.insert(songPoints.begin() + songPoints.size()/2, songPoint);
 
+    }
+     */
+    
+}
+
+void grid::drawSong() {
+    
+    if (songPoints.size() !=0) {
+        ofBeginShape();
+        ofSetLineWidth(4);
+        ofSetColor(100); 
+        
+        for (int i = 0; i < songPoints.size(); i++){            
+            if (i == 0){
+                ofCurveVertex(songPoints[0].pos.x, songPoints[0].pos.y); // we need to duplicate 0 for the curve to start at point 0
+                ofCurveVertex(songPoints[0].pos.x, songPoints[0].pos.y); // we need to duplicate 0 for the curve to start at point 0
+            } else if (i == songPoints.size()-1){
+                ofCurveVertex(songPoints[i].pos.x, songPoints[i].pos.y);
+                ofCurveVertex(songPoints[0].pos.x, songPoints[0].pos.y);	// to draw a curve from pt 6 to pt 0
+                ofCurveVertex(songPoints[0].pos.x, songPoints[0].pos.y);	// we duplicate the first point twice
+            } else {
+                ofCurveVertex(songPoints[i].pos.x, songPoints[i].pos.y);
+            }
+        }
+        
+        ofEndShape(true);
+    }
+}
 
 
 

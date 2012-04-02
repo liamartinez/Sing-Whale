@@ -24,6 +24,16 @@ grid::grid() {
     
     damping         = .1;
     frequency       = 1; 
+    
+    
+    
+}
+
+void grid::setWorld(int num){
+    if (num == 1) theWorld = box2d;
+    if (num == 2) theWorld = box2dDupe;
+    
+    
 }
 
 void grid::setLocation(int locationX, int locationY){
@@ -49,32 +59,32 @@ void grid::setLengthDensity(int numHorz_, float incHorz_){
 
 void grid::setupBox2d(int gravX, int gravY){
     
-    box2d.init();
-	box2d.setGravity(gravX, gravY);
-	box2d.setFPS(30.0);
-	//box2d.registerGrabbing();    
-    box2d.setIterations(1, 1);
+    theWorld.init();
+	theWorld.setGravity(gravX, gravY);
+	theWorld.setFPS(30.0);
+	//theWorld.registerGrabbing();    
+    theWorld.setIterations(1, 1);
 }
 
 void grid::setupGrid() {
     //anchors
-    startAnchor.setup(box2d.getWorld(), startLoc.x, startLoc.y, circleSize);
-    endAnchor.setup(box2d.getWorld(), endLoc.x, endLoc.y, circleSize);
-    startAnchorBot.setup(box2d.getWorld(), startLocBot.x, startLocBot.y, circleSize);
-    endAnchorBot.setup(box2d.getWorld(), endLocBot.x, endLocBot.y, circleSize);
+    startAnchor.setup(theWorld.getWorld(), startLoc.x, startLoc.y, circleSize);
+    endAnchor.setup(theWorld.getWorld(), endLoc.x, endLoc.y, circleSize);
+    startAnchorBot.setup(theWorld.getWorld(), startLocBot.x, startLocBot.y, circleSize);
+    endAnchorBot.setup(theWorld.getWorld(), endLocBot.x, endLocBot.y, circleSize);
     
     //create the top/bot circles
     for (int i=0; i<numHorz-1; i++) {
         
 		ofxBox2dCircle topCircle;
 		topCircle.setPhysics(100, 0, 5);//density, bounce, friction
-		topCircle.setup(box2d.getWorld(), startLoc.x + ((lenHorz/numHorz)* (i+1)), startLoc.y, 2); //move this by one point so it doesn't get knotted up
+		topCircle.setup(theWorld.getWorld(), startLoc.x + ((lenHorz/numHorz)* (i+1)), startLoc.y, 2); //move this by one point so it doesn't get knotted up
         topCircle.setFixedRotation(false);
 		topCircles.push_back(topCircle);
         
         ofxBox2dCircle bottomCircle;
 		bottomCircle.setPhysics(100, 0, 5);//density, bounce, friction
-		bottomCircle.setup(box2d.getWorld(), startLocBot.x+((lenHorz/numHorz)* i), startLocBot.y, 2);
+		bottomCircle.setup(theWorld.getWorld(), startLocBot.x+((lenHorz/numHorz)* i), startLocBot.y, 2);
         bottomCircle.setFixedRotation(false);
 		bottomCircles.push_back(bottomCircle);
 	}
@@ -88,27 +98,27 @@ void grid::setupGrid() {
         ofxBox2dJoint connectJointBot; 
         
         if (i == 0 ) {
-            topJoint.setup (box2d.getWorld(), startAnchor.body, topCircles[i].body, frequency, damping, false); 
-            connectJointTop.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
+            topJoint.setup (theWorld.getWorld(), startAnchor.body, topCircles[i].body, frequency, damping, false); 
+            connectJointTop.setup(theWorld.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
             
-            bottomJoint.setup (box2d.getWorld(), startAnchorBot.body, bottomCircles[i].body,frequency, damping, false); 
-            connectJointBot.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
+            bottomJoint.setup (theWorld.getWorld(), startAnchorBot.body, bottomCircles[i].body,frequency, damping, false); 
+            connectJointBot.setup(theWorld.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
         }
         
         else if (i == topCircles.size()-1) {
-            topJoint.setup(box2d.getWorld(), topCircles[i].body, endAnchor.body, frequency, damping, false);
+            topJoint.setup(theWorld.getWorld(), topCircles[i].body, endAnchor.body, frequency, damping, false);
             
-            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, endAnchorBot.body,frequency, damping, false);
+            bottomJoint.setup(theWorld.getWorld(), bottomCircles[i].body, endAnchorBot.body,frequency, damping, false);
         }
         
         else {
-            topJoint.setup(box2d.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
+            topJoint.setup(theWorld.getWorld(), topCircles[i].body, topCircles[i+1].body,frequency, damping, false);
             
-            bottomJoint.setup(box2d.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
+            bottomJoint.setup(theWorld.getWorld(), bottomCircles[i].body, bottomCircles[i+1].body,frequency, damping, false);
         }
         
         //the height joints will grow later depending on octave analysis
-        heightJoint.setup(box2d.getWorld(), topCircles[i].body, bottomCircles[i].body);
+        heightJoint.setup(theWorld.getWorld(), topCircles[i].body, bottomCircles[i].body, frequency, damping, false);
         heightJoint.setLength(lenVertz);  
         
         connectJointTop.setLength(incHorz);
@@ -128,13 +138,13 @@ void grid::setupGrid() {
     for (int i=0; i<numVertz-1; i++) {
 		ofxBox2dCircle leftCircle;
 		leftCircle.setPhysics(30.0, 0.003, 5);//density, bounce, friction
-		leftCircle.setup(box2d.getWorld(), startLoc.x, startLoc.y + ((lenVertz/numVertz) *i ), 2);
+		leftCircle.setup(theWorld.getWorld(), startLoc.x, startLoc.y + ((lenVertz/numVertz) *i ), 2);
         leftCircle.setFixedRotation(false);
 		leftCircles.push_back(leftCircle);
         
         ofxBox2dCircle rightCircle;
 		rightCircle.setPhysics(30.0, 0.003, 5);//density, bounce, friction
-		rightCircle.setup(box2d.getWorld(), endLoc.x, endLoc.y + ((lenVertz/numVertz) *i ), 2);
+		rightCircle.setup(theWorld.getWorld(), endLoc.x, endLoc.y + ((lenVertz/numVertz) *i ), 2);
         rightCircle.setFixedRotation(false);
 		rightCircles.push_back(rightCircle);
 	}
@@ -147,23 +157,23 @@ void grid::setupGrid() {
         ofxBox2dJoint connectJointRight; 
         
         if (i == 0 ) {
-            leftJoint.setup (box2d.getWorld(), startAnchor.body, leftCircles[i].body); 
-            connectJointLeft.setup(box2d.getWorld(), leftCircles[i].body, leftCircles[i+1].body);
+            leftJoint.setup (theWorld.getWorld(), startAnchor.body, leftCircles[i].body); 
+            connectJointLeft.setup(theWorld.getWorld(), leftCircles[i].body, leftCircles[i+1].body);
             
-            rightJoint.setup (box2d.getWorld(), endAnchor.body, rightCircles[i].body); 
-            connectJointRight.setup(box2d.getWorld(), rightCircles[i].body, rightCircles[i+1].body);
+            rightJoint.setup (theWorld.getWorld(), endAnchor.body, rightCircles[i].body); 
+            connectJointRight.setup(theWorld.getWorld(), rightCircles[i].body, rightCircles[i+1].body);
         }
         
         else if (i == leftCircles.size()-1) {
-            leftJoint.setup(box2d.getWorld(), leftCircles[i].body, startAnchorBot.body);
+            leftJoint.setup(theWorld.getWorld(), leftCircles[i].body, startAnchorBot.body);
             
-            rightJoint.setup(box2d.getWorld(), rightCircles[i].body, endAnchorBot.body);
+            rightJoint.setup(theWorld.getWorld(), rightCircles[i].body, endAnchorBot.body);
         }
         
         else {
-            leftJoint.setup(box2d.getWorld(), leftCircles[i].body, leftCircles[i+1].body);
+            leftJoint.setup(theWorld.getWorld(), leftCircles[i].body, leftCircles[i+1].body);
             
-            rightJoint.setup(box2d.getWorld(), rightCircles[i].body, rightCircles[i+1].body);
+            rightJoint.setup(theWorld.getWorld(), rightCircles[i].body, rightCircles[i+1].body);
         }
         
         connectJointLeft.setLength(incVertz);
@@ -179,7 +189,7 @@ void grid::setupGrid() {
 }
 
 void grid::update() {
- 	box2d.update();	
+ 	theWorld.update();	
 }
 
 void grid::drawGrid() {
@@ -189,6 +199,7 @@ void grid::drawGrid() {
     endAnchorBot.draw(); 
     
     if (skeleton) {
+        ofSetLineWidth(2);
         
         for(int i=0; i<topCircles.size(); i++) {
             ofFill();
@@ -226,7 +237,12 @@ void grid::drawGrid() {
     }
     
     if (!skeleton) {
-        ofFill();
+        if (fillSong) {
+            ofFill();
+        } else {
+            ofNoFill(); 
+        }
+        ofSetLineWidth(2);
         ofSetColor(79, 178, 245);
         ofBeginShape();
         

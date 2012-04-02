@@ -178,6 +178,7 @@ void testApp::draw(){
         for (int i = 0; i < theBins.size()-1; i++){
             cout << "i " << theBins.size() << endl; 
             grid.letsGo(theBins.size(), theBins[i]);
+            //grid.letsgoSong(theBins.size(), theBins[i]);
             ofSetColor(255, 100, 100);
             ofCircle (grid.startLoc.x + ((grid.lenHorz/grid.numHorz)* (i+1)), grid.getLocation().y - 10, 5, 5); 
 
@@ -220,6 +221,9 @@ void testApp::draw(){
      
     ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
+    
+    
+    //grid.drawSong(); 
 }
 //--------------------------------------------------------------
 void testApp::exit(){

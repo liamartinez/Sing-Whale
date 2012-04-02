@@ -20,7 +20,12 @@ void songFour::setup() {
 
 //------------------------------------------------------------------
 void songFour::update() {
+    
+    theWhale.update(); 
+    
     switch(mgr.getCurScene()) {
+            
+            
         case SONG_FOUR_FIRST:
             //Do stuff
             break;            
@@ -44,8 +49,10 @@ void songFour::activate() {
     //button.setImage(&homeScreen,&homeScreen);
     
     cout << "Activate Song Three" << endl;
-    textStart.set(ofGetWidth()-200, ofGetHeight()-550);
+    textStart.set(ofGetWidth()-600, ofGetHeight()-550);
     dontSpeakNum = (int)ofRandom(4); 
+    
+    theWhale.wriggleOn = true; 
     
     
 }
@@ -74,7 +81,9 @@ void songFour::draw() {
             ofEnableAlphaBlending();
             
             message = dontSpeak[dontSpeakNum];
-            songFour.draw(0,0);
+            //songFour.draw(0,0);
+            theWhale.draw(); 
+            
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
