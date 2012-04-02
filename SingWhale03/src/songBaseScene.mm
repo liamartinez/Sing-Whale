@@ -20,6 +20,8 @@ songBaseScene::songBaseScene() {
     
     circleLoc.set(ofGetWidth()/2, ofGetHeight()/2); 
     
+    theWhale.setup(); 
+    
 }
 
 
@@ -35,7 +37,8 @@ void songBaseScene::setup() {
 
 //------------------------------------------------------------------
 void songBaseScene::update() {
-
+    
+    theWhale.update(); 
  
 
 }
@@ -45,7 +48,7 @@ void songBaseScene::update() {
 //------------------------------------------------------------------
 void songBaseScene::draw() {
     
-
+    theWhale.draw(); 
     
 }
 
@@ -95,7 +98,7 @@ void songBaseScene::drawGrid() {  //dont need this, but keep for now just in cas
 //--------------------------------------------------------------
 void songBaseScene::touchDown(ofTouchEventArgs &touch){
 
-
+    theWhale.touchDown(touch);
     
 }
 
@@ -104,6 +107,7 @@ void songBaseScene::touchDown(ofTouchEventArgs &touch){
 void songBaseScene::touchMoved(ofTouchEventArgs &touch){
 
     //wSong.touchMoved(touch);
+    theWhale.touchMoved(touch);
     
 }
 
@@ -112,6 +116,7 @@ void songBaseScene::touchMoved(ofTouchEventArgs &touch){
 void songBaseScene::touchUp(ofTouchEventArgs &touch){
 
     //wSong.touchUp(touch);
+    theWhale.touchUp(touch);
     
     
 }

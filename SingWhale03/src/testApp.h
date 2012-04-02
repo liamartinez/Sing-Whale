@@ -35,6 +35,8 @@ public:
 	void gotFocus();
 	void gotMemoryWarning();
 	void deviceOrientationChanged(int newOrientation);
+
+    
     
     swBaseScene* scenes[SW_TOTAL_SCENES];
     

@@ -52,6 +52,8 @@ void testApp::setup(){
     //particles
     gravity.y = 0.2;	
     
+    showGuides = false; 
+    
 }
 
 
@@ -136,6 +138,8 @@ void testApp::draw(){
             }
             
             ofBeginShape();
+            ofSetLineWidth(4);
+            ofSetColor(100); 
             
             for (int i = 0; i < whaleParts.size(); i++){
                 whaleParts[i].wriggle(i);
@@ -159,6 +163,7 @@ void testApp::draw(){
             
             ofPushMatrix();
                 ofTranslate(eyeLoc);
+                ofFill(); 
                 ofVec2f touchLoc; 
                 touchLoc.set(mouseX, mouseY);
                 //touchLoc -= eyeLoc; 
@@ -166,13 +171,13 @@ void testApp::draw(){
                 touchLoc.normalize(); 
                 touchLoc *= 10; 
 
-                ofCircle(touchLoc, 4);
+                ofCircle(touchLoc, 5);
             ofPopMatrix();
             
             //particles
             if (blowHoleOn) ps.draw();
             
-            
+            if (showGuides) {
             // show a faint the non-curve version of the same polygon:
             ofEnableAlphaBlending();
             ofNoFill();
@@ -205,7 +210,7 @@ void testApp::draw(){
                 ofSetColor(0,0,0,80);
             }
             
-            
+            }   
         }
     }
     ofDisableAlphaBlending();
@@ -388,7 +393,7 @@ void testApp::loadXML(string name) {
     }
     
     //set the eye location
-    eyeLoc.set (whaleParts[MOUTH_EDGE].pos.x - 20, whaleParts[MOUTH_EDGE].pos.y); 
+    eyeLoc.set (whaleParts[MOUTH_EDGE].pos.x - 17, whaleParts[MOUTH_EDGE].pos.y); 
 
 }
 

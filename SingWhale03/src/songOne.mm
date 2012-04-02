@@ -12,16 +12,16 @@
 //------------------------------------------------------------------
 void songOne::setup() {
     
-    
 }
 
 
 
 //------------------------------------------------------------------
 void songOne::update() {
-        
+   theWhale.update();
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
+             
             //Do stuff
         case SONG_ONE_SECOND:
             //Do stuff
@@ -37,6 +37,7 @@ void songOne::activate() {
     
     songOne.loadImage("images/speak_med.png");
     textStart.set(ofGetWidth()-200, ofGetHeight()-530);
+    theWhale.setup(); 
     
     
 }
@@ -51,7 +52,7 @@ void songOne::deactivate() {
 //------------------------------------------------------------------
 void songOne::draw() {
 
-       
+    
     drawGrid();
     
     string message = "";
@@ -63,6 +64,7 @@ void songOne::draw() {
             
             message = "  Hi there \n funny looking"; 
             songOne.draw(0,0);
+            theWhale.draw(); 
             
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
@@ -92,17 +94,23 @@ void songOne::draw() {
 
 //--------------------------------------------------------------
 void songOne::touchDown(ofTouchEventArgs &touch){
+    
+    theWhale.touchDown(touch);
 
 }
 
 
 //--------------------------------------------------------------
 void songOne::touchMoved(ofTouchEventArgs &touch){
+    
+    theWhale.touchMoved(touch); 
 
 }
 
 
 //--------------------------------------------------------------
 void songOne::touchUp(ofTouchEventArgs &touch){
+    
+    theWhale.touchUp(touch);
 
 }

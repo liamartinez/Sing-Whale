@@ -70,6 +70,8 @@ public:
     baseButton  blowHoleButton;
     bool        blowHoleOn; 
     
+    bool        showGuides;
+    
     void        setupAllButtons(); 
     void        drawAllButtons(); 
     void        touchUpAllButtons(ofTouchEventArgs &touch); 

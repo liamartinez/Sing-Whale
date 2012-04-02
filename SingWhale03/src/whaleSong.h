@@ -46,8 +46,12 @@ public:
 	void deviceOrientationChanged(int newOrientation);
 	
 	void audioRequested 	(float * input, int bufferSize, int nChannels); /* output method */
-	//void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
 	void audioReceivedIn(ofAudioEventArgs &args);
+    
+    void setupButtons(); 
+    void drawButtons(); 
+    void touchUpButtons(ofTouchEventArgs &touch); 
+    void touchDownButtons(ofTouchEventArgs &touch); 
 	
 	int		initialBufferSize; /* buffer size */ 
 	int		sampleRate;
@@ -81,7 +85,7 @@ public:
     grid            grid; 
     bool            showGrid;
     
-	//UI
+	//UI    
     baseButton      beginButt; 
     bool            begin; 
     ofxFreeType2    whitneySemiBold22;

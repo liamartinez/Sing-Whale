@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2600A615297473008E0C1B /* whaleMove.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600A515297473008E0C1B /* whaleMove.mm */; };
+		0A2600A915297537008E0C1B /* vertex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600A815297537008E0C1B /* vertex.mm */; };
+		0A2600B315297578008E0C1B /* Boid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600AC15297578008E0C1B /* Boid.mm */; };
+		0A2600B415297578008E0C1B /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600AD15297578008E0C1B /* Particle.cpp */; };
+		0A2600B515297578008E0C1B /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600AF15297578008E0C1B /* ParticleSystem.cpp */; };
+		0A2600B615297578008E0C1B /* Repeller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2600B115297578008E0C1B /* Repeller.cpp */; };
 		0A3349CE1520C210007FD88D /* songFour.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A3349CD1520C210007FD88D /* songFour.mm */; };
 		0A59A0D114FB4B4700A497DA /* callScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D014FB4B4700A497DA /* callScene.mm */; };
 		0A59A0D414FB4CAF00A497DA /* speakScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D314FB4CAF00A497DA /* speakScene.mm */; };
@@ -130,6 +136,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2600A41529742E008E0C1B /* whaleMove.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whaleMove.h; sourceTree = "<group>"; };
+		0A2600A515297473008E0C1B /* whaleMove.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = whaleMove.mm; sourceTree = "<group>"; };
+		0A2600A71529751F008E0C1B /* vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vertex.h; sourceTree = "<group>"; };
+		0A2600A815297537008E0C1B /* vertex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = vertex.mm; sourceTree = "<group>"; };
+		0A2600AB15297578008E0C1B /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		0A2600AC15297578008E0C1B /* Boid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Boid.mm; sourceTree = "<group>"; };
+		0A2600AD15297578008E0C1B /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		0A2600AE15297578008E0C1B /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		0A2600AF15297578008E0C1B /* ParticleSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
+		0A2600B015297578008E0C1B /* ParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleSystem.h; sourceTree = "<group>"; };
+		0A2600B115297578008E0C1B /* Repeller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Repeller.cpp; sourceTree = "<group>"; };
+		0A2600B215297578008E0C1B /* Repeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repeller.h; sourceTree = "<group>"; };
 		0A3349CC1520C206007FD88D /* songFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songFour.h; sourceTree = "<group>"; };
 		0A3349CD1520C210007FD88D /* songFour.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = songFour.mm; sourceTree = "<group>"; };
 		0A59A0CF14FB4B0300A497DA /* callScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callScene.h; sourceTree = "<group>"; };
@@ -355,6 +373,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2600AA15297560008E0C1B /* NoC */ = {
+			isa = PBXGroup;
+			children = (
+				0A2600AB15297578008E0C1B /* Boid.h */,
+				0A2600AC15297578008E0C1B /* Boid.mm */,
+				0A2600AD15297578008E0C1B /* Particle.cpp */,
+				0A2600AE15297578008E0C1B /* Particle.h */,
+				0A2600AF15297578008E0C1B /* ParticleSystem.cpp */,
+				0A2600B015297578008E0C1B /* ParticleSystem.h */,
+				0A2600B115297578008E0C1B /* Repeller.cpp */,
+				0A2600B215297578008E0C1B /* Repeller.h */,
+			);
+			name = NoC;
+			sourceTree = "<group>";
+		};
+		0A416BD315297170004AF1DD /* whaleMove */ = {
+			isa = PBXGroup;
+			children = (
+				0A2600AA15297560008E0C1B /* NoC */,
+				0A2600A815297537008E0C1B /* vertex.mm */,
+				0A2600A71529751F008E0C1B /* vertex.h */,
+				0A2600A41529742E008E0C1B /* whaleMove.h */,
+				0A2600A515297473008E0C1B /* whaleMove.mm */,
+			);
+			name = whaleMove;
+			sourceTree = "<group>";
+		};
 		0A8B02D5151949270065D05B /* whaleSong */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,6 +953,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0A416BD315297170004AF1DD /* whaleMove */,
 				0A8B02D5151949270065D05B /* whaleSong */,
 				0AC14A6C14FA0019009FBAF4 /* Scenes */,
 				0AAB18C314F9EDC300F8209A /* Shared */,
@@ -1099,6 +1145,12 @@
 				0A8B0439151BFD1C0065D05B /* ofxiPhoneFile.mm in Sources */,
 				0ABF79C5151E8905006DA884 /* songPhrase.cpp in Sources */,
 				0A3349CE1520C210007FD88D /* songFour.mm in Sources */,
+				0A2600A615297473008E0C1B /* whaleMove.mm in Sources */,
+				0A2600A915297537008E0C1B /* vertex.mm in Sources */,
+				0A2600B315297578008E0C1B /* Boid.mm in Sources */,
+				0A2600B415297578008E0C1B /* Particle.cpp in Sources */,
+				0A2600B515297578008E0C1B /* ParticleSystem.cpp in Sources */,
+				0A2600B615297578008E0C1B /* Repeller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

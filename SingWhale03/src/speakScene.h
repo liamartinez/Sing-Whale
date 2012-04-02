@@ -13,6 +13,7 @@
 
 #include "swBaseScene.h"
 #include "songBaseScene.h"
+#include "swAssetManager.h"
 
 #include "songSceneManager.h"
 
@@ -56,18 +57,22 @@ public:
     
     
     baseButton button;
+    ofxFreeType2    whitneySemiBold22;
     
     songBaseScene* songs[SONG_TOTAL_SCENES];
     
     //Managers
     songSceneManager* songSM;
-    //swAssetManager* swAssets;
+    swAssetManager* swAssets;
     
     //Menu
     swMenu songMenu;
     
     //whalesong
     whaleSong wSong; 
+
+    bool            showSongButtons; 
+    baseButton      showSongButt; 
 
     
 private:

@@ -39,6 +39,9 @@ void speakScene::setup() {
     songMenu.show(); 
     
     wSong.setup(); 
+    
+    showSongButt.setup(); 
+    //showSongButt.setLabel("Show Song Buttons", &whitneySemiBold22);
         
     //ofAddListener(ofEvents.audioReceived, this, &speakScene::audioReceived);  
     
@@ -80,7 +83,7 @@ void speakScene::update() {
         }
     }
     
-
+    
     
 }
 
@@ -118,6 +121,9 @@ void speakScene::draw() {
     }
     
     songMenu.draw(); 
+    if (showSongButtons) wSong.drawButtons();
+    
+    showSongButt.draw(50, 50);
     
     /*
     drawGrid();
@@ -155,6 +161,8 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     songMenu.touchDown(touch);
     
     wSong.touchDown(touch);
+    if (showSongButtons) wSong.touchDownButtons(touch);
+    showSongButt.touchDown(touch);
 
 }
 
@@ -197,8 +205,16 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
      
      }
      songMenu.touchMenuRes = false;
+    
+    if (showSongButt.isPressed()) {
+        showSongButtons = !showSongButtons; 
+    }
 
+    if (showSongButtons == true) wSong.setupButtons();
+    
      wSong.touchUp(touch);
+     if (showSongButtons) wSong.touchDownButtons(touch);
+    showSongButt.touchUp(touch);
     
 }
 

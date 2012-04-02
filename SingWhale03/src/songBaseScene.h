@@ -14,6 +14,7 @@
 #include "swAssetManager.h"
 #include "ofxSceneManagerScene.h"
 
+#include "whaleMove.h"
 //#include "baseButton.h"
 
 class songSceneManager; //why is there a class declared here? 
@@ -37,7 +38,6 @@ public:
     
     ofxSceneManager2 mgr;
     void drawGrid();
-
     
     ofImage speakScreen;
     
@@ -47,6 +47,9 @@ public:
     
     void drawCircle(); 
     ofVec2f  circleLoc; 
+    
+    whaleMove   theWhale; 
+    
     
 protected:
     

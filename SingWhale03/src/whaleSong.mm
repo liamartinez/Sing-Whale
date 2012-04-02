@@ -81,35 +81,8 @@ void whaleSong::setup(){
     
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
-    
-    beginButt.setup(); 
-    beginButt.setColor(ofColor(232, 58, 37));
-    beginButt.setLabel("start/ stop", &whitneySemiBold22);
-    begin = false; 
-    
-    skeletonButt.setup(); 
-    skeletonButt.setColor(ofColor(232, 58, 37));
-    skeletonButt.setLabel("show grid", &whitneySemiBold22);
-    
-    resetButt.setup(); 
-    resetButt.setColor(ofColor(232, 58, 37));
-    resetButt.setLabel("start again", &whitneySemiBold22);
+    //setupButtons(); 
 
-    checkButt.setup(); 
-    checkButt.setColor(ofColor(232, 58, 37));
-    checkButt.setLabel("check Song", &whitneySemiBold22);
-    
-    correctButt.setup(); 
-    correctButt.setColor(ofColor(232, 58, 37));
-    correctButt.setLabel("correct", &whitneySemiBold22);
-    
-    tryAgainButt.setup(); 
-    tryAgainButt.setColor(ofColor(232, 58, 37));
-    tryAgainButt.setLabel("try again", &whitneySemiBold22);
-    
-    checkDebugButt.setup(); 
-    checkDebugButt.setColor(ofColor(232, 58, 37));
-    checkDebugButt.setLabel("check debug", &whitneySemiBold22);
         
     checkMe = false; 
     reset   = false; 
@@ -165,15 +138,9 @@ void whaleSong::draw(){
     
     
     //buttons
-    if (showGrid) beginButt.draw( 10, 10); 
-    skeletonButt.draw(10, 50); 
-    resetButt.draw(10, 90);
-    checkButt.draw(200, 90);
-    correctButt.draw(200, 10); 
-    tryAgainButt.draw(200,50); 
-    checkDebugButt.draw(200,90); 
+    //drawButtons(); 
         
-    ofSetColor(78, 96, 146);
+    //ofSetColor(78, 96, 146);
     
     ofSetColor(225);
     
@@ -243,13 +210,7 @@ void whaleSong::audioReceivedIn(ofAudioEventArgs &args){
 
 //--------------------------------------------------------------
 void whaleSong::touchDown(ofTouchEventArgs &touch){
-    beginButt.touchDown(touch);
-    skeletonButt.touchDown(touch);
-    resetButt.touchDown(touch);
-    checkButt.touchDown(touch);
-    tryAgainButt.touchDown(touch);
-    correctButt.touchDown(touch);
-    checkDebugButt.touchDown(touch);
+    //touchDownButtons(touch);
 }
 
 //--------------------------------------------------------------
@@ -284,14 +245,8 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
         checked = true;    
     }
     
-        
-    beginButt.touchUp(touch);
-    skeletonButt.touchUp(touch);
-    resetButt.touchUp(touch);
-    checkButt.touchUp(touch);
-    correctButt.touchUp(touch);
-    tryAgainButt.touchUp(touch);
-    checkDebugButt.touchUp(touch);
+    //touchUpButtons (touch); 
+
 }
 
 //--------------------------------------------------------------
@@ -421,6 +376,70 @@ void whaleSong::letsReset() {
     }
 }
 
+//--------------------------------------------------------------
+void whaleSong::setupButtons() {
+    beginButt.setup(); 
+    beginButt.setColor(ofColor(232, 58, 37));
+    beginButt.setLabel("start/ stop", &whitneySemiBold22);
+    begin = false; 
+    
+    skeletonButt.setup(); 
+    skeletonButt.setColor(ofColor(232, 58, 37));
+    skeletonButt.setLabel("show grid", &whitneySemiBold22);
+    
+    resetButt.setup(); 
+    resetButt.setColor(ofColor(232, 58, 37));
+    resetButt.setLabel("start again", &whitneySemiBold22);
+    
+    checkButt.setup(); 
+    checkButt.setColor(ofColor(232, 58, 37));
+    checkButt.setLabel("check Song", &whitneySemiBold22);
+    
+    correctButt.setup(); 
+    correctButt.setColor(ofColor(232, 58, 37));
+    correctButt.setLabel("correct", &whitneySemiBold22);
+    
+    tryAgainButt.setup(); 
+    tryAgainButt.setColor(ofColor(232, 58, 37));
+    tryAgainButt.setLabel("try again", &whitneySemiBold22);
+    
+    checkDebugButt.setup(); 
+    checkDebugButt.setColor(ofColor(232, 58, 37));
+    checkDebugButt.setLabel("check debug", &whitneySemiBold22);
+}
 
 
+//-----------------------------------------------------------------
 
+void whaleSong::drawButtons() {
+    if (showGrid) beginButt.draw( 10, 10); 
+    skeletonButt.draw(10, 50); 
+    resetButt.draw(10, 90);
+    checkButt.draw(200, 90);
+    correctButt.draw(200, 10); 
+    tryAgainButt.draw(200,50); 
+    checkDebugButt.draw(200,90); 
+}
+
+//-----------------------------------------------------------------
+
+void whaleSong::touchDownButtons(ofTouchEventArgs &touch){
+    beginButt.touchDown(touch);
+    skeletonButt.touchDown(touch);
+    resetButt.touchDown(touch);
+    checkButt.touchDown(touch);
+    tryAgainButt.touchDown(touch);
+    correctButt.touchDown(touch);
+    checkDebugButt.touchDown(touch);
+}
+//-----------------------------------------------------------------
+
+void whaleSong::touchUpButtons(ofTouchEventArgs &touch){
+    beginButt.touchUp(touch);
+    skeletonButt.touchUp(touch);
+    resetButt.touchUp(touch);
+    checkButt.touchUp(touch);
+    correctButt.touchUp(touch);
+    tryAgainButt.touchUp(touch);
+    checkDebugButt.touchUp(touch);
+}

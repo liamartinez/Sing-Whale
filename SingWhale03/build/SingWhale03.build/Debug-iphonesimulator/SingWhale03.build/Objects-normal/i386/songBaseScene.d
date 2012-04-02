@@ -125,4 +125,31 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/fttypes.h \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
-  ../../../libs/freetype/include/freetype2/freetype/ftglyph.h
+  ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/whaleMove.h \
+  ../../../addons/ofxiPhone/ofxiPhone.h \
+  ../../../addons/ofxAccelerometer/src/ofxAccelerometer.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAlerts.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAlertsListener.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneApp.h \
+  ../../../addons/ofxMultiTouch/src/ofxMultiTouch.h \
+  ../../../addons/ofxMultiTouch/src/ofxMultiTouchListener.h \
+  ../../../addons/ofxiPhone/ofxiPhoneExtras.h \
+  ../../../addons/ofxiPhone/src/ofAppiPhoneWindow.h \
+  ../../../libs/openFrameworks/app/ofAppBaseWindow.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneAppDelegate.h \
+  ../../../addons/ofxiPhone/src/EAGLView.h \
+  ../../../addons/ofxiPhone/src/ESRenderer.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneKeyboard.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneCoreLocation.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h \
+  ../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxXmlSettings/libs/tinyxml.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/../../../addons/ofxVtron/ofxBaseButton/baseButton.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/vertex.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/Boid.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/Particle.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/ParticleSystem.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale03/src/Repeller.h
