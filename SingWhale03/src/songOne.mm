@@ -117,3 +117,9 @@ void songOne::touchUp(ofTouchEventArgs &touch){
     theWhale.touchUp(touch);
 
 }
+//--------------------------------------------------------------
+
+void songOne::touchDoubleTap(ofTouchEventArgs &touch){
+    theWhale.touchDoubleTap(touch);
+
+}

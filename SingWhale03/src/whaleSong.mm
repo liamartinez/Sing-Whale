@@ -159,8 +159,16 @@ void whaleSong::draw(){
     
     if (showGrid) {
         if (begin && theBins.size() != 0) {
-            for (int i = 0; i < theBins.size()-1; i++){
+            for (int i = 0; i < theBins.size(); i++){
                 grid.letsGo(i, theBins[i]);
+                
+                ofSetColor(255, 100, 100);
+                ofCircle (grid.startLoc.x + ((grid.lenHorz/grid.numHorz)* (i+1)), grid.getLocation().y - 10, 3, 3); 
+                
+                if (i == theBins.size()-1) {
+                   //checkMe = true; 
+                   //checked = true;   
+                }
             }
         }
     }
@@ -175,16 +183,18 @@ void whaleSong::draw(){
         }
     }
 
-    /*
+    
     if (checkMe) {
         checkMe = false; 
         if (checkSong()) {
             message = "YOU GOT IT";
+            //correct = true; 
         } else {
             message = "TRY AGAIN";
+            //correct = false; 
         }
     }
-     */
+     
     
     ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
@@ -262,6 +272,20 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void whaleSong::touchDoubleTap(ofTouchEventArgs &touch){
     
+
+    
+    checked = true; 
+    
+    if (touch.x < ofGetWidth()/2) {
+        
+        correct = true; 
+        
+        cout << "DOUBLE TAP LEFT" << endl;
+        
+    }  else {
+        correct = false; 
+        cout << "DOUBLE TAP RIGHT" << endl; 
+    }
 }
 
 //--------------------------------------------------------------
@@ -374,8 +398,7 @@ void whaleSong::setSong(int whichSong_){
     
     for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
         guide.letsGo(i, songs[whichSong].savedBins[i]);
-        cout << "NUMBER " << songs[whichSong].songNum << endl; 
-        cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
+
     }
 }
 

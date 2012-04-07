@@ -32,8 +32,6 @@ grid::grid() {
 void grid::setWorld(int num){
     if (num == 1) theWorld = box2d;
     if (num == 2) theWorld = box2dDupe;
-    
-    
 }
 
 void grid::setLocation(int locationX, int locationY){
@@ -41,6 +39,10 @@ void grid::setLocation(int locationX, int locationY){
     startLocBot.set(startLoc.x, startLoc.y + lenVertz); 
     endLoc.set (startLoc.x + lenHorz, startLoc.y); 
     endLocBot.set(endLoc.x, startLocBot.y);
+}
+
+ofVec2f grid::getLocation () {
+    return startLoc;
 }
 
 void grid::setLength(float lenHorz_){

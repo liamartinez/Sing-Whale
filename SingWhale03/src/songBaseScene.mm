@@ -120,6 +120,13 @@ void songBaseScene::touchUp(ofTouchEventArgs &touch){
     
     
 }
+//--------------------------------------------------------------
+void songBaseScene::touchDoubleTap(ofTouchEventArgs &touch){
+    
+    //wSong.touchUp(touch);
+    theWhale.touchDoubleTap(touch);
+    
+}
 
 void songBaseScene::audioReceived 	(float * input, int bufferSize, int nChannels){
     //wSong.audioReceived(input, bufferSize, nChannels); 

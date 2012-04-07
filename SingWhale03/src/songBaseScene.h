@@ -29,7 +29,10 @@ public:
     void touchDown(ofTouchEventArgs &touch);
     void touchMoved(ofTouchEventArgs &touch);
     void touchUp(ofTouchEventArgs &touch);    
+    void touchDoubleTap(ofTouchEventArgs &touch);
+    
     void audioReceived 	(float * input, int bufferSize, int nChannels);
+    
     
     string sceneName; //?
     

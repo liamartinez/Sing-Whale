@@ -74,7 +74,7 @@ void testApp::update(){
             }
         }
 	}
-    
+    cout << "THE BIN " << theBin << endl; 
     theBins.push_back(theBin);
     if( theBins.size() >= 400 ){
 		theBins.erase(theBins.begin(), theBins.begin()+1);

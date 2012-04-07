@@ -133,3 +133,9 @@ void songFour::touchUp(ofTouchEventArgs &touch){
      
      */
 }
+//--------------------------------------------------------------
+
+void songFour::touchDoubleTap(ofTouchEventArgs &touch){
+    theWhale.touchDoubleTap(touch);
+    
+}

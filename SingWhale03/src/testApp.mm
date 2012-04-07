@@ -105,6 +105,8 @@ void testApp::touchUp(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void testApp::touchDoubleTap(ofTouchEventArgs &touch){
     scenes[swSM->getCurScene()]->touchDoubleTap(touch);
+    
+    
 }
 
 //--------------------------------------------------------------

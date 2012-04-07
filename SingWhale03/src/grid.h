@@ -18,6 +18,7 @@ public:
     grid (); 
     void                    setWorld(int num); 
     void                    setLocation (int locationX, int locationY); 
+    ofVec2f                    getLocation(); 
     void                    setLength (float lenHorz_);  
     void                    setLengthDensity (int numHorz_, float incHorz_); 
     void                    setupBox2d(int gravX, int gravY); 
