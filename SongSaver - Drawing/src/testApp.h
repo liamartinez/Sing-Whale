@@ -7,6 +7,8 @@
 #include "ofxMaxim.h"
 #include "baseButton.h"
 
+#define NUMREADINGS 10
+
 class testApp : public ofxiPhoneApp {
 	
 public:
@@ -48,6 +50,11 @@ public:
 	ofxMaxiFFT mfft;
 	int fftSize;
     
+    //smoothing the values
+    int    readings [NUMREADINGS]; 
+    int    index, total, average; 
+    
+    
     ofTrueTypeFont TTF;
     dorwing singing; 
     
@@ -66,6 +73,7 @@ public:
     baseButton      resetButt; 
     bool            reset; 
 
+    
 
 
 

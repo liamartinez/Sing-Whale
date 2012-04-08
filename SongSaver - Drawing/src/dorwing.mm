@@ -123,10 +123,8 @@ void dorwing::update() {
 
 void dorwing::letsGo(int num, int height_) {
     
-    cout << "NUM " << num << endl; 
-    
     int height = height_; 
-    height = ofGetHeight()/2 + height; 
+    height = ofGetHeight()/2 - height; 
     
     vertex songPoint; 
     songPoint.pos.x = num * 5;
@@ -136,14 +134,13 @@ void dorwing::letsGo(int num, int height_) {
     songPoint.bBeingDragged 	= false;
     
     vertex songPoint2; 
-    songPoint2.pos.x = num * 5;
+    songPoint2.pos.x = (num * 5) + 15;
     songPoint2.pos.y = height + 15; 
     
     songPoint2.bOver 			= false;
     songPoint2.bBeingDragged 	= false;
     
     if (songPoints.size() > 2 ) {
-    //songPoints.insert(songPoints.end() - songPoints.size()/2, songPoint);
         songPoints.insert(songPoints.end() - (songPoints.size()/2)-1, songPoint);
         songPoints.insert(songPoints.end() - (songPoints.size()/2), songPoint2);
     } else {

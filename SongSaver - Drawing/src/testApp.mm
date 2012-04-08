@@ -50,6 +50,14 @@ void testApp::setup(){
     
 	ofSoundStreamSetup(0,1, this, sampleRate, initialBufferSize, 4);/* Call this last ! */
 
+    //smoothing
+    index = 0; 
+    total = 0; 
+    average = 0; 
+    for (int i = 0; i < 10; i ++) {
+        readings[i] = 0; 
+    }
+    
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
     
@@ -91,14 +99,24 @@ void testApp::update(){
                 }
             }
         }
+        cout << "THE BIN " << theBin << endl; 
+        theBin = ofClamp(theBin, 30, 120);
+        theBin = ofMap(theBin, 30, 120, 0, 200);
+        cout << "MAPPED " << theBin << endl; 
         
-        //disable this because I want to count silences
-        //if (theBin != 0) { 
-        //cout << "THE BIN " << theBin << endl; 
-        //theBin = ofMap(theBin, 0, 50, 30, 100);
-        if (theBins.size() < sampleSize) theBins.push_back(theBin);
-        singing.letsGo(theBins.size(), theBin); 
-        //}
+        total = total - readings[index]; 
+        readings[index] = theBin; 
+        total = total + readings[index]; 
+        index ++; 
+        
+        if (index >= NUMREADINGS) index = 0; 
+        average = total/NUMREADINGS; 
+        
+        if (theBins.size() < sampleSize) theBins.push_back(average);
+        singing.letsGo(theBins.size(), average); 
+        
+  
+
                 
     }
     if (reset) {
@@ -106,7 +124,6 @@ void testApp::update(){
         begin = false; 
         for (int i = 0; i < sampleSize-1; i++){
             singing.reset(); 
-            //grid.drawWater(i, grid.lenVertz); 
             theBins.clear(); 
             
         }
@@ -121,6 +138,7 @@ void testApp::draw(){
     beginButt.draw( 10, 10); 
     resetButt.draw(10, 90);
     singing.draw(); 
+
     
     if (begin && theBins.size() != 0) {
         
@@ -138,7 +156,7 @@ void testApp::draw(){
         } 
         */
         
-        
+        /*
         ofBeginShape();
         for (int i = 0; i < theBins.size(); i++){
             if( i == 0 ) ofVertex(i, 100);
@@ -148,8 +166,9 @@ void testApp::draw(){
             if( i == theBins.size() -1 ) ofVertex(i, 100);
         }
         ofEndShape(false);	
+          */
     } 
-    
+   
 }
 
 //--------------------------------------------------------------
