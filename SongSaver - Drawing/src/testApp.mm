@@ -43,14 +43,7 @@ void testApp::setup(){
     
 	ofSoundStreamSetup(0,1, this, sampleRate, initialBufferSize, 4);/* Call this last ! */
 
-    //smoothing
-    index = 0; 
-    total = 0; 
-    average = 0; 
-    for (int i = 0; i < 10; i ++) {
-        readings[i] = 0; 
-    }
-    
+
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
     
@@ -63,7 +56,7 @@ void testApp::setup(){
     setupButtons(); 
 
     
-    numSong = 1; 
+    numSong = 1; //for saving
     whichSong = 0; 
     
     //dorwings
