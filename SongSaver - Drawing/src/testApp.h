@@ -6,8 +6,12 @@
 #include "dorwing.h" 
 #include "ofxMaxim.h"
 #include "baseButton.h"
+#include "ofxXmlSettings.h"
+#include "song.h"
 
 #define NUMREADINGS 10
+#define SAMPLESIZE 100
+#define THRESHOLD 50 
 
 class testApp : public ofxiPhoneApp {
 	
@@ -31,17 +35,18 @@ public:
     
     void audioRequested 	(float * input, int bufferSize, int nChannels); /* output method */
 	void audioReceived 	(float * input, int bufferSize, int nChannels); /* input method */
-	
+    
+    void setupButtons(); 
+    void drawButtons(); 
+    void touchUpButtons(ofTouchEventArgs &touch);
+    void touchDownButtons(ofTouchEventArgs &touch); 
 	
 	int		initialBufferSize; /* buffer size */ 
 	int		sampleRate;
 	
     int		drawCounter, bufferCounter;
 	float 	* buffer;
-    
-    float   scaledAve;
-    float   smoothedAve;
-	
+    	
 	/* stick you maximilian stuff below */
 	
 	ofxMaxiFFTOctaveAnalyzer oct;
@@ -54,28 +59,43 @@ public:
     int    readings [NUMREADINGS]; 
     int    index, total, average; 
     
-    
     ofTrueTypeFont TTF;
     dorwing singing; 
-    
-    vector <float>  heightHistory; 
-    int     sampleSize; 
+    dorwing guide; 
     
     int     highest; 
     
     int             theBin;
     vector<int>     theBins;
     
-    baseButton      beginButt; 
-    bool            begin; 
     ofxFreeType2    whitneySemiBold22;
     
+    baseButton      beginButt; 
+    bool            begin; 
     baseButton      resetButt; 
     bool            reset; 
-
+    baseButton      skeletonButt;    
+    baseButton      saveButt;
+    bool            saveMe; 
+    baseButton      loadButt;
+    bool            loadMe; 
+    baseButton      checkButt;
+    bool            checkMe; 
+    baseButton      nextButt; 
+    bool            nextMe; 
     
-
-
+    //saving
+    void            saveSong(int numSong); 
+    void            loadSong(); 
+    int             numberOfSongs; 
+    vector<vector<int> >     songCount; 
+    int             numSong; //counter outside
+    vector<song>    songs; 
+    int             whichSong;
+    
+    //checking
+    bool            checkSong(); 
+    string          message; 
 
 };
 

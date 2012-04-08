@@ -1,6 +1,6 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \

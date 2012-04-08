@@ -15,19 +15,22 @@ class dorwing {
     
 public: 
     dorwing(); 
-    void setup(); 
+    void setup(ofVec2f startLoc_); 
     void draw(); 
     void update(); 
     void letsGo (int num, int height_); 
+    void setWriggleOn(bool on); 
     void reset(); 
     void touchDown(ofTouchEventArgs &touch);
 	void touchMoved(ofTouchEventArgs &touch);
 	void touchUp(ofTouchEventArgs &touch);
 	void touchDoubleTap(ofTouchEventArgs &touch);
 
-    
+    ofVec2f     startLoc; 
     vector<vertex> songPoints; 
     ofTrueTypeFont TTF;
+    
+    bool wriggleOn; 
     
 };
 

@@ -1,6 +1,6 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/src/grid.mm \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/src/grid.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/src/grid.mm \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/src/grid.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \
@@ -108,47 +108,47 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2d.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Include/Box2D.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Common/b2Settings.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2CircleShape.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2Shape.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Common/b2BlockAllocator.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Common/b2Math.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/b2Collision.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2PolygonShape.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/b2BroadPhase.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/b2DynamicTree.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/b2Distance.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Collision/b2TimeOfImpact.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2Body.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2Fixture.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2WorldCallbacks.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2TimeStep.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2World.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Common/b2StackAllocator.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2ContactManager.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Contacts/b2Contact.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2DistanceJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2Joint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2FrictionJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2GearJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2LineJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2MouseJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2PulleyJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2WeldJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dPolygonUtils.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/triangle/del_interface.hpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/triangle/dpoint.hpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/libs/triangle/assert.hpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dBaseShape.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dCircle.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dPolygon.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dRect.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dJoint.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dJointRevolute.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dRender.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxBox2d/src/ofxBox2dContactListener.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2d.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dUtils.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Include/Box2D.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Common/b2Settings.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2CircleShape.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2Shape.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Common/b2BlockAllocator.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Common/b2Math.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/b2Collision.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/Shapes/b2PolygonShape.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/b2BroadPhase.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/b2DynamicTree.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/b2Distance.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Collision/b2TimeOfImpact.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2Body.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2Fixture.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2WorldCallbacks.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2TimeStep.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2World.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Common/b2StackAllocator.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/b2ContactManager.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Contacts/b2Contact.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2DistanceJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2Joint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2FrictionJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2GearJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2LineJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2MouseJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2PulleyJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/Box2D/Dynamics/Joints/b2WeldJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dPolygonUtils.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/triangle/del_interface.hpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/triangle/dpoint.hpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/libs/triangle/assert.hpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dBaseShape.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dCircle.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dPolygon.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dRect.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dJoint.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dJointRevolute.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dRender.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxBox2d/src/ofxBox2dContactListener.h

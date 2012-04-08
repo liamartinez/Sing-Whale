@@ -1,6 +1,6 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \
@@ -108,4 +108,4 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver/../../../addons/ofxXmlSettings/libs/tinyxml.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SongSaver\ copy/../../../addons/ofxXmlSettings/libs/tinyxml.h
