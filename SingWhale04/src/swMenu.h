@@ -14,6 +14,7 @@
 #include "baseButton.h"
 #include "swAssetManager.h"
 #include "songSceneManager.h"
+#include "ofxTweenzor.h"
 #include "Tweenzor.h"
 
 enum buttonTypes { //fill this with the different words he can say. 

@@ -157,12 +157,12 @@ dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/Particle.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/ParticleSystem.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/Repeller.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/ofxTweenzor.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/Tweenzor.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/Tween.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenSelector.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenFunctions.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenEvent.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/ofxTweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/Tweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/Tween.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenSelector.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenFunctions.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenEvent.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/songTwo.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/songThree.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/songFour.h \

@@ -1,6 +1,6 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/Tween.cpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/Tween.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/Tween.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/Tween.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \
@@ -108,6 +108,6 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofiPhoneVideoPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenSelector.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenFunctions.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxTweenzor/src/TweenEvent.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenSelector.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenFunctions.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/TweenEvent.h

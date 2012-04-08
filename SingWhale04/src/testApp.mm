@@ -46,11 +46,15 @@ void testApp::setup(){
     //initialize the listener
     //listener *listen =new listener(this); 
     //counterVariable = 10; 
+    
+    Tweenzor::init(); 
 
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    Tweenzor::update(); 
 
     if(swSM->getCurSceneChanged()) {
         for(int i=0; i<SW_TOTAL_SCENES; i++) {

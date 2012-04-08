@@ -75,10 +75,13 @@ void whaleSong::setup(){
     
     //dorwings
     ofVec2f startSingingLoc; 
-    startSingingLoc.set(0, ofGetHeight()/2);
+    startSingingLoc.set(0, 0);
     
     ofVec2f startGuideLoc; 
-    startGuideLoc.set(0, ofGetHeight()/2);
+    startGuideLoc.set(0, 0);
+    
+    songLoc.set(0, ofGetHeight());
+    songHeight = 100; 
     
     singing.setup(startSingingLoc); 
     guide.setup(startGuideLoc); 
@@ -173,7 +176,7 @@ void whaleSong::draw(){
     ofSetColor(225);
     
     ofPushMatrix(); 
-        ofTranslate(0, ofGetHeight()/2 - 100);
+        ofTranslate(0, songLoc.y); //start with being hidden
         ofEnableAlphaBlending(); 
     
         ofSetColor(0, 120, 190, 100);
@@ -366,7 +369,12 @@ bool whaleSong::checkSong() {
 //-------------------------------------------------------------
 void whaleSong::setSong(int whichSong_){
     
+    guide.reset();
+    songLoc.y = ofGetHeight() + 50; 
+    
     whichSong = whichSong_; 
+    
+    Tweenzor::add (songLoc.y, songLoc.y, songLoc.y - songHeight,   0, 30, EASE_OUT_QUAD); 
     
     for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
         guide.letsGo(i, songs[whichSong].savedBins[i]);

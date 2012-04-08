@@ -74,8 +74,6 @@
 		0A8B04121519569A0065D05B /* grid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B04111519569A0065D05B /* grid.mm */; };
 		0A8B0415151956C00065D05B /* whaleSong.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B0414151956C00065D05B /* whaleSong.mm */; };
 		0A8B0439151BFD1C0065D05B /* ofxiPhoneFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B0438151BFD1C0065D05B /* ofxiPhoneFile.mm */; };
-		0AAB18A214F9ECA900F8209A /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB189B14F9ECA900F8209A /* Tween.cpp */; };
-		0AAB18A314F9ECA900F8209A /* Tweenzor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A014F9ECA900F8209A /* Tweenzor.cpp */; };
 		0AAB18BC14F9ED9100F8209A /* baseButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18A614F9ED9100F8209A /* baseButton.cpp */; };
 		0AAB18BD14F9ED9100F8209A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0AAB18A914F9ED9100F8209A /* README */; };
 		0AAB18BE14F9ED9100F8209A /* ofxFreeType2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AAB18AB14F9ED9100F8209A /* ofxFreeType2.cpp */; };
@@ -96,6 +94,8 @@
 		0ADDCE911517A98800B32146 /* songTwo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE901517A98800B32146 /* songTwo.mm */; };
 		0ADDCE951517EBA200B32146 /* songBaseScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDCE941517EBA100B32146 /* songBaseScene.mm */; };
 		0AF1BCBD1531D3CB00E686AD /* dorwing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BCBC1531D3CB00E686AD /* dorwing.mm */; };
+		0AF1BD5B15321D9E00E686AD /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BD5415321D9E00E686AD /* Tween.cpp */; };
+		0AF1BD5C15321D9E00E686AD /* Tweenzor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BD5915321D9E00E686AD /* Tweenzor.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -276,14 +276,6 @@
 		0A8B0414151956C00065D05B /* whaleSong.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = whaleSong.mm; sourceTree = "<group>"; };
 		0A8B0437151BFD1C0065D05B /* ofxiPhoneFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneFile.h; sourceTree = "<group>"; };
 		0A8B0438151BFD1C0065D05B /* ofxiPhoneFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiPhoneFile.mm; sourceTree = "<group>"; };
-		0AAB189A14F9ECA900F8209A /* ofxTweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweenzor.h; sourceTree = "<group>"; };
-		0AAB189B14F9ECA900F8209A /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tween.cpp; sourceTree = "<group>"; };
-		0AAB189C14F9ECA900F8209A /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
-		0AAB189D14F9ECA900F8209A /* TweenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenEvent.h; sourceTree = "<group>"; };
-		0AAB189E14F9ECA900F8209A /* TweenFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenFunctions.h; sourceTree = "<group>"; };
-		0AAB189F14F9ECA900F8209A /* TweenSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenSelector.h; sourceTree = "<group>"; };
-		0AAB18A014F9ECA900F8209A /* Tweenzor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tweenzor.cpp; sourceTree = "<group>"; };
-		0AAB18A114F9ECA900F8209A /* Tweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweenzor.h; sourceTree = "<group>"; };
 		0AAB18A614F9ED9100F8209A /* baseButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baseButton.cpp; sourceTree = "<group>"; };
 		0AAB18A714F9ED9100F8209A /* baseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseButton.h; sourceTree = "<group>"; };
 		0AAB18A914F9ED9100F8209A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -324,6 +316,14 @@
 		0AF1BCB81531D30400E686AD /* songTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = songTwo.h; sourceTree = "<group>"; };
 		0AF1BCBB1531D3BD00E686AD /* dorwing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dorwing.h; sourceTree = "<group>"; };
 		0AF1BCBC1531D3CB00E686AD /* dorwing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = dorwing.mm; sourceTree = "<group>"; };
+		0AF1BD5315321D9E00E686AD /* ofxTweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweenzor.h; sourceTree = "<group>"; };
+		0AF1BD5415321D9E00E686AD /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tween.cpp; sourceTree = "<group>"; };
+		0AF1BD5515321D9E00E686AD /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
+		0AF1BD5615321D9E00E686AD /* TweenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenEvent.h; sourceTree = "<group>"; };
+		0AF1BD5715321D9E00E686AD /* TweenFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenFunctions.h; sourceTree = "<group>"; };
+		0AF1BD5815321D9E00E686AD /* TweenSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenSelector.h; sourceTree = "<group>"; };
+		0AF1BD5915321D9E00E686AD /* Tweenzor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tweenzor.cpp; sourceTree = "<group>"; };
+		0AF1BD5A15321D9E00E686AD /* Tweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweenzor.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -686,30 +686,6 @@
 			path = ../../../addons/ofxiPhoneFile;
 			sourceTree = "<group>";
 		};
-		0AAB189814F9ECA900F8209A /* ofxTweenzor */ = {
-			isa = PBXGroup;
-			children = (
-				0AAB189914F9ECA900F8209A /* src */,
-			);
-			name = ofxTweenzor;
-			path = ../../../addons/ofxTweenzor;
-			sourceTree = "<group>";
-		};
-		0AAB189914F9ECA900F8209A /* src */ = {
-			isa = PBXGroup;
-			children = (
-				0AAB189A14F9ECA900F8209A /* ofxTweenzor.h */,
-				0AAB189B14F9ECA900F8209A /* Tween.cpp */,
-				0AAB189C14F9ECA900F8209A /* Tween.h */,
-				0AAB189D14F9ECA900F8209A /* TweenEvent.h */,
-				0AAB189E14F9ECA900F8209A /* TweenFunctions.h */,
-				0AAB189F14F9ECA900F8209A /* TweenSelector.h */,
-				0AAB18A014F9ECA900F8209A /* Tweenzor.cpp */,
-				0AAB18A114F9ECA900F8209A /* Tweenzor.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		0AAB18A414F9ED9100F8209A /* ofxVtron */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,11 +796,11 @@
 		0AC14A6C14FA0019009FBAF4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0A59A0D214FB4C6D00A497DA /* speakScene.h */,
+				0A59A0D314FB4CAF00A497DA /* speakScene.mm */,
 				0ADDCE851517183B00B32146 /* songScenes */,
 				0AC14A6D14FA002F009FBAF4 /* homeScene.h */,
 				0AC14A7114FA0217009FBAF4 /* homeScene.mm */,
-				0A59A0D214FB4C6D00A497DA /* speakScene.h */,
-				0A59A0D314FB4CAF00A497DA /* speakScene.mm */,
 				0A59A0CF14FB4B0300A497DA /* callScene.h */,
 				0A59A0D014FB4B4700A497DA /* callScene.mm */,
 				0ADDCE7F15170AC500B32146 /* callSceneName.h */,
@@ -852,6 +828,38 @@
 				0ADDCE941517EBA100B32146 /* songBaseScene.mm */,
 			);
 			name = songScenes;
+			sourceTree = "<group>";
+		};
+		0AF1BD5015321D9E00E686AD /* ofxTweenzor */ = {
+			isa = PBXGroup;
+			children = (
+				0AF1BD5115321D9E00E686AD /* example */,
+				0AF1BD5215321D9E00E686AD /* src */,
+			);
+			name = ofxTweenzor;
+			path = ../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor;
+			sourceTree = "<group>";
+		};
+		0AF1BD5115321D9E00E686AD /* example */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		0AF1BD5215321D9E00E686AD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0AF1BD5315321D9E00E686AD /* ofxTweenzor.h */,
+				0AF1BD5415321D9E00E686AD /* Tween.cpp */,
+				0AF1BD5515321D9E00E686AD /* Tween.h */,
+				0AF1BD5615321D9E00E686AD /* TweenEvent.h */,
+				0AF1BD5715321D9E00E686AD /* TweenFunctions.h */,
+				0AF1BD5815321D9E00E686AD /* TweenSelector.h */,
+				0AF1BD5915321D9E00E686AD /* Tweenzor.cpp */,
+				0AF1BD5A15321D9E00E686AD /* Tweenzor.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -907,12 +915,12 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				0AF1BD5015321D9E00E686AD /* ofxTweenzor */,
 				0A8B0436151BFD1B0065D05B /* ofxiPhoneFile */,
 				0A8B03EA15194F110065D05B /* ofxMaxim */,
 				0A8B03DA15194EEC0065D05B /* ofxXmlSettings */,
 				0A8B02D9151949830065D05B /* ofxBox2d */,
 				0AAB18A414F9ED9100F8209A /* ofxVtron */,
-				0AAB189814F9ECA900F8209A /* ofxTweenzor */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -1073,8 +1081,6 @@
 			files = (
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
-				0AAB18A214F9ECA900F8209A /* Tween.cpp in Sources */,
-				0AAB18A314F9ECA900F8209A /* Tweenzor.cpp in Sources */,
 				0AAB18BC14F9ED9100F8209A /* baseButton.cpp in Sources */,
 				0AAB18BE14F9ED9100F8209A /* ofxFreeType2.cpp in Sources */,
 				0AAB18BF14F9ED9100F8209A /* ofxSceneManager.cpp in Sources */,
@@ -1157,6 +1163,8 @@
 				0A2600B515297578008E0C1B /* ParticleSystem.cpp in Sources */,
 				0A2600B615297578008E0C1B /* Repeller.cpp in Sources */,
 				0AF1BCBD1531D3CB00E686AD /* dorwing.mm in Sources */,
+				0AF1BD5B15321D9E00E686AD /* Tween.cpp in Sources */,
+				0AF1BD5C15321D9E00E686AD /* Tweenzor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

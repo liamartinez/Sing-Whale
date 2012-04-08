@@ -12,6 +12,7 @@
 #include "callScene.h"
 #include "callSceneName.h"
 #include "speakScene.h"
+#include "ofxTweenzor.h"
 
 
 

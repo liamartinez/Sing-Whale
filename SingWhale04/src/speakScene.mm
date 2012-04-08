@@ -218,18 +218,5 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
     
 }
 
-/*
-void speakScene::audioReceived 	(float * input, int bufferSize, int nChannels){
-    wSong.audioReceived(input, bufferSize, nChannels); 
-    cout << "from speakscene" << input << endl; 
-}
 
-*/
-/*
-void speakScene::audioReceived(ofAudioEventArgs &audio){
-    wSong.audioReceived(audio.buffer, audio.bufferSize, audio.nChannels);  
-      cout <<"HELLO" << endl; 
-   
-}
-*/
 

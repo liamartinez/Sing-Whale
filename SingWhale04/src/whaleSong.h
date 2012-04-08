@@ -16,6 +16,9 @@
 #include "baseButton.h"
 #include "ofxFreeType2.h"
 #include "ofxXmlSettings.h"
+#include "Tweenzor.h"
+#include "ofxTweenzor.h"
+
 #include "songPhrase.h"
 #include "dorwing.h"
 
@@ -118,6 +121,11 @@ public:
     
     //clearing
     void            letsReset(); 
+    
+    //location for dorwing
+    ofVec2f         songLoc; 
+    int             songHeight; 
+    
 };
 
 #endif
