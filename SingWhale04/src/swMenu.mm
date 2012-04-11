@@ -34,9 +34,9 @@ void swMenu::setup() {
     
     
     //Set Labels
-    labels[MENU_ONE]        = "Plulu!";           //put text on the menu
-    labels[MENU_TWO]        = "Whales are \n   stupid";       //put text on the menu
-    labels[MENU_THREE]      = "La la la";       //put text on the menu
+    labels[MENU_ONE]        = "Carrot!";           //put text on the menu
+    labels[MENU_TWO]        = "Burp";       //put text on the menu
+    labels[MENU_THREE]      = "Sleep";       //put text on the menu
     
     //Create Buttons
     
