@@ -78,6 +78,9 @@ void swMenu::hide() {
 void swMenu::update() {
     
     Tweenzor::update();
+    
+    //ofNotifyEvent(switchOn, bool true); 
+
 }
 
 
@@ -116,9 +119,7 @@ void swMenu::draw() {
         ofDisableAlphaBlending();
         ofPopMatrix(); 
 
-    
-   
-    //separate matrices to make the rotations a little different
+    //-------------separate matrices to make the rotations a little different
     ofPushMatrix(); 
         ofTranslate(0, ofGetHeight() - 100, 150); 
 
@@ -163,6 +164,28 @@ void swMenu::draw() {
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
     
+    //move this to update and make everything a variable
+    for (int i = 0; i < MENU_TOTAL; i++) {
+        
+        ofDrawBitmapString(buttons[i].getLabel() + " " + ofToString(buttons[i].rLocBG.y), 500, ofGetHeight()-200 + (i*20));
+        
+        if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
+           
+            ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 200 + (i*20));
+            
+            songPressed = i; 
+            
+            currentSong = i; 
+            if (currentSong != lastSong) {            
+            activate = true; 
+                cout << "activate? " << activate << endl; 
+                lastSong = currentSong;
+            } else {
+                activate = false; 
+                cout << "activate? " << activate << endl; 
+            }
+        }
+    }
 
 }
 
@@ -190,6 +213,7 @@ void swMenu::touchDown(ofTouchEventArgs &touch){
 
     lastMouse = ofVec2f(touch.x, touch.y);  
     
+    //switchOn = true; 
 }
 
 

@@ -44,6 +44,7 @@ void speakScene::setup() {
     //showSongButt.setLabel("Show Song Buttons", &whitneySemiBold22);
         
     //ofAddListener(ofEvents.audioReceived, this, &speakScene::audioReceived);  
+    ofAddListener(songMenu.switchOn,this, &speakScene::onSwitch); 
     
 }
 
@@ -83,7 +84,12 @@ void speakScene::update() {
         }
     }
     
+    if (songMenu.activate) switchOn = true; 
     
+    if (switchOn) {
+        switchOn = false; 
+        wSong.setSong(songMenu.getSongPressed());        
+    }
     
 }
 
@@ -201,7 +207,7 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
      cout<<"touch menu res true "<<songSM->getCurScene() <<endl;
      //songs[songSM->getCurScene()]->activate();
      //wSong.letsReset(); 
-     wSong.setSong(songMenu.getSongPressed());
+     //wSong.setSong(songMenu.getSongPressed()); //lia
      
      }
      songMenu.touchMenuRes = false;
@@ -218,5 +224,8 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
     
 }
 
+void speakScene::onSwitch(bool & on){
+    cout << "HI FROM SPEAK SCENE! " << endl; 
+}
 
 

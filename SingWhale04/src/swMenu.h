@@ -73,6 +73,11 @@ public:
     
     GLfloat modelview2[16];  
     ofVec3f translation2;  
+    
+    ofEvent <bool> switchOn; 
+    bool activate; 
+    int currentSong; 
+    int lastSong; 
 
     
 private:
