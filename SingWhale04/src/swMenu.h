@@ -71,6 +71,10 @@ public:
     GLfloat modelview[16];  
     ofVec3f translation;  
     
+    GLfloat modelview2[16];  
+    ofVec3f translation2;  
+
+    
 private:
     bool bShowing;
     int showingY;
