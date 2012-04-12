@@ -23,7 +23,7 @@
 #include "dorwing.h"
 
 #define NUMREADINGS 10
-#define SAMPLESIZE 100
+#define SAMPLESIZE 70
 #define THRESHOLD 50 
 
 class testApp; 

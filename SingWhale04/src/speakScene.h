@@ -74,9 +74,9 @@ public:
     bool            showSongButtons; 
     baseButton      showSongButt; 
     
-    void onSwitch(bool & on);
-    
     bool            switchOn; 
+    
+    baseButton      startSingingButt; 
 
     
 private:

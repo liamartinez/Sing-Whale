@@ -57,6 +57,8 @@ void swMenu::setup() {
     carrot.loadImage("carrot.png");   
     wheel.loadImage("circle.png");
     Tweenzor::init();  
+    
+
 }
 
 
@@ -78,8 +80,6 @@ void swMenu::hide() {
 void swMenu::update() {
     
     Tweenzor::update();
-    
-    //ofNotifyEvent(switchOn, bool true); 
 
 }
 
@@ -156,8 +156,13 @@ void swMenu::draw() {
     for (int i = 0; i < MENU_TOTAL; i++) {
         
         ofEnableAlphaBlending();
-        ofSetColor(255);
-        wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 200, 200, 200);
+        if (buttons[i].activated) {
+            ofSetColor(255);
+        } else {
+            ofSetColor(200);
+        }
+        
+        wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
         carrot.draw(buttons[i].rLoc.x, buttons[i].rLoc.y - 55, 100, 130);
         ofDisableAlphaBlending();
         
@@ -171,6 +176,8 @@ void swMenu::draw() {
         
         if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
            
+            buttons[i].activated = true; 
+            
             ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 200 + (i*20));
             
             songPressed = i; 
@@ -178,14 +185,15 @@ void swMenu::draw() {
             currentSong = i; 
             if (currentSong != lastSong) {            
             activate = true; 
-                cout << "activate? " << activate << endl; 
                 lastSong = currentSong;
             } else {
                 activate = false; 
-                cout << "activate? " << activate << endl; 
             }
+        } else {
+            buttons[i].activated = false; 
         }
     }
+
 
 }
 
@@ -212,8 +220,7 @@ void swMenu::touchDown(ofTouchEventArgs &touch){
         }
 
     lastMouse = ofVec2f(touch.x, touch.y);  
-    
-    //switchOn = true; 
+
 }
 
 
@@ -232,7 +239,6 @@ void swMenu::touchMoved(ofTouchEventArgs &touch){
     curRot *= yRot*xRot;  
     
     lastMouse = mouse; 
-    
     
 
 }
@@ -276,10 +282,12 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
         for(int i=0; i<MENU_TOTAL; i++) {
             buttons[i].touchUp(touch);
         }
-
-         
     }
-         Tweenzor::add(future, 0, 10, 0.f, 1.5f, EASE_OUT_ELASTIC);
+    
+
+    
+    Tweenzor::add(future, 0, 10, 0.f, 1.5f, EASE_OUT_ELASTIC);
+
      
 }
 

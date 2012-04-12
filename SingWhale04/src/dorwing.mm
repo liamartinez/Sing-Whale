@@ -45,8 +45,8 @@ void dorwing::draw() {
                 ofCurveVertex(startLoc.x, startLoc.y);
                 ofCurveVertex(startLoc.x, startLoc.y);
             } else if (i == songPoints.size()-1){
-                ofCurveVertex(startLoc.x, startLoc.y+100);
-                ofCurveVertex(startLoc.x, startLoc.y+100);
+                ofCurveVertex(startLoc.x, startLoc.y+90);
+                ofCurveVertex(startLoc.x, startLoc.y+90);
             } else {
                 ofCurveVertex(songPoints[i].pos.x, songPoints[i].pos.y);
             }
