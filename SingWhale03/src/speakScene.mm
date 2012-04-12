@@ -52,7 +52,7 @@ void speakScene::setup() {
 //------------------------------------------------------------------
 void speakScene::update() {
     
-    Tweenzor::update();
+    Tweenzor::update(ofGetElapsedTimeMillis());
     
     if(songSM->getCurSceneChanged()) {
         for(int i=0; i<SONG_TOTAL_SCENES; i++) {

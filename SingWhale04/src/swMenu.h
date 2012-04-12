@@ -58,11 +58,25 @@ public:
     
     int songPressed; 
     
+    //rotation
+    ofQuaternion curRot;  
+    ofVec2f lastMouse;  
+    ofVec3f axis; 
+    float   angle;     
+    float future;     
+    float newAngle; 
+    
+    ofImage carrot; 
+    
+    GLfloat modelview[16];  
+    ofVec3f translation;  
+    
 private:
     bool bShowing;
     int showingY;
     
     ofImage bgImage;
+    ofImage wheel; 
 };
 
 #endif

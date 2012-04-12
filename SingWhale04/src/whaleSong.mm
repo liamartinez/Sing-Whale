@@ -425,7 +425,7 @@ void whaleSong::setupButtons() {
 //-----------------------------------------------------------------
 
 void whaleSong::drawButtons() {
-    beginButt.draw( 10, 10); 
+    beginButt.draw( 300, 10); 
     skeletonButt.draw(10, 50); 
     resetButt.draw(10, 90);
     checkButt.draw(200, 90);
