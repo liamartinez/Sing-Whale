@@ -83,6 +83,7 @@ void speakScene::update() {
             songs[songSM->getCurScene()]->activate();
             wSong.checked = false;
         }
+        cout << "Speak Scene activating song " << songs[songSM->getCurScene()] << endl; 
     }
     
     if (songMenu.activate) switchOn = true; 
@@ -229,9 +230,14 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
      if (showSongButtons) wSong.touchDownButtons(touch);
     showSongButt.touchUp(touch);
     
+    //if you press play and the song is done, reset and try again. if not, just pause it. 
     if (startSingingButt.isPressed()) {
-        wSong.begin = !wSong.begin;
-        cout << "HI BUTTON " <<  endl;
+        if (wSong.atEnd) {
+            wSong.reset = true;
+            wSong.begin = true; 
+        } else {
+            wSong.begin = !wSong.begin;
+        }
     }
     
     startSingingButt.touchUp(touch);

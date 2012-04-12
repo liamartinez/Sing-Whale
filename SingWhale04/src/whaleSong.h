@@ -24,7 +24,7 @@
 
 #define NUMREADINGS 10
 #define SAMPLESIZE 70
-#define THRESHOLD 50 
+#define THRESHOLD 100 
 
 class testApp; 
 
@@ -98,6 +98,9 @@ public:
     baseButton      checkButt;
     bool            checkMe; 
     
+    bool            debugCheck; 
+    bool            debugCorrect; 
+    
     baseButton      correctButt;
     baseButton      tryAgainButt; 
     bool            correct;
@@ -125,6 +128,9 @@ public:
     //location for dorwing
     ofVec2f         songLoc; 
     int             songHeight; 
+    
+    //marker for end
+    bool            atEnd; 
     
 };
 

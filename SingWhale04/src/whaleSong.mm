@@ -128,39 +128,41 @@ void whaleSong::update(){
         if (index >= NUMREADINGS) index = 0; 
         average = total/NUMREADINGS; 
         
+        //add to vector array
         if (theBins.size() < SAMPLESIZE) theBins.push_back(average);
         singing.letsGo(theBins.size(), average); 
+        
+        //when you're at the end, stop collecting data and check if you got the answer
+        if (theBins.size() == SAMPLESIZE -1) {
+            atEnd = true; 
+        } else {
+            atEnd = false; 
+        }
+        
+        if (atEnd) {
+            debugCheck = false; 
+            checked = true; 
+            begin = false; 
+        }
+
         
     }
     if (reset) {
         reset = false; 
-        begin = false; 
         for (int i = 0; i < SAMPLESIZE-1; i++){
             singing.reset();  
             theBins.clear(); 
         }
     }
     
-    /*
-    if (loadMe) {
-        loadMe = false; 
-        
-        for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
-            guide.letsGo(i, songs[whichSong].savedBins[i]);
-            cout << "i " << i << endl; 
-            cout << "NUMBER " << songs[whichSong].songNum << endl; 
-            cout << "WHALE SAYS " << songs[whichSong].songWords << endl; 
-        }
-        
-    }
-     */
     
-    if (checkMe) {
-        checkMe = false; 
+    if (checked) {
         if (checkSong()) {
             message = "YOU GOT IT";
+            correct = true; 
         } else {
             message = "TRY AGAIN";
+            correct = false; 
         }
     }
 
@@ -169,6 +171,7 @@ void whaleSong::update(){
 //--------------------------------------------------------------
 void whaleSong::draw(){
     
+    cout << "CORRECT IS " << correct << endl; 
     
     //buttons
     drawButtons(); 
@@ -192,7 +195,7 @@ void whaleSong::draw(){
 
     
     ofSetColor(232, 58, 37);
-    ofDrawBitmapString(message, 300, 50);
+    ofDrawBitmapString(message, 300, 300);
 }
 //--------------------------------------------------------------
 void whaleSong::exit(){
@@ -255,6 +258,16 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
     }
     
     touchUpButtons (touch); 
+    
+    if (touch.id == 1) {
+        if (touch.x < ofGetWidth()/2) {
+            debugCorrect = true; 
+        } else {
+            debugCorrect = false; 
+        }
+        debugCheck = true; 
+        checked = true; 
+    }
 
 }
 
@@ -344,25 +357,29 @@ void whaleSong::loadSong(string XMLname) {
 //--------------------------------------------------------------
 bool whaleSong::checkSong() {
     
-    int points = 0; 
-    
-    //lets do something that sees which one is shorter
-    int longer = 0; 
-    
-    if (songs[whichSong].savedBins.size() > theBins.size()) {
-        longer = songs[whichSong].savedBins.size();
-    } else {
-        longer = theBins.size(); 
-    }
-    
-    //compare against the longer one 
-    for (int i = 0; i < longer-1; i++) {
+    if (!debugCheck) {
+        int points = 0; 
         
-        if (songs[whichSong].savedBins[i] < (theBins[i] + THRESHOLD) && songs[whichSong].savedBins[i] > (theBins[i] - THRESHOLD)) {
-            points ++; 
-        }        
+        //lets do something that sees which one is shorter
+        int longer = 0; 
+        
+        if (songs[whichSong].savedBins.size() > theBins.size()) {
+            longer = songs[whichSong].savedBins.size();
+        } else {
+            longer = theBins.size(); 
+        }
+        
+        //compare against the longer one 
+        for (int i = 0; i < longer-1; i++) {
+            
+            if (songs[whichSong].savedBins[i] < (theBins[i] + THRESHOLD) && songs[whichSong].savedBins[i] > (theBins[i] - THRESHOLD)) {
+                points ++; 
+            }        
+        }
+        if (points > songs[whichSong].savedBins.size() - songs[whichSong].savedBins.size()/3) return true; 
+    } else {
+        return debugCorrect; 
     }
-    if (points > songs[whichSong].savedBins.size() - songs[whichSong].savedBins.size()/3) return true; 
 }
 
 

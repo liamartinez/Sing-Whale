@@ -96,6 +96,10 @@
 		0AF1BCBD1531D3CB00E686AD /* dorwing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BCBC1531D3CB00E686AD /* dorwing.mm */; };
 		0AF1BD5B15321D9E00E686AD /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BD5415321D9E00E686AD /* Tween.cpp */; };
 		0AF1BD5C15321D9E00E686AD /* Tweenzor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1BD5915321D9E00E686AD /* Tweenzor.cpp */; };
+		0AF1BDF1153746B800E686AD /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1BDF0153746B700E686AD /* Default-Portrait~ipad.png */; };
+		0AF1BDF3153746C300E686AD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1BDF2153746C300E686AD /* Default-Landscape~ipad.png */; };
+		0AF1BDF5153746C800E686AD /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1BDF4153746C800E686AD /* Default-Landscape@2x~ipad.png */; };
+		0AF1BDF7153746D100E686AD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1BDF6153746D100E686AD /* Default-Portrait@2x~ipad.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -324,6 +328,10 @@
 		0AF1BD5815321D9E00E686AD /* TweenSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenSelector.h; sourceTree = "<group>"; };
 		0AF1BD5915321D9E00E686AD /* Tweenzor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tweenzor.cpp; sourceTree = "<group>"; };
 		0AF1BD5A15321D9E00E686AD /* Tweenzor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweenzor.h; sourceTree = "<group>"; };
+		0AF1BDF0153746B700E686AD /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		0AF1BDF2153746C300E686AD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		0AF1BDF4153746C800E686AD /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		0AF1BDF6153746D100E686AD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -873,6 +881,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0AF1BDF6153746D100E686AD /* Default-Portrait@2x~ipad.png */,
+				0AF1BDF4153746C800E686AD /* Default-Landscape@2x~ipad.png */,
+				0AF1BDF2153746C300E686AD /* Default-Landscape~ipad.png */,
+				0AF1BDF0153746B700E686AD /* Default-Portrait~ipad.png */,
 				0A8B03FF151950EF0065D05B /* Accelerate.framework */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24DD8B10DA77E000E9C588 /* data */,
@@ -1053,6 +1065,10 @@
 				0A8B0344151949830065D05B /* install.xml in Resources */,
 				0A8B03E415194EEC0065D05B /* install.xml in Resources */,
 				0A8B03F915194F110065D05B /* install.xml in Resources */,
+				0AF1BDF1153746B800E686AD /* Default-Portrait~ipad.png in Resources */,
+				0AF1BDF3153746C300E686AD /* Default-Landscape~ipad.png in Resources */,
+				0AF1BDF5153746C800E686AD /* Default-Landscape@2x~ipad.png in Resources */,
+				0AF1BDF7153746D100E686AD /* Default-Portrait@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

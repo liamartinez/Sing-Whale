@@ -48,7 +48,7 @@ void songFour::activate() {
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
     
-    cout << "Activate Song Three" << endl;
+    cout << "Activate Song Four" << endl;
     textStart.set(ofGetWidth()-600, ofGetHeight()-550);
     dontSpeakNum = (int)ofRandom(4); 
     

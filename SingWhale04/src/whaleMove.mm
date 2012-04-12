@@ -101,7 +101,6 @@ void whaleMove::update(){
     
     //particles
     if (blowHoleOn) {
-        cout << "IM ON!" << endl; 
         ps.applyForce(gravity);
         ps.update();
         
