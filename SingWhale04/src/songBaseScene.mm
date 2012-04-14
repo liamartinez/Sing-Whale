@@ -22,6 +22,12 @@ songBaseScene::songBaseScene() {
     
     theWhale.setup(); 
     
+    //for the animation
+    amplitude = 20; 
+    period = 500; 
+    dx = (TWO_PI / period);
+    theta += 0.02;
+    
 }
 
 
@@ -89,6 +95,19 @@ void songBaseScene::drawGrid() {  //dont need this, but keep for now just in cas
     
     glPopMatrix();
      */ 
+}
+
+//--------------------------------------------------------------
+
+float songBaseScene::floatVal() {
+    
+    float val; 
+    
+    val = sin(theta)*amplitude;
+    theta+=dx;    
+    
+    return val; 
+    
 }
 
 

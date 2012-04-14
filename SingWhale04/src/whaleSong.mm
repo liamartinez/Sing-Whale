@@ -16,6 +16,8 @@ whaleSong::~whaleSong() {
 //--------------------------------------------------------------
 void whaleSong::setup(){
     
+    this->swAssets = swAssetManager::getInstance();
+    
     // register touch events
     //ofAddListener(ofEvents.audioReceived,this,&whaleSong::audioReceived);  
 
@@ -62,7 +64,7 @@ void whaleSong::setup(){
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
     
-    setupButtons(); 
+    //setupButtons(); 
 
     //button parade    
     checkMe = false; 
@@ -71,7 +73,7 @@ void whaleSong::setup(){
     checked = false; 
     message = "TEMPORARY DEBUG CONTROLS"; 
     
-    whichSong = 0; 
+    whichSong = -1; 
     
     //dorwings
     ofVec2f startSingingLoc; 
@@ -80,12 +82,22 @@ void whaleSong::setup(){
     ofVec2f startGuideLoc; 
     startGuideLoc.set(0, 0);
     
+    //starting point 
     songLoc.set(0, ofGetHeight());
     songHeight = 100; 
     
     singing.setup(startSingingLoc); 
     guide.setup(startGuideLoc); 
+    
+    setPhrases(); 
 
+}
+
+//--------------------------------------------------------------
+
+void whaleSong::setPhrases() {
+    phrases[0] = "Would you like a carrot?"; 
+    
 }
 
 //--------------------------------------------------------------
@@ -171,11 +183,6 @@ void whaleSong::update(){
 //--------------------------------------------------------------
 void whaleSong::draw(){
     
-    cout << "CORRECT IS " << correct << endl; 
-    
-    //buttons
-    drawButtons(); 
-        
     ofSetColor(225);
     
     ofPushMatrix(); 
@@ -190,12 +197,15 @@ void whaleSong::draw(){
         singing.setWriggleOn(true);
         singing.draw(); 
     
+    ofSetColor(50);
+    if (whichSong != -1) swAssets->nevis22.drawString(songs[whichSong].songWords, 100, 30);
+
         ofDisableAlphaBlending(); 
     ofPopMatrix();
 
     
     ofSetColor(232, 58, 37);
-    ofDrawBitmapString(message, 300, 300);
+    //ofDrawBitmapString(message, 300, 300);
 }
 //--------------------------------------------------------------
 void whaleSong::exit(){
@@ -230,7 +240,7 @@ void whaleSong::audioReceivedIn(ofAudioEventArgs &args){
 void whaleSong::touchDown(ofTouchEventArgs &touch){
     singing.touchDown(touch);
     guide.touchDown(touch);
-    touchDownButtons(touch);
+    //touchDownButtons(touch);
 }
 
 //--------------------------------------------------------------
@@ -242,6 +252,7 @@ void whaleSong::touchMoved(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void whaleSong::touchUp(ofTouchEventArgs &touch){
     
+    /*
     if (beginButt.isPressed()) begin = !begin; 
     if (resetButt.isPressed()) reset = true; 
     
@@ -256,8 +267,8 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
     if (checkDebugButt.isPressed()) {
         checked = true;    
     }
-    
-    touchUpButtons (touch); 
+    */
+    //touchUpButtons (touch); 
     
     if (touch.id == 1) {
         if (touch.x < ofGetWidth()/2) {
@@ -315,8 +326,7 @@ void whaleSong::loadSong(string XMLname) {
     } else {
         //cout << "unable to load " << XMLname << endl; 
     }
-    
-    
+
         songList.pushTag("songList");
         numberOfSongs = songList.getNumTags("songs");
         
@@ -325,6 +335,7 @@ void whaleSong::loadSong(string XMLname) {
             int songID = songList.getAttribute("songs", "song",0, i);
 
             string songWords = songList.getAttribute("songs", "words", "nothing",i);
+            cout << "WORDS " << songWords << endl; 
             tempSong.songNum = songID; 
             tempSong.songWords = songWords; 
             
@@ -357,6 +368,7 @@ void whaleSong::loadSong(string XMLname) {
 //--------------------------------------------------------------
 bool whaleSong::checkSong() {
     
+    //if debug is not on, compare the user song against the guide
     if (!debugCheck) {
         int points = 0; 
         
@@ -377,6 +389,8 @@ bool whaleSong::checkSong() {
             }        
         }
         if (points > songs[whichSong].savedBins.size() - songs[whichSong].savedBins.size()/3) return true; 
+        
+        //if debug is on, follow what the two fingers say. 
     } else {
         return debugCorrect; 
     }
@@ -386,17 +400,23 @@ bool whaleSong::checkSong() {
 //-------------------------------------------------------------
 void whaleSong::setSong(int whichSong_){
     
+    //first reset the two dorwings.
+    singing.reset();
     guide.reset();
-    songLoc.y = ofGetHeight() + 50; 
     
+    //set the song
     whichSong = whichSong_; 
+    
+    //set the tweenzor start point
+    songLoc.y = ofGetHeight() + 50; 
     
     Tweenzor::add (songLoc.y, songLoc.y, songLoc.y - songHeight,   0, 30, EASE_OUT_QUAD); 
     
+    //lets go!
     for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
         guide.letsGo(i, songs[whichSong].savedBins[i]);
-
     }
+    
 }
 
 //-------------------------------------------------------------

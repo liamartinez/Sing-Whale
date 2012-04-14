@@ -21,6 +21,7 @@ enum buttonTypes { //fill this with the different words he can say.
     MENU_ONE,
     MENU_TWO,
     MENU_THREE,
+
     MENU_TOTAL
 };
 
@@ -45,7 +46,9 @@ public:
     int getSongPressed(); 
     
     string labels[MENU_TOTAL];
+    string phrases[MENU_TOTAL]; 
     baseButton buttons[MENU_TOTAL];
+    ofImage icons [MENU_TOTAL]; 
     
     swAssetManager* swAssets;
     songSceneManager* songSM;
@@ -64,6 +67,7 @@ public:
     ofVec3f axis; 
     float   angle;     
     float future;     
+    float futureVal; 
     float newAngle; 
     
     ofImage carrot; 

@@ -53,6 +53,13 @@ public:
     
     whaleMove   theWhale; 
     
+    //animate a little 
+    float floatVal(); 
+    float       amplitude;
+    float       period; 
+    float       dx;
+    float       theta; 
+    
     
 protected:
     

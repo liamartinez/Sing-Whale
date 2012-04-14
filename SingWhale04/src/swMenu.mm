@@ -32,11 +32,23 @@ void swMenu::setup() {
     disableBG();
     bgImage.loadImage("images/menuBG.png");        //load menu background
     
+    //icons
+    for (int i = 1; i <= MENU_TOTAL; i++ ) {
+        icons[i].loadImage("whaleIcons-" + ofToString(i) + ".png");
+    }
+    
     
     //Set Labels
     labels[MENU_ONE]        = "Carrot!";           //put text on the menu
     labels[MENU_TWO]        = "Burp";       //put text on the menu
     labels[MENU_THREE]      = "Sleep";       //put text on the menu
+    
+    /*
+    //Set Phrases
+    phrases[MENU_ONE]        = "Would you like a carrot?";           //put text on the menu
+    phrases[MENU_TWO]        = "Can you burp really loud?";       //put text on the menu
+    phrases[MENU_THREE]      = "It's time for bed.";       //put text on the menu
+    */
     
     //Create Buttons
     
@@ -48,7 +60,8 @@ void swMenu::setup() {
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
         buttons[i].setLabel(labels[i], &swAssets->nevis22);
-        buttons[i].setSize(MENU_BTN_W, rect.height);
+        //buttons[i].setImage(&icons[i]);
+        //buttons[i].setPhrase(phrases[i], &swAssets->nevis22);        buttons[i].setSize(MENU_BTN_W, rect.height);
         buttons[i].setColor(bgOffColor, bgOnColor);
         disableBG();
     }
@@ -80,6 +93,31 @@ void swMenu::hide() {
 void swMenu::update() {
     
     Tweenzor::update();
+    
+    //if you are within the activate area, activate
+    for (int i = 0; i < MENU_TOTAL; i++) {
+        
+        ofDrawBitmapString(buttons[i].getLabel() + " " + ofToString(buttons[i].rLocBG.y), 500, ofGetHeight()-200 + (i*20));
+        
+        if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
+            
+            buttons[i].activated = true; 
+            
+            ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 200 + (i*20));
+            
+            //make that the current song, only if it wasn't the last song.
+            songPressed = i;             
+            currentSong = i; 
+            if (currentSong != lastSong) {            
+                activate = true; 
+                lastSong = currentSong;
+            } else {
+                activate = false; 
+            }
+        } else {
+            buttons[i].activated = false; 
+        }
+    }
 
 }
 
@@ -168,33 +206,6 @@ void swMenu::draw() {
         
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
-    
-    //move this to update and make everything a variable
-    for (int i = 0; i < MENU_TOTAL; i++) {
-        
-        ofDrawBitmapString(buttons[i].getLabel() + " " + ofToString(buttons[i].rLocBG.y), 500, ofGetHeight()-200 + (i*20));
-        
-        if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
-           
-            buttons[i].activated = true; 
-            
-            ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 200 + (i*20));
-            
-            songPressed = i; 
-            
-            currentSong = i; 
-            if (currentSong != lastSong) {            
-            activate = true; 
-                lastSong = currentSong;
-            } else {
-                activate = false; 
-            }
-        } else {
-            buttons[i].activated = false; 
-        }
-    }
-
-
 }
 
 
@@ -284,9 +295,14 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
         }
     }
     
+    //snaps to the nearest value divisible by 40. change depending on size. 
+    float distToGoal; 
+    distToGoal = angle/40;
+    distToGoal = floor(distToGoal+0.5);
+    distToGoal = distToGoal * 40; 
 
-    
-    Tweenzor::add(future, 0, 10, 0.f, 1.5f, EASE_OUT_ELASTIC);
+    futureVal = angle - distToGoal; 
+    Tweenzor::add(future, 0, futureVal, 0.f, 1.5f, EASE_OUT_ELASTIC);
 
      
 }

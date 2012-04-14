@@ -64,9 +64,15 @@ void songOne::draw() {
             ofEnableAlphaBlending();
             
             //message = "  Hi there \n funny looking"; 
-            //songOne.draw(0,0);
+            
+            ofPushMatrix();
+            ofTranslate(0, floatVal());
+            songOne.draw(0,0);
+            ofPopMatrix();
+            /*
             theWhale.draw(); 
             theWhale.translateFloat = true; 
+             */
             
             
             ofSetColor(255, 255, 255); 

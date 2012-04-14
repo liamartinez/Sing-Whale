@@ -40,7 +40,7 @@ void speakScene::setup() {
     
     wSong.setup(); 
     
-    showSongButt.setup(); 
+    //showSongButt.setup(); 
     //showSongButt.setLabel("Show Song Buttons", &whitneySemiBold22);
         
     //start singing button
@@ -86,8 +86,10 @@ void speakScene::update() {
         cout << "Speak Scene activating song " << songs[songSM->getCurScene()] << endl; 
     }
     
+    //if the song is rotated in the right place, its switched on
     if (songMenu.activate) switchOn = true; 
     
+    //set the song!
     if (switchOn) {
         switchOn = false; 
         wSong.setSong(songMenu.getSongPressed());        
@@ -131,7 +133,7 @@ void speakScene::draw() {
     songMenu.draw(); 
     if (showSongButtons) wSong.drawButtons();
     
-    showSongButt.draw(50, 50);
+    //showSongButt.draw(50, 50);
     
     /*
     drawGrid();
@@ -174,8 +176,9 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     songMenu.touchDown(touch);
     
     wSong.touchDown(touch);
-    if (showSongButtons) wSong.touchDownButtons(touch);
-    showSongButt.touchDown(touch);
+    
+    //if (showSongButtons) wSong.touchDownButtons(touch);
+    //showSongButt.touchDown(touch);
 
     startSingingButt.touchDown(touch);
 }
@@ -220,11 +223,13 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
      }
      songMenu.touchMenuRes = false;
     
+    /*
     if (showSongButt.isPressed()) {
         showSongButtons = !showSongButtons; 
     }
 
     if (showSongButtons == true) wSong.setupButtons();
+     */
     
      wSong.touchUp(touch);
      if (showSongButtons) wSong.touchDownButtons(touch);

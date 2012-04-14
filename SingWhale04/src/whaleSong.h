@@ -14,6 +14,7 @@
 #include "ofxMaxim.h"
 #include "ofxiPhoneExtras.h"
 #include "baseButton.h"
+#include "swAssetManager.h"
 #include "ofxFreeType2.h"
 #include "ofxXmlSettings.h"
 #include "Tweenzor.h"
@@ -76,6 +77,8 @@ public:
     
     ofTrueTypeFont TTF;
     ofxFreeType2    whitneySemiBold22;
+    swAssetManager* swAssets;
+    
     dorwing singing; 
     dorwing guide; 
 
@@ -131,6 +134,12 @@ public:
     
     //marker for end
     bool            atEnd; 
+    
+    //phrases
+    void setPhrases(); 
+    string phrases[20]; //20 is the max.
+    
+    
     
 };
 

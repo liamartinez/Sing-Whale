@@ -147,6 +147,7 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/src/swAssetManager.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../addons/ofxXmlSettings/libs/tinyxml.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale04/../../../../of_preRelease_v0062_iphone_FAT/addons/ofxTweenzor/src/Tweenzor.h \
