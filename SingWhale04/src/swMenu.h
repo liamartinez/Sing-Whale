@@ -21,7 +21,13 @@ enum buttonTypes { //fill this with the different words he can say.
     MENU_ONE,
     MENU_TWO,
     MENU_THREE,
-
+    MENU_FOUR,
+    MENU_FIVE,
+    MENU_SIX,
+    MENU_SEVEN, 
+    MENU_EIGHT, 
+    MENU_NINE,
+    MENU_TEN, 
     MENU_TOTAL
 };
 

@@ -29,12 +29,13 @@ void swMenu::setup() {
     showingY = ofGetHeight() - rect.height;             //showing scene 
     
     //Menu BG
-    disableBG();
-    bgImage.loadImage("images/menuBG.png");        //load menu background
+    //disableBG();
+    //bgImage.loadImage("images/menuBG.png");        //load menu background
     
     //icons
-    for (int i = 1; i <= MENU_TOTAL; i++ ) {
-        icons[i].loadImage("whaleIcons-" + ofToString(i) + ".png");
+    for (int i = 0; i < 10; i++ ) {
+        icons[i].loadImage("images/icons/whaleIcons-" + ofToString(i) + ".png");
+        //icons[i].loadImage("carrot.png");
     }
     
     
@@ -59,11 +60,11 @@ void swMenu::setup() {
     bgOnColor.a = 50;                                   //draw 50% of black when touching
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
-        buttons[i].setLabel(labels[i], &swAssets->nevis22);
-        //buttons[i].setImage(&icons[i]);
+        buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
+        buttons[i].setImage(&icons[i]);
         //buttons[i].setPhrase(phrases[i], &swAssets->nevis22);        buttons[i].setSize(MENU_BTN_W, rect.height);
-        buttons[i].setColor(bgOffColor, bgOnColor);
-        disableBG();
+        //buttons[i].setColor(bgOffColor, bgOnColor);
+        //disableBG();
     }
     
     //rotation
@@ -94,30 +95,7 @@ void swMenu::update() {
     
     Tweenzor::update();
     
-    //if you are within the activate area, activate
-    for (int i = 0; i < MENU_TOTAL; i++) {
-        
-        ofDrawBitmapString(buttons[i].getLabel() + " " + ofToString(buttons[i].rLocBG.y), 500, ofGetHeight()-200 + (i*20));
-        
-        if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
-            
-            buttons[i].activated = true; 
-            
-            ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 200 + (i*20));
-            
-            //make that the current song, only if it wasn't the last song.
-            songPressed = i;             
-            currentSong = i; 
-            if (currentSong != lastSong) {            
-                activate = true; 
-                lastSong = currentSong;
-            } else {
-                activate = false; 
-            }
-        } else {
-            buttons[i].activated = false; 
-        }
-    }
+
 
 }
 
@@ -136,7 +114,7 @@ void swMenu::draw() {
         ofEnableAlphaBlending();
 
     for (int i = 0; i < MENU_TOTAL; i++) {
-        float theta = ofMap(i, 0, 3, 0, 360);
+        float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
         ofPushMatrix(); 
         ofRotate (theta); 
         ofTranslate(300, 100);
@@ -159,17 +137,17 @@ void swMenu::draw() {
 
     //-------------separate matrices to make the rotations a little different
     ofPushMatrix(); 
-        ofTranslate(0, ofGetHeight() - 100, 150); 
+        ofTranslate(200, ofGetHeight() - 250); 
 
         ofRotate(newAngle, axis.x, axis.y ,axis.z);  
         ofEnableAlphaBlending();
     
             for (int i = 0; i < MENU_TOTAL; i++) {
-                float theta = ofMap(i, 0, 3, 0, 360);
+                float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
         
                 ofPushMatrix(); 
                 ofRotate (theta); 
-                ofTranslate(300, 100);
+                ofTranslate(120, 100);
                 
                 //get the modelview coordinates for this location
                 glGetFloatv(GL_MODELVIEW_MATRIX, modelview);
@@ -200,12 +178,44 @@ void swMenu::draw() {
             ofSetColor(200);
         }
         
-        wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
-        carrot.draw(buttons[i].rLoc.x, buttons[i].rLoc.y - 55, 100, 130);
+        //the wheel is for the 2nd rotation, in case you want that effect
+        //wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
         ofDisableAlphaBlending();
         
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
+    
+    //-------move this back
+    //if you are within the activate area, activate
+    for (int i = 0; i < MENU_TOTAL; i++) {
+        
+        //draw button location
+        ofDrawBitmapString(ofToString(i) + " " + ofToString(buttons[i].rLoc.y), 500, ofGetHeight()-300 + (i*20));
+        
+        //activate the background? 
+        //if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
+        
+        if (buttons[i].rLoc.y > 650 && buttons[i].rLoc.y < 700 && buttons[i].rLoc.x > 0) {
+            
+            buttons[i].activated = true; 
+            
+            ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
+            
+            //make that the current song, only if it wasn't the last song.
+            songPressed = i;             
+            currentSong = i; 
+            if (currentSong != lastSong) {            
+                activate = true; 
+                lastSong = currentSong;
+            } else {
+                activate = false; 
+            }
+        } else {
+            buttons[i].activated = false; 
+        }
+    }
+    
+    
 }
 
 
@@ -243,7 +253,7 @@ void swMenu::touchMoved(ofTouchEventArgs &touch){
             buttons[i].touchMoved(touch);
         }
 
-    
+
     ofVec2f mouse(touch.x,touch.y);  
     ofQuaternion yRot(touch.x -lastMouse.x, ofVec3f(0,0,.5));  
     ofQuaternion xRot(touch.y -lastMouse.y, ofVec3f(0,0,.5));  
@@ -296,10 +306,11 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
     }
     
     //snaps to the nearest value divisible by 40. change depending on size. 
+    float divisor = 30;
     float distToGoal; 
-    distToGoal = angle/40;
+    distToGoal = angle/divisor;
     distToGoal = floor(distToGoal+0.5);
-    distToGoal = distToGoal * 40; 
+    distToGoal = distToGoal * divisor; 
 
     futureVal = angle - distToGoal; 
     Tweenzor::add(future, 0, futureVal, 0.f, 1.5f, EASE_OUT_ELASTIC);
