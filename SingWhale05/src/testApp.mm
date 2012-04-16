@@ -17,7 +17,7 @@ void testApp::setup(){
 	//If you want a landscape oreintation 
 	iPhoneSetOrientation(OFXIPHONE_ORIENTATION_LANDSCAPE_RIGHT);
 	
-	ofBackground(127,127,127);
+	//ofBackground(127,127,127);
     
     //Load Assets
     swAssets = swAssetManager::getInstance();

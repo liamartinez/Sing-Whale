@@ -31,7 +31,9 @@ void songSeven::update() {
 void songSeven::activate() {
     mgr.setCurScene(SONG_SEVEN_FIRST);
     
-    songSeven.loadImage("images/speak_sleepy.png");
+    songSeven.loadImage("story/7-0.png");
+    songJellies.loadImage("story/7-jellies.png");
+    songSevenBG.loadImage("story/7-BG.png");
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
@@ -39,14 +41,25 @@ void songSeven::activate() {
     cout << "Activate Song Seven" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
+    for (int i = 0; i < 15; i ++) {
     
+    randLoc[i].x = ofRandom(-500, ofGetWidth());
+    randLoc[i].y = ofRandom(ofGetHeight() - 200);
+    randSize[i] = ofRandom(1300);
+    randDelay[i] = ofRandom(1.f);
+    randDur[i] = ofRandom(3.f, 8.f);
+    
+    Tweenzor::add(&randLoc[i].y, randLoc[i].y, randLoc[i].y + randSize[i], randDelay[i], randDur[i], EASE_IN_OUT_SINE);
+    Tweenzor::getTween( &randLoc[i].y )->setRepeat( 20, true );
+    }
 }
 
 //------------------------------------------------------------------
 void songSeven::deactivate() {
     cout << "Deactivate songSeven" << endl;
     
-    //homeScreen.clear();
+    songSeven.clear();
+    songJellies.clear();
     
 }
 
@@ -54,36 +67,32 @@ void songSeven::deactivate() {
 //------------------------------------------------------------------
 void songSeven::draw() {
     
-    
-    drawGrid();
+    button.draw();
+    songSevenBG.draw(0, 0);
+    //drawGrid();
+    ofTranslate(0, floatVal());    
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255); 
     
     string message = "";
-    int textW = swAssets->nevis48.getStringWidth(message);
+    //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_SEVEN_FIRST:
-            
-            ofEnableAlphaBlending();
-            
-            //message = "zZZzz"; 
-            //songSeven.draw(0,0);
-            
-            theWhale.draw(); 
-            theWhale.translateFloat = true; 
-            theWhale.blowHoleOn = true; 
-            
-            ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0);    
-            ofDisableAlphaBlending();
-            
+            songSeven.draw(0,0);   
+            for (int i = 0; i < NUMJELLIES; i++) {
+                songJellies.draw(randLoc[i].x, randLoc[i].y, randSize[i], randSize[i]);
+            }
             break;
-            
     }
     
+    ofDisableAlphaBlending();
+
+    /*
     ofSetColor(0);
     textW = swAssets->nevis48.getStringWidth(message);
     swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
-    
+    */
 }
 
 

@@ -31,10 +31,12 @@ void songThree::update() {
 void songThree::activate() {
     mgr.setCurScene(SONG_THREE_FIRST);
     
-    songThree.loadImage("images/speak_sleepy.png");
+    for (int i = 0; i < SONG_THREE_TOTAL; i++) {
+        songThree[i].loadImage("story/3-" + ofToString(i) + ".png"); 
+    }
     
-    //homeScreen.loadImage("images/wires-01.png");
-    //button.setImage(&homeScreen,&homeScreen);
+    button.setPos(0, 0);
+    button.setSize(ofGetWidth(), ofGetHeight()-300);
     
     cout << "Activate Song Three" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
@@ -46,7 +48,9 @@ void songThree::activate() {
 void songThree::deactivate() {
     cout << "Deactivate songThree" << endl;
     
-    //homeScreen.clear();
+    for (int i = 0; i < SONG_THREE_TOTAL; i++) {
+        songThree[i].clear(); 
+    }
     
 }
 
@@ -54,35 +58,32 @@ void songThree::deactivate() {
 //------------------------------------------------------------------
 void songThree::draw() {
 
-    
+    button.draw();
     drawGrid();
+    ofTranslate(0, floatVal());    
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255); 
     
     string message = "";
-    int textW = swAssets->nevis48.getStringWidth(message);
+    //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_THREE_FIRST:
-            
-            ofEnableAlphaBlending();
-            
-            //message = "zZZzz"; 
-            //songThree.draw(0,0);
-            
-            theWhale.draw(); 
-            theWhale.translateFloat = true; 
-            theWhale.blowHoleOn = true; 
-            
-            ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0);    
-            ofDisableAlphaBlending();
-            
+            songThree[SONG_THREE_FIRST].draw(0,0);             
             break;
             
+        case SONG_THREE_SECOND:
+            songThree[SONG_THREE_SECOND].draw(0,0);             
+            break;
+            
+        case SONG_THREE_THIRD:
+            songThree[SONG_THREE_THIRD].draw(0,0);             
+            break;
+                        
     }
     
-    ofSetColor(0);
-    textW = swAssets->nevis48.getStringWidth(message);
-    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
+    ofDisableAlphaBlending();
+
     
 }
 
@@ -95,35 +96,29 @@ void songThree::draw() {
 
 //--------------------------------------------------------------
 void songThree::touchDown(ofTouchEventArgs &touch){
-    //button.touchDown(touch);
+    button.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void songThree::touchMoved(ofTouchEventArgs &touch){
-    //button.touchMoved(touch);
+    button.touchMoved(touch);
 }
 
 
 //--------------------------------------------------------------
 void songThree::touchUp(ofTouchEventArgs &touch){
     //Switch Scenes
-    /*
-     if(button.isPressed()) {
-     if(mgr.getCurScene() == SONG_ONE_TOTAL-1) {
-     swSM->setCurScene(SCENE_CALL);
-     } else  {
-     mgr.setCurScene(mgr.getCurScene() + 1);      
-     }
-     }
-     button.touchUp(touch);
-     
-     */
+    if(button.isPressed()) {
+            if(mgr.getCurScene() < SONG_THREE_TOTAL - 1) {
+                mgr.setCurScene(mgr.getCurScene() + 1); 
+            }
+    }
+    button.touchUp(touch);
 }
 
 //--------------------------------------------------------------
 
 void songThree::touchDoubleTap(ofTouchEventArgs &touch){
-    theWhale.touchDoubleTap(touch);
     
 }

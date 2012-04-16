@@ -36,7 +36,7 @@ public:
 private:
     
     ofImage songTwo[SONG_TWO_TOTAL]; 
-        baseButton button; 
+    baseButton button; 
     
 };
 

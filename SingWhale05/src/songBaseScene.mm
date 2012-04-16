@@ -20,13 +20,15 @@ songBaseScene::songBaseScene() {
     
     circleLoc.set(ofGetWidth()/2, ofGetHeight()/2); 
     
-    theWhale.setup(); 
+    //theWhale.setup(); 
     
     //for the animation
     amplitude = 20; 
     period = 500; 
     dx = (TWO_PI / period);
     theta += 0.02;
+    
+    Tweenzor::init(); 
     
 }
 
@@ -44,9 +46,8 @@ void songBaseScene::setup() {
 //------------------------------------------------------------------
 void songBaseScene::update() {
     
-    theWhale.update(); 
- 
-
+    //theWhale.update(); 
+    Tweenzor::update(ofGetElapsedTimeMillis());
 }
 
 
@@ -54,7 +55,7 @@ void songBaseScene::update() {
 //------------------------------------------------------------------
 void songBaseScene::draw() {
     
-    theWhale.draw(); 
+    //theWhale.draw(); 
     
 }
 
@@ -69,10 +70,14 @@ void songBaseScene::drawCircle() {
 //------------------------------------------------------------------
 void songBaseScene::drawGrid() {  //dont need this, but keep for now just in case. 
     
+    speakScreen.draw (0,0); 
+    
+    /*
     ofSetColor(255, 255, 255); 
     ofEnableAlphaBlending();
-    speakScreen.draw (0,0); 
+    
     ofDisableAlphaBlending();
+     */
     
     /*
     int gridWidth = ofGetWidth() + MNH_GRID_CELL_SIZE; // lia - where is it getting these values?
@@ -117,7 +122,7 @@ float songBaseScene::floatVal() {
 //--------------------------------------------------------------
 void songBaseScene::touchDown(ofTouchEventArgs &touch){
 
-    theWhale.touchDown(touch);
+    //theWhale.touchDown(touch);
     
 }
 
@@ -126,7 +131,7 @@ void songBaseScene::touchDown(ofTouchEventArgs &touch){
 void songBaseScene::touchMoved(ofTouchEventArgs &touch){
 
     //wSong.touchMoved(touch);
-    theWhale.touchMoved(touch);
+    //theWhale.touchMoved(touch);
     
 }
 
@@ -135,7 +140,7 @@ void songBaseScene::touchMoved(ofTouchEventArgs &touch){
 void songBaseScene::touchUp(ofTouchEventArgs &touch){
 
     //wSong.touchUp(touch);
-    theWhale.touchUp(touch);
+    //theWhale.touchUp(touch);
     
     
 }
@@ -143,7 +148,7 @@ void songBaseScene::touchUp(ofTouchEventArgs &touch){
 void songBaseScene::touchDoubleTap(ofTouchEventArgs &touch){
     
     //wSong.touchUp(touch);
-    theWhale.touchDoubleTap(touch);
+    //theWhale.touchDoubleTap(touch);
     
 }
 

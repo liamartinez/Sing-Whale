@@ -20,10 +20,9 @@ void whaleSong::setup(){
 
 	/* some standard setup stuff*/
 
-	ofEnableAlphaBlending();
+	//ofEnableAlphaBlending();
     ofEnableSmoothing();
 	ofSetupScreen();
-	ofBackground(193, 217, 197);
 	ofSetFrameRate(30);
     ofSetVerticalSync(true);
 	

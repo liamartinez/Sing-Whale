@@ -13,6 +13,7 @@
 #include "songSceneManager.h"
 #include "swAssetManager.h"
 #include "ofxSceneManagerScene.h"
+#include "ofxTweenzor.h"
 
 #include "whaleMove.h"
 //#include "baseButton.h"

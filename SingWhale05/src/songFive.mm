@@ -31,7 +31,9 @@ void songFive::update() {
 void songFive::activate() {
     mgr.setCurScene(SONG_FIVE_FIRST);
     
-    songFive.loadImage("images/speak_sleepy.png");
+    for (int i = 0; i < SONG_FIVE_TOTAL; i++) {
+        songFive[i].loadImage("story/5-" + ofToString(i) + ".png"); 
+    }
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
@@ -39,50 +41,42 @@ void songFive::activate() {
     cout << "Activate Song Five" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    
+    button.setPos(0, 0);
+    button.setSize(ofGetWidth(), ofGetHeight()-300);
 }
 
 //------------------------------------------------------------------
 void songFive::deactivate() {
     cout << "Deactivate songFive" << endl;
     
-    //homeScreen.clear();
+    for (int i = 0; i < SONG_FIVE_TOTAL; i++) {
+        songFive[i].clear();  
+    }
     
 }
 
 
 //------------------------------------------------------------------
 void songFive::draw() {
-    
-    
+    button.draw();
     drawGrid();
+    ofTranslate(0, floatVal());    
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255); 
     
     string message = "";
-    int textW = swAssets->nevis48.getStringWidth(message);
+    //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_FIVE_FIRST:
-            
-            ofEnableAlphaBlending();
-            
-            //message = "zZZzz"; 
-            //songFive.draw(0,0);
-            
-            theWhale.draw(); 
-            theWhale.translateFloat = true; 
-            theWhale.blowHoleOn = true; 
-            
-            ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0);    
-            ofDisableAlphaBlending();
-            
+            songFive[SONG_FIVE_FIRST].draw(0,0);             
             break;
             
+        case SONG_FIVE_SECOND:
+            songFive[SONG_FIVE_SECOND].draw(0,0);             
+            break;
     }
-    
-    ofSetColor(0);
-    textW = swAssets->nevis48.getStringWidth(message);
-    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
+    ofDisableAlphaBlending();
     
 }
 
@@ -95,7 +89,7 @@ void songFive::draw() {
 
 //--------------------------------------------------------------
 void songFive::touchDown(ofTouchEventArgs &touch){
-    //button.touchDown(touch);
+    button.touchDown(touch);
 }
 
 
@@ -108,22 +102,16 @@ void songFive::touchMoved(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void songFive::touchUp(ofTouchEventArgs &touch){
     //Switch Scenes
-    /*
-     if(button.isPressed()) {
-     if(mgr.getCurScene() == SONG_ONE_TOTAL-1) {
-     swSM->setCurScene(SCENE_CALL);
-     } else  {
-     mgr.setCurScene(mgr.getCurScene() + 1);      
-     }
-     }
-     button.touchUp(touch);
-     
-     */
+    if(button.isPressed()) {
+        if(mgr.getCurScene() < SONG_FIVE_TOTAL - 1) {
+            mgr.setCurScene(mgr.getCurScene() + 1); 
+        }
+    }
+    button.touchUp(touch);
 }
 
 //--------------------------------------------------------------
 
 void songFive::touchDoubleTap(ofTouchEventArgs &touch){
-    theWhale.touchDoubleTap(touch);
     
 }

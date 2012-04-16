@@ -122,11 +122,15 @@ void songTwo::touchUp(ofTouchEventArgs &touch){
     //Switch Scenes
     
     if(button.isPressed()) {
-        if(mgr.getCurScene() == SONG_TWO_TOTAL-1) {
+        cout <<"scene num " << mgr.getCurScene() << endl; 
+        if(mgr.getCurScene() < SONG_TWO_TOTAL -1) {
             mgr.setCurScene(mgr.getCurScene() + 1);   
+            
         }
     }
      button.touchUp(touch);
+    
+
 }
 
 //--------------------------------------------------------------

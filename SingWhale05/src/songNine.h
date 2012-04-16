@@ -14,6 +14,8 @@
 
 enum {
     SONG_NINE_FIRST,
+    SONG_NINE_SECOND,
+    SONG_NINE_THIRD,
     SONG_NINE_TOTAL
 };
 
@@ -33,7 +35,9 @@ public:
     
 private:
     
-    ofImage songNine; 
+    ofImage songNine[SONG_NINE_TOTAL];
+    ofImage songNineMom; 
+    baseButton button; 
 };
 
 

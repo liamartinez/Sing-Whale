@@ -34,7 +34,7 @@ void songZero::activate() {
     
     if (gen == 0) {
         mgr.setCurScene(SONG_ZERO_FIRST);
-    } else {
+    } else if (gen == 1){
         mgr.setCurScene(SONG_ZERO_THIRD);
     }
     

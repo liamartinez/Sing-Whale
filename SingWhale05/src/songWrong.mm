@@ -43,14 +43,14 @@ void songWrong::activate() {
     dontSpeak[3] = "What was that?";
     dontSpeak[4] = "Perhaps if you \n  ENUNCIATE?";
     
-    songWrong.loadImage("images/speak_med.png");
+    songWrong.loadImage("story/wrong-0.png");
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
     
     cout << "Activate Song Wrong" << endl;
-    textStart.set(ofGetWidth()-600, ofGetHeight()-550);
-    dontSpeakNum = (int)ofRandom(4); 
+    textStart.set(ofGetWidth()-200, ofGetHeight()-460);
+    dontSpeakNum = (int)ofRandom(5); 
     
     theWhale.wriggleOn = true; 
     
@@ -81,7 +81,7 @@ void songWrong::draw() {
             ofEnableAlphaBlending();
             
             message = dontSpeak[dontSpeakNum];
-            //songWrong.draw(0,0);
+            songWrong.draw(0,0);
             theWhale.draw(); 
             
             

@@ -9,6 +9,8 @@
 #ifndef SingWhale04_songSeven_h
 #define SingWhale04_songSeven_h
 
+#define NUMJELLIES 20
+
 #include "speakScene.h"
 #include "baseButton.h"
 
@@ -34,6 +36,15 @@ public:
 private:
     
     ofImage songSeven; 
+    ofImage songJellies; 
+    ofImage songSevenBG; 
+    
+    ofVec2f randLoc[NUMJELLIES]; 
+    int randSize[NUMJELLIES]; 
+    float randDelay[NUMJELLIES];
+     float randDur[NUMJELLIES];
+        
+    baseButton button; 
 };
 
 
