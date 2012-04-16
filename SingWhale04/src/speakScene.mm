@@ -19,10 +19,17 @@ void speakScene::setup() {
         //setup scene manager/Scenes
         songSM = songSceneManager::getInstance();
         
+        songs[SONG_ZERO]     = new songZero();
         songs[SONG_ONE]      = new songOne();
         songs[SONG_TWO]      = new songTwo();
         songs[SONG_THREE]    = new songThree();
         songs[SONG_FOUR]     = new songFour(); 
+        songs[SONG_FIVE]     = new songFive();
+        songs[SONG_SIX]      = new songSix();
+        songs[SONG_SEVEN]    = new songSeven(); 
+        songs[SONG_EIGHT]    = new songEight();
+        songs[SONG_NINE]     = new songNine();
+        songs[SONG_WRONG]     = new songWrong();
         
 
         try {
@@ -44,8 +51,21 @@ void speakScene::setup() {
     //showSongButt.setLabel("Show Song Buttons", &whitneySemiBold22);
         
     //start singing button
-    startSingingButt.setup(); 
+    
     //startSingingButt.setLabel("sing", &whitneySemiBold22);
+    
+    //buttons and antenna
+    buttonUp.loadImage("images/button-up.png"); 
+    buttonDown.loadImage("images/button-down.png");
+    antenna.loadImage("images/antenna.png");
+    for (int i = 1; i <= 3; i++) {
+        antennaWaves[i].loadImage ("images/antenna_waves-" + ofToString(i) + ".png"); 
+    }
+    menuBG.loadImage ("images/menuBG3.png"); 
+    
+    startSingingButt.setup(); 
+    startSingingButt.setImage(&buttonUp, &buttonDown);
+    
     
 }
 
@@ -78,10 +98,12 @@ void speakScene::update() {
             songSM->setCurScene(songMenu.getSongPressed());
             songs[songSM->getCurScene()]->activate();
             wSong.checked = false; 
+            cout << "I THINK ITS RIGHT " << endl ;
         } else {
-            songSM->setCurScene(SONG_FOUR);  
+            songSM->setCurScene(SONG_WRONG);  
             songs[songSM->getCurScene()]->activate();
             wSong.checked = false;
+            cout << "I THINK ITS WRONG " << endl ;
         }
         cout << "Speak Scene activating song " << songs[songSM->getCurScene()] << endl; 
     }
@@ -93,7 +115,7 @@ void speakScene::update() {
     if (switchOn) {
         switchOn = false; 
         wSong.setSong(songMenu.getSongPressed());        
-    }
+    } 
     
 }
 
@@ -126,9 +148,21 @@ void speakScene::deactivate() {
 //------------------------------------------------------------------
 void speakScene::draw() {
     
+
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();
     }
+    
+   
+    ofPushMatrix(); 
+    ofTranslate(300, 30, -130);
+    wSong.draw(); 
+    ofPopMatrix(); 
+    
+    ofEnableAlphaBlending(); 
+    ofSetColor(255, 255, 255);
+    menuBG.draw(0,-20);
+    ofDisableAlphaBlending();
     
     songMenu.draw(); 
     if (showSongButtons) wSong.drawButtons();
@@ -156,12 +190,9 @@ void speakScene::draw() {
     }
     */
     
-    ofPushMatrix(); 
-    ofTranslate(300, -50);
-    wSong.draw(); 
-    ofPopMatrix(); 
+
     
-    startSingingButt.draw (50, ofGetHeight() - 100); 
+    startSingingButt.draw (30, ofGetHeight() - 200); 
     
 }
 

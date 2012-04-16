@@ -12,10 +12,17 @@
 #include "ofxSceneManager2.h"
 
 enum song {
+    SONG_ZERO, 
     SONG_ONE,
     SONG_TWO,
     SONG_THREE,
     SONG_FOUR,
+    SONG_FIVE, 
+    SONG_SIX,
+    SONG_SEVEN,
+    SONG_EIGHT, 
+    SONG_NINE,
+    SONG_WRONG, 
     SONG_TOTAL_SCENES //Always keep this one in here and keep it last!
 };
 

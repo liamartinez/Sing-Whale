@@ -129,7 +129,7 @@ void whaleSong::update(){
         
         //clamp and map
         theBin = ofClamp(theBin, 30, 120);
-        theBin = ofMap(theBin, 30, 120, 0, 200);
+        theBin = ofMap(theBin, 30, 120, 0, 150);
         
         //average
         total = total - readings[index]; 
@@ -197,8 +197,9 @@ void whaleSong::draw(){
         singing.setWriggleOn(true);
         singing.draw(); 
     
+    //draw the phrase
     ofSetColor(50);
-    if (whichSong != -1) swAssets->nevis22.drawString(songs[whichSong].songWords, 100, 30);
+    if (whichSong != -1) swAssets->nevis22.drawString(songs[whichSong].songWords, 100, 10);
 
         ofDisableAlphaBlending(); 
     ofPopMatrix();
@@ -252,6 +253,8 @@ void whaleSong::touchMoved(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void whaleSong::touchUp(ofTouchEventArgs &touch){
     
+    cout << "XVAL " << touch.x << " ID " << touch.id << endl; 
+    
     /*
     if (beginButt.isPressed()) begin = !begin; 
     if (resetButt.isPressed()) reset = true; 
@@ -279,7 +282,7 @@ void whaleSong::touchUp(ofTouchEventArgs &touch){
         debugCheck = true; 
         checked = true; 
     }
-
+    
 }
 
 //--------------------------------------------------------------
@@ -335,7 +338,7 @@ void whaleSong::loadSong(string XMLname) {
             int songID = songList.getAttribute("songs", "song",0, i);
 
             string songWords = songList.getAttribute("songs", "words", "nothing",i);
-            cout << "WORDS " << songWords << endl; 
+
             tempSong.songNum = songID; 
             tempSong.songWords = songWords; 
             

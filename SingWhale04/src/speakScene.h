@@ -20,10 +20,17 @@
 #include "ofxTweenzor.h"
 
 //create the main scenes
+#include "songZero.h"
 #include "songOne.h"
 #include "songTwo.h"
 #include "songThree.h"
 #include "songFour.h"
+#include "songFive.h"
+#include "songSix.h"
+#include "songSeven.h"
+#include "songEight.h"
+#include "songNine.h"
+#include "songWrong.h"
 
 // menu
 #include "swMenu.h"
@@ -75,7 +82,13 @@ public:
     baseButton      showSongButt; 
     
     bool            switchOn; 
-    
+        
+    //buttons and antenna
+    ofImage buttonUp, buttonDown; 
+    ofImage antenna; 
+    ofImage antennaWaves[3]; 
+    ofImage menuBG; 
+
     baseButton      startSingingButt; 
 
     

@@ -17,6 +17,8 @@
 #include "ofxTweenzor.h"
 #include "Tweenzor.h"
 
+#define DIVISOR 36; 
+
 enum buttonTypes { //fill this with the different words he can say. 
     MENU_ONE,
     MENU_TWO,
@@ -88,7 +90,15 @@ public:
     int currentSong; 
     int lastSong; 
     
-
+    bool poked; 
+    
+    //coordinates for the translations
+    ofVec2f transRing; 
+    ofVec2f transObj; 
+    
+    ofRectangle ringBounds, smallRingBounds; 
+    
+    ofVec2f finger; 
 
     
 private:

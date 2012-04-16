@@ -38,7 +38,6 @@ void swMenu::setup() {
         //icons[i].loadImage("carrot.png");
     }
     
-    
     //Set Labels
     labels[MENU_ONE]        = "Carrot!";           //put text on the menu
     labels[MENU_TWO]        = "Burp";       //put text on the menu
@@ -73,6 +72,8 @@ void swMenu::setup() {
     Tweenzor::init();  
     
 
+    
+
 }
 
 
@@ -95,6 +96,10 @@ void swMenu::update() {
     
     Tweenzor::update();
     
+    if (poked == true) {
+
+
+    }
 
 
 }
@@ -104,7 +109,8 @@ void swMenu::update() {
 void swMenu::draw() {
     
     //get the angle based on the quaternion computations
-    curRot.getRotate(angle, axis);      
+    curRot.getRotate(angle, axis);    
+    cout << "                        FUTURE " << future << endl; 
     newAngle = angle - future; //"future" is for the bounce
    
     //rotate the wheel
@@ -136,19 +142,29 @@ void swMenu::draw() {
         ofPopMatrix(); 
 
     //-------------separate matrices to make the rotations a little different
+    
+    transRing.set(200, ofGetHeight() - 250);
+    transObj.set(120, 100);
+    
     ofPushMatrix(); 
-        ofTranslate(200, ofGetHeight() - 250); 
+        ofTranslate(transRing.x, transRing.y); 
 
+    cout << "                    REAL NEW ANGLE " << newAngle << endl; 
         ofRotate(newAngle, axis.x, axis.y ,axis.z);  
         ofEnableAlphaBlending();
+    
+
+    
+    ofSetColor(255, 255, 180);
+    ofCircle(axis.x,axis.y, 20, 20);
     
             for (int i = 0; i < MENU_TOTAL; i++) {
                 float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
         
                 ofPushMatrix(); 
                 ofRotate (theta); 
-                ofTranslate(120, 100);
-                
+                ofTranslate(transObj.x, transObj.y);
+
                 //get the modelview coordinates for this location
                 glGetFloatv(GL_MODELVIEW_MATRIX, modelview);
 
@@ -159,9 +175,11 @@ void swMenu::draw() {
                 
                 //store them in the class
                 buttons[i].rLoc = translation; 
-
+                
                 ofPopMatrix(); 
     }
+    
+    
 
         ofDisableAlphaBlending();
     ofPopMatrix(); 
@@ -190,23 +208,26 @@ void swMenu::draw() {
     for (int i = 0; i < MENU_TOTAL; i++) {
         
         //draw button location
-        ofDrawBitmapString(ofToString(i) + " " + ofToString(buttons[i].rLoc.y), 500, ofGetHeight()-300 + (i*20));
+        ofDrawBitmapString(ofToString(i) + " " + ofToString(buttons[i].rLoc.y) + " x " + ofToString(buttons[i].rLoc.x), 500, ofGetHeight()-300 + (i*20));
+        ofCircle(buttons[i].rLoc.x, buttons[i].rLoc.y, 10);
         
         //activate the background? 
         //if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
         
-        if (buttons[i].rLoc.y > 650 && buttons[i].rLoc.y < 700 && buttons[i].rLoc.x > 0) {
+        if (buttons[i].rLoc.y > 600 && buttons[i].rLoc.y < 650 && buttons[i].rLoc.x > 200) {
             
             buttons[i].activated = true; 
             
             ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
             
             //make that the current song, only if it wasn't the last song.
-            songPressed = i;             
+            songPressed = i; 
             currentSong = i; 
+            //cout << "CUR " << currentSong << endl; 
             if (currentSong != lastSong) {            
                 activate = true; 
                 lastSong = currentSong;
+                //poked = false;
             } else {
                 activate = false; 
             }
@@ -215,6 +236,36 @@ void swMenu::draw() {
         }
     }
     
+    if ((!smallRingBounds.inside (finger.x, finger.y)) && ringBounds.inside(finger.x, finger.y)){
+        
+        //float divisor = 36;
+        float distToGoal; 
+        
+        cout << "ANGLE " << angle << endl;
+        distToGoal = angle/DIVISOR;
+        cout << "GOAL " << distToGoal << endl; 
+        //distToGoal = ceil(distToGoal-0.5);
+        distToGoal = floor(distToGoal+0.5);
+        cout << "GOAL " << distToGoal << endl; 
+        distToGoal = distToGoal * DIVISOR; 
+        cout << "END GOAL " << distToGoal << endl; 
+        
+        futureVal = angle - distToGoal; 
+        
+        cout << "FUTURE VAL " << futureVal << endl; 
+
+    }
+    
+    
+    ofDrawBitmapString("ANGLE " + ofToString(angle), 700, ofGetHeight() - 450);
+    ofDrawBitmapString("NEW ANGLE " + ofToString(newAngle), 700, ofGetHeight() - 480);
+    ofDrawBitmapString("DISTANCE TO GOAL " + ofToString(futureVal + angle), 700, ofGetHeight() - 430);
+    
+    /* //for debugging the active touch areas for the ring
+    ofNoFill(); 
+    ofRect(0, (transRing.y - 100), transRing.x + transObj.x + 100,  (transRing.y)); 
+    ofRect(50, transRing.y + 100, (transRing.x + transObj.x) -150, transRing.y + 100);
+     */
     
 }
 
@@ -235,12 +286,10 @@ int swMenu::drawSeparatorLine(int x) {
 
 //--------------------------------------------------------------
 void swMenu::touchDown(ofTouchEventArgs &touch){
-
-        for(int i=0; i<MENU_TOTAL; i++) {
-            buttons[i].touchDown(touch);
-        }
-
     lastMouse = ofVec2f(touch.x, touch.y);  
+    poked = true; 
+    
+
 
 }
 
@@ -248,75 +297,48 @@ void swMenu::touchDown(ofTouchEventArgs &touch){
 //--------------------------------------------------------------
 void swMenu::touchMoved(ofTouchEventArgs &touch){
 
+    //set the outside/inside bounds
+    ringBounds.set(0, (transRing.y - 100), transRing.x + transObj.x + 100,  (transRing.y));
+    smallRingBounds.set(50, transRing.y + 100, (transRing.x + transObj.x) -150, transRing.y + 100); 
+    
+    //restrict where the active area is for the ring
+    if ((!smallRingBounds.inside (touch.x, touch.y)) && ringBounds.inside(touch.x, touch.y)){
+        ofVec2f mouse(touch.x,touch.y);  
+        ofQuaternion yRot(touch.x -lastMouse.x, ofVec3f(0,0,.5));  
+        ofQuaternion xRot(touch.y -lastMouse.y, ofVec3f(0,0,.5));  
+        curRot *= yRot*xRot;  
         
-        for(int i=0; i<MENU_TOTAL; i++) {
-            buttons[i].touchMoved(touch);
-        }
-
-
-    ofVec2f mouse(touch.x,touch.y);  
-    ofQuaternion yRot(touch.x -lastMouse.x, ofVec3f(0,0,.5));  
-    ofQuaternion xRot(touch.y -lastMouse.y, ofVec3f(0,0,.5));  
-    curRot *= yRot*xRot;  
+        lastMouse = mouse; 
+    }
     
-    lastMouse = mouse; 
+    finger.x = touch.x;
+    finger.y = touch.y;
     
+    cout << "DOWN ************" << endl; 
 
 }
 
 
 //--------------------------------------------------------------
 void swMenu::touchUp(ofTouchEventArgs &touch){
-    
 
-    
-    if(bShowing) {
-        for(int i=0; i<MENU_TOTAL; i++) {
-            if(buttons[i].isPressed()) {
-                songPressed = i; 
 
-                switch (i) {
-                    case  MENU_ONE:
-                        //songSM->setCurScene(SONG_ONE);
-                        
-                        touchMenuRes = true; 
-                        break;
-                    case  MENU_TWO:
-                        //songSM->setCurScene(SONG_TWO);
-                        
-                        touchMenuRes = true; 
-                        //                        cout<<"press Resouce"<<endl;
-                        break;
-                    case  MENU_THREE:
-                        //songSM->setCurScene(SONG_THREE);
-                        touchMenuRes = true; 
-                        break;
-                    default:
-                        break;
-                }
-                
-                break;
-            }
-        }
 
-        
-        for(int i=0; i<MENU_TOTAL; i++) {
-            buttons[i].touchUp(touch);
-        }
-    }
+    Tweenzor::add(future, 0, -futureVal, 0.f, 1.5f, EASE_OUT_ELASTIC);
+    cout << "                               ********FUTURE************** " << future << endl; 
+    cout << "                          " << future << endl; 
+    cout << "                          " << future << endl; 
+    cout << "                          " << future << endl; 
+    cout << "                                NEW ANGLE!!! " << newAngle << endl; 
+    cout << "                          " << future << endl; 
+    cout << "                          " << future << endl; 
+    cout << "                          " << future << endl; 
     
     //snaps to the nearest value divisible by 40. change depending on size. 
-    float divisor = 30;
-    float distToGoal; 
-    distToGoal = angle/divisor;
-    distToGoal = floor(distToGoal+0.5);
-    distToGoal = distToGoal * divisor; 
 
-    futureVal = angle - distToGoal; 
-    Tweenzor::add(future, 0, futureVal, 0.f, 1.5f, EASE_OUT_ELASTIC);
 
-     
-}
+    
+    }
 
 //-------------------------------------------------------------------
 int swMenu::getSongPressed() {
