@@ -21,10 +21,7 @@ void songOne::update() {
    theWhale.update();
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
-             
-            //Do stuff
-        case SONG_ONE_SECOND:
-            //Do stuff
+
             break;            
     }
 }
@@ -35,7 +32,7 @@ void songOne::activate() {
 
     cout << "Activate Song One" << endl;
     
-    songOne.loadImage("images/speak_med.png");
+    songOne.loadImage("story/1-0.png");
     textStart.set(ofGetWidth()-200, ofGetHeight()-530);
     //theWhale.setup(); 
     //theWhale.smileOn = true; 
@@ -80,11 +77,7 @@ void songOne::draw() {
             ofDisableAlphaBlending();
 
             break; 
-            
-        case SONG_ONE_SECOND:
-            
 
-            break;
             
     }
     

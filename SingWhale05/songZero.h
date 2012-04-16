@@ -17,6 +17,7 @@ enum {
     SONG_ZERO_SECOND,
     SONG_ZERO_THIRD,
     SONG_ZERO_FOURTH,
+    SONG_ZERO_FIFTH, 
     SONG_ZERO_TOTAL
 };
 
@@ -38,6 +39,7 @@ private:
     
     ofImage songZero[SONG_ZERO_TOTAL]; 
     baseButton button; 
+    int gen; 
 };
 
 

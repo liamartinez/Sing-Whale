@@ -29,7 +29,16 @@ void songZero::update() {
 
 //------------------------------------------------------------------
 void songZero::activate() {
-    mgr.setCurScene(SONG_ZERO_FIRST);
+    
+    gen = ofRandom(1);
+    
+    if (gen == 0) {
+        mgr.setCurScene(SONG_ZERO_FIRST);
+    } else {
+        mgr.setCurScene(SONG_ZERO_THIRD);
+    }
+    
+    
     
     for (int i = 0; i < SONG_ZERO_TOTAL; i++) {
         songZero[i].loadImage("story/0-" + ofToString(i) + ".png"); 
@@ -43,8 +52,9 @@ void songZero::activate() {
     
     cout << "Activate Song Zero" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
+    
     button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-500);
+    button.setSize(ofGetWidth(), ofGetHeight()-300);
     
     
 }
@@ -61,42 +71,40 @@ void songZero::deactivate() {
 //------------------------------------------------------------------
 void songZero::draw() {
     
-    
+    button.draw();
     drawGrid();
+    ofTranslate(0, floatVal());    
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255); 
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_ZERO_FIRST:
-            ofEnableAlphaBlending();
-            ofSetColor(255, 255, 255); 
             songZero[SONG_ZERO_FIRST].draw(0,0);             
-            ofDisableAlphaBlending();
             break;
             
         case SONG_ZERO_SECOND:
-            ofEnableAlphaBlending();
-            ofSetColor(255, 255, 255); 
             songZero[SONG_ZERO_SECOND].draw(0,0);             
-            ofDisableAlphaBlending();
             break;
             
         case SONG_ZERO_THIRD:
-            ofEnableAlphaBlending();
-            ofSetColor(255, 255, 255); 
             songZero[SONG_ZERO_THIRD].draw(0,0);             
-            ofDisableAlphaBlending();
             break;
             
         case SONG_ZERO_FOURTH:
-            ofEnableAlphaBlending();
-            ofSetColor(255, 255, 255); 
             songZero[SONG_ZERO_FOURTH].draw(0,0);             
-            ofDisableAlphaBlending();
+            break;
+            
+        case SONG_ZERO_FIFTH:
+            songZero[SONG_ZERO_FIFTH].draw(0,0);             
             break;
             
     }
+    
+    ofDisableAlphaBlending();
+
     
     //ofSetColor(0);
     //textW = swAssets->nevis48.getStringWidth(message);
@@ -139,9 +147,16 @@ void songZero::touchUp(ofTouchEventArgs &touch){
      */
     
     if(button.isPressed()) {
-        if(mgr.getCurScene() < SONG_ZERO_TOTAL-1) {
-            mgr.setCurScene(mgr.getCurScene() + 1); 
-        } 
+        
+        if (gen == 0) {
+            if(mgr.getCurScene() < SONG_ZERO_SECOND) {
+                mgr.setCurScene(mgr.getCurScene() + 1); 
+            }
+        } else {
+            if(mgr.getCurScene() < SONG_ZERO_TOTAL < 1) {
+                mgr.setCurScene(mgr.getCurScene() + 1); 
+            }
+        }
     }
     button.touchUp(touch);
 }

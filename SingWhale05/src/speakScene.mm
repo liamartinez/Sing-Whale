@@ -15,11 +15,10 @@ void speakScene::setup() {
     //Load Assets
     //swAssets = swAssetManager::getInstance();
 
-        
         //setup scene manager/Scenes
         songSM = songSceneManager::getInstance();
         
-        songs[SONG_WAITING]   = new songWaiting(); 
+
         songs[SONG_ZERO]     = new songZero();
         songs[SONG_ONE]      = new songOne();
         songs[SONG_TWO]      = new songTwo();
@@ -31,6 +30,7 @@ void speakScene::setup() {
         songs[SONG_EIGHT]    = new songEight();
         songs[SONG_NINE]     = new songNine();
         songs[SONG_WRONG]     = new songWrong();
+        songs[SONG_WAITING]   = new songWaiting(); 
         
         
 
@@ -44,10 +44,16 @@ void speakScene::setup() {
     
     //Tweenzor::init(); 
     
+    //start with the waiting scene
+    songSM->setCurScene(SONG_WAITING);
+
     songMenu.setup();
     songMenu.show(); 
     
     wSong.setup(); 
+    
+    //empty guide
+    wSong.letsReset();
     
     //showSongButt.setup(); 
     //showSongButt.setLabel("Show Song Buttons", &whitneySemiBold22);

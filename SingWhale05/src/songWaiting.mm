@@ -30,7 +30,7 @@ void songWaiting::update() {
 void songWaiting::activate() {
     mgr.setCurScene(SONG_WAITING_FIRST);    
     cout << "Activate Song Waiting" << endl;    
-    songWaiting.loadImage("images/speak_med.png");
+    songWaiting.loadImage("story/waiting-0.png");
     textStart.set(ofGetWidth()-200, ofGetHeight()-530);
         
     songSmallTalk[0] = " Hi, \n  what's up?  ";
@@ -81,8 +81,8 @@ void songWaiting::draw() {
     }
     
     ofSetColor(0);
-    textW = swAssets->nevis48.getStringWidth(message);
-    swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
+    textW = swAssets->nevis22.getStringWidth(message);
+    swAssets->nevis22.drawString(message, textStart.x - textW/2, textStart.y);
     
 }
 

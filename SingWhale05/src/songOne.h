@@ -15,7 +15,6 @@
 
 enum {
     SONG_ONE_FIRST,
-    SONG_ONE_SECOND, 
     SONG_ONE_TOTAL
 };
 
