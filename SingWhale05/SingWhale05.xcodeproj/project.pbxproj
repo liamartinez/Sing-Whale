@@ -354,7 +354,7 @@
 		0AF1BDF2153746C300E686AD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		0AF1BDF4153746C800E686AD /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		0AF1BDF6153746D100E686AD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		0AF4AACE153BE46000F4FD94 /* songWaiting.h */ = {isa = PBXFileReference; path = songWaiting.h; sourceTree = "<group>"; };
+		0AF4AACE153BE46000F4FD94 /* songWaiting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songWaiting.h; sourceTree = "<group>"; };
 		0AF4AACF153BE46A00F4FD94 /* songWaiting.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = songWaiting.mm; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SingWhale05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingWhale05.app; sourceTree = BUILT_PRODUCTS_DIR; };

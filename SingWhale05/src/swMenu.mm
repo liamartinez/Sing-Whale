@@ -59,7 +59,7 @@ void swMenu::setup() {
     bgOnColor.a = 50;                                   //draw 50% of black when touching
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
-        buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
+        //buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
         buttons[i].setImage(&icons[i]);
         //buttons[i].setPhrase(phrases[i], &swAssets->nevis22);        buttons[i].setSize(MENU_BTN_W, rect.height);
         //buttons[i].setColor(bgOffColor, bgOnColor);
@@ -71,6 +71,7 @@ void swMenu::setup() {
     wheel.loadImage("circle.png");
     Tweenzor::init();  
     
+
 
     
 
@@ -98,8 +99,37 @@ void swMenu::update() {
     
     Tweenzor::update(ofGetElapsedTimeMillis());
 
-
-
+    //-------move this back
+    //if you are within the activate area, activate
+    for (int i = 0; i < MENU_TOTAL; i++) {
+        
+        //draw button location
+        //ofDrawBitmapString(ofToString(i) + " " + ofToString(buttons[i].rLoc.y) + " x " + ofToString(buttons[i].rLoc.x), 500, ofGetHeight()-300 + (i*20));
+        
+        
+        //activate the background? 
+        //if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
+        
+        if (buttons[i].rLoc.y > 590 && buttons[i].rLoc.y < 660 && buttons[i].rLoc.x > 200) {
+            
+            buttons[i].activated = true; 
+            
+            //ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
+            
+            //make that the current song, only if it wasn't the last song.
+            songPressed = i; 
+            currentSong = i; 
+            //cout << "CUR " << currentSong << endl; 
+            if (currentSong != lastSong) {            
+                activate = true; //do something
+                lastSong = currentSong;
+            } else {
+                activate = false; //dont do anything
+            }
+        } else {
+            buttons[i].activated = false; 
+        }
+    }
 }
 
 
@@ -195,37 +225,7 @@ void swMenu::draw() {
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
     
-    //-------move this back
-    //if you are within the activate area, activate
-    for (int i = 0; i < MENU_TOTAL; i++) {
-        
-        //draw button location
-        //ofDrawBitmapString(ofToString(i) + " " + ofToString(buttons[i].rLoc.y) + " x " + ofToString(buttons[i].rLoc.x), 500, ofGetHeight()-300 + (i*20));
-        
-        
-        //activate the background? 
-        //if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
 
-            if (buttons[i].rLoc.y > 590 && buttons[i].rLoc.y < 660 && buttons[i].rLoc.x > 200) {
-                
-                buttons[i].activated = true; 
-                
-                //ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
-                
-                //make that the current song, only if it wasn't the last song.
-                songPressed = i; 
-                currentSong = i; 
-                //cout << "CUR " << currentSong << endl; 
-                if (currentSong != lastSong) {            
-                    activate = true; //do something
-                    lastSong = currentSong;
-                } else {
-                    activate = false; //dont do anything
-                }
-            } else {
-                buttons[i].activated = false; 
-            }
-        }
     
 
     /*
@@ -247,6 +247,7 @@ void swMenu::onComplete(float* arg) {
 	cout << "----------------------------------------------onComplete : arg = " << *arg << endl;
 
     tweenDone = true; 
+    //poked = false; 
 }
 
 //------------------------------------------------------------------
@@ -316,7 +317,7 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
 void swMenu::bounce() {
     
     tweenDone = false; 
-    poked = false; 
+    
     
     float distToGoal; 
     

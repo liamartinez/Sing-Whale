@@ -56,7 +56,7 @@ void songSix::draw() {
     
     button.draw();
     drawGrid();
-    ofTranslate(0, floatVal());    
+    ofTranslate(0, tweenVal);    
     ofEnableAlphaBlending();
     ofSetColor(255, 255, 255); 
     

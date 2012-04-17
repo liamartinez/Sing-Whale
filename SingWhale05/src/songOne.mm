@@ -12,6 +12,7 @@
 //------------------------------------------------------------------
 void songOne::setup() {
     
+
 }
 
 
@@ -63,15 +64,11 @@ void songOne::draw() {
             //message = "  Hi there \n funny looking"; 
             
             ofPushMatrix();
-            ofTranslate(0, floatVal());
+            ofTranslate(0, tweenVal);
+            cout << "tweenval " << tweenVal << endl; 
             songOne.draw(0,0);
             ofPopMatrix();
-            /*
-            theWhale.draw(); 
-            theWhale.translateFloat = true; 
-             */
-            
-            
+
             ofSetColor(255, 255, 255); 
             //homeScreen.draw (0,0);    
             ofDisableAlphaBlending();

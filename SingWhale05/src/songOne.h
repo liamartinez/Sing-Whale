@@ -35,6 +35,7 @@ public:
 private:
     
     ofImage songOne; 
+    //float tweenVal; 
     
 };
 

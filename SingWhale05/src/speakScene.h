@@ -87,7 +87,7 @@ public:
     //buttons and antenna
     ofImage buttonUp, buttonDown; 
     ofImage antenna; 
-    ofImage antennaWaves[3]; 
+    ofImage waves[3]; 
     ofImage menuBG; 
 
     baseButton      startSingingButt; 

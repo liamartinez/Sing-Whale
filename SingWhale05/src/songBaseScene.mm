@@ -30,6 +30,9 @@ songBaseScene::songBaseScene() {
     
     Tweenzor::init(); 
     
+    Tweenzor::add(&tweenVal, 0.f, 50, 0.f, 8.f,  EASE_IN_OUT_SINE); 
+    Tweenzor::getTween( &tweenVal )->setRepeat( 5, true );
+    
 }
 
 

@@ -44,11 +44,7 @@ void songZero::activate() {
         songZero[i].loadImage("story/0-" + ofToString(i) + ".png"); 
     }
     
-    
-    //songZero.loadImage("images/speak_sleepy.png");
-    
-    //homeScreen.loadImage("images/wires-01.png");
-    //button.setImage(&homeScreen,&homeScreen);
+
     
     cout << "Activate Song Zero" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);

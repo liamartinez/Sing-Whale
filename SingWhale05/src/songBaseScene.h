@@ -61,6 +61,7 @@ public:
     float       dx;
     float       theta; 
     
+    float       tweenVal; 
     
 protected:
     

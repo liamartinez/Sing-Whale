@@ -126,6 +126,12 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/ofxTweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tween.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenSelector.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenFunctions.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenEvent.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale05/src/whaleMove.h \
   ../../../addons/ofxiPhone/ofxiPhone.h \
   ../../../addons/ofxAccelerometer/src/ofxAccelerometer.h \

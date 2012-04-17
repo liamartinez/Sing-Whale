@@ -70,7 +70,7 @@ void songSeven::draw() {
     button.draw();
     songSevenBG.draw(0, 0);
     //drawGrid();
-    ofTranslate(0, floatVal());    
+    ofTranslate(0, tweenVal);    
     ofEnableAlphaBlending();
     ofSetColor(255, 255, 255); 
     
