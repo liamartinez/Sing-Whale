@@ -19,6 +19,9 @@ void testApp::setup(){
 	
 	//If you want a landscape oreintation 
 	iPhoneSetOrientation(OFXIPHONE_ORIENTATION_LANDSCAPE_RIGHT);
+    
+    //around 4 seconds to match layla
+    ofSetFrameRate(16);
 	
 	ofBackground(150,150,127);
     
@@ -42,7 +45,13 @@ void testApp::setup(){
 	ofxMaxiSettings::setup(sampleRate, 2, initialBufferSize);
     
 	ofSoundStreamSetup(0,1, this, sampleRate, initialBufferSize, 4);/* Call this last ! */
-
+    
+    //keyboard
+    keyboard = new ofxiPhoneKeyboard(0,52,320,32);
+	keyboard->setVisible(true);
+	keyboard->setBgColor(255, 255, 255, 255);
+	keyboard->setFontColor(0,0,0, 255);
+	keyboard->setFontSize(26);
 
     //interface
     whitneySemiBold22.loadFont("fonts/Whitney-Semibold.otf",22);
@@ -55,6 +64,13 @@ void testApp::setup(){
 
     setupButtons(); 
 
+    //smoothing
+    index = 0; 
+    total = 0; 
+    average = 0; 
+    for (int i = 0; i < 10; i ++) {
+        readings[i] = 0; 
+    }
     
     numSong = 1; //for saving
     whichSong = 0; 
@@ -103,7 +119,7 @@ void testApp::update(){
 
         //clamp and map
         theBin = ofClamp(theBin, 30, 120);
-        theBin = ofMap(theBin, 30, 120, 0, 200);
+        theBin = ofMap(theBin, 30, 120, 0, 150);
 
         //average
         total = total - readings[index]; 
@@ -117,11 +133,15 @@ void testApp::update(){
         if (theBins.size() < SAMPLESIZE) theBins.push_back(average);
         singing.letsGo(theBins.size(), average); 
 
+        
+        if (theBins.size() == SAMPLESIZE -1) begin = false; 
+
     }
     if (reset) {
         reset = false; 
         begin = false; 
         for (int i = 0; i < SAMPLESIZE-1; i++){
+            guide.reset();
             singing.reset();  
             theBins.clear(); 
         }
@@ -156,15 +176,15 @@ void testApp::draw(){
     
     
     ofPushMatrix(); 
-    ofTranslate(0, ofGetHeight()/2 - 100);
+    //ofTranslate(0, ofGetHeight()/2 - 100);
     ofEnableAlphaBlending(); 
 
         ofSetColor(0, 120, 190, 100);
-        guide.setWriggleOn(true);
+        //guide.setWriggleOn(true);
         guide.draw(); 
     
         ofSetColor(0, 90, 170, 100);
-        singing.setWriggleOn(true);
+        //singing.setWriggleOn(true);
         singing.draw(); 
 
     ofDisableAlphaBlending(); 
@@ -173,6 +193,14 @@ void testApp::draw(){
     
     ofSetColor(232, 58, 37);
     ofDrawBitmapString(message, 300, 50);
+    
+    //keyboard
+    ofSetColor( 255);
+	ofDrawBitmapString("tap the textfield to open the keyboard", 500, 100);
+    
+	ofDrawBitmapString("whale song number = "+  keyboard->getText() , 500, 130);
+    
+    numSong = ofToInt(keyboard->getText()); 
     
 }
 
@@ -231,12 +259,12 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     }
         
     if (saveButt.isPressed()) {
-        numSong ++; 
+        numSong = ofToInt(keyboard->getText());
         saveSong(numSong); 
     }
     
     if (loadButt.isPressed()) {
-        loadSong(); 
+        loadSong(numSong); 
     }
     
     if (checkButt.isPressed()) {
@@ -253,11 +281,20 @@ void testApp::touchUp(ofTouchEventArgs &touch){
     }
 
     touchUpButtons(touch);
+    singing.touchUp(touch);
+    guide.touchUp(touch);
 }
 
 //--------------------------------------------------------------
 void testApp::touchDoubleTap(ofTouchEventArgs &touch){
     singing.touchDoubleTap(touch);
+    
+    if(!keyboard->isKeyboardShowing()){
+        keyboard->openKeyboard();
+        keyboard->setVisible(true);
+    } else{
+        keyboard->setVisible(false);
+    }	
  
 }
 
@@ -277,26 +314,28 @@ void testApp::saveSong(int numSong_) {
     for (int i = 0; i < SAMPLESIZE; i++) {
         if (i < theBins.size()) {
             positions.addValue("pos", theBins[i]);   
+            //int tempPos = singing.songPoints[i].pos.y; 
+            //positions.addValue("pos", tempPos);
         } else {
-            positions.addValue("pos", 30); //fill the rest with 0's. 
+            positions.addValue("pos", 20); //fill the rest with 0's. 
         }
         
     }
     
     positions.popTag(); //pop position
     positions.popTag(); 
-    positions.saveFile(ofxiPhoneGetDocumentsDirectory() + "whaleSong.xml");
-    cout << "positions.xml saved to app documents folder" << endl; 
+    positions.saveFile(ofxiPhoneGetDocumentsDirectory() + ofToString(numSong_) + ".xml");
+    cout << ofToString(numSong_) + ".xml saved to app documents folder" << endl; 
 }
 
 //--------------------------------------------------------------
-void testApp::loadSong() {
+void testApp::loadSong(int numSong_) {
     ofxXmlSettings gotSongs;
     ofxXmlSettings songList; 
     
     song tempSong; 
     
-    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + "whaleSong.xml")){
+    if(songList.loadFile(ofxiPhoneGetDocumentsDirectory() + ofToString(numSong_) + ".xml")){
         
         songList.pushTag("songList");
         cout << "PUSH INTO SONGLIST " << endl; 
@@ -415,6 +454,9 @@ void testApp::touchUpButtons(ofTouchEventArgs &touch) {
     checkButt.touchUp(touch);
     nextButt.touchUp(touch);
     
+    singing.touchUp(touch);
+    guide.touchUp(touch); 
+    
 }
 //--------------------------------------------------------------
 void testApp::touchDownButtons(ofTouchEventArgs &touch){
@@ -425,6 +467,10 @@ void testApp::touchDownButtons(ofTouchEventArgs &touch){
     loadButt.touchDown(touch);
     checkButt.touchDown(touch);
     nextButt.touchDown(touch); 
+    
+    singing.touchDown(touch);
+    guide.touchDown(touch);
+    
     
 }
 //--------------------------------------------------------------

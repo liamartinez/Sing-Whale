@@ -67,6 +67,16 @@ void speakScene::setup() {
     startSingingButt.setup(); 
     startSingingButt.setImage(&buttonUp, &buttonDown);
     
+    activateGuideButt.setup(); 
+    //activateGuideButt.setLabel("activate", &whitneySemiBold22);
+    activateGuideButt.setSize(100, 100);
+    
+    switchButt.setSize(100, 100);
+    switchOn = false; 
+    
+    for (int i = 0; i < SONG_TOTAL_SCENES - 2; i++) {
+        layla[i].loadSound("sounds/" + ofToString(i) + ".caf");
+    }
     
 }
 
@@ -109,20 +119,26 @@ void speakScene::update() {
     }
     
     //if the song is rotated in the right place, its switched on
-    if (songMenu.activate) switchOn = true; 
+    if (songMenu.activate) wSong.drawWords();
+    cout << "ACTIVATE? " + ofToString(songMenu.activate) << endl; 
     
     //set the song!
     if (switchOn) {
         switchOn = false; 
         wSong.setSong(songMenu.getSongPressed());   
+        layla[songMenu.getSongPressed()].play();
     } 
-    
     
     if (songMenu.poked) {
         wSong.letsReset(); 
         wSong.reset = true;
         songMenu.poked = false; 
+        for (int i = 0; i < SONG_TOTAL_SCENES -2; i++) {
+            layla[i].stop();
+        }
     }
+    
+    cout << "SWITCHON? " + ofToString(switchOn) << endl;  
 
 }
 
@@ -145,6 +161,8 @@ void speakScene::deactivate() {
 //------------------------------------------------------------------
 void speakScene::draw() {
     
+    activateGuideButt.draw(200, ofGetHeight()-150); 
+    
     ofPushMatrix(); 
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();
@@ -154,6 +172,8 @@ void speakScene::draw() {
     ofPushMatrix(); 
     ofTranslate(300, 30, -130);
     wSong.draw(); 
+    //wSong.drawWords(); 
+    ofDrawBitmapString (songMenu.phrases[songMenu.currentSong], 500, 500);
     ofPopMatrix(); 
     
     ofEnableAlphaBlending(); 
@@ -174,6 +194,7 @@ void speakScene::draw() {
 
 
     startSingingButt.draw (30, ofGetHeight() - 200); 
+    switchButt.draw(200, ofGetHeight() - 150); 
     
 }
 
@@ -193,6 +214,8 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
         startSingingButt.touchDown(touch);
     }
+    activateGuideButt.touchDown(touch);
+    switchButt.touchDown(touch);
 }
 
 
@@ -246,7 +269,15 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
         startSingingButt.touchUp(touch);
     }
     
-
+    if (activateGuideButt.isPressed()) {
+        cout << "OK GO!" << endl; 
+    }
+    
+    if (switchButt.isPressed()) switchOn = true; 
+    
+    
+    activateGuideButt.touchUp(touch);
+    switchButt.touchUp(touch);
     
 }
 

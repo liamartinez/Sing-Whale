@@ -57,7 +57,7 @@ void dorwing::draw() {
     
     //make a variable to enable/disable this 
     
-    /*
+    
     // show a faint the non-curve version of the same polygon:
     ofEnableAlphaBlending();
     ofNoFill();
@@ -87,7 +87,7 @@ void dorwing::draw() {
         
         ofSetColor(0,0,0,80);
     }
-    */
+   
 
     
 }
@@ -95,11 +95,14 @@ void dorwing::draw() {
 //--------------------------------------------------------------
 
 void dorwing::update() {
+    //want to see it float? 
+    /*
     if (songPoints.size() !=0) {
         for (int i = 0; i < songPoints.size(); i++) {
            songPoints[i].pos.y = songPoints[i].pos.y + songPoints[i].floatValue;  
         }
     }
+     */
 }
 
 //--------------------------------------------------------------

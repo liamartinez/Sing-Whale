@@ -91,7 +91,11 @@ public:
     ofImage menuBG; 
 
     baseButton      startSingingButt; 
+    baseButton      activateGuideButt; 
+    baseButton      switchButt; 
 
+    //layla sounds
+    ofSoundPlayer layla[SONG_TOTAL_SCENES - 2]; 
     
 private:
     

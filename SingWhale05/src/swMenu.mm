@@ -43,13 +43,19 @@ void swMenu::setup() {
     labels[MENU_TWO]        = "Burp";       //put text on the menu
     labels[MENU_THREE]      = "Sleep";       //put text on the menu
     
-    /*
-    //Set Phrases
-    phrases[MENU_ONE]        = "Would you like a carrot?";           //put text on the menu
-    phrases[MENU_TWO]        = "Can you burp really loud?";       //put text on the menu
-    phrases[MENU_THREE]      = "It's time for bed.";       //put text on the menu
-    */
     
+    //Set Phrases
+    phrases[MENU_ZERO]       = "I have a gift for you!";   
+    phrases[MENU_ONE]        = "What is your favorite color?";          
+    phrases[MENU_TWO]        = "Do you believe in ghosts?";  
+    phrases[MENU_THREE]      = "Are you ready for bed?";  
+    phrases[MENU_FOUR]       = "Look! A carrot!";  
+    phrases[MENU_FIVE]       = "Can you burp really loud?";
+    phrases[MENU_SIX]        = "Are you ready for bed?";
+    phrases[MENU_SEVEN]      = "I like stars.";
+    phrases[MENU_EIGHT]      = "Do you like tacos?";
+    phrases[MENU_NINE]       = "Where is your mom?";
+
     //Create Buttons
     
     ofColor bgOffColor, bgOnColor;                      //color of button when touch down
@@ -59,9 +65,10 @@ void swMenu::setup() {
     bgOnColor.a = 50;                                   //draw 50% of black when touching
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
-        //buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
+        buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
         buttons[i].setImage(&icons[i]);
-        //buttons[i].setPhrase(phrases[i], &swAssets->nevis22);        buttons[i].setSize(MENU_BTN_W, rect.height);
+        //buttons[i].setPhrase(phrases[i], &swAssets->nevis22); 
+        //buttons[i].setSize(MENU_BTN_W, rect.height);
         //buttons[i].setColor(bgOffColor, bgOnColor);
         //disableBG();
     }
@@ -70,11 +77,6 @@ void swMenu::setup() {
     carrot.loadImage("carrot.png");   
     wheel.loadImage("circle.png");
     Tweenzor::init();  
-    
-
-
-    
-
 }
 
 
@@ -110,12 +112,14 @@ void swMenu::update() {
         //activate the background? 
         //if (buttons[i].rLocBG.y > 750 && buttons[i].rLocBG.y < 900 && buttons[i].rLocBG.x > 0) {
         
-        if (buttons[i].rLoc.y > 590 && buttons[i].rLoc.y < 660 && buttons[i].rLoc.x > 200) {
+        //(200, ofGetHeight()-150, 100, 100); 
+        
+        activateArea.set(200, ofGetHeight()-150, 100, 100); 
+        
+        if (buttons[i].rLoc.y > activateArea.y - (activateArea.height/2) && buttons[i].rLoc.y < activateArea.y + (activateArea.height/2) && buttons[i].rLoc.x > activateArea.x) {
             
             buttons[i].activated = true; 
-            
-            //ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
-            
+
             //make that the current song, only if it wasn't the last song.
             songPressed = i; 
             currentSong = i; 
@@ -143,7 +147,7 @@ void swMenu::draw() {
     //rotate the wheel
     ofPushMatrix();  
         ofTranslate(0, ofGetHeight()); 
-        ofRotate(newAngle + 5, axis.x, axis.y ,axis.z);  
+        ofRotate(newAngle+5, axis.x, axis.y ,axis.z);  //+5 to make it slightly different
         ofEnableAlphaBlending();
 
     for (int i = 0; i < MENU_TOTAL; i++) {
@@ -172,19 +176,20 @@ void swMenu::draw() {
     
     transRing.set(200, ofGetHeight() - 250);
     transObj.set(120, 100);
-    
+
     ofPushMatrix(); 
         ofTranslate(transRing.x, transRing.y); 
 
         ofRotate(newAngle, axis.x, axis.y ,axis.z);  
         ofEnableAlphaBlending();
 
-    
             for (int i = 0; i < MENU_TOTAL; i++) {
                 float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
-        
+                //saving in the class so we can access it later
+                buttons[i].theta = theta; 
+                
                 ofPushMatrix(); 
-                ofRotate (theta); 
+                ofRotate (buttons[i].theta); 
                 ofTranslate(transObj.x, transObj.y);
 
                 //get the modelview coordinates for this location
@@ -200,8 +205,6 @@ void swMenu::draw() {
                 
                 ofPopMatrix(); 
     }
-    
-    
 
         ofDisableAlphaBlending();
     ofPopMatrix(); 
@@ -210,35 +213,28 @@ void swMenu::draw() {
 
     //draw everything according to translated values
     for (int i = 0; i < MENU_TOTAL; i++) {
-        
-        ofEnableAlphaBlending();
-        if (buttons[i].activated) {
-            ofSetColor(255);
-        } else {
-            ofSetColor(200);
-        }
-        
+                
+        /*
         //the wheel is for the 2nd rotation, in case you want that effect
-        //wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
+        ofEnableAlphaBlending();
+        wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
         ofDisableAlphaBlending();
+         */
         
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
     
 
-    
-
-    /*
-    ofDrawBitmapString("ANGLE " + ofToString(angle), 700, ofGetHeight() - 450);
-    ofDrawBitmapString("NEW ANGLE " + ofToString(newAngle), 700, ofGetHeight() - 480);
-     */
-    
-    /* //for debugging the active touch areas for the ring
-    ofNoFill(); 
-    ofRect(0, (transRing.y - 100), transRing.x + transObj.x + 100,  (transRing.y)); 
-    ofRect(50, transRing.y + 100, (transRing.x + transObj.x) -150, transRing.y + 100);
-     */
+    drawActiveBox(); 
         
+}
+
+
+//--------------------------------------------------------------
+void swMenu::drawActiveBox(){
+    
+    ofNoFill();
+    ofRect(activateArea); 
 }
 
 //--------------------------------------------------------------
@@ -266,17 +262,13 @@ int swMenu::drawSeparatorLine(int x) {
 
 //--------------------------------------------------------------
 void swMenu::touchDown(ofTouchEventArgs &touch){
+    
     lastMouse = ofVec2f(touch.x, touch.y);  
-    
-    
-
 }
 
 
 //--------------------------------------------------------------
 void swMenu::touchMoved(ofTouchEventArgs &touch){
-
-    
     
     //set the outside/inside bounds
     ringBounds.set(0, (transRing.y - 100), transRing.x + transObj.x + 100,  (transRing.y));
@@ -313,11 +305,14 @@ void swMenu::touchUp(ofTouchEventArgs &touch){
     
     }
 
+
+
 //--------------------------------------------------------
 void swMenu::bounce() {
     
     tweenDone = false; 
     
+    /*
     
     float distToGoal; 
     
@@ -335,12 +330,14 @@ void swMenu::bounce() {
     futureVal = futureVal*-1; 
     
     
-    cout << "FUTURE VAL " << futureVal << endl; 
+    */
     
-    Tweenzor::add(&future, 0, futureVal, 0.f, 1.5f, EASE_OUT_ELASTIC);
-    
+    future = 20; 
+    Tweenzor::add(&future, 0, future, 0.f, 1.5f, EASE_OUT_ELASTIC);
     Tweenzor::addCompleteListener( Tweenzor::getTween(&future), this, &swMenu::onComplete);
 
+    
+    
     
 }
                        
@@ -348,4 +345,47 @@ void swMenu::bounce() {
 //-------------------------------------------------------------------
 int swMenu::getSongPressed() {
     return songPressed; 
+}
+
+//--------------------------------------------------------------------
+void swMenu::debugText() {
+    
+    //lets see the individual rotation values
+    
+     ofSetColor(0);
+     
+     ofDrawBitmapString("NEWANGLE " + ofToString(newAngle), 700, ofGetHeight() - 480);
+     for (int i = 0; i < MENU_TOTAL; i++) {
+     float thetaPlusAngle = newAngle + buttons[i].theta; 
+     thetaPlusAngle = ofWrapDegrees(thetaPlusAngle, 0, 360);
+     //if (thetaPlusAngle > 360) thetaPlusAngle = thetaPlusAngle - 360; 
+     //float thetaPlusAngle = ofAngleDifferenceDegrees(buttons[i].theta, 50);
+     ofDrawBitmapString("ITEM " + ofToString(i) + " THETA " + ofToString(buttons[i].theta) + " ANGLE PLUS THETA " + ofToString(thetaPlusAngle) , 700, ofGetHeight() - 450 + (i*20));
+     }
+     
+    
+    /*
+     if i is activated, this is my current theta
+     current theta has to be ideal theta
+     so future is ideal theta - current theta.
+     
+     
+     
+     newAngle = newAngle + 
+     */
+    
+    
+    
+     ofDrawBitmapString("ANGLE " + ofToString(angle), 700, ofGetHeight() - 450);
+     ofDrawBitmapString("NEW ANGLE " + ofToString(newAngle), 700, ofGetHeight() - 480);
+     
+    
+    //for debugging the active touch areas for the ring
+     ofNoFill(); 
+     ofRect(0, (transRing.y - 100), transRing.x + transObj.x + 100,  (transRing.y)); 
+     ofRect(50, transRing.y + 100, (transRing.x + transObj.x) -150, transRing.y + 100);
+     
+    
+    
+    //ofDrawBitmapString("ACTIVATE " + ofToString(i) + " " + buttons[i].getLabel() + " " + ofToString(activate), 700, ofGetHeight() - 400 + (i*20));
 }

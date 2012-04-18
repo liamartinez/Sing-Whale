@@ -196,10 +196,6 @@ void whaleSong::draw(){
         ofSetColor(0, 90, 170, 100);
         singing.setWriggleOn(true);
         singing.draw(); 
-    
-    //draw the phrase
-    ofSetColor(50);
-    if (whichSong != -1) swAssets->nevis22.drawString(songs[whichSong].songWords, 100, 10);
 
         ofDisableAlphaBlending(); 
     ofPopMatrix();
@@ -208,6 +204,16 @@ void whaleSong::draw(){
     ofSetColor(232, 58, 37);
     //ofDrawBitmapString(message, 300, 300);
 }
+
+//--------------------------------------------------------------
+
+void whaleSong::drawWords () {
+
+    //draw the phrase
+    ofSetColor(50);
+    if (whichSong != -1) swAssets->nevis48.drawString(songs[whichSong].songWords, 100, 10);
+}
+
 //--------------------------------------------------------------
 void whaleSong::exit(){
     

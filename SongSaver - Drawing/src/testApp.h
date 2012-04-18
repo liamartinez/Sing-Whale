@@ -10,7 +10,7 @@
 #include "song.h"
 
 #define NUMREADINGS 10
-#define SAMPLESIZE 100
+#define SAMPLESIZE 70
 #define THRESHOLD 50 
 
 class testApp : public ofxiPhoneApp {
@@ -86,7 +86,7 @@ public:
     
     //saving
     void            saveSong(int numSong); 
-    void            loadSong(); 
+    void            loadSong(int numSong_); 
     int             numberOfSongs; 
     vector<vector<int> >     songCount; 
     int             numSong; //counter outside
@@ -96,6 +96,9 @@ public:
     //checking
     bool            checkSong(); 
     string          message; 
+    
+    //keyboard
+    ofxiPhoneKeyboard * keyboard;
 
 };
 

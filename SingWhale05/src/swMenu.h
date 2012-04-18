@@ -17,9 +17,10 @@
 #include "ofxTweenzor.h"
 #include "Tweenzor.h"
 
-#define DIVISOR 20; 
+#define DIVISOR 16; 
 
 enum buttonTypes { //fill this with the different words he can say. 
+    MENU_ZERO,
     MENU_ONE,
     MENU_TWO,
     MENU_THREE,
@@ -29,7 +30,6 @@ enum buttonTypes { //fill this with the different words he can say.
     MENU_SEVEN, 
     MENU_EIGHT, 
     MENU_NINE,
-    MENU_TEN, 
     MENU_TOTAL
 };
 
@@ -103,6 +103,11 @@ public:
         
     void bounce (); 
     bool tweenDone; 
+    
+    void drawActiveBox(); 
+    ofRectangle activateArea; 
+    
+    void debugText(); 
     
 
 

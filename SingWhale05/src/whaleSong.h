@@ -135,10 +135,12 @@ public:
     //marker for end
     bool            atEnd; 
     
-    //phrases
+    //phrases ???! 
     void setPhrases(); 
     string phrases[20]; //20 is the max.
     
+    //draw just the words
+    void            drawWords(); 
     
     
 };
