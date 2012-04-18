@@ -83,28 +83,29 @@ public:
     baseButton      showSongButt; 
     
     bool            switchOn; 
+    bool            drawWords;
         
     //buttons and antenna
     ofImage buttonUp, buttonDown; 
     ofImage antenna; 
     ofImage waves[3]; 
     ofImage menuBG; 
+    int waveNum; 
 
     baseButton      startSingingButt; 
     baseButton      activateGuideButt; 
     baseButton      switchButt; 
+    
+    ofRectangle     guideArea; 
 
     //layla sounds
     ofSoundPlayer layla[SONG_TOTAL_SCENES - 2]; 
+    ofSoundPlayer test; 
+    
+    bool           loadMe; 
     
 private:
-    
-    //ofImage speakScreen; //lia - replace pictures here. 
-    /*
-     ofImage homeScreen;
-     ofImage postit; 
-     */
-    
+
     
 };
 

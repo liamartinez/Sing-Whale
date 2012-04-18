@@ -206,13 +206,14 @@ void whaleSong::draw(){
 }
 
 //--------------------------------------------------------------
-
+/*
 void whaleSong::drawWords () {
 
     //draw the phrase
     ofSetColor(50);
     if (whichSong != -1) swAssets->nevis48.drawString(songs[whichSong].songWords, 100, 10);
 }
+ */
 
 //--------------------------------------------------------------
 void whaleSong::exit(){
@@ -398,9 +399,9 @@ void whaleSong::setSong(int whichSong_){
     whichSong = whichSong_; 
     
     //set the tweenzor start point
-    songLoc.y = ofGetHeight() + 50; 
+    songLoc.y = ofGetHeight() - 40; 
 
-    Tweenzor::add (&songLoc.y, songLoc.y, songLoc.y - songHeight,  0.f, 2.f, EASE_OUT_QUAD); 
+    Tweenzor::add (&songLoc.y, songLoc.y, songLoc.y - songHeight,  0.f, 3.f, EASE_OUT_QUAD); 
     
     //lets go!
     for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){

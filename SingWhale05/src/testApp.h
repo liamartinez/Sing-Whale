@@ -45,7 +45,7 @@ public:
     swSceneManager* swSM;
     swAssetManager* swAssets;
     
-
+    ofSoundPlayer test; 
     //int counterVariable; 
     
 };

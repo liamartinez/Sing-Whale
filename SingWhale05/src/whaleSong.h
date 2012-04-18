@@ -140,7 +140,7 @@ public:
     string phrases[20]; //20 is the max.
     
     //draw just the words
-    void            drawWords(); 
+    //void            drawWords(); 
     
     
 };

@@ -19,8 +19,12 @@ void testApp::setup(){
 	
 	//ofBackground(127,127,127);
     
+    
     //Load Assets
     swAssets = swAssetManager::getInstance();
+    
+    ofSoundStreamSetup(0,1, this, 44100, 512, 4);/* Call this last ! */
+
     if(swAssets->loadData()) {
         swAssets->loadFonts();
         
@@ -44,8 +48,9 @@ void testApp::setup(){
         cout << "Could not load the data!" << endl;
     }
 
-    ofSoundStreamSetup(0,1, this, 44100, 512, 4);/* Call this last ! */
     
+    
+    //test.loadSound ("sounds/1.caf");
     //initialize the listener
     //listener *listen =new listener(this); 
     //counterVariable = 10; 
