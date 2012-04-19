@@ -103,6 +103,14 @@ public:
     ofSoundPlayer test; 
     
     bool           loadMe; 
+    bool           youSing; 
+    float           singWordSize; 
+    float           newSize; 
+    
+    void    onComplete(float* arg);
+    
+    ofSoundPlayer correct, incorrect; 
+   
     
 private:
 

@@ -11,7 +11,7 @@
 
 Particle::Particle() {
 	acc = ofPoint(0,0);
-    r = 3.0;
+    r = 15.0;
     timer = 30.0;
     maxspeed = 20.0;
 	mass = 1.0;
@@ -35,11 +35,13 @@ void Particle::draw() {
 	
 	ofPushMatrix();
 	ofTranslate(loc.x, loc.y);
-	ofEnableAlphaBlending();
-	ofFill();
-	ofSetColor(93, 203, 184, timer);
+	//ofEnableAlphaBlending();
+    ofSetLineWidth(4);
+	ofNoFill();
+	//ofSetColor(93, 203, 184, timer);
+    ofSetColor(40); 
 	ofCircle(0, 0, r);
-	ofSetColor(255, 0, 0, timer);
+	//ofSetColor(255, 0, 0, timer);
 	//ofLine(0, 0, vel.x, vel.y);
 	ofPopMatrix();
 }

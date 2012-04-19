@@ -12,6 +12,9 @@
 
 #include "speakScene.h"
 #include "baseButton.h"
+#include "Boid.h"
+#include "Particle.h"
+#include "ParticleSystem.h"
 
 enum {
     SONG_FIVE_FIRST,
@@ -32,6 +35,11 @@ public:
     void touchMoved(ofTouchEventArgs &touch);
     void touchUp(ofTouchEventArgs &touch);
     void touchDoubleTap(ofTouchEventArgs &touch);
+    
+     //particles
+     bool        blowHoleOn; 
+    ParticleSystem ps;
+    ofPoint gravity;
     
 private:
     

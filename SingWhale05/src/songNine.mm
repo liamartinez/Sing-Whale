@@ -46,6 +46,12 @@ void songNine::activate() {
     cout << "Activate Song Nine" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
+    momStart.set(0- songNineMom.getWidth()*3, 0);
+    
+    mom.loadSound("sounds/mom.caf");
+ 
+    
+    
     
 }
 
@@ -56,6 +62,8 @@ void songNine::deactivate() {
     for (int i = 0; i < SONG_NINE_TOTAL; i++) {
         songNine[i].clear(); 
     }
+    mom.stop();
+    //mom.unloadSound(); 
     
 }
 
@@ -83,7 +91,20 @@ void songNine::draw() {
             break;
             
         case SONG_NINE_THIRD:
-            songNine[SONG_NINE_THIRD].draw(0,0);             
+            
+            if (!mom.getIsPlaying()) mom.play(); 
+            
+            ofPushMatrix(); 
+            ofTranslate( momStart.x, -370); 
+            ofScale(3, 3);
+            momStart.x = momStart.x +4; 
+            songNineMom.draw(0,0); 
+            ofPopMatrix();
+            
+            songNine[SONG_NINE_THIRD].draw(0,0);  
+            
+            
+            
             break;
     }
     

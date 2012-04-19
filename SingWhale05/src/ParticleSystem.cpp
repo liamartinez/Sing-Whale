@@ -11,7 +11,7 @@
 
 ParticleSystem::ParticleSystem() {
 	origin.x = ofGetWidth()/2;
-	origin.y = ofGetHeight()/2;
+	origin.y = 200;
 }
 
 void ParticleSystem::applyForce(ofPoint force) {

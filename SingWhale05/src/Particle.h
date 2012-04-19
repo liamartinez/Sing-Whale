@@ -29,6 +29,8 @@ public:
 	
 	void applyForce(ofPoint force);
 	bool dead();
+    
+    ofImage bubble; 
 };
 
 #endif

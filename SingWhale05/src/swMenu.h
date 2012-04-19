@@ -109,6 +109,8 @@ public:
     
     void debugText(); 
     
+    ofSoundPlayer ppput; 
+    
 
 
     

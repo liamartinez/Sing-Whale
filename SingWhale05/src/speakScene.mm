@@ -60,9 +60,11 @@ void speakScene::setup() {
     for (int i = 0; i < 3; i++) {
         waves[i].loadImage ("images/antenna_waves-" + ofToString(i) + ".png"); 
     }
-    menuBG.loadImage ("images/menuBG3.png"); 
+    menuBG.loadImage ("images/menuBG5.png"); 
     
     startSingingButt.setup(); 
+    startSingingButt.setSize(50, 50);
+    //startSingingButt.setLabel("x", &swAssets->nevis48);
     startSingingButt.setImage(&buttonUp, &buttonDown);
     
     activateGuideButt.setup(); 
@@ -77,18 +79,41 @@ void speakScene::setup() {
         layla[i].loadSound("sounds/" + ofToString(i) + ".caf");
     }
     
-    //test.loadSound ("sounds/1.caf"); 
+    correct.loadSound("sounds/bubbles.caf");
+    incorrect.loadSound("sounds/tone.caf");
+    
+
+
+    //Tweenzor::init();
 
     waveNum = 0; 
+    singWordSize = 1;
+
+    Tweenzor::add(&singWordSize, singWordSize,0.7f, 0.f, 0.6f, EASE_IN_OUT_QUAD);
+    Tweenzor::getTween( &singWordSize )->setRepeat( 5000, true ); 
+
+    Tweenzor::addCompleteListener( Tweenzor::getTween(&singWordSize), this, &speakScene::onComplete);
+
 }
+
+//--------------------------------------------------------------
+// this function is called on when the tween is complete //
+void speakScene::onComplete(float* arg) {
+
+    Tweenzor::add(&singWordSize, singWordSize,0.7f, 0.f, 0.6f, EASE_IN_OUT_QUAD);
+	
+	// add the complete listener again so that it will fire again, creating a loop //
+  Tweenzor::addCompleteListener( Tweenzor::getTween(&singWordSize), this, &speakScene::onComplete);
+
+}
+
 
 
 
 //------------------------------------------------------------------
 void speakScene::update() {
     
-    
-    
+
     //Tweenzor::update(ofGetElapsedTimeMillis());
     
     if(songSM->getCurSceneChanged()) {
@@ -111,11 +136,13 @@ void speakScene::update() {
         if (wSong.correct) {
             songSM->setCurScene(songMenu.getSongPressed());
             songs[songSM->getCurScene()]->activate();
+            correct.play();
             wSong.checked = false; 
             cout << "I THINK ITS RIGHT " << endl ;
         } else {
             songSM->setCurScene(SONG_WRONG);  
             songs[songSM->getCurScene()]->activate();
+            incorrect.play();
             wSong.checked = false;
             cout << "I THINK ITS WRONG " << endl ;
         }
@@ -129,14 +156,22 @@ void speakScene::update() {
     //set the song!
     if (switchOn && !drawWords) {
         switchOn = false; 
-        cout << "SET NOW" << endl; 
         wSong.setSong(songMenu.getSongPressed());   
         layla[songMenu.getSongPressed()].play();
+
     } 
+
+    //if at the end, flash the "SING!" thing
+    if (layla[songMenu.getSongPressed()].getPosition() == 1) {
+        youSing = true; 
+    } else {
+        youSing = false; 
+    }
     
     if (drawWords) {
         layla[songMenu.getSongPressed()].stop();
-    }
+    } 
+    
     
     if (songMenu.poked) {
         switchOn = false;
@@ -172,6 +207,13 @@ void speakScene::deactivate() {
 void speakScene::draw() {
     
     activateGuideButt.draw(200, ofGetHeight()-150); 
+    guideArea.set (310, ofGetHeight() - 230, 700, 200); 
+    ofNoFill();
+    //ofRect(guideArea); 
+    switchButt.setSize(guideArea.width, guideArea.height);
+    ofSetColor(50); 
+    switchButt.draw(guideArea.x, guideArea.y); 
+
     
     ofPushMatrix(); 
     if(!songSM->getCurSceneChanged(false)) {
@@ -184,7 +226,7 @@ void speakScene::draw() {
         swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 20 ,guideArea.y + guideArea.height/3);
     } else {
         ofPushMatrix(); 
-        ofTranslate(300, 30, -130);
+        ofTranslate(300, 60, -130);
         wSong.draw(); 
         ofPopMatrix(); 
     }
@@ -197,8 +239,9 @@ void speakScene::draw() {
     //flashing antenna    
     bool on = true; 
     if (wSong.begin) {
+        for (int i = 0; i < 3; i++) {
         if (ofGetFrameNum() %3 ==0) {
-            if (on) waves[waveNum].draw(ofGetWidth() - 230, ofGetHeight() - 400);
+            if (on) waves[i].draw(ofGetWidth() - 230, 400);
             on = !on; 
             /*
              if (waveNum < 3) {
@@ -209,18 +252,49 @@ void speakScene::draw() {
              cout << waveNum << endl; 
              */
         }
+        }
     }
     
     ofDisableAlphaBlending();
     
-    songMenu.draw(); 
-    if (showSongButtons) wSong.drawButtons();
-    startSingingButt.draw (30, ofGetHeight() - 200); 
     
-    guideArea.set (310, ofGetHeight() - 160, 700, 130); 
-    ofRect(guideArea); 
-    switchButt.setSize(guideArea.width, guideArea.height);
-    switchButt.draw(guideArea.x, guideArea.y); 
+
+    //fix this mess
+    songMenu.draw(); 
+    
+    startSingingButt.draw (45, ofGetHeight() - 200); 
+    if (showSongButtons) wSong.drawButtons();
+    
+
+
+    //singWordSize = 100; 
+
+    //cout << "WORD SIZE " <<  singWordSize << endl;
+    
+    //if switched on and layla is finished, blink "sing" button
+    cout << "you sing? " << youSing << endl; 
+    if (youSing && !wSong.begin )  {
+        newSize = singWordSize; 
+        ofPushMatrix(); 
+        ofTranslate(115, ofGetHeight() - 115);
+        ofPushMatrix(); 
+        ofScale(newSize, newSize); 
+        ofTranslate(-100, -100);
+        
+        //startSingingButt.draw(0,0); 
+        ofSetColor(200, 75, 90);
+        ofPushMatrix(); 
+        ofTranslate(65, 50);
+        swAssets->nevis22.drawString (" press to", 0,0); 
+        swAssets->nevis48.drawString ("SING!", 0,20); 
+        ofPopMatrix(); 
+        ofPopMatrix(); 
+        ofPopMatrix(); 
+    } else {
+        newSize = 1; 
+    }
+    
+    ofNoFill();
 
 }
 
@@ -283,6 +357,7 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
 
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
         if (startSingingButt.isPressed()) {
+            youSing = false; 
             if (wSong.atEnd) {
                 wSong.reset = true;
                 wSong.begin = true; 
@@ -304,6 +379,7 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
         cout << "PRESSED *********" << endl; 
         switchOn = true;
         drawWords = !drawWords;
+
     }
 
     activateGuideButt.touchUp(touch);

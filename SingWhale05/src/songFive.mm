@@ -22,8 +22,19 @@ void songFive::setup() {
 void songFive::update() {
     switch(mgr.getCurScene()) {
         case SONG_FIVE_FIRST:
-            theWhale.update();
-            break;            
+            //theWhale.update();
+            break;      
+        case SONG_FIVE_SECOND:
+            //particles
+            if (blowHoleOn) {
+                ps.applyForce(gravity);
+                ps.update();
+                
+                for(int i=0; i<2; i++) {
+                    ps.addParticle(ofGetWidth()/2, 165);
+                }
+            }
+            break; 
     }
 }
 
@@ -43,6 +54,10 @@ void songFive::activate() {
     
     button.setPos(0, 0);
     button.setSize(ofGetWidth(), ofGetHeight()-300);
+    
+    //particles
+    gravity.y = 0.2;	
+    blowHoleOn = true; 
 }
 
 //------------------------------------------------------------------
@@ -53,6 +68,7 @@ void songFive::deactivate() {
         songFive[i].clear();  
     }
     
+    blowHoleOn = false; 
 }
 
 
@@ -73,7 +89,11 @@ void songFive::draw() {
             break;
             
         case SONG_FIVE_SECOND:
-            songFive[SONG_FIVE_SECOND].draw(0,0);             
+            ofEnableAlphaBlending(); 
+            ofSetColor(255, 255, 255);
+            if (blowHoleOn) ps.draw();
+            songFive[SONG_FIVE_SECOND].draw(0,0);   
+            ofDisableAlphaBlending(); 
             break;
     }
     ofDisableAlphaBlending();

@@ -51,7 +51,7 @@ void swMenu::setup() {
     phrases[MENU_THREE]      = "Are you ready for bed?";  
     phrases[MENU_FOUR]       = "Look! A carrot!";  
     phrases[MENU_FIVE]       = "Can you burp really loud?";
-    phrases[MENU_SIX]        = "Are you ready for bed?";
+    phrases[MENU_SIX]        = "SHARK! I see a SHARK!";
     phrases[MENU_SEVEN]      = "I like stars.";
     phrases[MENU_EIGHT]      = "Do you like tacos?";
     phrases[MENU_NINE]       = "Where is your mom?";
@@ -65,7 +65,7 @@ void swMenu::setup() {
     bgOnColor.a = 50;                                   //draw 50% of black when touching
     
     for(int i=0; i<MENU_TOTAL; i++) {                               //
-        buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
+        //buttons[i].setLabel(ofToString(i), &swAssets->nevis22);
         buttons[i].setImage(&icons[i]);
         //buttons[i].setPhrase(phrases[i], &swAssets->nevis22); 
         //buttons[i].setSize(MENU_BTN_W, rect.height);
@@ -77,6 +77,9 @@ void swMenu::setup() {
     carrot.loadImage("carrot.png");   
     wheel.loadImage("circle.png");
     Tweenzor::init();  
+    
+    //sound
+    ppput.loadSound("sounds/ppput.caf");
 }
 
 
@@ -288,6 +291,8 @@ void swMenu::touchMoved(ofTouchEventArgs &touch){
     }
     
      bounce(); 
+    
+    ppput.play(); 
 }
 
 

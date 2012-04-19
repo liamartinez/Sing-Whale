@@ -33,11 +33,15 @@ public:
     void touchUp(ofTouchEventArgs &touch);
     void touchDoubleTap(ofTouchEventArgs &touch);
     
+    ofSoundPlayer mom; 
+    
 private:
     
     ofImage songNine[SONG_NINE_TOTAL];
     ofImage songNineMom; 
     baseButton button; 
+    
+    ofVec2f momStart; 
 };
 
 
