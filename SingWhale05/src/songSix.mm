@@ -36,8 +36,8 @@ void songSix::activate() {
     cout << "Activate Song Six" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
 }
 
@@ -65,15 +65,18 @@ void songSix::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_SIX_FIRST:
-            songSix[SONG_SIX_FIRST].draw(0,0);             
+            songSix[SONG_SIX_FIRST].draw(0,0);      
+            button.draw();
             break;
             
         case SONG_SIX_SECOND:
-            songSix[SONG_SIX_SECOND].draw(0,0);             
+            songSix[SONG_SIX_SECOND].draw(0,0); 
+            button.draw();
             break;
             
         case SONG_SIX_THIRD:
-            songSix[SONG_SIX_THIRD].draw(0,0);             
+            songSix[SONG_SIX_THIRD].draw(0,0);  
+            button.draw();
             break;
             
         case SONG_SIX_FOURTH:

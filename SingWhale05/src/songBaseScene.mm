@@ -28,6 +28,8 @@ songBaseScene::songBaseScene() {
     dx = (TWO_PI / period);
     theta += 0.02;
     
+    arrow.loadImage("images/arrow_right.png");
+    
     Tweenzor::init(); 
     
     Tweenzor::add(&tweenVal, 0.f, 50, 0.f, 8.f,  EASE_IN_OUT_SINE); 
@@ -58,6 +60,8 @@ void songBaseScene::update() {
 //------------------------------------------------------------------
 void songBaseScene::draw() {
     
+    
+    
     //theWhale.draw(); 
     
 }
@@ -70,6 +74,12 @@ void songBaseScene::drawCircle() {
     
 }
 
+//-----------------------------------------------------------------
+void songBaseScene::drawArrow() {
+    
+    arrow.draw(ofGetWidth() - 150, 300);
+    
+}
 //------------------------------------------------------------------
 void songBaseScene::drawGrid() {  //dont need this, but keep for now just in case. 
     

@@ -42,8 +42,8 @@ void songFour::activate() {
     cout << "Activate Song Four" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     
 }
@@ -73,7 +73,8 @@ void songFour::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_FOUR_FIRST:
-            songFour[SONG_ZERO_FIRST].draw(0,0);             
+            songFour[SONG_ZERO_FIRST].draw(0,0);   
+            button.draw();
             break;
             
         case SONG_FOUR_SECOND:

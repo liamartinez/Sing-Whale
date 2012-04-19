@@ -35,8 +35,8 @@ void songThree::activate() {
         songThree[i].loadImage("story/3-" + ofToString(i) + ".png"); 
     }
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     cout << "Activate Song Three" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
@@ -69,11 +69,13 @@ void songThree::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_THREE_FIRST:
-            songThree[SONG_THREE_FIRST].draw(0,0);             
+            songThree[SONG_THREE_FIRST].draw(0,0);   
+            button.draw();
             break;
             
         case SONG_THREE_SECOND:
-            songThree[SONG_THREE_SECOND].draw(0,0);             
+            songThree[SONG_THREE_SECOND].draw(0,0);   
+            button.draw();
             break;
             
         case SONG_THREE_THIRD:

@@ -47,8 +47,8 @@ void songTwo::activate() {
     theWhale.frownOn = true; 
     */
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
 
 
     
@@ -80,15 +80,17 @@ void songTwo::draw() {
 
     switch(mgr.getCurScene()) {
         case SONG_TWO_FIRST:
-            songTwo[SONG_TWO_FIRST].draw(0,0);             
+            songTwo[SONG_TWO_FIRST].draw(0,0);  
+            button.draw();
             break;
             
         case SONG_TWO_SECOND:
-            songTwo[SONG_TWO_SECOND].draw(0,0);             
+            songTwo[SONG_TWO_SECOND].draw(0,0);  
+            button.draw();
             break;
             
         case SONG_TWO_THIRD:
-            songTwo[SONG_TWO_THIRD].draw(0,0);             
+            songTwo[SONG_TWO_THIRD].draw(0,0);  
             break;
             
     }

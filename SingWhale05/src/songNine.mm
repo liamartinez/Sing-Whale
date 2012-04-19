@@ -37,8 +37,8 @@ void songNine::activate() {
     
     songNineMom.loadImage("story/9-mom.png");
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     //homeScreen.loadImage("images/wires-01.png");
     //button.setImage(&homeScreen,&homeScreen);
@@ -83,7 +83,8 @@ void songNine::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_NINE_FIRST:
-            songNine[SONG_NINE_FIRST].draw(0,0);             
+            songNine[SONG_NINE_FIRST].draw(0,0);     
+            button.draw();
             break;
             
         case SONG_NINE_SECOND:

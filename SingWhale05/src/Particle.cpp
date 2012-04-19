@@ -35,12 +35,14 @@ void Particle::draw() {
 	
 	ofPushMatrix();
 	ofTranslate(loc.x, loc.y);
-	//ofEnableAlphaBlending();
+	ofEnableAlphaBlending();
     ofSetLineWidth(4);
 	ofNoFill();
+    
 	//ofSetColor(93, 203, 184, timer);
     ofSetColor(40); 
 	ofCircle(0, 0, r);
+    ofSetColor(255, 255, 255);
 	//ofSetColor(255, 0, 0, timer);
 	//ofLine(0, 0, vel.x, vel.y);
 	ofPopMatrix();

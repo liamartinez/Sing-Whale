@@ -42,6 +42,7 @@ public:
     
     ofxSceneManager2 mgr;
     void drawGrid();
+    void drawArrow(); 
     
     ofImage speakScreen;
     
@@ -62,6 +63,8 @@ public:
     float       theta; 
     
     float       tweenVal; 
+    
+    ofImage arrow; 
     
 protected:
     

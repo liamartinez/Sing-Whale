@@ -49,8 +49,8 @@ void songZero::activate() {
     cout << "Activate Song Zero" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     
 }
@@ -78,19 +78,22 @@ void songZero::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_ZERO_FIRST:
-            songZero[SONG_ZERO_FIRST].draw(0,0);             
+            songZero[SONG_ZERO_FIRST].draw(0,0);    
+            button.draw();
             break;
             
         case SONG_ZERO_SECOND:
-            songZero[SONG_ZERO_SECOND].draw(0,0);             
+            songZero[SONG_ZERO_SECOND].draw(0,0);   
             break;
             
         case SONG_ZERO_THIRD:
-            songZero[SONG_ZERO_THIRD].draw(0,0);             
+            songZero[SONG_ZERO_THIRD].draw(0,0); 
+             
             break;
             
         case SONG_ZERO_FOURTH:
-            songZero[SONG_ZERO_FOURTH].draw(0,0);             
+            songZero[SONG_ZERO_FOURTH].draw(0,0);  
+            
             break;
             
         case SONG_ZERO_FIFTH:

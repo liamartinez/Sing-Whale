@@ -222,7 +222,9 @@ void speakScene::draw() {
     ofPopMatrix(); 
    
     //DRAW WORDS OR DRAW GUIDE
+    
     if (drawWords) {
+        ofSetColor(200, 75, 90);
         swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 20 ,guideArea.y + guideArea.height/3);
     } else {
         ofPushMatrix(); 
@@ -241,7 +243,7 @@ void speakScene::draw() {
     if (wSong.begin) {
         for (int i = 0; i < 3; i++) {
         if (ofGetFrameNum() %3 ==0) {
-            if (on) waves[i].draw(ofGetWidth() - 230, 400);
+            if (on) waves[i].draw(ofGetWidth() - 250, 290);
             on = !on; 
             /*
              if (waveNum < 3) {
@@ -284,7 +286,7 @@ void speakScene::draw() {
         //startSingingButt.draw(0,0); 
         ofSetColor(200, 75, 90);
         ofPushMatrix(); 
-        ofTranslate(65, 50);
+        ofTranslate(70, 80);
         swAssets->nevis22.drawString (" press to", 0,0); 
         swAssets->nevis48.drawString ("SING!", 0,20); 
         ofPopMatrix(); 

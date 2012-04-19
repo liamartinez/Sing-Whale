@@ -41,8 +41,8 @@ void songEight::activate() {
     cout << "Activate Song Eight" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     
 }
@@ -75,15 +75,18 @@ void songEight::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_EIGHT_FIRST:
-            songEight[SONG_EIGHT_FIRST].draw(0,0);             
+            songEight[SONG_EIGHT_FIRST].draw(0,0);  
+            button.draw();
             break;
             
         case SONG_EIGHT_SECOND:
-            songEight[SONG_EIGHT_SECOND].draw(0,0);             
+            songEight[SONG_EIGHT_SECOND].draw(0,0);   
+            button.draw();
             break;
             
         case SONG_EIGHT_THIRD:
-            songEight[SONG_EIGHT_THIRD].draw(0,0);             
+            songEight[SONG_EIGHT_THIRD].draw(0,0);    
+            button.draw();
             break;
             
         case SONG_EIGHT_FOURTH:

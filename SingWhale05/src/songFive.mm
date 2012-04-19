@@ -52,8 +52,8 @@ void songFive::activate() {
     cout << "Activate Song Five" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
-    button.setPos(0, 0);
-    button.setSize(ofGetWidth(), ofGetHeight()-300);
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
     
     //particles
     gravity.y = 0.2;	
@@ -85,7 +85,8 @@ void songFive::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_FIVE_FIRST:
-            songFive[SONG_FIVE_FIRST].draw(0,0);             
+            songFive[SONG_FIVE_FIRST].draw(0,0);  
+            button.draw();
             break;
             
         case SONG_FIVE_SECOND:
