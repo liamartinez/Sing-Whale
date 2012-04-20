@@ -35,6 +35,18 @@ songBaseScene::songBaseScene() {
     Tweenzor::add(&tweenVal, 0.f, 50, 0.f, 8.f,  EASE_IN_OUT_SINE); 
     Tweenzor::getTween( &tweenVal )->setRepeat( 5, true );
     
+    /*
+    for (int i = 0; i < 5; i++) {
+        songZero[i].loadImage("story/0-" + ofToString(i) + ".png"); 
+    }
+    
+    songOne.loadImage("story/1-0.png");
+    
+    for (int i = 0; i < 3; i++) {
+        songTwo[i].loadImage("story/2-" + ofToString(i) + ".png"); 
+    }
+     */
+
 }
 
 
@@ -42,6 +54,7 @@ songBaseScene::songBaseScene() {
 void songBaseScene::setup() {
     
     //setup stuff goes here. Do I need an "activate"? 
+
 
 
 }

@@ -33,6 +33,7 @@ void songTwo::update() {
 void songTwo::activate() {
     mgr.setCurScene(SONG_TWO_FIRST);
     
+    
     for (int i = 0; i < SONG_TWO_TOTAL; i++) {
         songTwo[i].loadImage("story/2-" + ofToString(i) + ".png"); 
     }

@@ -155,6 +155,7 @@ void speakScene::update() {
     
     //set the song!
     if (switchOn && !drawWords) {
+        wSong.reset = true;
         switchOn = false; 
         wSong.setSong(songMenu.getSongPressed());   
         layla[songMenu.getSongPressed()].play();
@@ -207,19 +208,36 @@ void speakScene::deactivate() {
 void speakScene::draw() {
     
     activateGuideButt.draw(200, ofGetHeight()-150); 
-    guideArea.set (310, ofGetHeight() - 230, 700, 200); 
+    guideArea.set (315, ofGetHeight() - 245, 685, 210); 
     ofNoFill();
     //ofRect(guideArea); 
+    
+
+    
+    
     switchButt.setSize(guideArea.width, guideArea.height);
     ofSetColor(50); 
     switchButt.draw(guideArea.x, guideArea.y); 
 
-    
+      
     ofPushMatrix(); 
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();
     }
     ofPopMatrix(); 
+    
+    ofFill(); 
+    //draw the song location
+    //ofEnableAlphaBlending(); 
+    ofSetColor(255, 255, 255, 100);
+    //if (layla[songMenu.getSongPressed()].getIsPlaying()) {
+    int songPos; 
+    songPos = ofMap(layla[songMenu.getSongPressed()].getPosition(), 0, 1, 0, guideArea.width);
+    //ofLine(0, ofGetHeight()/2, songPos, ofGetHeight()/2);
+    ofRect(guideArea.x, guideArea.y,songPos, guideArea.height);
+    //}
+    //ofDisableAlphaBlending();
+    ofNoFill(); 
    
     //DRAW WORDS OR DRAW GUIDE
     
@@ -261,6 +279,7 @@ void speakScene::draw() {
     
     
 
+
     //fix this mess
     songMenu.draw(); 
     
@@ -296,7 +315,8 @@ void speakScene::draw() {
         newSize = 1; 
     }
     
-    ofNoFill();
+   
+
 
 }
 
@@ -359,14 +379,19 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
 
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
         if (startSingingButt.isPressed()) {
-            youSing = false; 
-            if (wSong.atEnd) {
-                wSong.reset = true;
-                wSong.begin = true; 
-            } else {
-                wSong.begin = !wSong.begin;
+            
+            if (!drawWords) {
+                youSing = false; 
+                if (wSong.atEnd) {
+                    wSong.reset = true;
+                    wSong.begin = true; 
+                } else {
+                    wSong.begin = !wSong.begin;
+                }
             }
         }
+    } else {
+        ofDrawBitmapString("choose something to say before you sing :)", 500, 400);
     }
 
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {

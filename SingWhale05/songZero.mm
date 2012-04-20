@@ -22,7 +22,7 @@ void songZero::setup() {
 void songZero::update() {
     switch(mgr.getCurScene()) {
         case SONG_ZERO_FIRST:
-            theWhale.update();
+            //theWhale.update();
             break;            
     }
 }
@@ -43,6 +43,8 @@ void songZero::activate() {
     for (int i = 0; i < SONG_ZERO_TOTAL; i++) {
         songZero[i].loadImage("story/0-" + ofToString(i) + ".png"); 
     }
+     
+     
     
 
     
@@ -57,15 +59,19 @@ void songZero::activate() {
 
 //------------------------------------------------------------------
 void songZero::deactivate() {
+    /*
     cout << "Deactivate songZero" << endl;
     for (int i = 0; i < SONG_ZERO_TOTAL; i++) {
         songZero[i].clear();  
     }
+     */
 }
 
 
 //------------------------------------------------------------------
 void songZero::draw() {
+    
+    
     
     button.draw();
     drawGrid();

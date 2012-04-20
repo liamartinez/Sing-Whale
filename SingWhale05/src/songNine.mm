@@ -88,7 +88,8 @@ void songNine::draw() {
             break;
             
         case SONG_NINE_SECOND:
-            songNine[SONG_NINE_SECOND].draw(0,0);             
+            songNine[SONG_NINE_SECOND].draw(0,0);    
+            button.draw();
             break;
             
         case SONG_NINE_THIRD:

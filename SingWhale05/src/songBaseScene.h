@@ -15,6 +15,8 @@
 #include "ofxSceneManagerScene.h"
 #include "ofxTweenzor.h"
 
+//#include "songZero.h"
+
 #include "whaleMove.h"
 //#include "baseButton.h"
 
@@ -65,6 +67,14 @@ public:
     float       tweenVal; 
     
     ofImage arrow; 
+    
+    //scene pictures
+     /*
+    ofImage songZero[SONG_ZERO_TOTAL]; 
+   
+    ofImage songOne; 
+    ofImage songTwo[3]; 
+    */
     
 protected:
     
