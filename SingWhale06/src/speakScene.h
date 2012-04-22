@@ -92,6 +92,7 @@ public:
     ofImage antenna; 
     ofImage waves[3]; 
     ofImage menuBG; 
+    ofImage sparks;
     int waveNum; 
     ofImage lines; 
 
@@ -115,6 +116,7 @@ public:
     ofSoundPlayer correct, incorrect; 
    
     
+    int lightSize; 
 private:
 
     

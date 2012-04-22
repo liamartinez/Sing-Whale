@@ -52,7 +52,7 @@ void speakScene::setup() {
     wSong.letsReset();
     
     //buttons and antenna
-    BG.loadImage("images/BG.png");
+    BG.loadImage("story/7-BG.png");
     buttonUp.loadImage("images/button-up.png"); 
     buttonDown.loadImage("images/button-down.png");
     antenna.loadImage("images/antenna.png");
@@ -60,12 +60,14 @@ void speakScene::setup() {
         waves[i].loadImage ("images/antenna_waves-" + ofToString(i) + ".png"); 
     }
     menuBG.loadImage ("images/menuBG5.png"); 
-    lines.loadImage("images/lines.png");
+    lines.loadImage("images/linesdark.png");
+    sparks.loadImage("images/sparks.png");
     
     startSingingButt.setup(); 
-    startSingingButt.setSize(50, 50);
+    startSingingButt.setSize(150, 150);
+    startSingingButt.bColor = true; 
     //startSingingButt.setLabel("x", &swAssets->nevis48);
-    startSingingButt.setImage(&buttonUp, &buttonDown);
+    //startSingingButt.setImage(&buttonUp, &buttonDown);
     
     activateGuideButt.setup(); 
     //activateGuideButt.setLabel("activate", &whitneySemiBold22);
@@ -162,10 +164,9 @@ void speakScene::update() {
     
 
     //if at the end, flash the "SING!" thing
-    if (layla[songMenu.getSongPressed()].getPosition() == 1) {
+ if (layla[songMenu.getSongPressed()].getPosition() > .9) {
+     cout << "OVER NINE" << endl; 
         youSing = true; 
-    } else {
-        youSing = false; 
     }
         
     if (songMenu.poked) {
@@ -174,6 +175,7 @@ void speakScene::update() {
         wSong.letsReset(); 
         wSong.reset = true;
         songMenu.poked = false; 
+        youSing = false; 
         for (int i = 0; i < SONG_TOTAL_SCENES -2; i++) {
             layla[i].stop();
         }
@@ -199,7 +201,7 @@ void speakScene::draw() {
     
     BG.draw(0,0);
     
-    activateGuideButt.draw(200, ofGetHeight()-150); 
+    //activateGuideButt.draw(200, ofGetHeight()-150); 
     guideArea.set (315, ofGetHeight() - 245, 685, 210); 
     ofNoFill();
     
@@ -210,15 +212,16 @@ void speakScene::draw() {
     //DRAW WORDS AND DRAW GUIDE
 
         ofSetColor(200, 75, 90);
-        swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 20 ,guideArea.y + guideArea.height/3);
+        swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 50 ,guideArea.y + guideArea.height/2);
   
         ofPushMatrix(); 
-        ofTranslate(300, 60, -130);
+        ofTranslate(330, 100, -130);
         wSong.draw(); 
         ofPopMatrix(); 
         
         ofFill(); 
-        ofSetColor(213, 226, 234);
+        ofSetColor(64, 94, 109);
+        //ofSetColor(213, 226, 234);
     
     if (layla[songMenu.getSongPressed()].getIsPlaying()) {
         int songPos; 
@@ -228,19 +231,19 @@ void speakScene::draw() {
     }
 
     ofEnableAlphaBlending(); 
-    ofSetColor(255, 255, 255);
-    //menuBG.draw(0,-20);
-    lines.draw(0,0);
-    
 
-    
-    
+    startSingingButt.draw (70, ofGetHeight() - 150); 
+
     //flashing antenna    
     bool on = true; 
     if (wSong.begin) {
         for (int i = 0; i < 3; i++) {
             if (ofGetFrameNum() %3 ==0) {
-                if (on) waves[i].draw(ofGetWidth() - 250, 290);
+                ofEnableAlphaBlending();
+                ofSetColor(255);
+                if (on) sparks.draw(0,0);
+                ofDisableAlphaBlending();
+                //if (on) waves[i].draw(ofGetWidth() - 250, 290);
                 on = !on; 
                 /*
                  if (waveNum < 3) {
@@ -259,11 +262,21 @@ void speakScene::draw() {
     //fix this mess
     songMenu.draw(); 
     
+    /*
     startSingingButt.draw (45, ofGetHeight() - 200); 
     if (showSongButtons) wSong.drawButtons();
+     */
     
+    
+    cout << "yousing? " << youSing << endl;
+    cout << layla[songMenu.getSongPressed()].getPosition() << endl; 
     //if switched on and layla is finished, blink "sing" button
     if (youSing && !wSong.begin )  {
+        
+        lightSize = ofMap(singWordSize, .7f, 1, 100, 255);
+        songMenu.lightUp (lightSize); 
+        
+        /*
         newSize = singWordSize; 
         ofPushMatrix(); 
         ofTranslate(115, ofGetHeight() - 115);
@@ -271,7 +284,7 @@ void speakScene::draw() {
         ofScale(newSize, newSize); 
         ofTranslate(-100, -100);
         
-        //startSingingButt.draw(0,0); 
+
         ofSetColor(200, 75, 90);
         ofPushMatrix(); 
         ofTranslate(70, 80);
@@ -282,16 +295,33 @@ void speakScene::draw() {
         ofPopMatrix(); 
     } else {
         newSize = 1; 
+         
+         */
+    } else {
+        songMenu.lightUp(255);
     }
+         
+         
     
+    //the actual scene
     ofEnableAlphaBlending();
     ofSetColor(255); 
     ofPushMatrix(); 
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();
     }
-    ofPopMatrix(); 
+    ofPopMatrix();     
     ofDisableAlphaBlending();
+    
+    //lines
+    ofPushMatrix();
+    ofTranslate(40, 40);
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255);
+    //menuBG.draw(0,-20);
+    lines.draw(0,0);
+     ofDisableAlphaBlending();
+    ofPopMatrix();
     
 }
 

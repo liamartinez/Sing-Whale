@@ -34,7 +34,7 @@ void swMenu::setup() {
     
     //icons
     for (int i = 0; i < 10; i++ ) {
-        icons[i].loadImage("images/icons/whaleIcons-" + ofToString(i) + ".png");
+        icons[i].loadImage("images/iconscolor/whaleIcons-" + ofToString(i) + ".png");
         //icons[i].loadImage("carrot.png");
     }
     
@@ -76,6 +76,7 @@ void swMenu::setup() {
     //rotation
     carrot.loadImage("carrot.png");   
     wheel.loadImage("circle.png");
+    turtle.loadImage("images/turtle.png");
     Tweenzor::init();  
     
     //sound
@@ -117,7 +118,7 @@ void swMenu::update() {
         
         //(200, ofGetHeight()-150, 100, 100); 
         
-        activateArea.set(200, ofGetHeight()-150, 100, 100); 
+        activateArea.set(200, ofGetHeight()-200, 100, 100); 
         
         if (buttons[i].rLoc.y > activateArea.y - (activateArea.height/2) && buttons[i].rLoc.y < activateArea.y + (activateArea.height/2) && buttons[i].rLoc.x > activateArea.x) {
             
@@ -138,7 +139,10 @@ void swMenu::update() {
         }
     }
 }
-
+//------------------------------------------------------------------
+void swMenu::lightUp(float lightVal_) {
+    lightVal = lightVal_; 
+}
 
 //------------------------------------------------------------------
 void swMenu::draw() {
@@ -149,15 +153,21 @@ void swMenu::draw() {
    
     //rotate the wheel
     ofPushMatrix();  
-        ofTranslate(0, ofGetHeight()); 
+        ofTranslate(100, ofGetHeight() - 100); 
         ofRotate(newAngle+5, axis.x, axis.y ,axis.z);  //+5 to make it slightly different
         ofEnableAlphaBlending();
+    
+    ofSetColor(lightVal);
+    turtle.draw(-75, -100);
+    
 
     for (int i = 0; i < MENU_TOTAL; i++) {
         float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
         ofPushMatrix(); 
         ofRotate (theta); 
         ofTranslate(300, 100);
+        
+        
         
         //get the modelview coordinates for this location
         glGetFloatv(GL_MODELVIEW_MATRIX, modelview2);
@@ -177,14 +187,18 @@ void swMenu::draw() {
 
     //-------------separate matrices to make the rotations a little different
     
-    transRing.set(200, ofGetHeight() - 250);
-    transObj.set(120, 100);
+    transRing.set(150, ofGetHeight() - 250);
+    transObj.set(200, 100);
 
     ofPushMatrix(); 
         ofTranslate(transRing.x, transRing.y); 
 
         ofRotate(newAngle, axis.x, axis.y ,axis.z);  
         ofEnableAlphaBlending();
+
+
+        
+    
 
             for (int i = 0; i < MENU_TOTAL; i++) {
                 float theta = ofMap(i, 0, MENU_TOTAL, 0, 360);
@@ -227,8 +241,9 @@ void swMenu::draw() {
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
     }
     
+   
 
-    drawActiveBox(); 
+   // drawActiveBox(); 
         
 }
 

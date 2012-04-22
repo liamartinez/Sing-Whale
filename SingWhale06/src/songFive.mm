@@ -26,14 +26,18 @@ void songFive::update() {
             break;      
         case SONG_FIVE_SECOND:
             //particles
+            
             if (blowHoleOn) {
                 ps.applyForce(gravity);
                 ps.update();
                 
+                if (ofGetFrameNum() % 3 == 0){
                 for(int i=0; i<2; i++) {
                     ps.addParticle(ofGetWidth()/2, 165);
                 }
             }
+            }
+    
             break; 
     }
 }

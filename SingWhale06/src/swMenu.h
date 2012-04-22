@@ -79,6 +79,7 @@ public:
     float newAngle; 
     
     ofImage carrot; 
+    ofImage turtle; 
     
     GLfloat modelview[16];  
     ofVec3f translation;  
@@ -111,7 +112,8 @@ public:
     
     ofSoundPlayer ppput; 
     
-
+    void lightUp(float lightVal_);
+    float lightVal; 
 
     
 private:
