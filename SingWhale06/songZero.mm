@@ -1,0 +1,174 @@
+//
+//  songZero.cpp
+//  SingWhale04
+//
+//  Created by Lia Martinez on 4/14/12.
+//  Copyright (c) 2012 liamartinez.com. All rights reserved.
+//
+
+#include <iostream>
+
+#include "songZero.h" 
+
+//------------------------------------------------------------------
+void songZero::setup() {
+    
+    
+}
+
+
+
+//------------------------------------------------------------------
+void songZero::update() {
+    switch(mgr.getCurScene()) {
+        case SONG_ZERO_FIRST:
+            //theWhale.update();
+            break;            
+    }
+}
+
+//------------------------------------------------------------------
+void songZero::activate() {
+    
+    gen = ofRandom(1,2);
+    
+    if (gen == 1) {
+        mgr.setCurScene(SONG_ZERO_FIRST);
+    } else if (gen == 2){
+        mgr.setCurScene(SONG_ZERO_THIRD);
+    }
+    
+    
+    /*
+    for (int i = 0; i < SONG_ZERO_TOTAL; i++) {
+        songZero[i].loadImage("story/0-" + ofToString(i) + ".png"); 
+    }
+     */
+     
+     
+    
+
+    
+    cout << "Activate Song Zero" << endl;
+    textStart.set(ofGetWidth()-200, ofGetHeight()-600);
+    
+    button.setPos(ofGetWidth() - 150,180);
+    button.setImage(&arrow);
+    
+    
+}
+
+//------------------------------------------------------------------
+void songZero::deactivate() {
+    /*
+    cout << "Deactivate songZero" << endl;
+    for (int i = 0; i < SONG_ZERO_TOTAL; i++) {
+        songZero[i].clear();  
+    }
+     */
+}
+
+
+//------------------------------------------------------------------
+void songZero::draw() {
+    
+    
+    
+    button.draw();
+    ofTranslate(0, floatVal());    
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255); 
+    
+    string message = "";
+    //int textW = swAssets->nevis48.getStringWidth(message);
+    
+    switch(mgr.getCurScene()) {
+        case SONG_ZERO_FIRST:
+            songZeroPic[SONG_ZERO_FIRST].draw(0,0);    
+            button.draw();
+            break;
+            
+        case SONG_ZERO_SECOND:
+            songZeroPic[SONG_ZERO_SECOND].draw(0,0);   
+            break;
+            
+        case SONG_ZERO_THIRD:
+            songZeroPic[SONG_ZERO_THIRD].draw(0,0); 
+             
+            break;
+            
+        case SONG_ZERO_FOURTH:
+            songZeroPic[SONG_ZERO_FOURTH].draw(0,0);  
+            
+            break;
+            
+        case SONG_ZERO_FIFTH:
+            songZeroPic[SONG_ZERO_FIFTH].draw(0,0);             
+            break;
+            
+    }
+    
+    ofDisableAlphaBlending();
+
+    
+    //ofSetColor(0);
+    //textW = swAssets->nevis48.getStringWidth(message);
+    //swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
+    
+}
+
+
+
+
+
+//--------------------------------------------------------------
+//Event Listeners
+
+//--------------------------------------------------------------
+void songZero::touchDown(ofTouchEventArgs &touch){
+    button.touchDown(touch);
+}
+
+
+//--------------------------------------------------------------
+void songZero::touchMoved(ofTouchEventArgs &touch){
+    button.touchMoved(touch);
+}
+
+
+//--------------------------------------------------------------
+void songZero::touchUp(ofTouchEventArgs &touch){
+    //Switch Scenes
+    /*
+     if(button.isPressed()) {
+     if(mgr.getCurScene() == SONG_ONE_TOTAL-1) {
+     swSM->setCurScene(SCENE_CALL);
+     } else  {
+     mgr.setCurScene(mgr.getCurScene() + 1);      
+     }
+     }
+     button.touchUp(touch);
+     
+     */
+    
+    if(button.isPressed()) {
+        
+        if (gen == 0) {
+            if(mgr.getCurScene() < SONG_ZERO_SECOND) {
+                mgr.setCurScene(mgr.getCurScene() + 1); 
+            }
+        } else {
+            if(mgr.getCurScene() < SONG_ZERO_TOTAL < 1) {
+                mgr.setCurScene(mgr.getCurScene() + 1); 
+            }
+        }
+    }
+    button.touchUp(touch);
+}
+
+//--------------------------------------------------------------
+
+void songZero::touchDoubleTap(ofTouchEventArgs &touch){
+    //theWhale.touchDoubleTap(touch);
+    
+}
