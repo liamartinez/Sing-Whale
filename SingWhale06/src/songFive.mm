@@ -45,16 +45,7 @@ void songFive::update() {
 //------------------------------------------------------------------
 void songFive::activate() {
     mgr.setCurScene(SONG_FIVE_FIRST);
-    
-    /*
-    for (int i = 0; i < SONG_FIVE_TOTAL; i++) {
-        songFive[i].loadImage("story/5-" + ofToString(i) + ".png"); 
-    }
-     */
-    
-    //homeScreen.loadImage("images/wires-01.png");
-    //button.setImage(&homeScreen,&homeScreen);
-    
+
     cout << "Activate Song Five" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
     
@@ -64,6 +55,8 @@ void songFive::activate() {
     //particles
     gravity.y = 0.2;	
     blowHoleOn = true; 
+    
+    whaleSounds[4].play();
 }
 
 //------------------------------------------------------------------
@@ -79,28 +72,26 @@ void songFive::deactivate() {
 void songFive::draw() {
     //button.draw();
     ofTranslate(0, tweenVal);    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
-    
+
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_FIVE_FIRST:
+            
             songFivePic[SONG_FIVE_FIRST].draw(0,0);  
             button.draw();
             break;
             
         case SONG_FIVE_SECOND:
-            ofEnableAlphaBlending(); 
-            ofSetColor(255, 255, 255);
+
             if (blowHoleOn) ps.draw();
+            
             songFivePic[SONG_FIVE_SECOND].draw(0,0);   
-            ofDisableAlphaBlending(); 
+
             break;
     }
-    ofDisableAlphaBlending();
-    
+
 }
 
 

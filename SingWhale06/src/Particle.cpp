@@ -34,8 +34,9 @@ void Particle::applyForce(ofPoint force) {
 void Particle::draw() {
 	
 	ofPushMatrix();
+    ofPushStyle();
 	ofTranslate(loc.x, loc.y);
-	ofEnableAlphaBlending();
+	//ofEnableAlphaBlending();
     ofSetLineWidth(3);
 	ofFill();
     
@@ -47,6 +48,9 @@ void Particle::draw() {
 	//ofLine(0, 0, vel.x, vel.y);
 	ofPopMatrix();
     ofSetLineWidth(1);
+    //ofDisableAlphaBlending();
+    ofPopStyle();
+    
 }
 
 bool Particle::dead() {

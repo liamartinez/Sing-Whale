@@ -43,7 +43,7 @@ void songThree::activate() {
     cout << "Activate Song Three" << endl;
     textStart.set(ofGetWidth()-200, ofGetHeight()-600);
 
-    
+    whaleSounds[2].play();
 }
 
 //------------------------------------------------------------------
@@ -59,14 +59,14 @@ void songThree::draw() {
 
     //button.draw();
     ofTranslate(0, tweenVal);    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
+
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_THREE_FIRST:
+            
             songThreePic[SONG_THREE_FIRST].draw(0,0);   
             button.draw();
             break;
@@ -82,7 +82,7 @@ void songThree::draw() {
                         
     }
     
-    ofDisableAlphaBlending();
+
 
     
 }

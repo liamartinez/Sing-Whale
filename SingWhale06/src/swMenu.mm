@@ -81,6 +81,7 @@ void swMenu::setup() {
     
     //sound
     ppput.loadSound("sounds/ppput.caf");
+    
 }
 
 
@@ -157,7 +158,7 @@ void swMenu::draw() {
         ofRotate(newAngle+5, axis.x, axis.y ,axis.z);  //+5 to make it slightly different
         ofEnableAlphaBlending();
     
-    ofSetColor(lightVal);
+    ofSetColor(255, lightVal, lightVal);
     turtle.draw(-75, -100);
     
 
@@ -308,6 +309,7 @@ void swMenu::touchMoved(ofTouchEventArgs &touch){
      bounce(); 
     
     ppput.play(); 
+    ppput.setVolume(0.4f);
 }
 
 

@@ -78,6 +78,7 @@ public:
     ofImage songFourPic[2];
     ofImage songFivePic[2];
 
+    ofSoundPlayer whaleSounds[78];
     
 protected:
     

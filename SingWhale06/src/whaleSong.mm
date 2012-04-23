@@ -189,11 +189,13 @@ void whaleSong::draw(){
         ofTranslate(0, songLoc.y); //start with being hidden 
         ofEnableAlphaBlending(); 
     
-        ofSetColor(0, 120, 190, 100);
+        ofSetColor(197, 238, 252,100);
+        //ofSetColor(0, 120, 190, 100);
         guide.setWriggleOn(true);
         guide.draw(); 
     
-        ofSetColor(0, 90, 170, 100);
+        //ofSetColor(0, 90, 170, 100);
+        ofSetColor(39, 170, 225,100);
         singing.setWriggleOn(true);
         singing.draw(); 
 

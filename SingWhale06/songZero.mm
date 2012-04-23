@@ -54,7 +54,7 @@ void songZero::activate() {
     
     button.setPos(ofGetWidth() - 150,180);
     button.setImage(&arrow);
-    
+    whaleSounds[0].play();
     
 }
 
@@ -72,12 +72,7 @@ void songZero::deactivate() {
 //------------------------------------------------------------------
 void songZero::draw() {
     
-    
-    
-    button.draw();
     ofTranslate(0, floatVal());    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
@@ -94,12 +89,12 @@ void songZero::draw() {
             
         case SONG_ZERO_THIRD:
             songZeroPic[SONG_ZERO_THIRD].draw(0,0); 
-             
+             button.draw();
             break;
             
         case SONG_ZERO_FOURTH:
             songZeroPic[SONG_ZERO_FOURTH].draw(0,0);  
-            
+            button.draw();
             break;
             
         case SONG_ZERO_FIFTH:
@@ -108,8 +103,6 @@ void songZero::draw() {
             
     }
     
-    ofDisableAlphaBlending();
-
     
     //ofSetColor(0);
     //textW = swAssets->nevis48.getStringWidth(message);

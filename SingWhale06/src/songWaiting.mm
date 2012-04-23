@@ -59,8 +59,7 @@ void songWaiting::draw() {
     string message = "";
     int textW = swAssets->nevis48.getStringWidth(message);
     
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
+
     
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
@@ -75,7 +74,7 @@ void songWaiting::draw() {
             break;             
     }
     
-    ofDisableAlphaBlending();
+  
     
     ofSetColor(0);
     textW = swAssets->nevis22.getStringWidth(message);

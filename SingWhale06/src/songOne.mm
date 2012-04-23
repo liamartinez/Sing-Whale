@@ -38,7 +38,7 @@ void songOne::activate() {
     //theWhale.setup(); 
     //theWhale.smileOn = true; 
     
-    
+    whaleSounds[0].play();
     
 }
 
@@ -57,19 +57,13 @@ void songOne::draw() {
     
     switch(mgr.getCurScene()) {
         case SONG_ONE_FIRST:
-            ofEnableAlphaBlending();
-            
-            //message = "  Hi there \n funny looking"; 
+
             
             ofPushMatrix();
             ofTranslate(0, tweenVal);
             cout << "tweenval " << tweenVal << endl; 
             songOnePic.draw(0,0);
             ofPopMatrix();
-
-            ofSetColor(255, 255, 255); 
-            //homeScreen.draw (0,0);    
-            ofDisableAlphaBlending();
 
             break; 
 

@@ -44,7 +44,7 @@ void songSeven::activate() {
     for (int i = 0; i < 15; i ++) {
     
     randLoc[i].x = ofRandom(-500, ofGetWidth());
-    randLoc[i].y = ofRandom(ofGetHeight() - 200);
+    randLoc[i].y = ofRandom(- 500, ofGetHeight() - 500);
     randSize[i] = ofRandom(1300);
     randDelay[i] = ofRandom(1.f);
     randDur[i] = ofRandom(3.f, 8.f);
@@ -52,6 +52,8 @@ void songSeven::activate() {
     Tweenzor::add(&randLoc[i].y, randLoc[i].y, randLoc[i].y + randSize[i], randDelay[i], randDur[i], EASE_IN_OUT_SINE);
     Tweenzor::getTween( &randLoc[i].y )->setRepeat( 20, true );
     }
+    
+    whaleSounds[5].play();
 }
 
 //------------------------------------------------------------------
@@ -68,24 +70,22 @@ void songSeven::deactivate() {
 void songSeven::draw() {
     
     //button.draw();
-    songSevenBG.draw(0, 0);
+    //songSevenBG.draw(0, 0);
     ofTranslate(0, tweenVal);    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
+
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_SEVEN_FIRST:
+            
             songSeven.draw(0,0);   
             for (int i = 0; i < NUMJELLIES; i++) {
                 songJellies.draw(randLoc[i].x, randLoc[i].y, randSize[i], randSize[i]);
             }
             break;
     }
-    
-    ofDisableAlphaBlending();
 
     /*
     ofSetColor(0);

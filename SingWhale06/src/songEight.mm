@@ -44,7 +44,7 @@ void songEight::activate() {
     button.setPos(ofGetWidth() - 150,180);
     button.setImage(&arrow);
     
-    
+    whaleSounds[6].play();
 }
 
 //------------------------------------------------------------------
@@ -66,14 +66,14 @@ void songEight::draw() {
     
     //button.draw();
     ofTranslate(0, tweenVal);    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
+
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_EIGHT_FIRST:
+            
             songEight[SONG_EIGHT_FIRST].draw(0,0);  
             button.draw();
             break;
@@ -93,8 +93,7 @@ void songEight::draw() {
             break;
             
     }
-    
-    ofDisableAlphaBlending();
+
     
     /*
     ofSetColor(0);

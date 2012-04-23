@@ -84,6 +84,8 @@ void speakScene::setup() {
     
     correct.loadSound("sounds/bubbles.caf");
     incorrect.loadSound("sounds/tone.caf");
+    noise.loadSound("sounds/noise.caf");
+
     
     //for the animated radio waves
     //waveNum = 0; 
@@ -94,7 +96,7 @@ void speakScene::setup() {
     Tweenzor::getTween( &singWordSize )->setRepeat( 5000, true ); 
     
     Tweenzor::addCompleteListener( Tweenzor::getTween(&singWordSize), this, &speakScene::onComplete);
-    
+
 }
 
 //--------------------------------------------------------------
@@ -107,9 +109,6 @@ void speakScene::onComplete(float* arg) {
     Tweenzor::addCompleteListener( Tweenzor::getTween(&singWordSize), this, &speakScene::onComplete);
     
 }
-
-
-
 
 //------------------------------------------------------------------
 void speakScene::update() {
@@ -138,12 +137,14 @@ void speakScene::update() {
             songSM->setCurScene(songMenu.getSongPressed());
             songs[songSM->getCurScene()]->activate();
             correct.play();
+            correct.setVolume(0.3f);
             wSong.checked = false; 
             cout << "I THINK ITS RIGHT " << endl ;
         } else {
             songSM->setCurScene(SONG_WRONG);  
             songs[songSM->getCurScene()]->activate();
             incorrect.play();
+            incorrect.setVolume(0.5f);
             wSong.checked = false;
             cout << "I THINK ITS WRONG " << endl ;
         }
@@ -186,7 +187,9 @@ void speakScene::update() {
 //------------------------------------------------------------------
 void speakScene::activate() {
     cout << "Activate Speak" << endl;
-    
+    noise.setLoop(true);
+    noise.play(); 
+    noise.setVolume(0.5f);
 }
 
 //------------------------------------------------------------------
@@ -270,33 +273,12 @@ void speakScene::draw() {
     
     cout << "yousing? " << youSing << endl;
     cout << layla[songMenu.getSongPressed()].getPosition() << endl; 
-    //if switched on and layla is finished, blink "sing" button
+    //if switched on and layla is finished, the turtle strobes
     if (youSing && !wSong.begin )  {
         
         lightSize = ofMap(singWordSize, .7f, 1, 100, 255);
         songMenu.lightUp (lightSize); 
-        
-        /*
-        newSize = singWordSize; 
-        ofPushMatrix(); 
-        ofTranslate(115, ofGetHeight() - 115);
-        ofPushMatrix(); 
-        ofScale(newSize, newSize); 
-        ofTranslate(-100, -100);
-        
 
-        ofSetColor(200, 75, 90);
-        ofPushMatrix(); 
-        ofTranslate(70, 80);
-        swAssets->nevis22.drawString (" press to", 0,0); 
-        swAssets->nevis48.drawString ("SING!", 0,20); 
-        ofPopMatrix(); 
-        ofPopMatrix(); 
-        ofPopMatrix(); 
-    } else {
-        newSize = 1; 
-         
-         */
     } else {
         songMenu.lightUp(255);
     }
@@ -305,7 +287,7 @@ void speakScene::draw() {
     
     //the actual scene
     ofEnableAlphaBlending();
-    ofSetColor(255); 
+    ofSetColor(213, 226, 234); 
     ofPushMatrix(); 
     if(!songSM->getCurSceneChanged(false)) {
         songs[songSM->getCurScene()]->draw();

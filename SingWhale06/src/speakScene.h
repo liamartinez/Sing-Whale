@@ -114,6 +114,8 @@ public:
     void    onComplete(float* arg);
     
     ofSoundPlayer correct, incorrect; 
+    ofSoundPlayer noise; 
+    ofSoundPlayer whaleSounds[6];
    
     
     int lightSize; 

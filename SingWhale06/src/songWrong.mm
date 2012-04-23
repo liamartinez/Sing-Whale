@@ -52,6 +52,7 @@ void songWrong::activate() {
     textStart.set(ofGetWidth()-200, ofGetHeight()-460);
     dontSpeakNum = (int)ofRandom(5); 
     
+    whaleSounds[8].play();
 
     
     
@@ -68,11 +69,7 @@ void songWrong::deactivate() {
 
 //------------------------------------------------------------------
 void songWrong::draw() {
-    
 
-    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
     string message = "";
     int textW = swAssets->nevis48.getStringWidth(message);
     
@@ -88,8 +85,7 @@ void songWrong::draw() {
             break;
             
     }
-    
-    ofDisableAlphaBlending();
+
     ofSetColor(0);
     textW = swAssets->nevis22.getStringWidth(message);
     swAssets->nevis22.drawString(message, textStart.x - textW/2, textStart.y);

@@ -57,6 +57,10 @@ songBaseScene::songBaseScene() {
         songFivePic[i].loadImage("story/5-" + ofToString(i) + ".png"); 
     }
 
+    for (int i = 0; i < 8; i++) {
+        whaleSounds[i].loadSound("sounds/WS" + ofToString(i) + ".caf");
+    }
+    
 }
 
 

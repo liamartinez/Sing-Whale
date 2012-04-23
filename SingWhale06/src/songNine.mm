@@ -50,7 +50,7 @@ void songNine::activate() {
     
     mom.loadSound("sounds/mom.caf");
  
-    
+    whaleSounds[0].play();
     
     
 }
@@ -74,14 +74,14 @@ void songNine::draw() {
     
     //button.draw();
     ofTranslate(0, tweenVal);    
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255); 
+
     
     string message = "";
     //int textW = swAssets->nevis48.getStringWidth(message);
     
     switch(mgr.getCurScene()) {
         case SONG_NINE_FIRST:
+            
             songNine[SONG_NINE_FIRST].draw(0,0);     
             button.draw();
             break;
@@ -108,10 +108,7 @@ void songNine::draw() {
             
             break;
     }
-    
-    ofDisableAlphaBlending();
-    
-    
+
     //ofSetColor(0);
     //textW = swAssets->nevis48.getStringWidth(message);
     //swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
