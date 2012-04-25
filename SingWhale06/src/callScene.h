@@ -14,6 +14,8 @@
 #include "baseButton.h"
 #include "whaleSong.h"
 
+#include "Tweenzor.h"
+
 enum {
     CALL_SCENE_FIRST,
     CALL_SCENE_SECOND,
@@ -58,11 +60,17 @@ public:
     
     whaleSong   nameSong; 
     
+    ofImage     BG; 
+    
 private:
     
     bool    hasReturned; 
     ofImage callScreen; //lia - replace pictures here. 
     ofImage callWhale; 
+    
+    ofImage turtleBigLeft, turtleBigRight, turtleSmall, turtleMed1, turtleMed2; 
+    ofImage laylaBG, laylaPic; 
+    ofVideoPlayer laylaName, laylaFace, laylaHello; 
 
 };
 

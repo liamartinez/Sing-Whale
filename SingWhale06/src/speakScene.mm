@@ -283,6 +283,15 @@ void speakScene::draw() {
         songMenu.lightUp(255);
     }
          
+    //lines
+    ofPushMatrix();
+    ofTranslate(40, 40);
+    ofEnableAlphaBlending();
+    ofSetColor(255, 255, 255);
+    //menuBG.draw(0,-20);
+    lines.draw(0,0);
+    ofDisableAlphaBlending();
+    ofPopMatrix();
          
     
     //the actual scene
@@ -295,15 +304,7 @@ void speakScene::draw() {
     ofPopMatrix();     
     ofDisableAlphaBlending();
     
-    //lines
-    ofPushMatrix();
-    ofTranslate(40, 40);
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255);
-    //menuBG.draw(0,-20);
-    lines.draw(0,0);
-     ofDisableAlphaBlending();
-    ofPopMatrix();
+
     
 }
 

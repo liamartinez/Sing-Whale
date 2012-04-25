@@ -58,6 +58,21 @@ void callScene::activate() {
     
     nameSong.setup(); 
     
+    BG.loadImage("story/7-BG.png");
+    turtleBigLeft.loadImage("intro/introbigleft.png");
+    turtleBigRight.loadImage("intro/introbigright.png"); 
+    turtleSmall.loadImage("intro/introsmall.png");
+    turtleMed1.loadImage("intro/intromedleft.png");
+    turtleMed2.loadImage("intro/intromedleft2.png");
+
+    laylaBG.loadImage("intro/laylaBG.png");
+    laylaPic.loadImage("intro/laylapic.png");
+    
+    laylaName.loadMovie("intro/movies/LAYLA1.m4v");
+    laylaFace.loadMovie("intro/movies/LAYLA2.m4v");
+    laylaHello.loadMovie("intro/movies/LAYLA3.m4v");
+    
+    
 }
 
 //------------------------------------------------------------------
@@ -74,48 +89,78 @@ void callScene::draw() {
     cout << "Drawing Call screen" << endl;
     
     ofSetColor(255, 255, 255);
-    callScreen.draw(0,0);
+    BG.draw(0,0); 
     
     string message = "";
     int textW = swAssets->nevis48.getStringWidth(message);
     
     next.draw(ofGetWidth() - 550, ofGetHeight()-100); 
 
+    ofEnableAlphaBlending(); 
+    ofSetColor(255);
     switch(mgr.getCurScene()) {
         case CALL_SCENE_FIRST:
+            turtleSmall.draw(0,0); 
             message = "Why helloooo there!"; 
 
             break;
             
         case CALL_SCENE_SECOND:
+            turtleMed1.draw(0,0);
             message = "Im keo! \nIm the resident WHALE expert in these parts!  ";    
             break;
             
         case CALL_SCENE_THIRD:
+            turtleMed1.draw(0,0);
             message = "Do you want to learn how to speak whale? ";    
             break;   
             
         case CALL_SCENE_FOURTH:
-            message = "Whoops! I can't hear you. \n Whenever you want to say something, \n press this button:  "; 
+            turtleBigRight.draw(0,0); 
+            message = "Whoops! I can't hear you. \n Whenever you want to say something, \n press ME!  "; 
             break;
             
         case CALL_SCENE_FIFTH:
+            turtleBigLeft.draw(0,0); 
             message = "Try it! ";    
             break;
             
         case CALL_SCENE_SIXTH:
+            turtleMed2.draw(0,0);
             message = "Great! Did you see how the waves changed \nwhen you said something?  ";    
             break;
             
         case CALL_SCENE_SEVENTH:
+            turtleMed2.draw(0,0);
             message = "Try it again! ";    
             break;
             
         case CALL_SCENE_EIGHTH:
+            turtleBigRight.draw(0,0);
             message = "Okay, now that I know I can hear you, \nlet me introduce you to \nour OTHER whale expert!" ;    
             break;
             
         case CALL_SCENE_NINTH:
+            
+            //ofEnableAlphaBlending();
+            //ofSetColor(255);
+            
+
+            laylaPic.draw(0,0);
+            laylaBG.draw(0,0);
+            //ofDisableAlphaBlending();
+            
+            /*
+            //ofSetColor(255);
+            ofEnableAlphaBlending();
+            //ofSetColor(255);
+
+            ofDisableAlphaBlending(); 
+            */
+            turtleMed2.draw(0,0);
+            
+            laylaName.play();
+            laylaName.draw(500, 500, 500, 500); 
             message = " This is my friend Layla.  ";    
             break;
             
@@ -152,6 +197,8 @@ void callScene::draw() {
             message = "Dont forget to press this button to speak whale!!  ";    
             break;
 
+            
+            ofDisableAlphaBlending();
             /*
         case CALL_SCENE_SECOND:
             message = "This is how you say her name."; 
