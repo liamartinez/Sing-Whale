@@ -1,6 +1,6 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/vertex.mm \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/vertex.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/vertex.mm \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/vertex.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \

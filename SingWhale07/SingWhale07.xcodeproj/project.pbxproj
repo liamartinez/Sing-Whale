@@ -16,6 +16,7 @@
 		0A3349CE1520C210007FD88D /* songFour.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A3349CD1520C210007FD88D /* songFour.mm */; };
 		0A59A0D114FB4B4700A497DA /* callScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D014FB4B4700A497DA /* callScene.mm */; };
 		0A59A0D414FB4CAF00A497DA /* speakScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A59A0D314FB4CAF00A497DA /* speakScene.mm */; };
+		0A7882171547951800E3DA43 /* ofxImageSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A7882151547951800E3DA43 /* ofxImageSequence.cpp */; };
 		0A7D40FF153A5AC90035E8DE /* songZero.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D40FE153A5AC90035E8DE /* songZero.mm */; };
 		0A7D4101153A5AE30035E8DE /* songFive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4100153A5AE30035E8DE /* songFive.mm */; };
 		0A7D4103153A5AEE0035E8DE /* songSix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4102153A5AEE0035E8DE /* songSix.mm */; };
@@ -168,6 +169,8 @@
 		0A59A0D014FB4B4700A497DA /* callScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = callScene.mm; sourceTree = "<group>"; };
 		0A59A0D214FB4C6D00A497DA /* speakScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speakScene.h; sourceTree = "<group>"; };
 		0A59A0D314FB4CAF00A497DA /* speakScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = speakScene.mm; sourceTree = "<group>"; };
+		0A7882151547951800E3DA43 /* ofxImageSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxImageSequence.cpp; sourceTree = "<group>"; };
+		0A7882161547951800E3DA43 /* ofxImageSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxImageSequence.h; sourceTree = "<group>"; };
 		0A7D40F8153A5A6E0035E8DE /* songFive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songFive.h; sourceTree = "<group>"; };
 		0A7D40F9153A5A790035E8DE /* songSix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songSix.h; sourceTree = "<group>"; };
 		0A7D40FA153A5A810035E8DE /* songSeven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songSeven.h; sourceTree = "<group>"; };
@@ -441,6 +444,16 @@
 				0A4500C11547824000FA9E53 /* SingWhale07.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0A7882141547951800E3DA43 /* ofxImageSequence */ = {
+			isa = PBXGroup;
+			children = (
+				0A7882151547951800E3DA43 /* ofxImageSequence.cpp */,
+				0A7882161547951800E3DA43 /* ofxImageSequence.h */,
+			);
+			name = ofxImageSequence;
+			path = ../../../../of_preRelease_v007_osx/addons/ofxImageSequence;
 			sourceTree = "<group>";
 		};
 		0A7D4119153B1D520035E8DE /* ofxTweenzor */ = {
@@ -959,6 +972,7 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				0A7882141547951800E3DA43 /* ofxImageSequence */,
 				0A7D4119153B1D520035E8DE /* ofxTweenzor */,
 				0A8B0436151BFD1B0065D05B /* ofxiPhoneFile */,
 				0A8B03EA15194F110065D05B /* ofxMaxim */,
@@ -1222,6 +1236,7 @@
 				0A7D4128153B1D520035E8DE /* Tween.cpp in Sources */,
 				0A7D4129153B1D520035E8DE /* Tweenzor.cpp in Sources */,
 				0AF4AAD0153BE46A00F4FD94 /* songWaiting.mm in Sources */,
+				0A7882171547951800E3DA43 /* ofxImageSequence.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

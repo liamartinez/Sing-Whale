@@ -20,7 +20,11 @@ void callSceneName::setup() {
 //------------------------------------------------------------------
 void callSceneName::update() {
     
-    nameSong.update(); 
+    //nameSong.update(); 
+    wSong.update();
+    if (wSong.atEnd) wSong.begin = false;
+    
+    Tweenzor::update(ofGetElapsedTimeMillis());
     switch(mgr.getCurScene()) {
         case CALL_SCENE_FIRST:
             //Do stuff
@@ -42,15 +46,17 @@ void callSceneName::activate() {
     nameSong.setup(); 
     
     //load here, not setup
-    callScreen.loadImage("images/BG.png");
+    callScreen.loadImage("story/7-BG.png");
     callDuck.loadImage("images/call1.png");
     callPail.loadImage("images/call3.png");
-    next.setLabel("CORRECT", &swAssets->nevis22);
-    tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
+    //next.setLabel("CORRECT", &swAssets->nevis22);
+    //tryAgain.setLabel("TRY AGAIN", &swAssets->nevis22);
 
     cout << "Activate CallName" << endl;
     
     textStart.set(ofGetWidth()/2, ofGetHeight()/3);
+    wSong.loadSong("intro/hello.xml");
+    wSong.setSong(0);
 }
 
 //------------------------------------------------------------------
@@ -82,6 +88,30 @@ void callSceneName::draw() {
             ofEnableAlphaBlending();
             callDuck.draw(0,0);
             ofDisableAlphaBlending(); 
+            
+            ofPushMatrix();
+            ofTranslate(300, -200);
+            wSong.draw();
+            ofPopMatrix();
+            
+            //check the song
+            wSong.begin = false; 
+            wSong.reset = true; 
+            wSong.dontCheck = false; 
+            if(wSong.checked) {
+                if (wSong.correct) {
+                    mgr.setCurScene(mgr.getCurScene() + 1);   
+                    wSong.checked = false; 
+                } else {
+                    swSM->setCurScene(SCENE_CALL_NAME); 
+                    //hasReturned = true;
+                    wSong.checked = false;
+                }
+            }
+            
+            turtleButt.lightUp (strobey); 
+            turtleButt.draw(100, ofGetHeight() - 200);
+            
             message = "You did it wrong! You called a duck!"; 
             break;
             
@@ -91,10 +121,55 @@ void callSceneName::draw() {
             callPail.draw(0,0);
             ofDisableAlphaBlending(); 
             message = "You called a pail! A pail is not a WHALE"; 
+            
+            ofPushMatrix();
+            ofTranslate(300, -200);
+            wSong.draw();
+            ofPopMatrix();
+            
+            //check the song
+            wSong.begin = false;
+            wSong.reset = true; 
+            wSong.dontCheck = false; 
+            if(wSong.checked) {
+                if (wSong.correct) {
+                    mgr.setCurScene(mgr.getCurScene() + 1);   
+                    wSong.checked = false; 
+                } else {
+                    swSM->setCurScene(SCENE_CALL_NAME); 
+                    //hasReturned = true;
+                    wSong.checked = false;
+                }
+            }
+            
+            turtleButt.lightUp (strobey); 
+            turtleButt.draw(100, ofGetHeight() - 200);
             break;
             
         case CALL_SCENE_NAME_SNAIL:
             message = "Okay, that's a snail. You are getting closer"; 
+            ofPushMatrix();
+            ofTranslate(300, -200);
+            wSong.draw();
+            ofPopMatrix();
+            
+            //check the song
+            wSong.begin = false;
+            wSong.reset = true; 
+            wSong.dontCheck = false; 
+            if(wSong.checked) {
+                if (wSong.correct) {
+                    mgr.setCurScene(mgr.getCurScene() + 1);   
+                    wSong.checked = false; 
+                } else {
+                    swSM->setCurScene(SCENE_CALL_NAME); 
+                    //hasReturned = true;
+                    wSong.checked = false;
+                }
+            }
+            
+            turtleButt.lightUp (strobey); 
+            turtleButt.draw(100, ofGetHeight() - 200);
             break;
     }
     
@@ -102,10 +177,7 @@ void callSceneName::draw() {
 
     textW = swAssets->nevis48.getStringWidth(message);
     swAssets->nevis48.drawString(message, textStart.x - textW/2, textStart.y);
-    
-    nameSong.draw(); 
-    nameSong.loadSong("name.xml");
-    nameSong.setSong(0);
+
     ofSetColor(255, 255, 255);
     
 }

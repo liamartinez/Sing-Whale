@@ -64,7 +64,7 @@ void speakScene::setup() {
     sparks.loadImage("images/sparks.png");
     
     startSingingButt.setup(); 
-    startSingingButt.setSize(150, 150);
+    startSingingButt.setSize(200, 200);
     startSingingButt.bColor = true; 
     //startSingingButt.setLabel("x", &swAssets->nevis48);
     //startSingingButt.setImage(&buttonUp, &buttonDown);
@@ -113,6 +113,7 @@ void speakScene::onComplete(float* arg) {
 //------------------------------------------------------------------
 void speakScene::update() {
     
+    ofSoundUpdate();
     
     //Tweenzor::update(ofGetElapsedTimeMillis());
     
@@ -204,9 +205,9 @@ void speakScene::deactivate() {
 void speakScene::draw() {
     
     BG.draw(0,0);
-    
+
     //activateGuideButt.draw(200, ofGetHeight()-150); 
-    guideArea.set (315, ofGetHeight() - 245, 685, 210); 
+    guideArea.set (315, ofGetHeight() - 245, 710, 210); 
     ofNoFill();
     
     switchButt.setSize(guideArea.width, guideArea.height);
@@ -216,10 +217,11 @@ void speakScene::draw() {
     //DRAW WORDS AND DRAW GUIDE
 
         ofSetColor(200, 75, 90);
-        swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 50 ,guideArea.y + guideArea.height/2);
+        swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 50 ,guideArea.y + guideArea.height/3);
   
         ofPushMatrix(); 
-        ofTranslate(330, 100, -130);
+        //ofTranslate(330, 100, -130);
+        ofTranslate(330, 0);
         wSong.draw(); 
         ofPopMatrix(); 
         
@@ -230,14 +232,27 @@ void speakScene::draw() {
     if (layla[songMenu.getSongPressed()].getIsPlaying()) {
         int songPos; 
         songPos = ofMap(layla[songMenu.getSongPressed()].getPosition(), 0, 1, 0, guideArea.width);
-        ofRect(guideArea.x + songPos, guideArea.y, guideArea.width - songPos, guideArea.height + 300);
+        ofRect(guideArea.x  + songPos, guideArea.y-100, guideArea.width - songPos, guideArea.height + 400);
         ofNoFill(); 
     }
 
     ofEnableAlphaBlending(); 
+    //the image is inside swMenu. fix this. 
+    startSingingButt.draw(50, ofGetHeight() - 250); 
 
-    startSingingButt.draw (70, ofGetHeight() - 150); 
 
+    
+    //the actual scene
+    ofEnableAlphaBlending();
+    ofSetColor(213, 226, 234); 
+    ofPushMatrix(); 
+    ofTranslate(0, -100);
+    if(!songSM->getCurSceneChanged(false)) {
+        songs[songSM->getCurScene()]->draw();
+    }
+    ofPopMatrix();     
+    ofDisableAlphaBlending();
+    
     //flashing antenna    
     bool on = true; 
     if (wSong.begin) {
@@ -245,7 +260,7 @@ void speakScene::draw() {
             if (ofGetFrameNum() %3 ==0) {
                 ofEnableAlphaBlending();
                 ofSetColor(255);
-                if (on) sparks.draw(0,0);
+                if (on) sparks.draw(60,-30);
                 ofDisableAlphaBlending();
                 //if (on) waves[i].draw(ofGetWidth() - 250, 290);
                 on = !on; 
@@ -287,21 +302,11 @@ void speakScene::draw() {
     ofEnableAlphaBlending();
     ofSetColor(255, 255, 255);
     //menuBG.draw(0,-20);
-    lines.draw(0,0);
+    //lines.draw(0,0);
     ofDisableAlphaBlending();
     ofPopMatrix();
          
-    
-    //the actual scene
-    ofEnableAlphaBlending();
-    ofSetColor(213, 226, 234); 
-    ofPushMatrix(); 
-    if(!songSM->getCurSceneChanged(false)) {
-        songs[songSM->getCurScene()]->draw();
-    }
-    ofPopMatrix();     
-    ofDisableAlphaBlending();
-    
+
 
     
 }
@@ -318,7 +323,7 @@ void speakScene::touchDown(ofTouchEventArgs &touch){
     
     wSong.touchDown(touch);
     
-    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
+    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
         startSingingButt.touchDown(touch);
     }
     activateGuideButt.touchDown(touch);
@@ -363,7 +368,7 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
     
     //if you press play and the song is done, reset and try again. if not, just pause it. 
     
-    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
+    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
         if (startSingingButt.isPressed()) {
                 youSing = false; 
                 if (wSong.atEnd) {
@@ -374,11 +379,14 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
                 }
             
         }
-    } else {
+    } 
+    /*
+    else {
         ofDrawBitmapString("choose something to say before you sing :)", 500, 400);
     }
+     */
     
-    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 150)) {
+    if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
         startSingingButt.touchUp(touch);
     }
     

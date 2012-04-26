@@ -1,7 +1,7 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/Repeller.cpp \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/Repeller.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/Particle.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/Repeller.cpp \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/Repeller.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/Particle.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glu/include_iphone/glu.h \

@@ -1,12 +1,12 @@
 dependencies: \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/whaleSong.mm \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/whaleSong.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/src/ofxMaxim.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maximilian.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiFFT.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/fft.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiGrains.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiMFCC.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/whaleSong.mm \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/whaleSong.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/src/ofxMaxim.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maximilian.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiFFT.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/fft.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiGrains.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxMaxim/libs/maxiMFCC.h \
   ../../../addons/ofxiPhone/ofxiPhoneExtras.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
@@ -132,8 +132,8 @@ dependencies: \
   ../../../addons/ofxiPhone/src/ofxiPhoneImagePicker.h \
   ../../../addons/ofxiPhone/src/ofxiPhoneMapKit.h \
   ../../../addons/ofxiPhone/src/ofxiPhoneMapKitListener.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxVtron/ofxBaseButton/baseButton.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxVtron/ofxBaseButton/baseButton.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxVtron/ofxFreeType2/src/ofxFreeType2.h \
   ../../../libs/freetype/include/ft2build.h \
   ../../../libs/freetype/include/freetype2/freetype/config/ftheader.h \
   ../../../libs/freetype/include/freetype2/freetype/freetype.h \
@@ -147,15 +147,15 @@ dependencies: \
   ../../../libs/freetype/include/freetype2/freetype/ftsystem.h \
   ../../../libs/freetype/include/freetype2/freetype/ftimage.h \
   ../../../libs/freetype/include/freetype2/freetype/ftglyph.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/swAssetManager.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../addons/ofxXmlSettings/libs/tinyxml.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tweenzor.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tween.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenSelector.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenFunctions.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenEvent.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/ofxTweenzor.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/songPhrase.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/vertex.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone_copy/apps/Sing-Whale/SingWhale07/src/dorwing.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/swAssetManager.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxXmlSettings/src/ofxXmlSettings.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../addons/ofxXmlSettings/libs/tinyxml.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/Tween.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenSelector.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenFunctions.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/TweenEvent.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/ofxTweenzor.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/songPhrase.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/vertex.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/dorwing.h

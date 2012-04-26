@@ -14,6 +14,8 @@
 #include "baseButton.h"
 #include "whaleSong.h"
 
+#include "ofxImageSequence.h"
+
 enum {
     CALL_SCENE_FIRST,
     CALL_SCENE_SECOND,
@@ -54,6 +56,9 @@ public:
     
     baseButton  next;
     baseButton  tryAgain; 
+    baseButton  back; 
+    ofImage     leftArrow; 
+    ofImage     rightArrow; 
     
     string song; 
     ofVec2f     textStart; 
@@ -82,7 +87,22 @@ private:
     
     ofImage turtleBigLeft, turtleBigRight, turtleSmall, turtleMed1, turtleMed2; 
     ofImage laylaBG, laylaPic; 
-    ofVideoPlayer laylaName, laylaFace, laylaHello; 
+    ofSoundPlayer laylaName, laylaFace, laylaHello; 
+    
+    /*
+    ofImage laylaNameSq[136]; 
+    ofImage laylaFaceSq[138];
+    ofImage laylaHelloSq[107];
+     */
+    
+    ofxImageSequence laylaNameSq;
+    ofxImageSequence laylaFaceSq; 
+    ofxImageSequence laylaHelloSq; 
+    
+
+    bool layla1, layla2, layla3; 
+    
+    float percent1, percent2, percent3; 
 
 };
 

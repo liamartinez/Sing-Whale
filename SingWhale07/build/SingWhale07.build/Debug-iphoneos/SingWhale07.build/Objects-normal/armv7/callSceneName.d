@@ -164,4 +164,5 @@ dependencies: \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxTweenzor/src/ofxTweenzor.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/songPhrase.h \
   /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/vertex.h \
-  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/dorwing.h
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/src/dorwing.h \
+  /Code/oF/OpenFrameworks/of_preRelease_v007_iphone/apps/Sing-Whale/SingWhale07/../../../../of_preRelease_v007_osx/addons/ofxImageSequence/ofxImageSequence.h

@@ -76,7 +76,7 @@ void swMenu::setup() {
     //rotation
     carrot.loadImage("carrot.png");   
     wheel.loadImage("circle.png");
-    turtle.loadImage("images/turtle.png");
+    turtle.loadImage("images/icons/speech.png");
     Tweenzor::init();  
     
     //sound
@@ -148,6 +148,17 @@ void swMenu::lightUp(float lightVal_) {
 //------------------------------------------------------------------
 void swMenu::draw() {
     
+    //draw the balloon
+    ofEnableAlphaBlending();
+    ofSetColor(255, lightVal, lightVal);
+    ofPushMatrix();
+    ofScale(.90, .90);
+    turtle.draw(30, ofGetHeight() - 200);
+    buttons[currentSong].draw(60, ofGetHeight() - 210);
+    ofPopMatrix();
+    ofDisableAlphaBlending(); 
+    
+    
     //get the angle based on the quaternion computations
     curRot.getRotate(angle, axis);      
     newAngle = angle - future; //"future" is for the bounce
@@ -157,9 +168,11 @@ void swMenu::draw() {
         ofTranslate(100, ofGetHeight() - 100); 
         ofRotate(newAngle+5, axis.x, axis.y ,axis.z);  //+5 to make it slightly different
         ofEnableAlphaBlending();
-    
+    /*
     ofSetColor(255, lightVal, lightVal);
     turtle.draw(-75, -100);
+    buttons[currentSong].draw(-75, -100);
+     */
     
 
     for (int i = 0; i < MENU_TOTAL; i++) {
@@ -188,8 +201,8 @@ void swMenu::draw() {
 
     //-------------separate matrices to make the rotations a little different
     
-    transRing.set(150, ofGetHeight() - 250);
-    transObj.set(200, 100);
+    transRing.set(200, ofGetHeight() - 300);
+    transObj.set(180, 100);
 
     ofPushMatrix(); 
         ofTranslate(transRing.x, transRing.y); 
@@ -238,13 +251,14 @@ void swMenu::draw() {
         wheel.draw(buttons[i].rLocBG.x - 40, buttons[i].rLocBG.y - 180, 200, 200);
         ofDisableAlphaBlending();
          */
-        
+        ofPushMatrix();
+        ofScale(.85, .85);
         buttons[i].draw(buttons[i].rLoc.x, buttons[i].rLoc.y);
+        ofPopMatrix();
     }
-    
-   
 
    // drawActiveBox(); 
+
         
 }
 
