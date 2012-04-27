@@ -84,6 +84,7 @@ public:
     
     bool            switchOn; 
     bool            drawWords;
+    bool            noneLoaded; 
         
     ofImage         BG; 
     
@@ -97,8 +98,9 @@ public:
     ofImage lines; 
 
     baseButton      startSingingButt; 
-    baseButton      activateGuideButt; 
     baseButton      switchButt; 
+    
+    int             buttonState; 
     
     ofRectangle     guideArea; 
 

@@ -58,7 +58,6 @@ void songOne::draw() {
             
             ofPushMatrix();
             ofTranslate(0, tweenVal);
-            cout << "tweenval " << tweenVal << endl; 
             songOne.draw(0,0);
             ofPopMatrix();
 

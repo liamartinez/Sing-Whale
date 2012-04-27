@@ -64,20 +64,18 @@ void speakScene::setup() {
     sparks.loadImage("images/sparks.png");
     
     startSingingButt.setup(); 
-    startSingingButt.setSize(200, 200);
+    startSingingButt.setSize(100, 200);
     startSingingButt.bColor = true; 
     //startSingingButt.setLabel("x", &swAssets->nevis48);
     //startSingingButt.setImage(&buttonUp, &buttonDown);
     
-    activateGuideButt.setup(); 
-    //activateGuideButt.setLabel("activate", &whitneySemiBold22);
-    activateGuideButt.setSize(100, 100);
-    
+    /*
     switchButt.setSize(100, 100);
     switchButt.bColor = true;
+     */
+    
     switchOn = false; 
  
-    
     for (int i = 0; i < SONG_TOTAL_SCENES - 2; i++) {
         layla[i].loadSound("sounds/" + ofToString(i) + ".caf");
     }
@@ -96,6 +94,9 @@ void speakScene::setup() {
     Tweenzor::getTween( &singWordSize )->setRepeat( 5000, true ); 
     
     Tweenzor::addCompleteListener( Tweenzor::getTween(&singWordSize), this, &speakScene::onComplete);
+    
+    buttonState = 0; 
+    noneLoaded = true; 
 
 }
 
@@ -114,9 +115,7 @@ void speakScene::onComplete(float* arg) {
 void speakScene::update() {
     
     ofSoundUpdate();
-    
-    //Tweenzor::update(ofGetElapsedTimeMillis());
-    
+        
     if(songSM->getCurSceneChanged()) {
         for(int i=0; i<SONG_TOTAL_SCENES; i++) {
             songs[i]->deactivate();
@@ -134,6 +133,7 @@ void speakScene::update() {
     //if the user song is correct, then activate that scene. 
     //if the user is wrong, make fun of them in song 4. 
     if(wSong.checked) {
+        youSing = false; 
         if (wSong.correct) {
             songSM->setCurScene(songMenu.getSongPressed());
             songs[songSM->getCurScene()]->activate();
@@ -153,7 +153,6 @@ void speakScene::update() {
     }
     
     //if the song is rotated in the right place, its switched on
-    //if (songMenu.activate) 
 
     //set the song!
     if (switchOn ) {
@@ -161,16 +160,14 @@ void speakScene::update() {
         switchOn = false; 
         wSong.dontCheck = false; 
         wSong.setSong(songMenu.getSongPressed());
-        layla[songMenu.getSongPressed()].play();
-        
+        layla[songMenu.getSongPressed()].play();        
     } 
-    
 
     //if at the end, flash the "SING!" thing
- if (layla[songMenu.getSongPressed()].getPosition() > .9) {
+    if (layla[songMenu.getSongPressed()].getPosition() > .9) {
         youSing = true; 
     }
-        
+    
     if (songMenu.poked) {
         switchOn = false;
         drawWords = true; 
@@ -200,19 +197,13 @@ void speakScene::deactivate() {
     
 }
 
-
 //------------------------------------------------------------------
 void speakScene::draw() {
     
     BG.draw(0,0);
 
-    //activateGuideButt.draw(200, ofGetHeight()-150); 
     guideArea.set (315, ofGetHeight() - 245, 710, 210); 
     ofNoFill();
-    
-    switchButt.setSize(guideArea.width, guideArea.height);
-    ofSetColor(50); 
-    switchButt.draw(guideArea.x, guideArea.y); 
 
     //DRAW WORDS AND DRAW GUIDE
 
@@ -220,14 +211,12 @@ void speakScene::draw() {
         swAssets->nevis48.drawString(songMenu.phrases[songMenu.currentSong], guideArea.x + 50 ,guideArea.y + guideArea.height/3);
   
         ofPushMatrix(); 
-        //ofTranslate(330, 100, -130);
         ofTranslate(330, 0);
         wSong.draw(); 
         ofPopMatrix(); 
         
         ofFill(); 
         ofSetColor(64, 94, 109);
-        //ofSetColor(213, 226, 234);
     
     if (layla[songMenu.getSongPressed()].getIsPlaying()) {
         int songPos; 
@@ -260,18 +249,9 @@ void speakScene::draw() {
             if (ofGetFrameNum() %3 ==0) {
                 ofEnableAlphaBlending();
                 ofSetColor(255);
-                if (on) sparks.draw(60,-30);
+                if (on) sparks.draw(80,-60);
                 ofDisableAlphaBlending();
-                //if (on) waves[i].draw(ofGetWidth() - 250, 290);
                 on = !on; 
-                /*
-                 if (waveNum < 3) {
-                 waveNum ++; 
-                 } else {
-                 waveNum = 0; 
-                 }
-                 cout << waveNum << endl; 
-                 */
             }
         }
     }
@@ -280,35 +260,19 @@ void speakScene::draw() {
     
     //fix this mess
     songMenu.draw(); 
-    
-    /*
-    startSingingButt.draw (45, ofGetHeight() - 200); 
-    if (showSongButtons) wSong.drawButtons();
-     */
 
+    cout <<"YOU SING? " << youSing << " BEGIN? " << wSong.begin << endl; 
     //if switched on and layla is finished, the turtle strobes
-    if (youSing && !wSong.begin )  {
-        
+    //if (youSing && !wSong.begin  )  {
+    if (youSing  && !wSong.begin && !layla[songMenu.getSongPressed()].getIsPlaying()) {
+        cout << "LIGHT UP " << endl; 
         lightSize = ofMap(singWordSize, .7f, 1, 100, 255);
         songMenu.lightUp (lightSize); 
 
     } else {
         songMenu.lightUp(255);
     }
-         
-    //lines
-    ofPushMatrix();
-    ofTranslate(40, 40);
-    ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255);
-    //menuBG.draw(0,-20);
-    //lines.draw(0,0);
-    ofDisableAlphaBlending();
-    ofPopMatrix();
-         
 
-
-    
 }
 
 //--------------------------------------------------------------
@@ -317,40 +281,42 @@ void speakScene::draw() {
 //--------------------------------------------------------------
 void speakScene::touchDown(ofTouchEventArgs &touch){
     
-    songs[songSM->getCurScene()]->touchDown(touch);
+    //songs[songSM->getCurScene()]->touchDown(touch);
     
     songMenu.touchDown(touch);
     
-    wSong.touchDown(touch);
+    //wSong.touchDown(touch);
     
+    /*
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
         startSingingButt.touchDown(touch);
     }
-    activateGuideButt.touchDown(touch);
-    switchButt.touchDown(touch);
+     */
+
+    //switchButt.touchDown(touch);
     
-    
+     startSingingButt.touchDown(touch);
 }
 
 
 //--------------------------------------------------------------
 void speakScene::touchMoved(ofTouchEventArgs &touch){
     
-    songs[songSM->getCurScene()]->touchDown(touch);
+    //songs[songSM->getCurScene()]->touchDown(touch);
     songMenu.touchMoved(touch);
     
-    wSong.touchMoved(touch);
+    //wSong.touchMoved(touch);
     
 }
 
 
 //--------------------------------------------------------------
 void speakScene::touchUp(ofTouchEventArgs &touch){
-    
+
     songs[songSM->getCurScene()]->touchUp(touch);
+    
+    /*
     songMenu.touchUp(touch);
-    
-    
     if(songMenu.touchMenuRes){
         
         cout<<"touch menu res true "<<songSM->getCurScene() <<endl;
@@ -360,14 +326,17 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
         
     }
     songMenu.touchMenuRes = false;
+    */
     
-    
+    /*
     wSong.touchUp(touch);
     if (showSongButtons) wSong.touchDownButtons(touch);
     showSongButt.touchUp(touch);
+     */
     
     //if you press play and the song is done, reset and try again. if not, just pause it. 
     
+    /*
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
         if (startSingingButt.isPressed()) {
                 youSing = false; 
@@ -380,29 +349,74 @@ void speakScene::touchUp(ofTouchEventArgs &touch){
             
         }
     } 
-    /*
-    else {
-        ofDrawBitmapString("choose something to say before you sing :)", 500, 400);
-    }
      */
+
+    cout << "buttonState " << buttonState << endl; 
+
+   // if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
+        if (startSingingButt.isPressed()) {
+            if (noneLoaded) {
+                switchOn = true;
+                noneLoaded = false; 
+            }
+            else if (!wSong.atEnd) {
+                wSong.begin = !wSong.begin;
+                 
+            } else {
+                wSong.reset = true;
+                //wSong.begin = false; 
+                switchOn = true;
+                wSong.atEnd = false; 
+                youSing = false; 
+            }
+        }
+            /*
+            switch (buttonState) {
+                case 0:
+                    switchOn = true;
+                    break;
+                    
+                case 1:
+                    wSong.begin = !wSong.begin;
+                    break;
+            }
+            
+            cout << "uh oh, pressed " << endl; 
+            //if you're at the end, go to guide mode
+            if (wSong.atEnd){
+                
+                cout << "AT END " << endl; 
+                buttonState = 0;  
+                wSong.reset = true;
+                wSong.begin = false; 
+                youSing = false;                 
+            } 
+            
+            //if not at the end, stay at singing mode
+            else {
+                buttonState = 1; 
+            }
+        }
+   // }
+    */
+    
+    startSingingButt.touchUp(touch);
     
     if (touch.x < (30 + 150) && touch.y > (ofGetHeight() - 300)) {
-        startSingingButt.touchUp(touch);
+        
     }
-    
-    if (activateGuideButt.isPressed()) {
-        cout << "OK GO!" << endl; 
-    }
-    
+     
+
+    /*
     if (switchButt.isPressed()) {
         cout << "PRESSED *********" << endl; 
         switchOn = true;
 
         
     }
-    
-    activateGuideButt.touchUp(touch);
-    switchButt.touchUp(touch);
+     */
+
+    //switchButt.touchUp(touch);
     
     
     

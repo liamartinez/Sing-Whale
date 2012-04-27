@@ -323,7 +323,6 @@ void whaleSong::loadSong(string XMLname) {
     } else {
         //cout << "unable to load " << XMLname << endl; 
     }
-
         songList.pushTag("songList");
         numberOfSongs = songList.getNumTags("songs");
         
@@ -337,8 +336,7 @@ void whaleSong::loadSong(string XMLname) {
             tempSong.songWords = songWords; 
             
             songList.pushTag("songs",i);
-            
-            
+
             int numberOfSavedPoints = songList.getNumTags("pos");
             for(int j = 0; j < numberOfSavedPoints; j++){
                 
@@ -346,7 +344,6 @@ void whaleSong::loadSong(string XMLname) {
                 savedBin = songList.getValue("pos", 0,j);
 
                 tempSong.savedBins.push_back(savedBin);
-                
             }
             
             songs.push_back(tempSong);
@@ -366,7 +363,7 @@ void whaleSong::loadSong(string XMLname) {
 bool whaleSong::checkSong() {
     
     //if debug is not on, compare the user song against the guide
-    if (!debugCheck) {
+    if (!debugCheck && songs[whichSong].savedBins.size() !=0) {
         int points = 0; 
         
         //lets do something that sees which one is shorter
@@ -409,7 +406,7 @@ void whaleSong::setSong(int whichSong_){
     //set the tweenzor start point
     songLoc.y = ofGetHeight() - 40; 
     
-    Tweenzor::add (&songLoc.y, songLoc.y, songLoc.y - songHeight,  0.f, 1.f, EASE_OUT_QUAD); 
+    Tweenzor::add (&songLoc.y, songLoc.y- songHeight/2, songLoc.y - songHeight,  0.f, 1.f, EASE_OUT_QUAD); 
 
     //lets go!
     for (int i = 0; i < songs[whichSong].savedBins.size()-1; i++){
